@@ -5,6 +5,8 @@ Meeting Agenda, 16–18 February 2015
 
 HISPID should become a list of terms and definitions. It should not define a particular transfer format to avoid the need to define essentially the same terms at least once per transfer format. For exchange of herbarium data, HISPID 5 remains a useful transfer standard as it provides better atomisation than HISPID 3 and Darwin Core. Darwin Core is better for AVH/ALA content because that is the standard they use and a herbarium needs access to more terms than AVH.
 
+We need to assume that it is increasingly common that herbaria will be hiring consultants to implement data transfer systems, rather than using in-house resources. In this situation, we need to be as clear and consise as possible with our content and transfer standards to aid this. Documents can have different audiences, e.g. developer technical specifications versus content terms and definitions.
+
 ### Outcomes
 
 *   Generate a wiki document containing the full set of terms and their definitions with any associated controlled vocabulary or informational material. This might be similar to the [AVH data](http://hiscom.rbg.vic.gov.au/wiki/AVH_data) page, but covering all terms needed/used by Australian herbaria.
