@@ -42,4 +42,4 @@ What to do regarding specimen images? Audubon Core is a likely international sta
 
 ## Standards Maintenance
 
-Document how we (those maintaining our standards) will do this.
+Document how we (those maintaining our standards) will do this, both in developing the stardards as well as telling others how to get involved.
