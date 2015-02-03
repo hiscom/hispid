@@ -39,3 +39,7 @@ Ensure the schema is available at the expected public namespace URL to allow val
 ## Specimen Images
 
 What to do regarding specimen images? Audubon Core is a likely international standard.
+
+## Standards Maintenance
+
+Document how we (those maintaining our standards) will do this.
