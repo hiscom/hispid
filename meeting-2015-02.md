@@ -16,13 +16,15 @@ We need to assume that it is increasingly common that herbaria will be hiring co
 
 Deliver Darwin Core to AVH/ALA at least as well as HISPID 5/ABCD, thus avoiding a conversion to Darwin Core prior to delivery to AVH/ALA.
 
+  _There is actually very little transformation between ABCD and Darwin Core. I think there are only two elements – identificationQualifier and typeStatus – that need to be transformed; the rest is direct mapping. One issue is the flattening out of ABCD that needs to happen. Another is different implementations of ABCD by different providers._
+
 The [AVH data](http://hiscom.rbg.vic.gov.au/wiki/AVH_data) entry in the HISCOM wiki describes the way the AVH aggregation software (written by Niels) works. The [AVH MoU Technical Addendum](http://hiscom.rbg.vic.gov.au/wiki/AVH_MoU_Technical_Addendum) details the (CHAH accepted) expectation of any single data provider.
 
 ### Outcomes?
 
 ## Bolstering Herbarium use of HISPID 5/ABCD
 
-We still need HISPID as a transfer standard. Aside from updating the standard itself, we also need to find ways to better support its use.
+We still need HISPID as an exchange standard. Aside from updating the standard itself, we also need to find ways to better support its use.
 
 ### Outcomes
 
@@ -30,9 +32,13 @@ We still need HISPID as a transfer standard. Aside from updating the standard it
 
 We could define tools that might be used to help herbaria move to HISPID 5/ABCD? A tool that can take HISPID 3/4 documents and convert these to HISPID 5/ABCD and/or Darwin Core might be a good thing to attempt. This would help herbaria to transition off HISPID 3/4.
 
+  _I pretty much have that already, but they are loose scripts scattered here and there. The HO and BRI data was converted from HSIPID 3 to ABCD (or BioCASe tables used to create ABCD)_
+
 #### Documentation
 
 Rework HISPID 5 as necessary to update it for current needs and update the associated documentation.
+
+  _I would actually like to have a real ABCD implementation. HISPID 5 won't validate against ABCD, as it is in the wrong name space. MEL (and MELU, LTB and HO) is currently using a CMF file that contains ABCD, the HISPID 5 extension and the Darwin Core elements that we need and for which there are no equivalents in ABCD. XML produced by these providers validates against ABCD, HISPID 5 extension and Darwin Core. If we are going to keep any elements from the HISPID 5 extension, I would like the HISPID XML schema to be set up like the Darwin Core XML schema, so that HISPID elements can be added to ABCD as well as Darwin Core XML._
 
 #### Publishing
 
