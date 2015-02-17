@@ -7,13 +7,18 @@ The Index Herbariorum code for the herbarium supplying the record.
 
 Examples: `MEL`, `CANB`
 
-### Darwin Core
-
-> _[institutionCode] []_: The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.
-
-### HISPID 3 and 4
-
-> _[insid] []_: The standard code for the Institution to which the plant record refers.
+<table>
+<tr>
+	<td>Darwin Core</td>
+	<td>_[institutionCode] []_</td>
+	<td>The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.</td>
+</tr>
+<tr>
+	<td>HISPID 3 and 4</td>
+	<td>_[insid] []_</td>
+	<td>The standard code for the Institution to which the plant record refers.</td>
+</tr>
+</table>
 
 [institutionCode]: http://rs.tdwg.org/dwc/terms/institutionCode
 [insid]: http://chah.gov.au/hispid/terms/insid
@@ -38,7 +43,7 @@ Examples: `CBG`, `WAHERB`
 
 The unique identifier for each collection object, including the acronym
 
-Example(s): `MEL 12345`, `CANB 78021.1`, `PERTH 08444595`, `CHR 1234 A`
+Examples: `MEL 12345`, `CANB 78021.1`, `PERTH 08444595`, `CHR 1234 A`
 
 ### Darwin Core
 
