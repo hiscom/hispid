@@ -33,3 +33,20 @@ Examples: `CBG`, `WAHERB`
 > None.
 
 [collectionCode]: http://rs.tdwg.org/dwc/terms/collectionCode
+
+## Catalog Number
+
+The unique identifier for each collection object, including the acronym
+
+Example(s): `MEL 12345`, `CANB 78021.1`, `PERTH 08444595`, `CHR 1234 A`
+
+### Darwin Core
+
+> _[catalogNumber] []_:  An identifier (preferably unique) for the record within the data set or collection.
+
+### HISPID 3
+
+> _[accid] []_: The unique identifier of the record, often called “Accession Number”, used internally by the institution to record each accession.
+
+[catalogNumber]: http://rs.tdwg.org/dwc/terms/catalogueNumber
+[accid]: http://chah.org.au/hispid/terms/accid
