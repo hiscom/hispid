@@ -1,7 +1,7 @@
 HISPID Terms
 ============
 
-## <a name="institutionCode"></a> Institution Code
+## Institution Code
 
 The Index Herbariorum code for the herbarium supplying the record.
 
@@ -22,7 +22,7 @@ _[insid] []_
 [institutionCode]: http://rs.tdwg.org/dwc/terms/institutionCode
 [insid]: http://chah.gov.au/hispid/terms/insid
 
-## <a name="collectionCode"></a> Collection Code
+## Collection Code
 
 An acronym or code of a collection or source within the Institution if appropriate, otherwise the same as institutionCode
 
