@@ -28,7 +28,12 @@ An acronym or code of a collection or source within the Institution if appropria
 
 Examples: `CBG`, `WAHERB`
 
-DWC:  The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.
-HISPID 3:  -
+### Darwin Core
+
+> _[collectionCode] []_: The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.
+
+### HISPID 3 and 4
+
+> None.
 
 [collectionCode]: http://rs.tdwg.org/dwc/terms/collectionCode
