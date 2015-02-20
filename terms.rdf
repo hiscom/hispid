@@ -5,19 +5,37 @@
 		 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 		 xmlns:dc="http://purl.org/dc/elements/1.1/#"
 		 xmlns:dwc="http://rs.tdwg.org/dwc/terms/#"
-		 xmlns:hispid3="http://hiscom.rbg.vic.gov.au/hispid/3/terms/#"
+		 xmlns:hispid3="http://chah.org.au/hispid/3/terms/#"
 		 xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#"
-		 xmlns:hispid5="http://www.chah.org.au/schemas/hispid/5#">
-	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/">
-			<dc:title>HISPID Terms 0.1-SNAPSHOT</dc:title>
-			<skos:description>This document represents a sea-change in the way Australian
-				Herbaria manage their data standards. HISPID until now was a data format.
-				From now, it is a list of terms and definitions ready for use by any data
-				standard.</skos:description>
+		 xmlns:hispid5="http://www.chah.org.au/schemas/hispid/5#"
+		 xml:base="http://chah.org.au/hispid/terms/1.0/">
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0/">
+		<dc:title>HISPID Terms 0.1-SNAPSHOT</dc:title>
+		<skos:description>This document represents a sea-change in the way Australian
+			Herbaria manage their data standards. HISPID until now was a data format.
+			From now, it is a list of terms and definitions ready for use by any data
+			standard.</skos:description>
+		<dc:publisher>Herbarium Information Systems Committee (HISCOM), Australia</dc:publisher>
+		<dc:modified>2015-02-20</dc:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/term/institutionCode">
-		<rdfs:label>Institution Code</rdfs:label>
-		<rdf:type rdf:resource="rdf:Property"/>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/institutionCode"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/insid"/>
+		<!-- How to reference an element or type from an XML Schema? -->
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SourceInstitutionID"/>
+		<rdfs:label>Institution Code</rdfs:label>
+		<skos:definition>The Index Herbariorum code for the herbarium supplying the record.</skos:definition>
+		<skos:example>MEL</skos:example>
+		<skos:example>CANB</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/term/collectionCode">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/collectionCode"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SourceID"/>
+		<rdfs:label>Collection Code</rdfs:label>
+		<skos:definition>An acronym or code of a collection or source within the Institution if appropriate, otherwise the same as institutionCode.</skos:definition>
+		<skos:example>CBG</skos:example>
+		<skos:example>WAHERB</skos:example>
 	</rdf:Description>
 </rdf:RDF>
