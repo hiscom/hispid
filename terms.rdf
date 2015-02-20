@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:owl="http://www.w3.org/2002/07/owl#"
+		 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+		 xmlns:dc="http://purl.org/dc/elements/1.1/#"
+		 xmlns:dwc="http://rs.tdwg.org/dwc/terms/#"
+		 xmlns:hispid3="http://hiscom.rbg.vic.gov.au/hispid/3/terms/#"
+		 xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#"
+		 xmlns:hispid5="http://www.chah.org.au/schemas/hispid/5#">
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/">
+			<dc:title>HISPID Terms 0.1-SNAPSHOT</dc:title>
+			<skos:description>This document represents a sea-change in the way Australian
+				Herbaria manage their data standards. HISPID until now was a data format.
+				From now, it is a list of terms and definitions ready for use by any data
+				standard.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/term/institutionCode">
+		<rdfs:label>Institution Code</rdfs:label>
+		<rdf:type rdf:resource="rdf:Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/institutionCode"/>
+	</rdf:Description>
+</rdf:RDF>
