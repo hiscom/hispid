@@ -18,7 +18,7 @@
 		<dc:publisher>Herbarium Information Systems Committee (HISCOM), Australia</dc:publisher>
 		<dc:modified>2015-02-20</dc:modified>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://chah.org.au/hispid/term/institutionCode">
+	<rdf:Description rdf:about="institutionCode">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/institutionCode"/>
 		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/insid"/>
@@ -29,7 +29,7 @@
 		<skos:example>MEL</skos:example>
 		<skos:example>CANB</skos:example>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://chah.org.au/hispid/term/collectionCode">
+	<rdf:Description rdf:about="collectionCode">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/collectionCode"/>
 		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SourceID"/>
