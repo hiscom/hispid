@@ -8,7 +8,7 @@
 @prefix abcd:       <http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#> .
 @prefix hispid5:    <http://www.chah.org.au/schemas/hispid/5#> .
 
-<>  dc:title    "HISPID Terms 1.0-SNAPSHOT" .
+<>  dc:title    "HISPID Terms 0.1-SNAPSHOT" .
 <>  skos:description    "HISPID Terms represents a sea-change in the way Australian Herbaria
 manage their data standards. HISPID until now was a data format. From now, it is a list
 of terms and definitions ready for use by any data standard."
