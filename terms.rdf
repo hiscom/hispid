@@ -5,37 +5,1029 @@
 		 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 		 xmlns:dc="http://purl.org/dc/elements/1.1/#"
 		 xmlns:dwc="http://rs.tdwg.org/dwc/terms/#"
-		 xmlns:hispid3="http://chah.org.au/hispid/3/terms/#"
 		 xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#"
 		 xmlns:hispid5="http://www.chah.org.au/schemas/hispid/5#"
+		 xmlns:hispid4="http://chah.org.au/hispid/4/terms/#"
+		 xmlns:hispid3="http://chah.org.au/hispid/3/terms/#"
 		 xml:base="http://chah.org.au/hispid/terms/1.0/">
-	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0/">
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/">
 		<dc:title>HISPID Terms 0.1-SNAPSHOT</dc:title>
-		<skos:description>This document represents a sea-change in the way Australian
-			Herbaria manage their data standards. HISPID until now was a data format.
-			From now, it is a list of terms and definitions ready for use by any data
-			standard.</skos:description>
+		<skos:description>This document represents a sea-change in the way Australian Herbaria manage their data standards. HISPID until now was a data format. From now, it is a list of terms and definitions ready for use by any data standard.</skos:description>
 		<dc:publisher>Herbarium Information Systems Committee (HISCOM), Australia</dc:publisher>
-		<dc:modified>2015-02-20</dc:modified>
+		<dc:modified>2015-03-16</dc:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="institutionCode">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/institutionCode"/>
-		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/insid"/>
-		<!-- How to reference an element or type from an XML Schema? -->
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#institutionCode"/>
 		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SourceInstitutionID"/>
-		<rdfs:label>Institution Code</rdfs:label>
-		<skos:definition>The Index Herbariorum code for the herbarium supplying the record.</skos:definition>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#insid"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#insid"/>
+		<skos:description>The Index Herbariorum code for the herbarium supplying the record.</skos:description>
 		<skos:example>MEL</skos:example>
 		<skos:example>CANB</skos:example>
 	</rdf:Description>
 	<rdf:Description rdf:about="collectionCode">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/collectionCode"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#collectionCode"/>
 		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SourceID"/>
-		<rdfs:label>Collection Code</rdfs:label>
-		<skos:definition>An acronym or code of a collection or source within the Institution if appropriate, otherwise the same as institutionCode.</skos:definition>
+		<skos:description>An acronym or code of a collection or source within the institution.</skos:description>
 		<skos:example>CBG</skos:example>
-		<skos:example>WAHERB</skos:example>
+		<skos:example>QRS</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="modified">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#modified"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/DateLastEdited"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#moddat"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#moddat"/>
+		<skos:description>Date and time of the last modification to any component of the record.</skos:description>
+		<skos:example>1963-03-08T14:07:00</skos:example>
+		<skos:example>2009-02-12</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="basisOfRecord">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#basisOfRecord"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/RecordBasis"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#recsou"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#recsou"/>
+		<skos:description>Nature of the record</skos:description>
+		<skos:example>PreservedSpecimen</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="type">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#dcterms:type"/>
+		<skos:description>Nature of the resource</skos:description>
+		<skos:example>PhysicalObject</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="language">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#dcterms:language"/>
+		<skos:description>Language of the resource</skos:description>
+		<skos:example>http://id.loc.gov/vocabulary/iso639-2/eng</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="rightsHolder">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Owner of the copyright over the resource.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="license">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>URL defining or elaborating on the licence statement.</skos:description>
+		<skos:example>http://creativecommons.org/licenses/by/3.0/au/</skos:example>
+		<skos:example>http://creativecommons.org/licenses/by/4.0/</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="occurrenceID">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#occurrenceID"/>
+		<skos:description>A globally unique identifier for the collection object record.</skos:description>
+		<skos:example>1cf74f91-e991-4382-8b20-42d2d8e6076a</skos:example>
+		<skos:example>URN:catalog:PERTH:WAHERB:08444595</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="catalogNumber">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#catalogNumber"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/UnitID"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#accid"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#accid"/>
+		<skos:description>The unique identifier for each collection object, including the acronym</skos:description>
+		<skos:example>MEL 12345</skos:example>
+		<skos:example>CANB 78021.1</skos:example>
+		<skos:example>PERTH 08444595</skos:example>
+		<skos:example>CHR 1234 A</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="recordedBy">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#recordedBy"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Agents/GatheringAgentsText or //Unit/Gathering/Agents/GatheringAgent/AgentText (+)"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#cnam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#cnam"/>
+		<skos:description>The name(s) of the person or persons who made the collection on which this record is based</skos:description>
+		<skos:example>Steenis, C.G.G.J. van</skos:example>
+		<skos:example>Wilson, Peter G.</skos:example>
+		<skos:example>Streimann, H.|Mundua, A.</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="recordNumber">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#recordNumber"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/CollectorsFieldNumber"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#cid"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#cid"/>
+		<skos:description>The verbatim collecting number</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="preparations">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#preparations"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/KindOfUnit"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#ckin"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#ckin"/>
+		<skos:description>List of preparations from a specimen</skos:description>
+		<skos:example>sheet</skos:example>
+		<skos:example>alcohol</skos:example>
+		<skos:example>sheet|slide</skos:example>
+		<skos:example>sheet|silica gel|molecular isolate</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="otherCatalogNumbers">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#otherCatalogNumbers"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SpecimenUnit/History/PreviousUnits/PreviousUnit/PreviousUnitID"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#donacc"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#donacc"/>
+		<skos:description>A list of previous or alternate catalog numbers for the same Occurrence.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="occurrenceRemarks">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#occurrenceRemarks"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Notes"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#cnot"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#cnot"/>
+		<skos:description>Any additional information provided by the collector.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="organismQuantity">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#organismQuantity"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter='organismQuantity'][UnitOfMeasurement='Tansley (1946) scale']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://www.chah.org.au/schemas/hispid/5#//Unit/UnitExtension/hispid:HispidUnit/hispid:Frequency"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#fre"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#fre"/>
+		<skos:description>An indication of abundance of the taxon at the collecting locality as recorded by the collector</skos:description>
+		<skos:example>dominant</skos:example>
+		<skos:example>rare</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="establishmentMeans">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#establishmentMeans"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/EstablishmentMeans"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#posnat + poscul"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#posnat + poscul"/>
+		<skos:description>The process by which the individual(s) represented in the Occurrence became established at the location.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="lifeForm">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://www.chah.org.au/schemas/hispid/5#//Units/Unit/UnitExtension/hispid:HispidUnit/hispid:LifeForm"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#form"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#form"/>
+		<skos:description>A description of the habit or life form of the specimen on which the collection object is based.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="lifeStage">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#lifeStage"/>
+		<skos:description>The life stage of the individual at the time it was collected.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="sex">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#sex"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Units/Unit/Sex"/>
+		<skos:description>The sex of the individual</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="reproductiveCondition">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#reproductiveCondition"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter='reproductiveCondition']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://www.chah.org.au/schemas/hispid/5#//Unit/UnitExtension/hispid:HispidUnit/hispid:Phenology"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#phe"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#phe"/>
+		<skos:description>Reproductive condition(s) of the individual represented by the collection object.</skos:description>
+		<skos:example>flowers</skos:example>
+		<skos:example>flowers|fruit</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="associatedTaxa">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#associatedTaxa"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Synecology/AssociatedTaxa/TaxonIdentified/ScientificName/FullScientificNameString + //Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter='host']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#asspp"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#asspp"/>
+		<skos:description>A list of names of taxa and their associations with the Occurrence.</skos:description>
+		<skos:example>host:Nothofagus cunninghamii</skos:example>
+		<skos:example>growingWith:Eucalyptus regnans|growingWith:Atherospermum moschatum</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="associationType">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Type of association</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="associatedTaxon">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Nameof associated taxon</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="associatedSequences">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Sequences/Sequence/ID-in-Database"/>
+		<skos:description>List of identifiers for sequences associated with the collection object.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="disposition">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Current state of the specimen with respect to the collection identified by the collectionCode and institutionCode.</skos:description>
+		<skos:example>missing</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="habitat">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#habitat"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Biotope/Text"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#hab"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#hab"/>
+		<skos:description>Description of the habitat from where the collection object was collected, including geology and soil type, as well as the associated species.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="topography">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/AreaDetail"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#top"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#top"/>
+		<skos:description>A description of the topography of the habitat from which the collection object was collected</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="aspect">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Aspect/Ordination"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#asp"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#asp"/>
+		<skos:description>The abbreviated aspect or outlook of the site from which the collection object was gathered.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="geologicalSubstrate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter='geologicalSubstrate']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://www.chah.org.au/schemas/hispid/5#//Unit/UnitExtension/hispid:HispidGathering/hispid:Substrate"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#sub"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#sub"/>
+		<skos:description>The substrate or parent rock material in the habitat from which the collection object was collected.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="substrate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter='substrate']/LowerValue"/>
+		<skos:description>The material from which the collection object was collected.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="soil">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter='soil']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://www.chah.org.au/schemas/hispid/5#//Units/Unit/UnitExtension/hispid:HispidGathering/hispid:SoilType"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#soil"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#soil"/>
+		<skos:description>Description of the surface soil type from which the collection object was collected.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="vegetation">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter='vegetation']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://www.chah.org.au/schemas/hispid/5#//Unit/UnitExtension/hispid:HispidGathering/hispid:Vegetation"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#veg"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#veg"/>
+		<skos:description>Description of the vegetation from which the specimen was collected.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="eventDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#eventDate"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/DateTime/ISODateTimeBegin + //Unit/Gathering/DateTime/ISODateTimeEnd"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#cdat + cdat2"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#cdat + cdat2"/>
+		<skos:description>The date or period when the specimen was colleced</skos:description>
+		<skos:example>2014-10-03</skos:example>
+		<skos:example>1954-11</skos:example>
+		<skos:example>1872</skos:example>
+		<skos:example>1971-02-03/1971-02-05</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimEventDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimEventDate"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/DateTime/DateText"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#texcdat"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#texcdat"/>
+		<skos:description>The verbatim date information of when the specimen was collected</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="locality">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#locality"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/LocalityText"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#loc"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#loc"/>
+		<skos:description>Description of the locality from where the specimen was collected.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimLocality">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimLocality"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/LocalityText"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#loc"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#loc"/>
+		<skos:description>Verbatim locality description</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="continent">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#continent"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/NamedAreas/NamedArea[AreaClass='continent']/AreaName"/>
+		<skos:description>The name of the continent in which the collecting locality is situated.</skos:description>
+		<skos:example>Australia</skos:example>
+		<skos:example>South America</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="country">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#country"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Country/Name"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#cou"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#cou"/>
+		<skos:description>The name of the country in which the collecting locality is situated</skos:description>
+		<skos:example>Australia</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="countryCode">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#countryCode"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Country/ISO3166Code"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#iso"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#iso"/>
+		<skos:description>The standard ISO-3166 code for the country in which the collecting locality is situated.</skos:description>
+		<skos:example>AU</skos:example>
+		<skos:example>NZ</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="stateProvince">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#stateProvince"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/NamedAreas/NamedArea[AreaClass='stateProvince']/AreaName"/>
+		<owl:sameAs rdf:resource="http://www.chah.org.au/schemas/hispid/5#//Unit/UnitExtension/hispid:HispidGathering/hispid:PrimaryRecordingUnit"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#pru"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#pru"/>
+		<skos:description>The name of the next smaller administrative region after country in which the collecting locality is situated.</skos:description>
+		<skos:example>New South Wales</skos:example>
+		<skos:example>Kalimantan Barat</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="county">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#county"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/NamedAreas/NamedArea[AreaClass='county']/AreaName"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#sru"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#sru"/>
+		<skos:description>The name of the next smaller administrative region after stateProvince in which the collecting locality is situated.</skos:description>
+		<skos:example>Communa Cabo de Hornos</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="waterBody">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#waterBody"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/NamedAreas/NamedArea[AreaClass='waterBody']/AreaName"/>
+		<skos:description>The name of the water body in which the Location occurs.</skos:description>
+		<skos:example>Indian Ocean</skos:example>
+		<skos:example>Bass Strait</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="islandGroup">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#islandGroup"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/NamedAreas/NamedArea[AreaClass='islandGroup']/AreaName"/>
+		<skos:description>The name of the island group in which the Location occurs.</skos:description>
+		<skos:example>Cocos Islands</skos:example>
+		<skos:example>Auckland Islands</skos:example>
+		<skos:example>Furneaux Islands</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="island">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#island"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/NamedAreas/NamedArea[AreaClass='island']/AreaName"/>
+		<skos:description>The name of the island on or near which the Location occurs.</skos:description>
+		<skos:example>Macquarie Island</skos:example>
+		<skos:example>Flinders Island</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="decimalLatitude">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#decimalLatitude"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/LatitudeDecimal"/>
+		<skos:description>The geographic latitude of the collecting locality</skos:description>
+		<skos:example>-27.8566666667</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="decimalLongitude">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#decimalLongitude"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/LongitudeDecimal"/>
+		<skos:description>The geodetic longitude of the collecting locality</skos:description>
+		<skos:example>153.4422222222</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="geodeticDatum">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#geodeticDatum"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/SpatialDatum"/>
+		<skos:description>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude are based.</skos:description>
+		<skos:example>EPSG:4326</skos:example>
+		<skos:example>EPSG:4283</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimLatitude">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimLatitude"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/VerbatimLatitude"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#latdeg + latmin + latsec + latdir"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#latdeg + latmin + latsec + latdir"/>
+		<skos:description>The verbatim original latitude for the Location</skos:description>
+		<skos:example>15° 5' 59" S</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimLongitude">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimLongitude"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/VerbatimLongitude"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#londeg + lonmin + lonsec + londir"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#londeg + lonmin + lonsec + londir"/>
+		<skos:description>The verbatim original longitude for the Location</skos:description>
+		<skos:example>153° 26' 32" E</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimCoordinates">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimCoordinates"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMZone + //Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMEasting + //Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMNorthing"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#sqz + sge + sgn"/>
+		<skos:description>The verbatim original geographic coordinates for the Location</skos:description>
+		<skos:example>MGA 55 568183 5288204</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimCoordinateSystem">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimCoordinateSystem"/>
+		<skos:description>The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location.</skos:description>
+		<skos:example>:decimal degrees</skos:example>
+		<skos:example>UTM</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimSRS">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimSRS"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#spapro"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#sgp"/>
+		<skos:description>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based</skos:description>
+		<skos:example>EPSG:28352</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="coordinatePrecision">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#coordinatePrecision"/>
+		<skos:description>A decimal representation of the precision of the coordinates given in the decimalLatitude and decimalLongitude</skos:description>
+		<skos:example>0.016667</skos:example>
+		<skos:example>0.0002778</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="coordinateUncertaintyInMeters">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#coordinateUncertaintyInMeters"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/CoordinateErrorDistanceInMeters"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#geoacy"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#geoacy"/>
+		<skos:description>Estimate of the maximum horizontal distance between the point referenced by the decimalLatitude and decimalLongitude and the actual location the collection took place.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="georeferencedBy">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#georeferencedBy"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised[Parameter='georeferencedBy']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#geosou p.p."/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#geosou p.p."/>
+		<skos:description>Name(s) of person(s), group(s) or organisation(s) who took the georeference of the Location</skos:description>
+		<skos:example>National Herbarium of Victoria (MEL)</skos:example>
+		<skos:example>Walsh, N.G.</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="georeferenceProtocol">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#georeferenceProtocol"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinateMethod"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#geosou p.p."/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#geosou p.p."/>
+		<skos:description>A description of or reference to the methods used to determine the geographic coordinates of the Location.</skos:description>
+		<skos:example>GEOLocate</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="georeferencedDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#georeferencedDate"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised[Parameter='georeferencedDate']/LowerValue"/>
+		<skos:description>The date on which the Location was georeferen</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="georeferenceSources">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#georeferenceSources"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceSources"/>
+		<skos:description>A list (concatenated and separated) of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resource.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="georeferenceVerificationStatus">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#georeferenceVerificationStatus"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceVerificationStatus"/>
+		<skos:description>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial descript</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="georeferenceRemarks">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#georeferenceRemarks"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceRemarks"/>
+		<skos:description>Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalised in the method referred to in georeferenceProtocol.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="nearestNamedPlace">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/NearNamedPlaces/NamedPlaceRelation/NearNamedPlace"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#nnp"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#nnp"/>
+		<skos:description>The nearest named place to the collecting locality. </skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="minimumElevationInMeters">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#minimumElevationInMeters"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Altitude/MeasurementOrFactAtomised[UnitOfMeasurement='metres']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#alt"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#alt"/>
+		<skos:description>Elevation or lower value of a range of elevation in metres.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="maximumElevationInMeters">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#maximumElevationInMeters"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Altitude/MeasurementOrFactAtomised[UnitOfMeasurement='metres']/UpperValue"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#altx"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#altx"/>
+		<skos:description>Higher value of the range of elevation in metres.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimElevation">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimElevation"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Altitude/MeasurementOrFactText"/>
+		<skos:description>The original description of the elevation as provided by the collector.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="Accuracy of Maximum Altitude">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#altacyx"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#altacyx"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="Source of Altitude Accuracy Flag">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#altsou"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#altsou"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="elevationMethod">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#altdet"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#altdet"/>
+		<skos:description>Method by which the elevation was determined.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="minimumDepthInMeters">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#minimumDepthInMeters"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue with
+//Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#dep"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#dep"/>
+		<skos:description>Depth or the lesser of a range of depth below the local surface in metres.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="maximumDepthInMeters">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#maximumDepthInMeters"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue with
+//Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#depx"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#depx"/>
+		<skos:description>The greater of a range of depths below the local surface in metres.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimDepth">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimDepth"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Gathering/Depth/MeasurementOrFactText"/>
+		<skos:description>Verbatim description of the depth, as provided by the collector.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="Accuracy of Depth">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#depacy"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#depacy"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="Accuracy of Maximum Depth">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#depacyx"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#depacyx"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="Source of Depth Accuracy Flag">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="Method of Depth Determination">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="identificationID">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#identificationID"/>
+		<skos:description>Identifier for the Identification</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="identificationQualifier">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#identificationQualifier"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification[PreferredFlag='true']/Result/TaxonIdentified/ScientificName/IdentificationQualifier + //Unit/Identifications/Identification[PreferredFlag='true']/Result/TaxonIdentified/ScientificName/IdentificationQualifier[@insertionpoint]"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#idql"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#idql"/>
+		<skos:description>A brief phrase or standard term to express doubt about an identification.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="identificationQualifierRank">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#identificationQualifier"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#rkql"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#rkql"/>
+		<skos:description>Rank at which the identificationQualifier applies</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="nameAddendum">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification[PreferredFlag='true']/Result/TaxonIdentified/ScientificName/NameAddendum"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#spql"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#spql"/>
+		<skos:description>A suffix added after the scientific name to indicate aggregate taxa or  more or less inclusive taxon concepts</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="identificationVerificationStatus">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#identificationVerificationStatus"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/VerificationLevel"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#vlev"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#vlev"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="identifierRole">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Identifiers/IdentifierRole"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#det"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#det"/>
+		<skos:description>Categorical indicator of the type of contribution made by the determiner.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="identifiedBy">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#identifiedBy"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Identifiers/IdentifiersText"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#vnam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#vnam"/>
+		<skos:description>The name(s) of people, groups, or organisations who  identified the collection object.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="dateIdentified">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#dateIdentified"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Date/ISODateTimeBegin"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#vdat"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#vdat"/>
+		<skos:description>The date on which the collection object was identified.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="verbatimDateIdentified">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Date/DateText"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#textvdat"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#textvdat"/>
+		<skos:description>The verbatim date of the Identification.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="identificationReferences">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#identificationReferences"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#vlit"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#vlit"/>
+		<skos:description>References used for the Identification.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="previousIdentifications">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#previousIdentifications"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification[PreferredFlag='FALSE']/*
+or
+//Unit/Identifications/IdentificationHistory"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#vhist"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#vhist"/>
+		<skos:description>Previous identifications of the collection object.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="identificationRemarks">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#identificationRemarks"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Notes"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#idcom"/>
+		<skos:description>Any additional comments made by the determiner as part of the Identification.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="typeStatusQualifier">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation[0]/DoubtfulFlag"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#tql"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#tql"/>
+		<skos:description>Standard term to qualify the type status designation.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="typeStatus">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#typeStatus"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation[0]/TypeStatus"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#tsta"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#tsta"/>
+		<skos:description>Code indicating the type status of the collection object.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="typifiedName">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation[0]/TypifiedName/FullScientificNameString"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#basnam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#basnam"/>
+		<skos:description>The scientific name of which the collection object is a type.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="taxonRank">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#taxonRank"/>
+		<skos:description>Taxonomic rank of the taxon to which the collection object has been identified.</skos:description>
+		<skos:example>subspecies</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="kingdom">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#kingdom"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank='regnum']/HigherTaxonName"/>
+		<skos:description>Full scientific name of the kingdom in which the taxon is classified</skos:description>
+		<skos:example>Plantae</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="phylum">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#phylum"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank='phylum']/HigherTaxonName"/>
+		<skos:description>Full scientific name of the phylum in which the taxon is classified</skos:description>
+		<skos:example>Streptophyta</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="class">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#class"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank='classis']/HigherTaxonName"/>
+		<skos:description>Full scientific name of the class in which the taxon is classified</skos:description>
+		<skos:example>Equisetopsida</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="order">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#order"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank='ordo']/HigherTaxonName"/>
+		<skos:description>Full scientific name of the order in which the taxon is classified</skos:description>
+		<skos:example>Fabales</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="family">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#family"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank='familia']/HigherTaxonName"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#fam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#fam"/>
+		<skos:description>Full scientific name of the order in which the family is classified</skos:description>
+		<skos:example>Fabaceae</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="genus">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#genus"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/GenusOrMonomial"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#gen"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#gen"/>
+		<skos:description>Full scientific name of the order in which the genus is classified</skos:description>
+		<skos:example>Acacia</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="specificEpithet">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#specificEpithet"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/FirstEpithet"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#sp"/>
+		<skos:description>Species epithet of the scientific name.</skos:description>
+		<skos:example>dealbata</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="infraspecificEpithet">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#infraspecificEpithet"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/InfraspecificEpithet"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#isp"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#isp"/>
+		<skos:description>Infraspecific epithet of the scientific name.</skos:description>
+		<skos:example>subalpina</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="scientificName">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#scientificName"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/FullScientificNameString"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#fulnam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#fulnam"/>
+		<skos:description>Full scientific name with authorship</skos:description>
+		<skos:example>Dicranoloma menziesii (Taylor) Renauld</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="scientificNameAuthorship">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#scientificNameAuthorship"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/AuthorTeam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#spau/ispau"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#spau/ispau"/>
+		<skos:description>Authorship of the scientific name formatted to the conventions of the applicable nomenclatural code.</skos:description>
+		<skos:example>L.</skos:example>
+		<skos:example>(Taylor) Renauld</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="nomenclaturalCode">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#nomenclaturalCode"/>
+		<skos:description>Nomenclatural code under which the scientific name is applied.</skos:description>
+		<skos:example>ICBN</skos:example>
+		<skos:example>ICNCP</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="taxonRemarks">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#taxonRemarks"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/NameComments"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#namcom"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#namcom"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="vernacularName">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#vernacularName"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#vernam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#vernam"/>
+		<skos:description>A vernacular name assigned to the specimen.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="cultivarGroupName">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/CultivarGroupName"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#culgnam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#culgnam"/>
+		<skos:description>Cultivar group name</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="cultivarName">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/CultivarGroupName"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#culnam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#culnam"/>
+		<skos:description>Cultivar name</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="tradeDesignation">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/TradeDesignationNames"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#tranam"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#tranam"/>
+		<skos:description>Trade designation</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="hybridFlag">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#hyb"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#hyb"/>
+		<skos:description>Flag to indicate whether the plant name refers to a hybrid, graft chimaera or intergrade, without reference to rank.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="hybridParent1">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Scientific name of the first parent of a hybrid</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="hybridParent2">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#genhy2"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#genhy2"/>
+		<skos:description>Scientific name of the second parent of a hybrid</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="miscellaneousRemarks">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/Notes"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#misc"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#misc"/>
+		<skos:description>Any additional information to be transferred pertaining to the collection object.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="exsiccataSeries">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Exsiccata series</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="exsiccataFascicle">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Fascicle in exsiccata series</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="exsiccataNumber">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Number in exsiccata series</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="voucherFlag">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter='voucher']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#vou"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#vou"/>
+		<skos:description>Term to indicate the collection onject has served as a voucher for a special purpose.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="provenanceTypeFlag">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter='provenanceTypeFlag']/LowerValue"/>
+		<owl:sameAs rdf:resource="http://www.chah.org.au/schemas/hispid/5#//Unit/UnitExtension/hispid:HispidUnit/hispid:ProvenanceType"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#prot"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#prot"/>
+		<skos:description>Code to indicate the type of provenance of the cultivated material from which this collection object was taken.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="cultivatedPlantProvenance">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Descriptive and coded information that describes the geographic position from which the source material of the cultivated plant from which the collection object was taken was collected.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="donor">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Units/Unit/SpecimenUnit/Acquisition/AcquisitionSourceText"/>
+		<owl:sameAs rdf:resource="http://www.chah.org.au/schemas/hispid/5#/Unit/SpecimenUnit/Acquisition/AcquiredFrom/*"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#don"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#don"/>
+		<skos:description>The person, business or institution from which the collection object was obtained.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="duplicatesDistributedTo">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SpecimenUnit/DuplicatesDistributedTo"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#desrep"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#desrep"/>
+		<skos:description>List of institutions replicates have been sent to.</skos:description>
+		<skos:example>PERTH</skos:example>
+		<skos:example>CANB|NSW</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="loanIdentifier">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/HerbariumUnit/LoanIdentifier"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#loaid"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#loaid"/>
+		<skos:description>The number assigned to the loan by the lending institution.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="loanDestination">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/HerbariumUnit/LoanDestination"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#loades"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#loades"/>
+		<skos:description>Institution to which the loan is sent.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="loanForBotanist">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/HerbariumUnit/LoanForBotanist"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#loabot"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#loabot"/>
+		<skos:description>Name(s) of the botanist(s) for whom the loan is intended.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="loanDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/HerbariumUnit/LoanDate"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#loadat"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#loadat"/>
+		<skos:description>The date the loan is prepared and/or sent.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="loanReturnDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/HerbariumUnit/LoanReturnDate"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#loaret"/>
+		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#loaret"/>
+		<skos:description>The date the loan is due to be returned.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitType">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Type of permit.</skos:description>
+		<skos:example>collecting permit</skos:example>
+		<skos:example>export permit</skos:example>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitReferenceNumber">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Reference number allocated to the permit by the issuing authority.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitIssuedBy">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Name of the authority by whom the permit was issued.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitIssuedTo">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Name(s) of the person(s) or organisation to whom the permit was issued.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitIssuedDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Date the permit was issued.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitValidDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Date or period for which the permit is valid.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitStatus">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Status of the permit.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitConditions">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Conditions on the permit, which may affect how the specimens collected under the permit may be used or distributed.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitRemarks">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Any additional comments pertaining to the permit.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="permitLink">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>The link to an electronic version of the permit.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="creator">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Creator of the media object.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="createDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Date the media object, or its source, was created.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="digitizationDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Date the media object was created.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="source">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Original source of the media object, if the resource was digitised from a non-digital source.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="title">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Title of the media object, including subtitles, if any.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="description">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Description of the media resource.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="caption">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Free-form text to be displayed together with (rather than instead of) a media object that is suitable for captions.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="physicalSetting">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>The setting of the content represented in the media object</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="subjectCategory">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Broad subject or context of the media object.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="tag">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Tag or keyword.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="subjectPart">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Part of the subject that is imaged.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="subjectOrientation">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Orientation of the subject represented in the media object with respect to the capturing device.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="captureDevice">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Device used to create the media object.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="resourceCreationTechnique">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Information about technical aspects of the creation of the media object.</skos:description>
+	</rdf:Description>
+	<rdf:Description rdf:about="relatedResourceID">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:description>Identifier(s) of related media objects, e.g.different view angles of the same subject.</skos:description>
 	</rdf:Description>
 </rdf:RDF>
