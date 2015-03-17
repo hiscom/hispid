@@ -20,7 +20,7 @@
 		<skos:example xml:lang="en">MEL</skos:example>
 		<skos:example xml:lang="en">CANB</skos:example>
 		<skos:prefLabel xml:lang="en">institutionCode</skos:prefLabel>
-		<!--<dcterms:issued> </dcterms:issued>-->
+		<!--<dcterms:issued></dcterms:issued>-->
         <dcterms:modified>2015-03-17</dcterms:modified>
         <!--<dcterms:replaces rdf:resource=""/>-->
         <!--<dcterms:hasVersion rdf:resource=""/>-->
