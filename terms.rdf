@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-		 xmlns:owl="http://www.w3.org/2002/07/owl#"
-		 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-		 xmlns:dc="http://purl.org/dc/elements/1.1/#"
-		 xmlns:dwc="http://rs.tdwg.org/dwc/terms/#"
-		 xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#"
-		 xmlns:hispid5="http://www.chah.org.au/schemas/hispid/5#"
-		 xmlns:hispid4="http://chah.org.au/hispid/4/terms/#"
-		 xmlns:hispid3="http://chah.org.au/hispid/3/terms/#"
-		 xml:base="http://chah.org.au/hispid/terms/1.0/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/#" xmlns:dwc="http://rs.tdwg.org/dwc/terms/#" xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#" xmlns:hispid5="http://www.chah.org.au/schemas/hispid/5#" xmlns:hispid4="http://chah.org.au/hispid/4/terms/#" xmlns:hispid3="http://chah.org.au/hispid/3/terms/#" xml:base="http://chah.org.au/hispid/terms/1.0/" xmlns:dcterms="http://purl.org/dc/terms/">
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/">
 		<dc:title>HISPID Terms 0.1-SNAPSHOT</dc:title>
 		<skos:description>This document represents a sea-change in the way Australian Herbaria manage their data standards. HISPID until now was a data format. From now, it is a list of terms and definitions ready for use by any data standard.</skos:description>
@@ -18,13 +8,23 @@
 	</rdf:Description>
 	<rdf:Description rdf:about="institutionCode">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#institutionCode"/>
-		<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SourceInstitutionID"/>
-		<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#insid"/>
-		<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#insid"/>
-		<skos:description>The Index Herbariorum code for the herbarium supplying the record.</skos:description>
-		<skos:example>MEL</skos:example>
-		<skos:example>CANB</skos:example>
+		<!--<owl:sameAs rdf:resource="http://rs.tdwg.org/dwc/terms/#institutionCode"/>-->
+		<!--<owl:sameAs rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SourceInstitutionID"/>-->
+		<!--<owl:sameAs rdf:resource="http://chah.org.au/hispid/4/terms/#insid"/>-->
+		<!--<owl:sameAs rdf:resource="http://chah.org.au/hispid/3/terms/#insid"/>-->
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#institutionCode"/>
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#//Unit/SourceInstitutionID"/>
+		<skos:exactMatch rdf:resource="http://chah.org.au/hispid/4/terms/#insid"/>
+		<skos:exactMatch rdf:resource="http://chah.org.au/hispid/3/terms/#insid"/>
+		<skos:description xml:lang="en">The Index Herbariorum code for the herbarium supplying the record.</skos:description>
+		<skos:example xml:lang="en">MEL</skos:example>
+		<skos:example xml:lang="en">CANB</skos:example>
+		<skos:prefLabel xml:lang="en">institutionCode</skos:prefLabel>
+		<!--<dcterms:issued> </dcterms:issued>-->
+        <dcterms:modified>2015-03-17</dcterms:modified>
+        <!--<dcterms:replaces rdf:resource=""/>-->
+        <!--<dcterms:hasVersion rdf:resource=""/>-->
+        <rdfs:comment xml:lang="en">-</rdfs:comment>
 	</rdf:Description>
 	<rdf:Description rdf:about="collectionCode">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
