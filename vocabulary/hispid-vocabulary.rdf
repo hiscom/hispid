@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xml:base="http://test.data.scinfo.org.nz/ontology/skos-example" 
+    xmlns:dcterms="http://purl.org/dc/terms/">
+    
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+  </owl:Ontology>
+  <skos:ConceptScheme rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag">
+    <skos:prefLabel xml:lang="en">HISPID Hybrid Flag Vocabulary</skos:prefLabel>
+    <skos:definition xml:lang="en">A vocabulary for hybrid concepts</skos:definition>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/x">
+    <skos:prefLabel xml:lang="mi">x</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">x</skos:prefLabel>
+    <skos:notation>x</skos:notation>
+    <skos:inScheme rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag"/>
+    <skos:definition xml:lang="en">A latin collective name for a hybrid</skos:definition>
+    <dcterms:issued>2015-02-22T18:26:01+11:00</dcterms:issued>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/G">
+    <skos:prefLabel xml:lang="en">grep</skos:prefLabel>
+    <skos:notation>G</skos:notation>
+    <skos:inScheme rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag"/>
+    <skos:definition xml:lang="en">A non-latin collective name for a hybrid</skos:definition>
+    <dcterms:issued>2015-02-22T18:26:01+11:00</dcterms:issued>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/H">
+    <skos:prefLabel xml:lang="en">formula</skos:prefLabel>
+    <skos:notation>H</skos:notation>
+    <skos:inScheme rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag"/>
+    <skos:definition xml:lang="en">A hybrid formula</skos:definition>
+    <dcterms:issued>2015-02-22T18:26:01+11:00</dcterms:issued>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/%2B">
+    <skos:prefLabel xml:lang="en">grep</skos:prefLabel>
+    <skos:notation>+</skos:notation>
+    <skos:inScheme rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag"/>
+    <skos:definition xml:lang="en">A graft hybrid or graft chimaera</skos:definition>
+    <dcterms:issued>2015-02-22T18:26:01+11:00</dcterms:issued>
+  </skos:Concept>
+   <skos:Concept rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/-">
+    <skos:prefLabel xml:lang="en">intergrade</skos:prefLabel>
+    <skos:notation>-</skos:notation>
+    <skos:inScheme rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag"/>
+    <skos:definition xml:lang="en">An intergrade of non-hybrid nature</skos:definition>
+    <dcterms:issued>2015-02-22T18:26:01+11:00</dcterms:issued>
+  </skos:Concept>
+  
+   <skos:ConceptScheme rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/permit_status">
+    <skos:prefLabel xml:lang="en">HISPID Permit Status Vocabulary</skos:prefLabel>
+    <skos:definition xml:lang="en">A vocabulary for permit status concepts</skos:definition>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/permit_status/valid">
+    <skos:prefLabel xml:lang="en">valid</skos:prefLabel>
+    <skos:notation>valid</skos:notation>
+    <skos:inScheme rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/permit_status"/>
+    <skos:definition xml:lang="en">An intergrade of non-hybrid nature</skos:definition>
+    <dcterms:issued>2015-02-22T18:26:01+11:00</dcterms:issued>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/permit_status/expired">
+    <skos:prefLabel xml:lang="en">expired</skos:prefLabel>
+    <skos:notation>expired</skos:notation>
+    <skos:inScheme rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/permit_status"/>
+    <skos:definition xml:lang="en">The perm</skos:definition>
+    <dcterms:issued>2015-02-22T18:26:01+11:00</dcterms:issued>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/permit_status/revoked">
+    <skos:prefLabel xml:lang="en">revoked</skos:prefLabel>
+    <skos:notation>revoked</skos:notation>
+    <skos:inScheme rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/permit_status"/>
+    <skos:definition xml:lang="en">The permit has been revoked by the issuing authority</skos:definition>
+    <dcterms:issued>2015-02-22T18:26:01+11:00</dcterms:issued>
+  </skos:Concept>
+  
+<!--  for named subsets:
+  <skos:Collection rdf:about="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_vocubalaries">
+    <skos:member rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag"/>
+    <skos:member rdf:resource="http://hiscom.chah.org.au/hispid/vocabulary/..."/>
+  </skos:Collection>-->
+</rdf:RDF>
