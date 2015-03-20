@@ -16,7 +16,7 @@
 		<dc:title>HISPID Terms 1.0-SNAPSHOT</dc:title>
 		<rdfs:comment>This document represents a sea-change in the way Australian Herbaria manage their data standards. HISPID until now was a data format. From now, it is a list of terms and definitions ready for use by any data standard.</rdfs:comment>
 		<dc:publisher>Herbarium Information Systems Committee (HISCOM), Australia</dc:publisher>
-		<dc:modified>2015-03-17</dc:modified>
+		<dc:modified>2015-03-20</dc:modified>
 	</rdf:Description>
 
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#institutionCode">
@@ -39,9 +39,10 @@
 		<skos:definition>An acronym or code of a collection or source within the institution.</skos:definition>
 		<skos:example>CBG</skos:example>
 		<skos:example>QRS</skos:example>
+		<skos:example>WAHERB</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#collectionCode"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#modified">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -75,17 +76,8 @@
 		<skos:definition>Nature of the resource</skos:definition>
 		<skos:example>PhysicalObject</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
-	</rdf:Description>
-	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#language">
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#dcterms:language"/>
-		<skos:definition>Language of the resource</skos:definition>
-		<skos:example>http://id.loc.gov/vocabulary/iso639-2/eng</skos:example>
-		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#type"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#occurrenceID">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -95,8 +87,8 @@
 		<skos:example>1cf74f91-e991-4382-8b20-42d2d8e6076a</skos:example>
 		<skos:example>URN:catalog:PERTH:WAHERB:08444595</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#occurrenceID"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#catalogNumber">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -116,7 +108,7 @@
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#recordedBy">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#recordedBy"/>
-		<dwcattributes:abcdEquivalence>//Unit/Gathering/Agents/GatheringAgentsText or //Unit/Gathering/Agents/GatheringAgent/AgentText (+)</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Agents/GatheringAgentsText, //Unit/Gathering/Agents/GatheringAgent/AgentText (+)</dwcattributes:abcdEquivalence>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/cnam"/>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/cnam"/>
 		<skos:definition>The name(s) of the person or persons who made the collection on which this record is based</skos:definition>
@@ -178,30 +170,19 @@
 		<dcterms:issued>1996-01-01</dcterms:issued>
 		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/cnot"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#organismQuantity">
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#organismQuantity"/>
-		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="organismQuantity"][UnitOfMeasurement="Tansley (1946) scale"]/LowerValue</dwcattributes:abcdEquivalence>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/5/terms///Unit/UnitExtension/hispid:HispidUnit/hispid:Frequency"/>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/fre"/>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/fre"/>
-		<skos:definition>An indication of abundance of the taxon at the collecting locality as recorded by the collector</skos:definition>
-		<skos:example>dominant</skos:example>
-		<skos:example>rare</skos:example>
-		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>1996-01-01</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/fre"/>
-	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#establishmentMeans">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#establishmentMeans"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/EstablishmentMeans</dwcattributes:abcdEquivalence>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/posnat + poscul"/>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/posnat + poscul"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/posnat"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/poscul"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/posnat"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/poscul"/>
 		<skos:definition>The process by which the individual(s) represented in the Occurrence became established at the location.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<dcterms:issued>1996-01-01</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/posnat + poscul"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/posnat"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/poscul"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#reproductiveCondition">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -220,7 +201,7 @@
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associatedTaxa">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#associatedTaxa"/>
-		<dwcattributes:abcdEquivalence>//Unit/Gathering/Synecology/AssociatedTaxa/TaxonIdentified/ScientificName/FullScientificNameString + //Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="host"]/LowerValue</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Synecology/AssociatedTaxa/TaxonIdentified/ScientificName/FullScientificNameString, //Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="host"]/LowerValue</dwcattributes:abcdEquivalence>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/asspp"/>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/asspp"/>
 		<skos:definition>A list of names of taxa and their associations with the Occurrence.</skos:definition>
@@ -235,16 +216,16 @@
 		<skos:definition>Type of association</skos:definition>
 		<skos:scopeNote>To be used in combination with hispid:associatedTaxon to make up list for associatedTaxa</skos:scopeNote>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associationType"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associatedTaxon">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Nameof associated taxon</skos:definition>
 		<skos:scopeNote>To be used in combination with hispid:associationType to make up list for associatedTaxa</skos:scopeNote>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associatedTaxon"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associatedSequences">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -252,8 +233,8 @@
 		<skos:definition>List of identifiers for sequences associated with the collection object.</skos:definition>
 		<skos:scopeNote>Use Genbank accession numbers.</skos:scopeNote>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associatedSequences"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#habitat">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -269,9 +250,11 @@
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#eventDate">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#eventDate"/>
-		<dwcattributes:abcdEquivalence>//Unit/Gathering/DateTime/ISODateTimeBegin + //Unit/Gathering/DateTime/ISODateTimeEnd</dwcattributes:abcdEquivalence>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/cdat + cdat2"/>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/cdat + cdat2"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/DateTime/ISODateTimeBegin, //Unit/Gathering/DateTime/ISODateTimeEnd</dwcattributes:abcdEquivalence>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/cdat"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/cdat2"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/cdat"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/cdat2"/>
 		<skos:definition>The date or period when the specimen was collected</skos:definition>
 		<skos:scopeNote>ISO-8601</skos:scopeNote>
 		<skos:example>2014-10-03</skos:example>
@@ -280,7 +263,8 @@
 		<skos:example>1971-02-03/1971-02-05</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<dcterms:issued>1996-01-01</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/cdat + cdat2"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/cdat"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/cdat2"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#verbatimEventDate">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -324,8 +308,8 @@
 		<skos:example>Australia</skos:example>
 		<skos:example>South America</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#continent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#country">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -387,8 +371,8 @@
 		<skos:example>Indian Ocean</skos:example>
 		<skos:example>Bass Strait</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#waterBody"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#islandGroup">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -399,8 +383,8 @@
 		<skos:example>Auckland Islands</skos:example>
 		<skos:example>Furneaux Islands</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#islandGroup"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#island">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -410,8 +394,8 @@
 		<skos:example>Macquarie Island</skos:example>
 		<skos:example>Flinders Island</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#island"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#decimalLatitude">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -420,8 +404,8 @@
 		<skos:definition>The geographic latitude of the collecting locality</skos:definition>
 		<skos:example>-27.8566666667</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#decimalLatitude"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#decimalLongitude">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -430,69 +414,93 @@
 		<skos:definition>The geodetic longitude of the collecting locality</skos:definition>
 		<skos:example>153.4422222222</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#decimalLongitude"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#geodeticDatum">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#geodeticDatum"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/SpatialDatum</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/spadat"/>
 		<skos:definition>The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude are based.</skos:definition>
 		<skos:scopeNote>Use of EPSG codes is recommended.</skos:scopeNote>
 		<skos:example>EPSG:4326</skos:example>
 		<skos:example>EPSG:4283</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>1999-08-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/spadat"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#verbatimLatitude">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimLatitude"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/VerbatimLatitude</dwcattributes:abcdEquivalence>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/latdeg + latmin + latsec + latdir"/>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latdeg + latmin + latsec + latdir"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/latdeg"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/latmin"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/latsec"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/latdir"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latdeg"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latmin"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latsec"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latdir"/>
 		<skos:definition>The verbatim original latitude for the Location</skos:definition>
 		<skos:scopeNote>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</skos:scopeNote>
 		<skos:example>15° 5' 59" S</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<dcterms:issued>1996-01-01</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latdeg + latmin + latsec + latdir"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latdeg"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latmin"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latsec"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/latdir"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#verbatimLongitude">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimLongitude"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/VerbatimLongitude</dwcattributes:abcdEquivalence>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/londeg + lonmin + lonsec + londir"/>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/londeg + lonmin + lonsec + londir"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/londeg"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/lonmin"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/lonsec"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/londir"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/londeg"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/lonmin"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/lonsec"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/londir"/>
 		<skos:definition>The verbatim original longitude for the Location</skos:definition>
 		<skos:scopeNote>The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</skos:scopeNote>
 		<skos:example>153° 26' 32" E</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<dcterms:issued>1996-01-01</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/londeg + lonmin + lonsec + londir"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/londeg"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/lonmin"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/lonsec"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/londir"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#verbatimCoordinates">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimCoordinates"/>
-		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMZone + //Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMEasting + //Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMNorthing</dwcattributes:abcdEquivalence>
-		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/sqz + sge + sgn"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMZone, //Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMEasting, //Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMNorthing</dwcattributes:abcdEquivalence>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/sqz"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/sge"/>
+		<skos:relatedMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/sgn"/>
 		<skos:definition>The verbatim original geographic coordinates for the Location</skos:definition>
 		<skos:scopeNote>Use for UTM type coordinates. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.</skos:scopeNote>
 		<skos:example>MGA 55 568183 5288204</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<dcterms:issued>1999-08-01</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/sqz + sge + sgn"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/sqz"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/sge"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/sgn"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#verbatimCoordinateSystem">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#verbatimCoordinateSystem"/>
 		<skos:definition>The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location.</skos:definition>
 		<skos:scopeNote>Recommended best practice is to use a controlled vocabulary.</skos:scopeNote>
-		<skos:example>:decimal degrees</skos:example>
+		<skos:example>decimal degrees</skos:example>
 		<skos:example>UTM</skos:example>
+		<skos:example>NZMG</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#verbatimCoordinateSystem"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#verbatimSRS">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -513,8 +521,8 @@
 		<skos:example>0.016667</skos:example>
 		<skos:example>0.0002778</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#coordinatePrecision"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#coordinateUncertaintyInMeters">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -559,8 +567,8 @@
 		<skos:definition>The date on which the Location was georeferenced.</skos:definition>
 		<skos:scopeNote>Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</skos:scopeNote>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#georeferencedDate"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#georeferenceSources">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -568,8 +576,8 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceSources</dwcattributes:abcdEquivalence>
 		<skos:definition>A list of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resource.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#georeferenceSources"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#georeferenceVerificationStatus">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -578,8 +586,8 @@
 		<skos:definition>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial descript</skos:definition>
 		<skos:scopeNote>Recommended best practice is to use a controlled vocabulary.</skos:scopeNote>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#georeferenceVerificationStatus"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#georeferenceRemarks">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -587,8 +595,8 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceRemarks</dwcattributes:abcdEquivalence>
 		<skos:definition>Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalised in the method referred to in georeferenceProtocol.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#georeferenceRemarks"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#minimumElevationInMeters">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -618,8 +626,8 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Altitude/MeasurementOrFactText</dwcattributes:abcdEquivalence>
 		<skos:definition>The original description of the elevation as provided by the collector.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#verbatimElevation"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#elevationMethod">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -633,8 +641,7 @@
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#minimumDepthInMeters">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#minimumDepthInMeters"/>
-		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue with
-			//Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue, //Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'</dwcattributes:abcdEquivalence>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/dep"/>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/dep"/>
 		<skos:definition>Depth or the lesser of a range of depth below the local surface in metres.</skos:definition>
@@ -645,8 +652,7 @@
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#maximumDepthInMeters">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#maximumDepthInMeters"/>
-		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue with
-			//Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue, //Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'</dwcattributes:abcdEquivalence>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/depx"/>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/depx"/>
 		<skos:definition>The greater of a range of depths below the local surface in metres.</skos:definition>
@@ -660,8 +666,8 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactText</dwcattributes:abcdEquivalence>
 		<skos:definition>Verbatim description of the depth, as provided by the collector.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#verbatimDepth"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#identificationID">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -669,13 +675,13 @@
 		<skos:definition>Identifier for the Identification</skos:definition>
 		<skos:scopeNote>Use of a UUID is recommended.</skos:scopeNote>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#identificationID"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#identificationQualifier">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#identificationQualifier"/>
-		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="true"]/Result/TaxonIdentified/ScientificName/IdentificationQualifier + //Unit/Identifications/Identification[PreferredFlag="true"]/Result/TaxonIdentified/ScientificName/IdentificationQualifier[@insertionpoint]</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="true"]/Result/TaxonIdentified/ScientificName/IdentificationQualifier, //Unit/Identifications/Identification[PreferredFlag="true"]/Result/TaxonIdentified/ScientificName/IdentificationQualifier[@insertionpoint]</dwcattributes:abcdEquivalence>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/idql"/>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/idql"/>
 		<skos:definition>A brief phrase or standard term to express doubt about an identification.</skos:definition>
@@ -758,9 +764,7 @@
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#previousIdentifications">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#previousIdentifications"/>
-		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="FALSE"]/*
-			or
-			//Unit/Identifications/IdentificationHistory</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="FALSE"]/*, //Unit/Identifications/IdentificationHistory</dwcattributes:abcdEquivalence>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/vhist"/>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/vhist"/>
 		<skos:definition>Previous identifications of the collection object.</skos:definition>
@@ -816,8 +820,8 @@
 		<skos:definition>Taxonomic rank of the taxon to which the collection object has been identified.</skos:definition>
 		<skos:example>subspecies</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#taxonRank"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#kingdom">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -826,8 +830,8 @@
 		<skos:definition>Full scientific name of the kingdom in which the taxon is classified</skos:definition>
 		<skos:example>Plantae</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#kingdom"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#phylum">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -836,8 +840,8 @@
 		<skos:definition>Full scientific name of the phylum in which the taxon is classified</skos:definition>
 		<skos:example>Streptophyta</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#phylum"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#class">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -846,8 +850,8 @@
 		<skos:definition>Full scientific name of the class in which the taxon is classified</skos:definition>
 		<skos:example>Equisetopsida</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#class"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#order">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -856,8 +860,8 @@
 		<skos:definition>Full scientific name of the order in which the taxon is classified</skos:definition>
 		<skos:example>Fabales</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#order"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#family">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -938,8 +942,8 @@
 		<skos:example>ICBN</skos:example>
 		<skos:example>ICNCP</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#nomenclaturalCode"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#vernacularName">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -998,24 +1002,24 @@
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Exsiccata series</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#exsiccataSeries"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#exsiccataFascicle">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Fascicle in exsiccata series</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#exsiccataFascicle"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#exsiccataNumber">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Number in exsiccata series</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#exsiccataNumber"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#voucherFlag">
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#voucherFor">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="voucher"]/LowerValue</dwcattributes:abcdEquivalence>
 		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/vou"/>
@@ -1042,8 +1046,8 @@
 		<skos:definition>Descriptive and coded information that describes the geographic position from which the source material of the cultivated plant from which the collection object was taken was collected.</skos:definition>
 		<skos:scopeNote>Preferrably this information is databased and delivered as a related resource, using all relevant elements from the relevant standard; if this is not feasible, the information can be delivered as free text, providing as much detail as possible.</skos:scopeNote>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#cultivatedPlantProvenance"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#loanIdentifier">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -1102,71 +1106,71 @@
 		<skos:example>collecting permit</skos:example>
 		<skos:example>export permit</skos:example>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitType"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitReferenceNumber">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Reference number allocated to the permit by the issuing authority.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitReferenceNumber"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitIssuedBy">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Name of the authority by whom the permit was issued.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitIssuedBy"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitIssuedTo">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Name(s) of the person(s) or organisation to whom the permit was issued.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitIssuedTo"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitIssuedDate">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Date the permit was issued.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitIssuedDate"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitValidDate">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Date or period for which the permit is valid.</skos:definition>
 		<skos:scopeNote>ISO-8601</skos:scopeNote>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitValidDate"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitStatus">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Status of the permit.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitStatus"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitConditions">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Conditions on the permit, which may affect how the specimens collected under the permit may be used or distributed.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitConditions"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitRemarks">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Any additional comments pertaining to the permit.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitRemarks"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitLink">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>The link to an electronic version of the permit.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:issued>2015-03-17</dcterms:issued>
-		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#"/>
+		<dcterms:issued>2015-03-20</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#permitLink"/>
 	</rdf:Description>
 </rdf:RDF>
