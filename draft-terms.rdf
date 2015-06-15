@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		 xmlns:owl="http://www.w3.org/2002/07/owl#"
+		 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+		 xmlns:dc="http://purl.org/dc/elements/1.1/#"
+		 xmlns:dcterms="http://purl.org/dc/terms/"
+		 xmlns:dwc="http://rs.tdwg.org/dwc/terms/#"
+		 xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/"
+		 xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#"
+		 xmlns:hispid5="http://hiscom.rbg.vic.gov.au/hispid/5/terms/"
+		 xmlns:hispid4="http://hiscom.rbg.vic.gov.au/hispid/4/terms/"
+		 xmlns:hispid3="http://hiscom.rbg.vic.gov.au/hispid/3/terms/"
+		 xml:base="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#">
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#">
+		<dc:title>HISPID Terms 1.0-SNAPSHOT</dc:title>
+		<rdfs:comment>This document contains terms destined for terms.rdf that are under discussion.</rdfs:comment>
+		<dc:publisher>Herbarium Information Systems Committee (HISCOM), Australia</dc:publisher>
+		<dc:modified>2015-06-15</dc:modified>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#aspect">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Aspect/Ordination</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/asp"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/asp"/>
+		<skos:definition>The abbreviated aspect or outlook of the site from which the collection object was gathered.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/asp"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Event"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#collectingTrip">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>The collecting trip or expedition where the specimen was collected</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#collectingTrip"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Event"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#geologicalSubstrate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="geologicalSubstrate"]/LowerValue</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/5/terms///Unit/UnitExtension/hispid:HispidGathering/hispid:Substrate"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/sub"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/sub"/>
+		<skos:definition>The substrate or parent rock material in the habitat from which the collection object was collected.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/sub"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Event"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#soil">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="soil"]/LowerValue</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/5/terms///Units/Unit/UnitExtension/hispid:HispidGathering/hispid:SoilType"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/soil"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/soil"/>
+		<skos:definition>Description of the surface soil type from which the collection object was collected.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/soil"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Event"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#substrate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="substrate"]/LowerValue</dwcattributes:abcdEquivalence>
+		<skos:definition>The material from which the collection object was collected.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#substrate"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Event"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#topography">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/AreaDetail</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/top"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/top"/>
+		<skos:definition>A description of the topography of the habitat from which the collection object was collected</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/top"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Event"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#vegetation">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="vegetation"]/LowerValue</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/5/terms///Unit/UnitExtension/hispid:HispidGathering/hispid:Vegetation"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/veg"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/veg"/>
+		<skos:definition>Description of the vegetation from which the specimen was collected.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/veg"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Event"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#identificationVerificationStatus">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#identificationVerificationStatus"/>
+		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/VerificationLevel</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/vlev"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/vlev"/>
+		<skos:definition>Verification status of the identification, or an indication of how reliable the identification is deemed to be.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/vlev"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Identification"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#nearestNamedPlace">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/NearNamedPlaces/NamedPlaceRelation/NearNamedPlace</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/nnp"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/nnp"/>
+		<skos:definition>The nearest named place to the collecting locality. </skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/nnp"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Location"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#accessURI">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A URI that uniquely identifies a service that provides a representation of the underlying resource. If this resource can be acquired by an http request, its http URL should be given. If not, but it has some URI in another URI scheme, that may be given here.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#accessURI"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associatedObservationReference">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A reference to an observation associated with this resource.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associatedObservationReference"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associatedSpecimenReference">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A reference to a specimen associated with this resource.</skos:definition>
+		<skos:scopeNote>This should be in the same form as catalogNumber</skos:scopeNote>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#associatedSpecimenReference"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#attributionLinkURL">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>The URL where information about ownership, attribution, etc. of the resource may be found.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#attributionLinkURL"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#attributionURL">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>The URL of the icon or logo image to appear in source attribution.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#attributionURL"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#available">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>The date (often a range) that the resource became or will become available.</skos:definition>
+		<skos:scopeNote>ISO-8601</skos:scopeNote>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#available"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#caption">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Free-form text to be displayed together with (rather than instead of) a media object that is suitable for captions.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#caption"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#captureDevice">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Device used to create the media object.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#captureDevice"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#createDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Date the media object, or its source, was created.</skos:definition>
+		<skos:scopeNote>ISO-8601</skos:scopeNote>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#createDate"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#creator">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Creator of the media object.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#creator"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#credit">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>free text for "Please cite this as…"</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#credit"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#derivedFrom">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A reference to an original resource from which the current one is derived.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#derivedFrom"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#description">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Description of the media resource.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#description"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#digitizationDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Date the media object was created.</skos:definition>
+		<skos:scopeNote>ISO-8601</skos:scopeNote>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#digitizationDate"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#format">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A string describing the technical format of the resource (file format or physical medium).</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#format"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#funding">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Organizations or individuals who funded the creation of the resource.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#funding"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#furtherInformationURL">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>The URL of a Web site that provides additional information about the version of the media resource that is provided by the Service Access Point.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#furtherInformationURL"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#hasServiceAccessPoint">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Service access point for metadata about this media resource</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#hasServiceAccessPoint"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#licenseLogoURL">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A URL providing access to a logo that symbolizes the License.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#licenseLogoURL"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#licenseTerms">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>The license statement defining how resources may be used.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#licenseTerms"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#licenseURL">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A URL defining or further elaborating on the license statement (e. g., a web page explaining the precise terms of use).</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#licenseURL"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#mediaItemID">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>An arbitrary code that is unique for the resource, with the resource being either a provider, collection, or media item</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#mediaItemID"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#metadataDate">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Point in time recording when the last modification to metadata (not necessarily the media object itself) occurred.</skos:definition>
+		<skos:scopeNote>ISO-8601</skos:scopeNote>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#metadataDate"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#physicalSetting">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>The setting of the content represented in the media object</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#physicalSetting"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#provider">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Person or organization responsible for presenting the media resource.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#provider"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#providerManagedID">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A free-form identifier (a simple number, an alphanumeric code, a URL, etc.) that is unique and meaningful primarily for the data provider.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#providerManagedID"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#relatedResourceID">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Identifier(s) of related media objects, e.g.different view angles of the same subject.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#relatedResourceID"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#resourceCreationTechnique">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Information about technical aspects of the creation of the media object.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#resourceCreationTechnique"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#rights">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Information about rights held in and over the resource.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#rights"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#source">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Original source of the media object, if the resource was digitised from a non-digital source.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#source"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subjectCategory">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Broad subject or context of the media object.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subjectCategory"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subjectCategoryVocabulary">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Any vocabulary or formal classification from which terms in the Subject Category have been drawn.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subjectCategoryVocabulary"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subjectOrientation">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Orientation of the subject represented in the media object with respect to the capturing device.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subjectOrientation"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subjectPart">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Part of the subject that is imaged.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subjectPart"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subtype">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Any URI may be used that provides for more specialization than the type. Possible values are community-defined.</skos:definition>
+		<skos:scopeNote>URI to vocabulary term</skos:scopeNote>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#subtype"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#tag">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Tag or keyword.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#tag"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#taxonCoverage">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A higher taxon (e. g., a genus, family, or order) at the level of the genus or higher, that covers all taxa that are the primary subject of the resource</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#taxonCoverage"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#title">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Title of the media object, including subtitles, if any.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#title"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#variant">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>A URI designating what this Service Access Point provides. Some suggested values are the URIs ac:Thumbnail, ac:Trailer, ac:LowerQuality, ac:MediumQuality, ac:GoodQuality, ac:BestQuality, and ac:Offline. Additional URIs from communities of practice may be introduced.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#variant"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#MediaItem"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#disposition">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Current state of the specimen with respect to the collection identified by the collectionCode and institutionCode.</skos:definition>
+		<skos:example>missing</skos:example>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#disposition"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Occurrence"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#lifeForm">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/5/terms///Units/Unit/UnitExtension/hispid:HispidUnit/hispid:LifeForm"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/form"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/form"/>
+		<skos:definition>A description of the habit or life form of the specimen on which the collection object is based.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/form"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Occurrence"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#lifeStage">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#lifeStage"/>
+		<skos:definition>The life stage of the individual at the time it was collected.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#lifeStage"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Occurrence"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#organismQuantity">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#organismQuantity"/>
+		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="organismQuantity"][UnitOfMeasurement="Tansley (1946) scale"]/LowerValue</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/5/terms///Unit/UnitExtension/hispid:HispidUnit/hispid:Frequency"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/fre"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/fre"/>
+		<skos:definition>An indication of abundance of the taxon at the collecting locality as recorded by the collector</skos:definition>
+		<skos:scopeNote>The value should be from "Tansley (1946) scale"</skos:scopeNote>
+		<skos:example>dominant</skos:example>
+		<skos:example>rare</skos:example>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/fre"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Occurrence"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#organismQuantityType">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#organismQuantityType"/>
+		<skos:definition>The type of entity to which the number or enumeration value reported for the quantity of organisms in organismQuantity refers</skos:definition>
+		<skos:example>Tansley (1946) scale</skos:example>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#organismQuantityType"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Occurrence"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#sex">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#sex"/>
+		<dwcattributes:abcdEquivalence>//Units/Unit/Sex</dwcattributes:abcdEquivalence>
+		<skos:definition>The sex of the individual</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#sex"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Occurrence"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#language">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#dcterms:language"/>
+		<skos:definition>Language of the resource</skos:definition>
+		<skos:example>http://id.loc.gov/vocabulary/iso639-2/eng</skos:example>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#language"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Record"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#license">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>URL defining or elaborating on the licence statement.</skos:definition>
+		<skos:example>http://creativecommons.org/licenses/by/3.0/au/</skos:example>
+		<skos:example>http://creativecommons.org/licenses/by/4.0/</skos:example>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#license"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Record"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#rightsHolder">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>[The name of] Owner of the copyright over the resource.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#rightsHolder"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Record"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#hybridFlag">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/hyb"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/hyb"/>
+		<skos:definition>Flag to indicate whether the plant name refers to a hybrid, graft chimaera or intergrade, without reference to rank.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/hyb"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Taxon"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#hybridParent1">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>Scientific name of the first parent of a hybrid</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#hybridParent1"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Taxon"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#hybridParent2">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/genhy2"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/genhy2"/>
+		<skos:definition>Scientific name of the second parent of a hybrid</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/genhy2"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Taxon"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#scientificNameID">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#scientificNameID"/>
+		<skos:definition>An identifier for the nomenclatural (not taxonomic) details of a scientific name.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>2015-06-15</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#scientificNameID"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Taxon"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#taxonRemarks">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:exactMatch rdf:resource="http://rs.tdwg.org/dwc/terms/#taxonRemarks"/>
+		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/NameComments</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/namcom"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/namcom"/>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/namcom"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Taxon"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#donor">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dwcattributes:abcdEquivalence>//Units/Unit/SpecimenUnit/Acquisition/AcquisitionSourceText</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/5/terms//Unit/SpecimenUnit/Acquisition/AcquiredFrom/*"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/don"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/don"/>
+		<skos:definition>The person, business or institution from which the collection object was obtained.</skos:definition>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/don"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Transaction"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#duplicatesDistributedTo">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/DuplicatesDistributedTo</dwcattributes:abcdEquivalence>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/4/terms/desrep"/>
+		<skos:exactMatch rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/desrep"/>
+		<skos:definition>List of institutions replicates have been sent to.</skos:definition>
+		<skos:scopeNote>Use Index Herbariorum acronyms.</skos:scopeNote>
+		<skos:example>PERTH</skos:example>
+		<skos:example>CANB|NSW</skos:example>
+		<dwcattributes:status>recommended</dwcattributes:status>
+		<dcterms:issued>1996-01-01</dcterms:issued>
+		<dcterms:hasVersion rdf:resource="http://hiscom.rbg.vic.gov.au/hispid/3/terms/desrep"/>
+		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#Transaction"/>
+	</rdf:Description>
+</rdf:RDF>
