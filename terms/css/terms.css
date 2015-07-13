@@ -1,0 +1,208 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/03/2015, 8:17:18 PM
+    Author     : NKlaze
+*/
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+table {
+    font-size: 14px;
+}
+
+/*
+    Nav bar at top of page
+*/
+.navbar-brand .logo {
+    background-image: url("../../hiscom20.png");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    
+}
+
+/*
+ * Sidebar
+ */
+
+#sidebar {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 0px;
+}
+#sidebar>ul>li>a[href="#top"] {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+/* Hide for mobile, show later */
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+    }
+}
+
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.nav-sidebar>li>a {
+    font-weight: bold
+}
+
+/*
+    HISPID terms tables
+*/
+.table.hispid-table {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.table.hispid-table>thead>tr>th {
+    background-color: #eee;
+}
+
+.table.hispid-table>tbody>tr>th {
+    width: 20%;
+}
+
+
+.toc h2:first-of-type {
+    margin-top: -20px;
+}
+
+.toc2>p>a::after {
+    display: inline-block;
+    content: "|";
+    margin: 0 5px;
+}
+
+.toc2>p>a:last-child::after {
+    display: none;
+    content: "";
+}
+
+.toc2 p {
+    line-height: 1.5;
+}
+
+.toc2.show-ns>p>a::after {
+    display: none;
+}
+
+
+.show-ns [data-namespace] {
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.show-ns [data-namespace='http://rs.tdwg.org/dwc/terms/']::before {
+    content: 'dwc:';
+}
+
+.show-ns [data-namespace='http://rs.tdwg.org/dwc/terms/'] {
+    background-color: rgb(169,209,142);
+}
+
+.show-ns [data-namespace='http://hiscom.chah.org.au/hispid/terms/'] {
+    background-color: rgb(255,217,102);
+}
+
+.show-ns [data-namespace='http://hiscom.chah.org.au/hispid/terms/']::before {
+    content: 'hispid:';
+}
+
+.show-ns [data-namespace='http://purl.org/dc/terms/'] {
+    background-color: rgb(248,203,173);
+}
+
+.show-ns [data-namespace='http://purl.org/dc/terms/']::before {
+    content: 'dcterms:';
+}
+
+.show-ns [data-namespace='http://purl.org/dc/elements/1.1/'] {
+    background-color: rgb(244,177,131);
+}
+
+.show-ns [data-namespace='http://purl.org/dc/elements/1.1/']::before {
+    content: 'dc:';
+}
+
+.show-ns [data-namespace='http://rs.tdwg.org/ac/terms/'] {
+    background-color: rgb(204,153,255);
+}
+
+.show-ns [data-namespace='http://rs.tdwg.org/ac/terms/']::before {
+    content: 'ac:';
+}
+
+.show-ns [data-namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/'] {
+    background-color: rgb(189,215,238);
+}
+
+.show-ns [data-namespace='http://iptc.org/std/Iptc4xmpExt/2008-02-29/']::before {
+    content: 'Iptc4xmpExt:';
+}
+
+.show-ns [data-namespace='http://ns.adobe.com/xap/1.0/'] {
+    background-color: rgb(157,195,230);
+}
+
+.show-ns [data-namespace='http://ns.adobe.com/xap/1.0/']::before {
+    content: 'xmp:';
+}
+
+.show-ns [data-namespace='http://ns.adobe.com/photoshop/1.0/'] {
+    background-color: rgb(102,255,204);
+}
+
+.show-ns [data-namespace='http://ns.adobe.com/photoshop/1.0/']::before {
+    content: 'photoshop:';
+}
+
+.show-ns [data-namespace='http://ns.adobe.com/xap/1.0/rights/'] {
+    background-color: rgb(226,240,217);
+}
+
+.show-ns [data-namespace='http://ns.adobe.com/xap/1.0/rights/']::before {
+    content: 'xmpRights:';
+}
+
+/*
+*
+*/
+.concepts {
+    margin-top: 60px;
+}
+
+.rdf-properties {
+    color: #999;
+    font-size: 80%;
+    clear: both;
+}

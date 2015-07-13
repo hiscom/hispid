@@ -1,0 +1,2110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#" xmlns:dc="http://purl.org/dc/elements/1.1/#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/#" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:hispid3="http://hiscom.chah.org.au/hispid/3/terms/" xmlns:hispid4="http://hiscom.chah.org.au/hispid/4/terms/" xmlns:hispid5="http://hiscom.chah.org.au/hispid/5/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://hiscom.chah.org.au/hispid/terms/history/#">
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history#">
+		<dc:title>HISPID terms</dc:title>
+		<rdfs:comment/>
+		<dc:publisher>Herbarium Information Systems Committee (HISCOM), Australia</dc:publisher>
+		<dcterms:publisher rdf:resource="http://hiscom.chah.org.au"/>
+		<dc:modified>2015-07-12T20:51:46.23+10:00</dc:modified>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#startfile-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="startfile-hispid3"/>
+		<rdfs:label>Start of HISPID File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#startfile-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="startfile-hispid4"/>
+		<rdfs:label>Start of HISPID File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#startfile-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="startfile-hispid5"/>
+		<rdfs:label>Start of HISPID File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#endfile-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="endfile-hispid3"/>
+		<rdfs:label>End of HISPID File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#endfile-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="endfile-hispid4"/>
+		<rdfs:label>End of HISPID File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#endfile-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="endfile-hispid5"/>
+		<rdfs:label>End of HISPID File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#version-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="version-hispid3"/>
+		<rdfs:label>Version of File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#version-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="version-hispid4"/>
+		<rdfs:label>Version of File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#version-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="version-hispid5"/>
+		<rdfs:label>Version of File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#numrecords-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="numrecords-hispid3"/>
+		<rdfs:label>Number of Records in File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#numrecords-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="numrecords-hispid4"/>
+		<rdfs:label>Number of Records in File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#datefile-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="datefile-hispid3"/>
+		<rdfs:label>Date of File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#datefile-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="datefile-hispid4"/>
+		<rdfs:label>Date of File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#datefile-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="datefile-hispid5"/>
+		<rdfs:label>Date of File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#institute-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="institute-hispid3"/>
+		<rdfs:label>Name of Institution Supplying Information</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#institute-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="institute-hispid4"/>
+		<rdfs:label>Name of Institution Supplying Information</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#institute-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="institute-hispid5"/>
+		<rdfs:label>Name of Institution Supplying Information</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#contact-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="contact-hispid3"/>
+		<rdfs:label>Contact Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#contact-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="contact-hispid4"/>
+		<rdfs:label>Contact Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#contact-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="contact-hispid5"/>
+		<rdfs:label>Contact Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#address-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="address-hispid3"/>
+		<rdfs:label>Address of Institution Sending File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#address-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="address-hispid4"/>
+		<rdfs:label>Address of Institution Sending File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#address-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="address-hispid5"/>
+		<rdfs:label>Address of Institution Sending File</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#phone-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="phone-hispid3"/>
+		<rdfs:label>Telephone Number of Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#phone-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="phone-hispid4"/>
+		<rdfs:label>Telephone Number of Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#phone-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="phone-hispid5"/>
+		<rdfs:label>Telephone Number of Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fax-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fax-hispid3"/>
+		<rdfs:label>Facsimile Number of Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fax-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fax-hispid4"/>
+		<rdfs:label>Facsimile Number of Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fax-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fax-hispid5"/>
+		<rdfs:label>Facsimile Number of Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#email-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="email-hispid3"/>
+		<rdfs:label>Email Address of Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#email-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="email-hispid4"/>
+		<rdfs:label>Email Address of Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#email-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="email-hispid5"/>
+		<rdfs:label>Email Address of Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#nonstandard-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="nonstandard-hispid3"/>
+		<rdfs:label>Non-Standard Option</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#nonstandard-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="nonstandard-hispid4"/>
+		<rdfs:label>Non-Standard Option</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#nonstandard-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="nonstandard-hispid5"/>
+		<rdfs:label>Non-Standard Option</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fileaction-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fileaction-hispid3"/>
+		<rdfs:label>File Action Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fileaction-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fileaction-hispid4"/>
+		<rdfs:label>File Action Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fileaction-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fileaction-hispid5"/>
+		<rdfs:label>File Action Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#filedescriptor-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="filedescriptor-hispid3"/>
+		<rdfs:label>File Descriptor Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#filedescriptor-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="filedescriptor-hispid4"/>
+		<rdfs:label>File Descriptor Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#filedescriptor-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="filedescriptor-hispid5"/>
+		<rdfs:label>File Descriptor Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#content-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="content-hispid3"/>
+		<rdfs:label>Description of File Contents and Other Comments</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#content-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="content-hispid4"/>
+		<rdfs:label>Description of File Contents and Other Comments</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#content-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="content-hispid5"/>
+		<rdfs:label>Description of File Contents and Other Comments</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#daturl-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="daturl-hispid3"/>
+		<rdfs:label>Data Set URL</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#daturl-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="daturl-hispid4"/>
+		<rdfs:label>Data Set URL</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#daturl-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="daturl-hispid5"/>
+		<rdfs:label>Data Set URL</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#insid-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="insid-hispid3"/>
+		<rdfs:label>Institution Code</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#insid-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="insid-hispid4"/>
+		<rdfs:label>Institution Code</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#insid-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="insid-hispid5"/>
+		<rdfs:label>Institution Code</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#accid-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="accid-hispid3"/>
+		<rdfs:label>Accession Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#accid-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="accid-hispid4"/>
+		<rdfs:label>Accession Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#accid-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="accid-hispid5"/>
+		<rdfs:label>Accession Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#recsou-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="recsou-hispid3"/>
+		<rdfs:label>Source of Record Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#recsou-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="recsou-hispid4"/>
+		<rdfs:label>Source of Record Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#recsou-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="recsou-hispid5"/>
+		<rdfs:label>Source of Record Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#supfam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="supfam-hispid3"/>
+		<rdfs:label>Suprafamilial Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#supfam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="supfam-hispid4"/>
+		<rdfs:label>Suprafamilial Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#supfam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="supfam-hispid5"/>
+		<rdfs:label>Suprafamilial Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fam-hispid3"/>
+		<rdfs:label>Family Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fam-hispid4"/>
+		<rdfs:label>Family Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fam-hispid5"/>
+		<rdfs:label>Family Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#supgenrk-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="supgenrk-hispid3"/>
+		<rdfs:label>Suprageneric Group Rank</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#supgenrk-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="supgenrk-hispid4"/>
+		<rdfs:label>Suprageneric Group Rank</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#supgenrk-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="supgenrk-hispid5"/>
+		<rdfs:label>Suprageneric Group Rank</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#supgen-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="supgen-hispid3"/>
+		<rdfs:label>Suprageneric Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#supgen-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="supgen-hispid4"/>
+		<rdfs:label>Suprageneric Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#supgen-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="supgen-hispid5"/>
+		<rdfs:label>Suprageneric Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#hyb-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="hyb-hispid3"/>
+		<rdfs:label>Hybrid Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#hyb-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="hyb-hispid4"/>
+		<rdfs:label>Hybrid Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#hyb-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="hyb-hispid5"/>
+		<rdfs:label>Hybrid Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#NameFormula-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="NameFormula-hispid5"/>
+		<rdfs:label>Hybrid Formula</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#gen-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="gen-hispid3"/>
+		<rdfs:label>Genus Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#gen-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="gen-hispid4"/>
+		<rdfs:label>Genus Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#gen-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="gen-hispid5"/>
+		<rdfs:label>Genus Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#genhy2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="genhy2-hispid3"/>
+		<rdfs:label>Second Hybrid Genus Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#genhy2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="genhy2-hispid4"/>
+		<rdfs:label>Second Hybrid Genus Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#subgen-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="subgen-hispid3"/>
+		<rdfs:label>Subgeneric Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#subgen-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="subgen-hispid4"/>
+		<rdfs:label>Subgeneric Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#subgen-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="subgen-hispid5"/>
+		<rdfs:label>Subgeneric Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#spql-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="spql-hispid3"/>
+		<rdfs:label>Species Qualifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#spql-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="spql-hispid4"/>
+		<rdfs:label>Species Qualifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#spql-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="spql-hispid5"/>
+		<rdfs:label>Species Qualifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sp-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sp-hispid3"/>
+		<rdfs:label>Species Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sp-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sp-hispid4"/>
+		<rdfs:label>Species Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sp-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sp-hispid5"/>
+		<rdfs:label>Species Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sphy2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sphy2-hispid3"/>
+		<rdfs:label>Second Hybrid Species Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sphy2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sphy2-hispid4"/>
+		<rdfs:label>Second Hybrid Species Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sphy2-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sphy2-hispid5"/>
+		<rdfs:label>Second Hybrid Species Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#spau-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="spau-hispid3"/>
+		<rdfs:label>Species Author</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#spau-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="spau-hispid4"/>
+		<rdfs:label>Species Author</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#spau-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="spau-hispid5"/>
+		<rdfs:label>Species Author</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isprk-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isprk-hispid3"/>
+		<rdfs:label>Infraspecific Rank Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isprk-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isprk-hispid4"/>
+		<rdfs:label>Infraspecific Rank Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isprk-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isprk-hispid5"/>
+		<rdfs:label>Infraspecific Rank Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isprkhy2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isprkhy2-hispid3"/>
+		<rdfs:label>Second Hybrid Infraspecific Rank Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isprkhy2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isprkhy2-hispid4"/>
+		<rdfs:label>Second Hybrid Infraspecific Rank Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp-hispid3"/>
+		<rdfs:label>Infraspecific Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp-hispid4"/>
+		<rdfs:label>Infraspecific Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp-hispid5"/>
+		<rdfs:label>Infraspecific Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isphy2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isphy2-hispid3"/>
+		<rdfs:label>Second Hybrid Infraspecific Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isphy2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isphy2-hispid4"/>
+		<rdfs:label>Second Hybrid Infraspecific Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#ispau-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="ispau-hispid3"/>
+		<rdfs:label>Infraspecific Author</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#ispau-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="ispau-hispid4"/>
+		<rdfs:label>Infraspecific Author</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#ispau-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="ispau-hispid5"/>
+		<rdfs:label>Infraspecific Author</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2rk-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2rk-hispid3"/>
+		<rdfs:label>Second Infraspecific Rank Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2rk-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2rk-hispid4"/>
+		<rdfs:label>Second Infraspecific Rank Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2rkhy2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2rkhy2-hispid3"/>
+		<rdfs:label>Second Hybrid of the Second Infraspecific Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2rkhy2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2rkhy2-hispid4"/>
+		<rdfs:label>Second Hybrid of the Second Infraspecific Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2-hispid3"/>
+		<rdfs:label>Second Infraspecific Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2-hispid4"/>
+		<rdfs:label>Second Infraspecific Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2hy2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2hy2-hispid3"/>
+		<rdfs:label>Second Hybrid of the Second Infraspecific Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2hy2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2hy2-hispid4"/>
+		<rdfs:label>Second Hybrid of the Second Infraspecific Epithet</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2au-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2au-hispid3"/>
+		<rdfs:label>Second Infraspecific Author</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#isp2au-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="isp2au-hispid4"/>
+		<rdfs:label>Second Infraspecific Author</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vernam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vernam-hispid3"/>
+		<rdfs:label>Vernacular Names</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vernam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vernam-hispid4"/>
+		<rdfs:label>Vernacular Names</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vernam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vernam-hispid5"/>
+		<rdfs:label>Vernacular Names</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#culgnam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="culgnam-hispid3"/>
+		<rdfs:label>Cultivar Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#culgnam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="culgnam-hispid4"/>
+		<rdfs:label>Cultivar Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#culgnam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="culgnam-hispid5"/>
+		<rdfs:label>Cultivar Group Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#culnam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="culnam-hispid3"/>
+		<rdfs:label>Cultivar Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#culnam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="culnam-hispid4"/>
+		<rdfs:label>Cultivar Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#culnam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="culnam-hispid5"/>
+		<rdfs:label>Cultivar Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tranam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tranam-hispid3"/>
+		<rdfs:label>Trade Designation Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tranam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tranam-hispid4"/>
+		<rdfs:label>Trade Designation Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tranam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tranam-hispid5"/>
+		<rdfs:label>Trade Designation Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fulnam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fulnam-hispid3"/>
+		<rdfs:label>Full Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fulnam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fulnam-hispid4"/>
+		<rdfs:label>Full Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fulnam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fulnam-hispid5"/>
+		<rdfs:label>Full Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#namcom-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="namcom-hispid3"/>
+		<rdfs:label>Name Comments</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#namcom-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="namcom-hispid4"/>
+		<rdfs:label>Name Comments</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#namcom-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="namcom-hispid5"/>
+		<rdfs:label>Name Comments</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tql-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tql-hispid3"/>
+		<rdfs:label>Type Qualifier Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tql-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tql-hispid4"/>
+		<rdfs:label>Type Qualifier Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tql-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tql-hispid5"/>
+		<rdfs:label>Type Qualifier Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tsta-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tsta-hispid3"/>
+		<rdfs:label>Type Status</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tsta-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tsta-hispid4"/>
+		<rdfs:label>Type Status</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tsta-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tsta-hispid5"/>
+		<rdfs:label>Type Status</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#basnam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="basnam-hispid3"/>
+		<rdfs:label>Basionym</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#basnam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="basnam-hispid4"/>
+		<rdfs:label>Basionym</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#basnam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="basnam-hispid5"/>
+		<rdfs:label>Basionym</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tql2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tql2-hispid3"/>
+		<rdfs:label>Second Most Recent Type Qualifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tql2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tql2-hispid4"/>
+		<rdfs:label>Second Most Recent Type Qualifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tsta2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tsta2-hispid3"/>
+		<rdfs:label>Second Most Recent Type Status</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tsta2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tsta2-hispid4"/>
+		<rdfs:label>Second Most Recent Type Status</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#basnam2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="basnam2-hispid3"/>
+		<rdfs:label>Second Most Recent Basionym</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#basnam2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="basnam2-hispid4"/>
+		<rdfs:label>Second Most Recent Basionym</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tql3-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tql3-hispid3"/>
+		<rdfs:label>Third Most Recent Type Qualifier Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tql3-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tql3-hispid4"/>
+		<rdfs:label>Third Most Recent Type Qualifier Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tsta3-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tsta3-hispid3"/>
+		<rdfs:label>Third Most Recent Type Status</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tsta3-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tsta3-hispid4"/>
+		<rdfs:label>Third Most Recent Type Status</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#basnam3-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="basnam3-hispid3"/>
+		<rdfs:label>Third Most Recent Basionym</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#basnam3-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="basnam3-hispid4"/>
+		<rdfs:label>Third Most Recent Basionym</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vlev-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vlev-hispid3"/>
+		<rdfs:label>Verification Level Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vlev-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vlev-hispid4"/>
+		<rdfs:label>Verification Level Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vlev-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vlev-hispid5"/>
+		<rdfs:label>Verification Level Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vnam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vnam-hispid3"/>
+		<rdfs:label>Verifier's Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vnam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vnam-hispid4"/>
+		<rdfs:label>Verifier's Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vnam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vnam-hispid5"/>
+		<rdfs:label>Verifier's Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vdat-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vdat-hispid3"/>
+		<rdfs:label>Verification Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vdat-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vdat-hispid4"/>
+		<rdfs:label>Verification Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vdat-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vdat-hispid5"/>
+		<rdfs:label>Verification Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#textvdat-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="textvdat-hispid3"/>
+		<rdfs:label>Text Verification Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#textvdat-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="textvdat-hispid4"/>
+		<rdfs:label>Text Verification Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#texvdat-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="texvdat-hispid5"/>
+		<rdfs:label>Text Verification Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vlit-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vlit-hispid3"/>
+		<rdfs:label>Verification Literature</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vlit-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vlit-hispid4"/>
+		<rdfs:label>Verification Literature</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vlit-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vlit-hispid5"/>
+		<rdfs:label>Verification Literature</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vhist-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vhist-hispid3"/>
+		<rdfs:label>Verification History</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vhist-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vhist-hispid4"/>
+		<rdfs:label>Verification History</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vhist-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vhist-hispid5"/>
+		<rdfs:label>Verification History</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#det-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="det-hispid3"/>
+		<rdfs:label>Determinavit</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#det-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="det-hispid4"/>
+		<rdfs:label>Determinavit</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#det-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="det-hispid5"/>
+		<rdfs:label>Determinavit</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#rkql-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="rkql-hispid3"/>
+		<rdfs:label>Rank Qualified Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#rkql-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="rkql-hispid4"/>
+		<rdfs:label>Rank Qualified Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#rkql-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="rkql-hispid5"/>
+		<rdfs:label>Rank Qualified Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#idql-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="idql-hispid3"/>
+		<rdfs:label>Identification Qualifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#idql-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="idql-hispid4"/>
+		<rdfs:label>Identification Qualifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#idql-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="idql-hispid5"/>
+		<rdfs:label>Identification Qualifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#idcom-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="idcom-hispid4"/>
+		<rdfs:label>Identification Comments</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#idcom/namcom2-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="idcom/namcom2-hispid5"/>
+		<rdfs:label>Identification Comments</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cou-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cou-hispid3"/>
+		<rdfs:label>Country</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cou-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cou-hispid4"/>
+		<rdfs:label>Country</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cou-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cou-hispid5"/>
+		<rdfs:label>Country</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#iso-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="iso-hispid3"/>
+		<rdfs:label>ISO code for Country of Origin</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#iso-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="iso-hispid4"/>
+		<rdfs:label>ISO code for Country of Origin</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#iso-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="iso-hispid5"/>
+		<rdfs:label>ISO code for Country of Origin</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#wgs-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="wgs-hispid3"/>
+		<rdfs:label>World Geographical Scheme</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#wgs-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="wgs-hispid4"/>
+		<rdfs:label>World Geographical Scheme</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#wgs-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="wgs-hispid5"/>
+		<rdfs:label>World Geographical Scheme</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#pru-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="pru-hispid3"/>
+		<rdfs:label>Primary Subdivision of Country of Origin</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#pru-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="pru-hispid4"/>
+		<rdfs:label>Primary Subdivision of Country of Origin</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#pru-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="pru-hispid5"/>
+		<rdfs:label>Primary Subdivision of Country of Origin</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sru-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sru-hispid3"/>
+		<rdfs:label>Secondary Subdivision of Country of Origin</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sru-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sru-hispid4"/>
+		<rdfs:label>Secondary Subdivision of Country of Origin</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sru-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sru-hispid5"/>
+		<rdfs:label>Secondary Subdivision of Country of Origin</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgu-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgu-hispid3"/>
+		<rdfs:label>Special Geographic Unit</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgu-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgu-hispid4"/>
+		<rdfs:label>Special Geographic Unit</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgu-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgu-hispid5"/>
+		<rdfs:label>Special Geographic Unit</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loc-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loc-hispid3"/>
+		<rdfs:label>Locality</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loc-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loc-hispid4"/>
+		<rdfs:label>Locality</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loc-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loc-hispid5"/>
+		<rdfs:label>Locality</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#alt-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="alt-hispid3"/>
+		<rdfs:label>Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#alt-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="alt-hispid4"/>
+		<rdfs:label>Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#alt-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="alt-hispid5"/>
+		<rdfs:label>Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altacy-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altacy-hispid3"/>
+		<rdfs:label>Accuracy of Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altacy-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altacy-hispid4"/>
+		<rdfs:label>Accuracy of Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altacy-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altacy-hispid5"/>
+		<rdfs:label>Accuracy of Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altx-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altx-hispid3"/>
+		<rdfs:label>Maximum Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altx-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altx-hispid4"/>
+		<rdfs:label>Maximum Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altx-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altx-hispid5"/>
+		<rdfs:label>Maximum Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altacyx-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altacyx-hispid3"/>
+		<rdfs:label>Accuracy of Maximum Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altacyx-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altacyx-hispid4"/>
+		<rdfs:label>Accuracy of Maximum Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altacyx-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altacyx-hispid5"/>
+		<rdfs:label>Accuracy of Maximum Altitude</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altsou-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altsou-hispid3"/>
+		<rdfs:label>Source of Altitude Accuracy Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altsou-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altsou-hispid4"/>
+		<rdfs:label>Source of Altitude Accuracy Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altsou-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altsou-hispid5"/>
+		<rdfs:label>Source of Altitude Accuracy Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altdet-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altdet-hispid3"/>
+		<rdfs:label>Method of Altitude Determination</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altdet-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altdet-hispid4"/>
+		<rdfs:label>Method of Altitude Determination</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#altdet-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="altdet-hispid5"/>
+		<rdfs:label>Method of Altitude Determination</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#dep-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="dep-hispid3"/>
+		<rdfs:label>Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#dep-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="dep-hispid4"/>
+		<rdfs:label>Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#dep-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="dep-hispid5"/>
+		<rdfs:label>Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depacy-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depacy-hispid3"/>
+		<rdfs:label>Accuracy of Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depacy-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depacy-hispid4"/>
+		<rdfs:label>Accuracy of Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depacy-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depacy-hispid5"/>
+		<rdfs:label>Accuracy of Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depx-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depx-hispid3"/>
+		<rdfs:label>Maximum Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depx-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depx-hispid4"/>
+		<rdfs:label>Maximum Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depx-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depx-hispid5"/>
+		<rdfs:label>Maximum Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depacyx-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depacyx-hispid3"/>
+		<rdfs:label>Accuracy of Maximum Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depacyx-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depacyx-hispid4"/>
+		<rdfs:label>Accuracy of Maximum Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depacyx-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depacyx-hispid5"/>
+		<rdfs:label>Accuracy of Maximum Depth</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depsou-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depsou-hispid5"/>
+		<rdfs:label>Source of Depth Accuracy Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#depdet-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="depdet-hispid5"/>
+		<rdfs:label>Method of Depth Determination</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latdeg-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latdeg-hispid3"/>
+		<rdfs:label>Latitude, Degree</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latdeg-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latdeg-hispid4"/>
+		<rdfs:label>Latitude, Degree</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latdeg-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latdeg-hispid5"/>
+		<rdfs:label>Latitude, Degree</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latmin-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latmin-hispid3"/>
+		<rdfs:label>Latitude, Minutes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latmin-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latmin-hispid4"/>
+		<rdfs:label>Latitude, Minutes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latmin-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latmin-hispid5"/>
+		<rdfs:label>Latitude, Minutes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latsec-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latsec-hispid3"/>
+		<rdfs:label>Latitude, Seconds</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latsec-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latsec-hispid4"/>
+		<rdfs:label>Latitude, Seconds</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latsec-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latsec-hispid5"/>
+		<rdfs:label>Latitude, Seconds</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latdir-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latdir-hispid3"/>
+		<rdfs:label>Latitude, Direction Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latdir-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latdir-hispid4"/>
+		<rdfs:label>Latitude, Direction Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#latdir-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="latdir-hispid5"/>
+		<rdfs:label>Latitude, Direction Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#londeg-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="londeg-hispid3"/>
+		<rdfs:label>Longitude, Degrees</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#londeg-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="londeg-hispid4"/>
+		<rdfs:label>Longitude, Degrees</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#londeg-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="londeg-hispid5"/>
+		<rdfs:label>Longitude, Degrees</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#lonmin-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="lonmin-hispid3"/>
+		<rdfs:label>Longitude, Minutes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#lonmin-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="lonmin-hispid4"/>
+		<rdfs:label>Longitude, Minutes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#lonmin-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="lonmin-hispid5"/>
+		<rdfs:label>Longitude, Minutes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#lonsec-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="lonsec-hispid3"/>
+		<rdfs:label>Longitude, Seconds</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#lonsec-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="lonsec-hispid4"/>
+		<rdfs:label>Longitude, Seconds</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#lonsec-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="lonsec-hispid5"/>
+		<rdfs:label>Longitude, Seconds</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#londir-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="londir-hispid3"/>
+		<rdfs:label>Longitude, Direction Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#londir-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="londir-hispid4"/>
+		<rdfs:label>Longitude, Direction Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#londir-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="londir-hispid5"/>
+		<rdfs:label>Longitude, Direction Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#spadat-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="spadat-hispid4"/>
+		<rdfs:label>Spatial Datum</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#spadat-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="spadat-hispid5"/>
+		<rdfs:label>Spatial Datum</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgp-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgp-hispid3"/>
+		<rdfs:label>Spatial Projection</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#spapro-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="spapro-hispid4"/>
+		<rdfs:label>Spatial Projection</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgp/spapro-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgp/spapro-hispid5"/>
+		<rdfs:label>Spatial Projection</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgz-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgz-hispid4"/>
+		<rdfs:label>Spatial Grid, Zone Number</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgz-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgz-hispid5"/>
+		<rdfs:label>Spatial Grid, Zone Number</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sge-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sge-hispid3"/>
+		<rdfs:label>Spatial Grid, Easting</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sge-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sge-hispid4"/>
+		<rdfs:label>Spatial Grid, Easting</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sge-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sge-hispid5"/>
+		<rdfs:label>Spatial Grid, Easting</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgn-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgn-hispid3"/>
+		<rdfs:label>Spatial Grid, Northing</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgn-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgn-hispid4"/>
+		<rdfs:label>Spatial Grid, Northing</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sgn-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sgn-hispid5"/>
+		<rdfs:label>Spatial Grid, Northing</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#geoacy-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="geoacy-hispid3"/>
+		<rdfs:label>Accuracy of Geocode</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#geoacy-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="geoacy-hispid4"/>
+		<rdfs:label>Accuracy of Geocode</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#geoacy-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="geoacy-hispid5"/>
+		<rdfs:label>Accuracy of Geocode</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#geosou-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="geosou-hispid3"/>
+		<rdfs:label>Source of Geocode precision</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#geosou-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="geosou-hispid4"/>
+		<rdfs:label>Source of Geocode precision</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#geosou-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="geosou-hispid5"/>
+		<rdfs:label>Source of Geocode precision</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#nnp-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="nnp-hispid3"/>
+		<rdfs:label>Nearest Named Place</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#nnp-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="nnp-hispid4"/>
+		<rdfs:label>Nearest Named Place</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#nnp-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="nnp-hispid5"/>
+		<rdfs:label>Nearest Named Place</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#hab-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="hab-hispid3"/>
+		<rdfs:label>Habitat</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#hab-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="hab-hispid4"/>
+		<rdfs:label>Habitat</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#hab-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="hab-hispid5"/>
+		<rdfs:label>Habitat</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#top-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="top-hispid3"/>
+		<rdfs:label>Topography</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#top-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="top-hispid4"/>
+		<rdfs:label>Topography</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#top-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="top-hispid5"/>
+		<rdfs:label>Topography</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#asp-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="asp-hispid3"/>
+		<rdfs:label>Aspect</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#asp-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="asp-hispid4"/>
+		<rdfs:label>Aspect</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#asp-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="asp-hispid5"/>
+		<rdfs:label>Aspect</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sub-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sub-hispid3"/>
+		<rdfs:label>Substrate</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sub-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sub-hispid4"/>
+		<rdfs:label>Substrate</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#sub-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="sub-hispid5"/>
+		<rdfs:label>Substrate</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#soil-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="soil-hispid3"/>
+		<rdfs:label>Soil Type</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#soil-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="soil-hispid4"/>
+		<rdfs:label>Soil Type</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#soil-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="soil-hispid5"/>
+		<rdfs:label>Soil Type</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#veg-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="veg-hispid3"/>
+		<rdfs:label>Vegetation</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#veg-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="veg-hispid4"/>
+		<rdfs:label>Vegetation</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#veg-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="veg-hispid5"/>
+		<rdfs:label>Vegetation</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#asspp-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="asspp-hispid3"/>
+		<rdfs:label>Associated Species</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#asspp-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="asspp-hispid4"/>
+		<rdfs:label>Associated Species</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#asspp-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="asspp-hispid5"/>
+		<rdfs:label>Associated Species</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cnam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cnam-hispid3"/>
+		<rdfs:label>Primary Collector's Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cnam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cnam-hispid4"/>
+		<rdfs:label>Primary Collector's Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cnam-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cnam-hispid5"/>
+		<rdfs:label>Primary Collector's Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cid-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cid-hispid3"/>
+		<rdfs:label>Collector's Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cid-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cid-hispid4"/>
+		<rdfs:label>Collector's Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cid-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cid-hispid5"/>
+		<rdfs:label>Collector's Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cnam2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cnam2-hispid3"/>
+		<rdfs:label>Secondary Collector's Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cnam2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cnam2-hispid4"/>
+		<rdfs:label>Secondary Collector's Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cnam2-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cnam2-hispid5"/>
+		<rdfs:label>Secondary Collector's Name</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cid2-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cid2-hispid5"/>
+		<rdfs:label>Secondary Collector's Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cper-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cper-hispid3"/>
+		<rdfs:label>Per' Collector</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cper-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cper-hispid4"/>
+		<rdfs:label>Per' Collector</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cper-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cper-hispid5"/>
+		<rdfs:label>Per' Collector</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cdat-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cdat-hispid3"/>
+		<rdfs:label>Collection Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cdat-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cdat-hispid4"/>
+		<rdfs:label>Collection Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cdat-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cdat-hispid5"/>
+		<rdfs:label>Collection Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cdat2-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cdat2-hispid3"/>
+		<rdfs:label>Second Collection Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cdat2-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cdat2-hispid4"/>
+		<rdfs:label>Second Collection Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cdat2-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cdat2-hispid5"/>
+		<rdfs:label>Second Collection Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#texcdat-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="texcdat-hispid3"/>
+		<rdfs:label>General Text Collection Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#texcdat-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="texcdat-hispid4"/>
+		<rdfs:label>General Text Collection Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#texcdat-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="texcdat-hispid5"/>
+		<rdfs:label>General Text Collection Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#ckin-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="ckin-hispid3"/>
+		<rdfs:label>Kind of Collection </rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#ckin-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="ckin-hispid4"/>
+		<rdfs:label>Kind of Collection </rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#ckin-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="ckin-hispid5"/>
+		<rdfs:label>Kind of Collection </rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vou-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vou-hispid3"/>
+		<rdfs:label>Voucher Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vou-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vou-hispid4"/>
+		<rdfs:label>Voucher Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#vou-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="vou-hispid5"/>
+		<rdfs:label>Voucher Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#numshe-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="numshe-hispid3"/>
+		<rdfs:label>Number of Sheets, Parts</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#numshe-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="numshe-hispid4"/>
+		<rdfs:label>Number of Sheets, Parts</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#numshe-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="numshe-hispid5"/>
+		<rdfs:label>Number of Sheets, Parts</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tcul-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tcul-hispid3"/>
+		<rdfs:label>Type of Cultivated Material Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tcul-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tcul-hispid4"/>
+		<rdfs:label>Type of Cultivated Material Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#tcul-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="tcul-hispid5"/>
+		<rdfs:label>Type of Cultivated Material Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#prot-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="prot-hispid3"/>
+		<rdfs:label>Provenance Type Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#prot-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="prot-hispid4"/>
+		<rdfs:label>Provenance Type Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#prot-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="prot-hispid5"/>
+		<rdfs:label>Provenance Type Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#prohis-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="prohis-hispid3"/>
+		<rdfs:label>Propagation History Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#prohis-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="prohis-hispid4"/>
+		<rdfs:label>Propagation History Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#prohis-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="prohis-hispid5"/>
+		<rdfs:label>Propagation History Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#dont-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="dont-hispid3"/>
+		<rdfs:label>Donor Type Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#dont-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="dont-hispid4"/>
+		<rdfs:label>Donor Type Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#dont-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="dont-hispid5"/>
+		<rdfs:label>Donor Type Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#don-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="don-hispid3"/>
+		<rdfs:label>Donor</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#don-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="don-hispid4"/>
+		<rdfs:label>Donor</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#don-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="don-hispid5"/>
+		<rdfs:label>Donor</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#donacc-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="donacc-hispid3"/>
+		<rdfs:label>Donor's Accession Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#donacc-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="donacc-hispid4"/>
+		<rdfs:label>Donor's Accession Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#donacc-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="donacc-hispid5"/>
+		<rdfs:label>Donor's Accession Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cnot-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cnot-hispid3"/>
+		<rdfs:label>Collection Notes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cnot-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cnot-hispid4"/>
+		<rdfs:label>Collection Notes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#cnot-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="cnot-hispid5"/>
+		<rdfs:label>Collection Notes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fre-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fre-hispid3"/>
+		<rdfs:label>Frequency</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fre-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fre-hispid4"/>
+		<rdfs:label>Frequency</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#fre-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="fre-hispid5"/>
+		<rdfs:label>Frequency</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#consta-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="consta-hispid3"/>
+		<rdfs:label>Conservation Status</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#consta-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="consta-hispid4"/>
+		<rdfs:label>Conservation Status</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#posnat-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="posnat-hispid3"/>
+		<rdfs:label>Plant Occurrence - Native</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#posnat-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="posnat-hispid4"/>
+		<rdfs:label>Plant Occurrence - Native</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#posnat-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="posnat-hispid5"/>
+		<rdfs:label>Plant Occurrence - Native</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#poscul-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="poscul-hispid3"/>
+		<rdfs:label>Plant Occurrence - Cultivation</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#poscul-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="poscul-hispid4"/>
+		<rdfs:label>Plant Occurrence - Cultivation</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#poscul-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="poscul-hispid5"/>
+		<rdfs:label>Plant Occurrence - Cultivation</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#posint-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="posint-hispid3"/>
+		<rdfs:label>Plant Occurrence - Introduction</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#posint-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="posint-hispid4"/>
+		<rdfs:label>Plant Occurrence - Introduction</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#posint-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="posint-hispid5"/>
+		<rdfs:label>Plant Occurrence - Introduction</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#form-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="form-hispid3"/>
+		<rdfs:label>Habit, Life form</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#form-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="form-hispid4"/>
+		<rdfs:label>Habit, Life form</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#form-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="form-hispid5"/>
+		<rdfs:label>Habit, Life form</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#phe-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="phe-hispid3"/>
+		<rdfs:label>Phenology</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#phe-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="phe-hispid4"/>
+		<rdfs:label>Phenology</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#phe-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="phe-hispid5"/>
+		<rdfs:label>Phenology</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#noncom-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="noncom-hispid3"/>
+		<rdfs:label>Non-computerised Data Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#noncom-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="noncom-hispid4"/>
+		<rdfs:label>Non-computerised Data Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#noncom-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="noncom-hispid5"/>
+		<rdfs:label>Non-computerised Data Flag</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#misc-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="misc-hispid3"/>
+		<rdfs:label>Miscellaneous Notes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#misc-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="misc-hispid4"/>
+		<rdfs:label>Miscellaneous Notes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#misc-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="misc-hispid5"/>
+		<rdfs:label>Miscellaneous Notes</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#numrep-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="numrep-hispid3"/>
+		<rdfs:label>Number of Replicates</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#numrep-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="numrep-hispid4"/>
+		<rdfs:label>Number of Replicates</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#desrep-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="desrep-hispid3"/>
+		<rdfs:label>Destination of Replicates</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#desrep-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="desrep-hispid4"/>
+		<rdfs:label>Destination of Replicates</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#desrep-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="desrep-hispid5"/>
+		<rdfs:label>Destination of Replicates</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loaid-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loaid-hispid3"/>
+		<rdfs:label>Loan Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loaid-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loaid-hispid4"/>
+		<rdfs:label>Loan Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loaid-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loaid-hispid5"/>
+		<rdfs:label>Loan Identifier</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loanum-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loanum-hispid3"/>
+		<rdfs:label>Loan Sequence Number</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loanum-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loanum-hispid4"/>
+		<rdfs:label>Loan Sequence Number</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loanum-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loanum-hispid5"/>
+		<rdfs:label>Loan Sequence Number</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loades-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loades-hispid3"/>
+		<rdfs:label>Loan Destination</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loades-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loades-hispid4"/>
+		<rdfs:label>Loan Destination</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loades-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loades-hispid5"/>
+		<rdfs:label>Loan Destination</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loabot-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loabot-hispid3"/>
+		<rdfs:label>Loan for Botanist</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loabot-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loabot-hispid4"/>
+		<rdfs:label>Loan for Botanist</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loabot-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loabot-hispid5"/>
+		<rdfs:label>Loan for Botanist</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loadis-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loadis-hispid3"/>
+		<rdfs:label>Loan Despatch Method</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loadis-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loadis-hispid4"/>
+		<rdfs:label>Loan Despatch Method</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loadis-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loadis-hispid5"/>
+		<rdfs:label>Loan Despatch Method</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loadat-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loadat-hispid3"/>
+		<rdfs:label>Loan Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loadat-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loadat-hispid4"/>
+		<rdfs:label>Loan Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loadat-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loadat-hispid5"/>
+		<rdfs:label>Loan Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loaret-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loaret-hispid3"/>
+		<rdfs:label>Loan Return Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loaret-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loaret-hispid4"/>
+		<rdfs:label>Loan Return Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#loaret-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="loaret-hispid5"/>
+		<rdfs:label>Loan Return Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#crenam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="crenam-hispid3"/>
+		<rdfs:label>Record Creation Operator</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#crenam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="crenam-hispid4"/>
+		<rdfs:label>Record Creation Operator</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#credat-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="credat-hispid3"/>
+		<rdfs:label>Record Creation Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#credat-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="credat-hispid4"/>
+		<rdfs:label>Record Creation Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#creins-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="creins-hispid3"/>
+		<rdfs:label>Record Creation Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#creins-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="creins-hispid4"/>
+		<rdfs:label>Record Creation Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#modnam-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="modnam-hispid3"/>
+		<rdfs:label>Record Update Operator</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#modnam-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="modnam-hispid4"/>
+		<rdfs:label>Record Update Operator</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#moddat-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="moddat-hispid3"/>
+		<rdfs:label>Last Edit Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#moddat-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="moddat-hispid4"/>
+		<rdfs:label>Last Edit Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#moddat-hispid5">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="moddat-hispid5"/>
+		<rdfs:label>Last Edit Date</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#modins-hispid3">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="modins-hispid3"/>
+		<rdfs:label>Record Update Institution</rdfs:label>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/history/#modins-hispid4">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<dcterms:hasVersion rdf:resource="modins-hispid4"/>
+		<rdfs:label>Record Update Institution</rdfs:label>
+	</rdf:Description>
+</rdf:RDF>

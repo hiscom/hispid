@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-		 xmlns:owl="http://www.w3.org/2002/07/owl#"
-		 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-		 xmlns:dc="http://purl.org/dc/elements/1.1/#"
-		 xmlns:dcterms="http://purl.org/dc/terms/"
-		 xmlns:dwc="http://rs.tdwg.org/dwc/terms/#"
-		 xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/"
-		 xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#"
-		 xmlns:hispid5="http://hiscom.chah.org.au/hispid/5/terms/"
-		 xmlns:hispid4="http://hiscom.chah.org.au/hispid/4/terms/"
-		 xmlns:hispid3="http://hiscom.chah.org.au/hispid/3/terms/"
-		 xml:base="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#">
+<?xml-stylesheet type="text/xsl" href="file:///C:/www/hispid-review-2014-15/terms/terms.xslt"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/#" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#" xmlns:hispid5="http://hiscom.chah.org.au/hispid/5/terms/" xmlns:hispid4="http://hiscom.chah.org.au/hispid/4/terms/" xmlns:hispid3="http://hiscom.chah.org.au/hispid/3/terms/" xml:base="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#">
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#">
 		<dc:title>HISPID Terms 1.0-SNAPSHOT</dc:title>
 		<rdfs:comment>This document represents a sea-change in the way Australian Herbaria manage their data standards. HISPID until now was a data format. From now, it is a list of terms and definitions ready for use by any data standard.</rdfs:comment>
@@ -19,7 +8,6 @@
 		<dcterms:publisher>http://hiscom.chah.org.au</dcterms:publisher>
 		<dc:modified>2015-06-15</dc:modified>
 	</rdf:Description>
-
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#CollectionObject">
 		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition>Group for CollectionObject-level terms</skos:definition>
@@ -27,7 +15,6 @@
 		<dcterms:issued>2015-06-15</dcterms:issued>
 		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#CollectionObject"/>
 	</rdf:Description>
-	
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#cultivatedPlantProvenance">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Descriptive and coded information that describes the geographic position from which the source material of the cultivated plant from which the collection object was taken was collected.</skos:definition>
@@ -37,7 +24,6 @@
 		<dcterms:hasVersion rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#cultivatedPlantProvenance"/>
 		<dwcattributes:organizedInClass rdf:resource="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#CollectionObject"/>
 	</rdf:Description>
-	
 	<rdf:Description rdf:about="http://chah.org.au/hispid/terms/1.0-SNAPSHOT/#exsiccataFascicle">
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition>Fascicle in exsiccata series</skos:definition>
