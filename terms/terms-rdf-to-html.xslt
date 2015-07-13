@@ -6,7 +6,7 @@
 		<xsl:text>http://hiscom.chah.org.au/hispid/terms</xsl:text>
 	</xsl:variable>
 	<xsl:template match="/">
-		<xsl:result-document href="terms.html">
+		<xsl:result-document href="index.html">
 			<html>
 				<head>
 					<title>HISPID terms</title>
@@ -251,8 +251,8 @@
 					</td>
 					<td>
 						<xsl:choose>
-							<xsl:when test="skos:exactMatch/@rdf:about">
-								<xsl:value-of select="skos:exactMatch/@rdf:about"/>
+							<xsl:when test="skos:exactMatch">
+								<xsl:value-of select="skos:exactMatch/@rdf:resource"/>
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:value-of select="@rdf:about"/>
