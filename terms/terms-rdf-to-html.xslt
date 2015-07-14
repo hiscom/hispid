@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?altova_samplexml file:///C:/www/hispid-review-2014-15/terms/hispid2015.rdf?>
+<?altova_samplexml file:///C:/www/hispid/terms/hispid2015.rdf?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/">
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:variable name="nsHispid">
 		<xsl:text>http://hiscom.chah.org.au/hispid/terms</xsl:text>
 	</xsl:variable>
+	
+	
 	<xsl:template match="/">
 		<xsl:result-document href="index.html">
 			<html>
@@ -97,13 +99,22 @@
 			</html>
 		</xsl:result-document>
 	</xsl:template>
+	
+	
 	<xsl:template match="rdf:Description" mode="rlt-toc">
 		<xsl:if test="contains(rdf:type/@rdf:resource, '#Property')">
 			<xsl:choose>
 				<xsl:when test="dwcattributes:organizedInClass"/>
 				<xsl:otherwise>
 					<xsl:variable name="property">
-						<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+						<xsl:choose>
+							<xsl:when test="starts-with(@rdf:about, 'http://')">
+								<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="@rdf:about"/>
+							</xsl:otherwise>
+						</xsl:choose>
 					</xsl:variable>
 					<li>
 						<a href="#{$property}">
@@ -114,10 +125,19 @@
 			</xsl:choose>
 		</xsl:if>
 	</xsl:template>
+	
+	
 	<xsl:template match="rdf:Description" mode="toc">
 		<xsl:if test="contains(rdf:type/@rdf:resource, '#Class')">
 			<xsl:variable name="class">
-				<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+				<xsl:choose>
+					<xsl:when test="starts-with(@rdf:about, 'http://')">
+						<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="@rdf:about"/>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:variable>
 			<li>
 				<a href="#{$class}">
@@ -125,7 +145,16 @@
 				</a>
 				<ul>
 					<xsl:for-each select="../rdf:Description">
-						<xsl:variable name="property" select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+						<xsl:variable name="property">
+							<xsl:choose>
+								<xsl:when test="starts-with(@rdf:about, 'http://')">
+									<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="@rdf:about"/>
+								</xsl:otherwise>
+							</xsl:choose>
+						</xsl:variable>
 						<xsl:if test="contains(dwcattributes:organizedInClass/@rdf:resource, $class)">
 							<li>
 								<a href="#{$property}">
@@ -138,12 +167,23 @@
 			</li>
 		</xsl:if>
 	</xsl:template>
+	
+	
 	<xsl:template match="rdf:Description" mode="rlt-toc2">
 		<xsl:if test="contains(rdf:type/@rdf:resource, '#Property')">
 			<xsl:choose>
 				<xsl:when test="dwcattributes:organizedInClass"/>
 				<xsl:otherwise>
-					<xsl:variable name="property" select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+					<xsl:variable name="property">
+						<xsl:choose>
+							<xsl:when test="starts-with(@rdf:about, 'http://')">
+								<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="@rdf:about"/>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:variable>
 					<xsl:variable name="ns" select="rdfs:isDefinedBy/@rdf:resource"/>
 					<a href="#{$property}" data-namespace="{$ns}">
 						<xsl:value-of select="$property"/>
@@ -152,10 +192,19 @@
 			</xsl:choose>
 		</xsl:if>
 	</xsl:template>
+	
+	
 	<xsl:template match="rdf:Description" mode="toc2">
 		<xsl:if test="contains(rdf:type/@rdf:resource, '#Class')">
 			<xsl:variable name="class">
-				<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+				<xsl:choose>
+					<xsl:when test="starts-with(@rdf:about, 'http://')">
+						<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="@rdf:about"/>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:variable>
 			<h2>
 				<a href="#{$class}">
@@ -166,11 +215,16 @@
 				<xsl:for-each select="../rdf:Description">
 					<xsl:if test="contains(dwcattributes:organizedInClass/@rdf:resource, $class)">
 						<xsl:variable name="property">
-							<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+							<xsl:choose>
+								<xsl:when test="starts-with(@rdf:about, 'http://')">
+									<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="@rdf:about"/>
+								</xsl:otherwise>
+							</xsl:choose>
 						</xsl:variable>
-						<xsl:variable name="ns">
-							<xsl:value-of select="rdfs:isDefinedBy/@rdf:resource"/>
-						</xsl:variable>
+						<xsl:variable name="ns" select="rdfs:isDefinedBy/@rdf:resource"/>
 						<a href="#{$property}" data-namespace="{$ns}">
 							<xsl:value-of select="$property"/>
 						</a>
@@ -179,6 +233,8 @@
 			</p>
 		</xsl:if>
 	</xsl:template>
+	
+	
 	<xsl:template name="rlterms">
 		<h2>
 			<a id="RecordLevelTerms"/>
@@ -198,6 +254,8 @@
 			</xsl:if>
 		</xsl:for-each>
 	</xsl:template>
+	
+	
 	<xsl:template match="rdf:Description" mode="concepts">
 		<xsl:if test="contains(rdf:type/@rdf:resource, '#Class')">
 			<xsl:variable name="this" select="."/>
@@ -205,7 +263,14 @@
 				<xsl:with-param name="term" select="$this"/>
 			</xsl:call-template>
 			<xsl:variable name="class">
-				<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+				<xsl:choose>
+					<xsl:when test="starts-with(@rdf:about, 'http://')">
+						<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="@rdf:about"/>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:variable>
 			<xsl:for-each select="../rdf:Description">
 				<xsl:variable name="this" select="."/>
@@ -217,10 +282,19 @@
 			</xsl:for-each>
 		</xsl:if>
 	</xsl:template>
+	
+	
 	<xsl:template name="processTerm">
 		<xsl:param name="term"/>
 		<xsl:variable name="property">
-			<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+			<xsl:choose>
+				<xsl:when test="starts-with(@rdf:about, 'http://')">
+					<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="@rdf:about"/>
+				</xsl:otherwise>
+			</xsl:choose>
 		</xsl:variable>
 		<a id="{$property}"/>
 		<table class="table table-condensed table-bordered hispid-table">
@@ -250,14 +324,15 @@
 						<xsl:text>Identifier</xsl:text>
 					</td>
 					<td>
-						<xsl:choose>
+						<!--xsl:choose>
 							<xsl:when test="skos:exactMatch">
 								<xsl:value-of select="skos:exactMatch/@rdf:resource"/>
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:value-of select="@rdf:about"/>
 							</xsl:otherwise>
-						</xsl:choose>
+						</xsl:choose-->
+						<xsl:value-of select="rdfs:isDefinedBy/@rdf:resource"/><xsl:value-of select="@rdf:about"/>
 					</td>
 				</tr>
 				<tr>
