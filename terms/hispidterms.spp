@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
+		<Folder FolderName="hispid">
+			<File FilePath="hispid2015.rdf" HomeFolder="Yes"/>
+			<File FilePath="HISPID2015.xml" HomeFolder="Yes"/>
+			<File FilePath="hispidtermshistory.rdf" HomeFolder="Yes"/>
+			<File FilePath="C:\www\hispid\terms.rdf" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="dwc">
+			<File FilePath="C:\www\hispid\accessory\dwcattributes.rdf" HomeFolder="Yes"/>
+			<File FilePath="C:\www\hispid\accessory\dwcterms.rdf" HomeFolder="Yes"/>
+			<File FilePath="C:\www\hispid\accessory\dwctermshistory.rdf" HomeFolder="Yes"/>
+		</Folder>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
+		<File FilePath="hispid2015-xml-to-rdf.xslt" HomeFolder="Yes"/>
+		<File FilePath="history-rdf-to-html.xslt" HomeFolder="Yes"/>
+		<File FilePath="history-xml-to-rdf.xslt" HomeFolder="Yes"/>
+		<File FilePath="terms-rdf-to-html.xslt" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery"/>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd"/>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+</Project>

@@ -21,7 +21,7 @@
 	</xsl:variable>
 	
 	<xsl:template match="/">
-		<xsl:result-document href="../terms.rdf">
+		<xsl:result-document href="hispidterms.rdf">
 			<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/#" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#" xmlns:hispid5="http://hiscom.chah.org.au/hispid/5/terms/" xmlns:hispid4="http://hiscom.chah.org.au/hispid/4/terms/" xmlns:hispid3="http://hiscom.chah.org.au/hispid/3/terms/" xml:base="http://hiscom.chah.org.au/hispid/terms/">
 				<rdf:Description rdf:about="http://hiscomchah.org.au/hispid/terms/">
 					<dc:title>HISPID terms</dc:title>

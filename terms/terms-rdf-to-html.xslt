@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?altova_samplexml file:///C:/www/hispid/terms/hispid2015.rdf?>
+<?altova_samplexml file:///C:/www/hispid/terms/hispidterms.rdf?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/">
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:variable name="nsHispid">
@@ -375,6 +375,7 @@
 									</xsl:matching-substring>
 								</xsl:analyze-string>
 							</xsl:when>
+							<xsl:otherwise><xsl:text>all</xsl:text></xsl:otherwise>
 						</xsl:choose>
 					</td>
 				</tr>
