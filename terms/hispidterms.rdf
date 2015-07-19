@@ -5,7 +5,7 @@
 		<rdfs:comment/>
 		<dc:publisher>Herbarium Information Systems Committee (HISCOM), Australia</dc:publisher>
 		<dcterms:publisher rdf:resource="http://hiscom.chah.org.au"/>
-		<dc:modified>2015-07-19T12:58:05.697+10:00</dc:modified>
+		<dc:modified>2015-07-19T17:05:41.976+10:00</dc:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="Occurrence">
 		<rdfs:label>Occurrence</rdfs:label>
@@ -197,6 +197,7 @@
 		<skos:example>location information not given for endangered species</skos:example>
 		<skos:example>collector identities withheld</skos:example>
 		<skos:example>ask about tissue samples</skos:example>
+		<dwcattributes:abcdEquivalence>//Unit/InformationWithheld</dwcattributes:abcdEquivalence>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/67</skos:note>
 	</rdf:Description>
 	<rdf:Description rdf:about="dataGeneralizations">
@@ -220,6 +221,7 @@
 		<dcterms:modified>2015-07-11</dcterms:modified>
 		<skos:example>1cf74f91-e991-4382-8b20-42d2d8e6076a</skos:example>
 		<skos:example>URN:catalog:PERTH:WAHERB:08444595</skos:example>
+		<dwcattributes:abcdEquivalence>//Unit/UnitGUID</dwcattributes:abcdEquivalence>
 		<skos:scopeNote>Preferrably use a UUID. If this is not feasible an identifier can be created based on a unique field in the database, for example the catalogNumber. If doing so, the identifier must be stored in the database and cannot be changed or used for another record.</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/2</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="Occurrence"/>
@@ -313,6 +315,7 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Notes</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/cnot-hispid5"/>
 		<skos:scopeNote>This may contain information about the collecting event/gathering, or descriptive information about the organism.</skos:scopeNote>
+		<skos:note>Darwin Core maps occurrenceRemarks to abcd://Unit/Notes and eventRemarks to abcd://Unit/Gathering/Remarks, but botanical collecting notes often contain descriptive notes, which relate to a taxon and hence semantically fit better in occurrenceRemarks. At the same time, they fit better in abcd://Unit/Gathering/Notes, to which they were mapped in HISPID 5, in order to distinguish between notes made by the collector in the field and which refer to the Occurrence and annotations that are made in the herbarium and which refer to the PreservedSpecimen, i.e. abcd://Unit/Notes or HISPID Miscellaneous Notes (misc).</skos:note>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/1</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="Occurrence"/>
 	</rdf:Description>
@@ -330,7 +333,7 @@
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/fre-hispid5"/>
 		<skos:scopeNote>The value should be from "Tansley (1946) scale"</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/organism_quantity.xml</skos:scopeNote>
-		<skos:note>organismQuantityType  must be delivered alongside this term.</skos:note>
+		<skos:note>organismQuantityType  must be delivered alongside this term. Note that this is a considerable deviation from earlier versions of HISPID, where Frequency was a free text field.</skos:note>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/22</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="Occurrence"/>
 	</rdf:Description>
@@ -439,21 +442,10 @@
 		<dcterms:issued>2015-07-11</dcterms:issued>
 		<dcterms:modified>2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/associationType-2015-07-11"/>
-		<skos:scopeNote>To be used in combination with hispid:associatedTaxon to make up list for associatedTaxa</skos:scopeNote>
+		<skos:scopeNote>To be used in combination with dwc:Taxon to make up list for associatedTaxa</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
+		<skos:note>Could potentially be used for dwc:associatedOccurrences as well, in combination with a dwc:Occurrence.</skos:note>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/33</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="Occurrence"/>
-	</rdf:Description>
-	<rdf:Description rdf:about="associatedTaxon">
-		<rdfs:label>Associated Taxon</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition>Nameof associated taxon</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
-		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:issued>2015-07-11</dcterms:issued>
-		<dcterms:modified>2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/associatedTaxon-2015-07-11"/>
-		<skos:scopeNote>To be used in combination with hispid:associationType to make up list for associatedTaxa</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="associatedSequences">
@@ -480,6 +472,29 @@
 		<skos:example>missing</skos:example>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/15</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="Occurrence"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="eventID">
+		<rdfs:label>Event ID</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>An identifier for the set of information associated with an Event (something that occurs at a place and time).</skos:definition>
+		<dwcattributes:status>under consideration</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Code</dwcattributes:abcdEquivalence>
+		<skos:scopeNote>May be a global unique identifier or an identifier specific to the data set.</skos:scopeNote>
+		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/2</skos:note>
+		<dwcattributes:organizedInClass rdf:resource="Event"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="parentEventID">
+		<rdfs:label>Parent Event ID</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition>An identifier for the broader Event that groups this and potentially other Events.</skos:definition>
+		<dwcattributes:status>under consideration</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<dcterms:issued>2015-07-19</dcterms:issued>
+		<dcterms:modified>2015-07-19</dcterms:modified>
+		<skos:scopeNote>May be a global unique identifier or an identifier specific to the data set. Must be an existing EventID. Could be used for collecting trips and expeditions.</skos:scopeNote>
+		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/75</skos:note>
+		<dwcattributes:organizedInClass rdf:resource="Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="habitat">
 		<rdfs:label>Habitat</rdfs:label>
