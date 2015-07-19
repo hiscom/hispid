@@ -109,7 +109,11 @@
 					<xsl:variable name="property">
 						<xsl:choose>
 							<xsl:when test="starts-with(@rdf:about, 'http://')">
-								<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+								<xsl:analyze-string select="@rdf:about" regex="[/|#]([A-Za-z0-9]+)$">
+									<xsl:matching-substring>
+										<xsl:value-of select="regex-group(1)"/>
+									</xsl:matching-substring>
+								</xsl:analyze-string>
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:value-of select="@rdf:about"/>
@@ -132,7 +136,12 @@
 			<xsl:variable name="class">
 				<xsl:choose>
 					<xsl:when test="starts-with(@rdf:about, 'http://')">
-						<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+						<!-- xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/ -->
+						<xsl:analyze-string select="@rdf:about" regex="[/|#]([A-Za-z0-9]+)$">
+							<xsl:matching-substring>
+								<xsl:value-of select="regex-group(1)"/>
+							</xsl:matching-substring>
+						</xsl:analyze-string>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="@rdf:about"/>
@@ -148,7 +157,11 @@
 						<xsl:variable name="property">
 							<xsl:choose>
 								<xsl:when test="starts-with(@rdf:about, 'http://')">
-									<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+									<xsl:analyze-string select="@rdf:about" regex="[/|#]([A-Za-z0-9]+)$">
+										<xsl:matching-substring>
+											<xsl:value-of select="regex-group(1)"/>
+										</xsl:matching-substring>
+									</xsl:analyze-string>
 								</xsl:when>
 								<xsl:otherwise>
 									<xsl:value-of select="@rdf:about"/>
@@ -177,7 +190,11 @@
 					<xsl:variable name="property">
 						<xsl:choose>
 							<xsl:when test="starts-with(@rdf:about, 'http://')">
-								<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+								<xsl:analyze-string select="@rdf:about" regex="[/|#]([A-Za-z0-9]+)$">
+									<xsl:matching-substring>
+										<xsl:value-of select="regex-group(1)"/>
+									</xsl:matching-substring>
+								</xsl:analyze-string>
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:value-of select="@rdf:about"/>
@@ -199,7 +216,11 @@
 			<xsl:variable name="class">
 				<xsl:choose>
 					<xsl:when test="starts-with(@rdf:about, 'http://')">
-						<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+						<xsl:analyze-string select="@rdf:about" regex="[/|#]([A-Za-z0-9]+)$">
+							<xsl:matching-substring>
+								<xsl:value-of select="regex-group(1)"/>
+							</xsl:matching-substring>
+						</xsl:analyze-string>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="@rdf:about"/>
@@ -217,7 +238,11 @@
 						<xsl:variable name="property">
 							<xsl:choose>
 								<xsl:when test="starts-with(@rdf:about, 'http://')">
-									<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+									<xsl:analyze-string select="@rdf:about" regex="[/|#]([A-Za-z0-9]+)$">
+										<xsl:matching-substring>
+											<xsl:value-of select="regex-group(1)"/>
+										</xsl:matching-substring>
+									</xsl:analyze-string>
 								</xsl:when>
 								<xsl:otherwise>
 									<xsl:value-of select="@rdf:about"/>
@@ -289,7 +314,12 @@
 		<xsl:variable name="property">
 			<xsl:choose>
 				<xsl:when test="starts-with(@rdf:about, 'http://')">
-					<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+					<!--xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/-->
+					<xsl:analyze-string select="@rdf:about" regex="/([A-Za-z0-9]+)$">
+						<xsl:matching-substring>
+							<xsl:value-of select="regex-group(1)"/>
+						</xsl:matching-substring>
+					</xsl:analyze-string>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of select="@rdf:about"/>
@@ -332,7 +362,14 @@
 								<xsl:value-of select="@rdf:about"/>
 							</xsl:otherwise>
 						</xsl:choose-->
-						<xsl:value-of select="rdfs:isDefinedBy/@rdf:resource"/><xsl:value-of select="@rdf:about"/>
+						<xsl:choose>
+							<xsl:when test="starts-with(@rdf:about, 'http://')">
+								<xsl:value-of select="@rdf:about"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="rdfs:isDefinedBy/@rdf:resource"/><xsl:value-of select="@rdf:about"/>
+							</xsl:otherwise>
+						</xsl:choose>
 					</td>
 				</tr>
 				<tr>
@@ -366,7 +403,7 @@
 					<td>
 						<xsl:choose>
 							<xsl:when test="dwcattributes:organizedInClass">
-								<xsl:analyze-string select="dwcattributes:organizedInClass/@rdf:resource" regex="/([A-Za-z0-0]+)$">
+								<xsl:analyze-string select="dwcattributes:organizedInClass/@rdf:resource" regex="/([A-Za-z0-9]+)$">
 									<xsl:matching-substring>
 										<xsl:variable name="cl" select="regex-group(1)"/>
 										<a href="#{$cl}">
@@ -525,23 +562,27 @@
 					<td class="col-xs-4 col-lg-3">For the geeks among us</td>
 					<td class="col-xs-8 col-lg-9">
 						<div class="rdf-properties">
+							<div class="row">
+								<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+								<div class="dd col-md-8 col-lg-9">
+									<xsl:value-of select="@rdf:about"/>
+								</div>
+							</div>
 							<xsl:for-each select="element()">
 								<div class="row">
 									<div class="dt col-md-4 col-lg-3">
 										<xsl:value-of select="name()"/>
 									</div>
-									<xsl:choose>
-										<xsl:when test="@rdf:resource">
-											<div class="dd col-md-8 col-lg-9">
+									<div class="dd col-md-8 col-lg-9">
+										<xsl:choose>
+											<xsl:when test="@rdf:resource">
 												<xsl:value-of select="@rdf:resource"/>
-											</div>
-										</xsl:when>
-										<xsl:otherwise>
-											<div class="dd col-md-8 col-lg-9">
+											</xsl:when>
+											<xsl:otherwise>
 												<xsl:value-of select="."/>
-											</div>
-										</xsl:otherwise>
-									</xsl:choose>
+											</xsl:otherwise>
+										</xsl:choose>
+									</div>
 								</div>
 							</xsl:for-each>
 						</div>

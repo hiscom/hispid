@@ -22,15 +22,14 @@
 	
 	<xsl:template match="/">
 		<xsl:result-document href="hispidterms.rdf">
-			<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/#" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:abcd="http://rs.tdwg.org/abcd/2.06/b/ABCD_2.06b.xsd#" xmlns:hispid5="http://hiscom.chah.org.au/hispid/5/terms/" xmlns:hispid4="http://hiscom.chah.org.au/hispid/4/terms/" xmlns:hispid3="http://hiscom.chah.org.au/hispid/3/terms/" xml:base="http://hiscom.chah.org.au/hispid/terms/">
-				<rdf:Description rdf:about="http://hiscomchah.org.au/hispid/terms/">
-					<dc:title>HISPID terms</dc:title>
+			<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xml:base="http://hiscom.chah.org.au/hispid/terms/">
+				<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/">
+					<dcterms:title xml:lang="en">HISPID terms</dcterms:title>
 					<rdfs:comment/>
-					<dc:publisher>Herbarium Information Systems Committee (HISCOM), Australia</dc:publisher>
-					<dcterms:publisher rdf:resource="http://hiscom.chah.org.au"/>
-					<dc:modified>
+					<dcterms:publisher xml:lang="en">Herbarium Information Systems Committee (HISCOM), Australia</dcterms:publisher>
+					<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
 						<xsl:value-of select="current-dateTime()"/>
-					</dc:modified>
+					</dcterms:modified>
 				</rdf:Description>
 				<xsl:apply-templates select="hispid/terms/term"/>
 			</rdf:RDF>
@@ -39,18 +38,18 @@
 	
 	
 	<xsl:template match="term">
-		<xsl:variable name="name" select="name"/>
+		<xsl:variable name="name" select="qualName"/>
 		<rdf:Description rdf:about="{$name}">
 			<xsl:variable name="type">
 				<xsl:value-of select="type"/>
 			</xsl:variable>
 			<xsl:if test="label">
-				<rdfs:label>
+				<rdfs:label xml:lang="en">
 					<xsl:value-of select="label"/>
 				</rdfs:label>
 			</xsl:if>
 			<rdf:type rdf:resource="{$nsRdf}{$type}"/>
-			<skos:definition>
+			<skos:definition xml:lang="en">
 				<xsl:value-of select="definition"/>
 			</skos:definition>
 			<xsl:if test="status">
@@ -69,7 +68,7 @@
 			</xsl:variable>
 			<rdfs:isDefinedBy rdf:resource="{$namespace}"/>
 			<xsl:if test="issued">
-				<dcterms:issued>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
 					<xsl:value-of select="issued"/>
 				</dcterms:issued>
 			</xsl:if>
@@ -77,7 +76,7 @@
 				<xsl:variable name="version">
 					<xsl:value-of select="modified"/>
 				</xsl:variable>
-				<dcterms:modified>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
 					<xsl:value-of select="$version"/>
 				</dcterms:modified>
 				<xsl:if test="$namespace = $nsHispid">
@@ -107,7 +106,7 @@
 				</xsl:if-->
 			</xsl:if>
 			<xsl:if test="usage">
-				<skos:scopeNote>
+				<skos:scopeNote xml:lang="en">
 					<xsl:value-of select="usage"/>
 				</skos:scopeNote>
 			</xsl:if>
@@ -118,7 +117,7 @@
 				</skos:scopeNote>
 			</xsl:if>
 			<xsl:if test="comments">
-				<skos:note>
+				<skos:note xml:lang="en">
 					<xsl:value-of select="comments"/>
 				</skos:note>
 			</xsl:if>
