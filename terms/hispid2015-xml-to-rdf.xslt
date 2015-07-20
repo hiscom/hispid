@@ -145,7 +145,7 @@
 			</xsl:if>
 			<xsl:if test="inClass">
 				<xsl:variable name="inClass">
-					<xsl:value-of select="substring-after(inClass, $nsHispid)"/>
+					<xsl:value-of select="inClass"/>
 				</xsl:variable>
 				<dwcattributes:organizedInClass rdf:resource="{$inClass}"/>
 			</xsl:if>

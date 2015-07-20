@@ -8,14 +8,17 @@ function hispidTerms() {
     fgetcsv($handle);
     $classes = array();
     $cl_ns = array();
+    $cl = array();
     while (!feof($handle)) {
         $line = fgetcsv($handle);
         if ($line && $line[1]) {
+            $cl[] = $line[0];
             $cl_ns[] = $line[1];
             $classes[] = $line;
         }
     }
     fclose($handle);
+    
 
 
     $handle = fopen('../HISPID2015.csv', 'r');
@@ -103,7 +106,8 @@ function hispidTerms() {
         $term->appendChild($newnode);
         // class
         if ($prop['group'] && $prop['group'] != 'Record level terms') {
-            $newnode = $doc->createElement('inClass', 'http://hiscom.chah.org.au/hispid/terms/' . $prop['group']);
+            $key = array_search($prop['group'], $cl);
+            $newnode = $doc->createElement('inClass', $cl_ns[$key] . $prop['group']);
             $term->appendChild($newnode);
         }
         // dataType

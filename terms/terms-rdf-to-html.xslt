@@ -290,7 +290,11 @@
 			<xsl:variable name="class">
 				<xsl:choose>
 					<xsl:when test="starts-with(@rdf:about, 'http://')">
-						<xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/>
+						<xsl:analyze-string select="@rdf:about" regex="[/|#]([A-Za-z0-9]+)$">
+							<xsl:matching-substring>
+								<xsl:value-of select="regex-group(1)"/>
+							</xsl:matching-substring>
+						</xsl:analyze-string>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="@rdf:about"/>
@@ -299,10 +303,12 @@
 			</xsl:variable>
 			<xsl:for-each select="../rdf:Description">
 				<xsl:variable name="this" select="."/>
-				<xsl:if test="contains(dwcattributes:organizedInClass/@rdf:resource, $class)">
-					<xsl:call-template name="processTerm">
-						<xsl:with-param name="term" select="$this"/>
-					</xsl:call-template>
+				<xsl:if test="ends-with(rdf:type/@rdf:resource, '#Property')">
+					<xsl:if test="ends-with(dwcattributes:organizedInClass/@rdf:resource, $class)">
+						<xsl:call-template name="processTerm">
+							<xsl:with-param name="term" select="$this"/>
+						</xsl:call-template>
+					</xsl:if>
 				</xsl:if>
 			</xsl:for-each>
 		</xsl:if>
@@ -313,16 +319,16 @@
 		<xsl:param name="term"/>
 		<xsl:variable name="property">
 			<xsl:choose>
-				<xsl:when test="starts-with(@rdf:about, 'http://')">
+				<xsl:when test="starts-with($term/@rdf:about, 'http://')">
 					<!--xsl:value-of select="substring-after(@rdf:about, concat($nsHispid, '/'))"/-->
-					<xsl:analyze-string select="@rdf:about" regex="/([A-Za-z0-9]+)$">
+					<xsl:analyze-string select="$term/@rdf:about" regex="/([A-Za-z0-9]+)$">
 						<xsl:matching-substring>
 							<xsl:value-of select="regex-group(1)"/>
 						</xsl:matching-substring>
 					</xsl:analyze-string>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:value-of select="@rdf:about"/>
+					<xsl:value-of select="$term/@rdf:about"/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
@@ -334,7 +340,7 @@
 						<xsl:choose>
 							<xsl:when test="contains(rdf:type/@rdf:resource, '#Property')">
 								<h3>
-									<xsl:text>Term name: </xsl:text>
+									<xsl:text>Property: </xsl:text>
 									<xsl:value-of select="$property"/>
 								</h3>
 							</xsl:when>
