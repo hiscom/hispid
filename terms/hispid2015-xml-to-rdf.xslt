@@ -34,6 +34,20 @@
 				<xsl:apply-templates select="hispid/terms/term"/>
 			</rdf:RDF>
 		</xsl:result-document>
+
+		<xsl:result-document href="../terms.rdf">
+			<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xml:base="http://hiscom.chah.org.au/hispid/terms/">
+				<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/">
+					<dcterms:title xml:lang="en">HISPID terms</dcterms:title>
+					<rdfs:comment/>
+					<dcterms:publisher xml:lang="en">Herbarium Information Systems Committee (HISCOM), Australia</dcterms:publisher>
+					<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+						<xsl:value-of select="current-dateTime()"/>
+					</dcterms:modified>
+				</rdf:Description>
+				<xsl:apply-templates select="hispid/terms/term"/>
+			</rdf:RDF>
+		</xsl:result-document>
 	</xsl:template>
 	
 	
@@ -68,18 +82,20 @@
 			</xsl:variable>
 			<rdfs:isDefinedBy rdf:resource="{$namespace}"/>
 			<xsl:if test="issued">
-				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
-					<xsl:value-of select="issued"/>
-				</dcterms:issued>
+				<xsl:if test="starts-with(@rdf:about,$nsHispid)">
+					<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+						<xsl:value-of select="issued"/>
+					</dcterms:issued>
+				</xsl:if>
 			</xsl:if>
 			<xsl:if test="modified">
-				<xsl:variable name="version">
-					<xsl:value-of select="modified"/>
-				</xsl:variable>
-				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
-					<xsl:value-of select="$version"/>
-				</dcterms:modified>
 				<xsl:if test="$namespace = $nsHispid">
+					<xsl:variable name="version">
+						<xsl:value-of select="modified"/>
+					</xsl:variable>
+					<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+						<xsl:value-of select="$version"/>
+					</dcterms:modified>
 					<dcterms:hasVersion rdf:resource="{$nsHispid}{$name}-{$version}"/>
 				</xsl:if>
 			</xsl:if>
