@@ -20,8 +20,12 @@ $(function() {
             $(this).removeClass('active');
         });*/
         
-        if (location.href.indexOf('#') != -1) {
-            anchor = location.href.substr(location.href.indexOf('#'));
+        anchor = location.href.substring(location.href.indexOf('terms/')+6);
+        
+        if (anchor.length > 1) {
+            if (anchor.substring(0,1) !== '#') {
+                anchor = '#' + anchor;
+            }
             if (anchor.length > 1) {
                 scrollTo(anchor);
             }
