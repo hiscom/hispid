@@ -4,53 +4,53 @@
 		<dcterms:title xml:lang="en">HISPID terms</dcterms:title>
 		<rdfs:comment/>
 		<dcterms:publisher xml:lang="en">Herbarium Information Systems Committee (HISCOM), Australia</dcterms:publisher>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-20T14:25:07.044+10:00</dcterms:modified>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-25T15:02:07.143+10:00</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Occurrence">
 		<rdfs:label xml:lang="en">Occurrence</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">An existence of an Organism (sensu http://rs.tdwg.org/dwc/terms/Organism) at a particular place at a particular time.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Event">
 		<rdfs:label xml:lang="en">Event</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">An action that occurs at some location during some time.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/dc/terms/Location">
 		<rdfs:label xml:lang="en">Location</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">A spatial region or named place.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Identification">
 		<rdfs:label xml:lang="en">Identification</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">A taxonomic determination (e.g., the assignment to a taxon).</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Taxon">
 		<rdfs:label xml:lang="en">Taxon</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) considered by taxonomists to form a homogeneous unit.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/PreservedSpecimen">
 		<rdfs:label xml:lang="en">Preserved Specimen</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">A specimen that has been preserved.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/Transaction">
 		<rdfs:label xml:lang="en">Transaction</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">An interaction between two herbaria, e.g. loan or exchange.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
@@ -59,7 +59,7 @@
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/Permit">
 		<rdfs:label xml:lang="en">Permit</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">A document or certificate giving permission to do something, e.g. collecting.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
@@ -68,7 +68,7 @@
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/MediaItem">
 		<rdfs:label xml:lang="en">Media Item</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Class"/>
+		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">An image or other digital resource.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>

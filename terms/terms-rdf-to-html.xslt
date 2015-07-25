@@ -418,7 +418,9 @@
 									</xsl:matching-substring>
 								</xsl:analyze-string>
 							</xsl:when>
-							<xsl:otherwise><xsl:text>all</xsl:text></xsl:otherwise>
+							<xsl:when test="contains(rdf:type/@rdf:resource, '#Property')">
+								<xsl:text>all</xsl:text>
+							</xsl:when>
 						</xsl:choose>
 					</td>
 				</tr>

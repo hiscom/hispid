@@ -45,6 +45,10 @@ function hispidTerms() {
     $doc = new DOMDocument('1.0', 'UTF-8');
     $root = $doc->createElement('hispid');
     $doc->appendChild($root);
+    
+    $xslt = $doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="hispid2015-xml-to-rdf.xslt"');
+    $doc->appendChild($xslt);
+
 
     $terms = $doc->createElement('terms');
     $root->appendChild($terms);

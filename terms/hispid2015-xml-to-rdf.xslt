@@ -62,7 +62,14 @@
 					<xsl:value-of select="label"/>
 				</rdfs:label>
 			</xsl:if>
-			<rdf:type rdf:resource="{$nsRdf}{$type}"/>
+			<xsl:choose>
+				<xsl:when test="$type='Class'">
+					<rdf:type rdf:resource="{$nsRdfs}{$type}"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<rdf:type rdf:resource="{$nsRdf}{$type}"/>
+				</xsl:otherwise>
+			</xsl:choose>
 			<skos:definition xml:lang="en">
 				<xsl:value-of select="definition"/>
 			</skos:definition>
