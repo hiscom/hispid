@@ -342,9 +342,9 @@
 		<rdfs:label xml:lang="en">Life Stage</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The life stage of the individual at the time it was collected.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
-		<skos:scopeNote>Vocabulary: http://rs.gbif.org/vocabulary/gbif/sex.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://rs.gbif.org/vocabulary/gbif/lifeStage.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/18</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
