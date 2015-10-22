@@ -325,14 +325,18 @@
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/lifeForm">
 		<rdfs:label xml:lang="en">Life Form</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">A description of the habit or life form of the specimen on which the collection object is based.</skos:definition>
-		<dwcattributes:status>discouraged</dwcattributes:status>
+		<skos:definition xml:lang="en">A list of terms of the habit or life form of the specimen on which the collection object is based.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/lifeForm-2015-07-11"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/form-hispid5"/>
+		<skos:note>A controlled vocabulary term describing the habit or life form of the specimen on which the collection object is based. We intend to provide a controlled vocabulary, and/or a term to identify a controlled vocabulary.</skos:note>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/17</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
+		<dcterms:references rdf:resource="http://data.kew.org/sid/plantform.html"/>
+		<dcterms:references rdf:resource="http://rs.gbif.org/vocabulary/gbif/life_form.xml"/>
+		<dcterms:references rdf:resource="http://www.bryoecol.mtu.edu/chapters/4-5AdaptStratForm.pdf"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lifeStage">
 		<rdfs:label xml:lang="en">Life Stage</rdfs:label>
