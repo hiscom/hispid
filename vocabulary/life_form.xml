@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form" dc:title="HISPID Life Form Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-22">
+	<concept dc:identifier="phanerophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/phanerophyte" dc:description="have stems that are woody and persistent, and buds that are normally exposed 3 m or more above ground level. This category includes trees and large shrubs" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="phanerophyte"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="nanophanerophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/nanophanerophyte" dc:description="also have woody, persistent stems, but are lower in stature with buds typically located between 0.5 m and 3 m above ground level. This category includes smaller shrubs" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="nanophanerophyte"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="herbaceous_phanerophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/herbaceous_phanerophyte" dc:description="have herbaceous stems that persist for several years and include tropical species such as bananas and plantains." dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="herbaceous phanerophyte"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="chamaephyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/chamaephyte" dc:description="can have stems that are herbaceous or woody and persistent, and have buds that are located above soil level, but never by more than 50 cm. This group includes dwarf shrubs and some perennial herbs." dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="chamaephyte"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="hemicryptophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/hemicryptophyte" dc:description="have herbaceous stems that often die-back during unfavourable seasons, and surviving buds placed on (or just below) soil level. This group includes many biennial and perennial herbs, including those in which buds grow from a basal rosette." dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="hemicryptophyte"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="geophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/geophyte" dc:description="have stems that die back during unfavourable seasons, with the plant surviving as a bulb, rhizome, tuber or root bud." dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="geophyte"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="therophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/therophyte" dc:description="complete their entire life-cycle during the favourable season, and survive the unfavourable season as a seed. This group includes all annual herbs." dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="therophyte"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="epiphyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/epiphyte" dc:description="grow on other plants (their growing buds occur on another plant)." dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="epiphyte"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="helophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/helophyte" dc:description="are plants in which surviving buds are buried in water-saturated soil, or below water-level, but that have flowers and leaves that are fully emergent during the growing season. The group includes many marsh and emergent aquatic herbs." dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="helophyte"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="hydrophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/hydrophyte" dc:description="are fully aquatic herbs in which surviving buds are submerged, or buried in soil beneath water. Their stems and vegetative shoots grow entirely underwater and leaves can be submerged or floating, but only the flower-bearing parts may be emergent." dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="hydrophyte"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="annual" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/annual" dc:description="Mägdefrau (1982): pioneers; no vegetative shoots remain to carry on a second year" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="annual"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="short_turf" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/short_turf" dc:description="Mägdefrau (1982): open mineral soils and rocks; regenerative shoots; form spreading turfs for only a few years" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="short turf"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="tall_turf" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/tall_turf" dc:description="Mägdefrau (1982): forest floors in temperate zones; can conduct water internally; very tall; persist by regenerative shoots" dc:issued="2015-10-22"><preferred>
+		<term dc:title="tall turf"></term>
+	</preferred></concept>
+	<concept dc:identifier="cushion" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/cushion" dc:description="Mägdefrau (1982): rocks, bark, Arctic, Antarctic, alpine; usually high light; grow upward and sideways; hemispherical; persistent for many years" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="cushion"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="mat" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/mat" dc:description="Mägdefrau (1982): rocks, bark, [on leaves (epiphyllous) in tropics]; plagiotropic and persistent for a number of years" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="mat"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="pendant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/pendant" dc:description="Mägdefrau (1982): epiphytes, especially in tropical cloud forests; long main stem with short side branches" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="pendant"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="weft" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/weft" dc:description="Mägdefrau (1982):  forest floor of temperate zone; hold considerable capillary water; grow loosely and easy to remove from substrate; new layer grows each year;" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="weft"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="tail" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/tail" dc:description="Mägdefrau (1982): on trees and rocks, shade-loving; radially leafed, creeping, shoots stand away from substrate" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="tail"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="fan" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/fan" dc:description="Mägdefrau (1982): on vertical substrate, usually where there is lots of rain; creeping, with branches in one plane and leaves usually flat" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="fan"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="dendroid" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/dendroid" dc:description="Mägdefrau (1982): on ground, usually moist; main stem with tuft of branches at top" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="dendroid"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="streamer" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/streamer" dc:description="Mägdefrau (1982): long, floating stems in streams and lakes" dc:issued="2015-10-22">
+		<preferred>
+			<term dc:title="streamer"></term>
+		</preferred>
+	</concept>
+</thesaurus>
