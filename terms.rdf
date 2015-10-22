@@ -724,7 +724,7 @@
 		<skos:definition xml:lang="en">The verbatim original latitude for the Location</skos:definition>
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
-		<skos:example>15° 5' 59 S"</skos:example>
+		<skos:example>15° 5' 59" S</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/VerbatimLatitude</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/latdeg-hispid5"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/latmin-hispid5"/>
