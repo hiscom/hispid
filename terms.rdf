@@ -98,6 +98,15 @@
 		<dwcattributes:abcdEquivalence>//Unit/SourceID</dwcattributes:abcdEquivalence>
 		<skos:note xml:lang="en">May be the same as institutionCode</skos:note>
 	</rdf:Description>
+	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode">
+		<rdfs:label xml:lang="en">Owner Institution Code</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">The name (or acronym) in use by the institution having ownership of the object(s) or information referred to in the record.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<skos:example>TMAG</skos:example>
+		<dwcattributes:abcdEquivalence>//Unit/Owner/Organisation</dwcattributes:abcdEquivalence>
+	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
 		<rdfs:label xml:lang="en">Modified</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
