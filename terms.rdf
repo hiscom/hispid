@@ -783,7 +783,7 @@
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>EPSG:28352</skos:example>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/spapro-hispid5"/>
-		<skos:scopeNote xml:lang="en">Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if know</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/coordinatePrecision">
