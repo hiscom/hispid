@@ -347,6 +347,7 @@
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/life_stage.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/18</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
+		<dcterms:issued>2015-10-22</dcterms:issued>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/sex">
 		<rdfs:label xml:lang="en">Sex</rdfs:label>
