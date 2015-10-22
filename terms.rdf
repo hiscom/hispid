@@ -262,6 +262,8 @@
 		<skos:definition xml:lang="en">A list of previous or alternate catalog numbers for the same Occurrence.</skos:definition>
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<skos:example>12345678</skos:example>
+		<skos:example>MEL 23456</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/History/PreviousUnits/PreviousUnit/PreviousUnitID</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/donacc-hispid5"/>
 		<skos:scopeNote xml:lang="en">e.g., for the catalogue numbers for exchanged specimens when known or of multisheets.</skos:scopeNote>
