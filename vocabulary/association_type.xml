@@ -1,3 +1,18 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type" dc:title="HISPID Association Type Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"><concept dc:identifier="host" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/host" dc:description="host" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="growingWith" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/growingWith" dc:description="growingWith" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="mixedWith" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/mixedWith" dc:description="mixedWith" dc:issued="2015-02-22T18:26:01+11:00"/></thesaurus>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/"
+		   dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type"
+		   dc:title="HISPID Association Type Vocabulary"
+		   xmlns:dc="http://purl.org/dc/terms/"
+		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd">
+	<concept dc:identifier="host"
+			 dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/host"
+			 dc:description="host" dc:issued="2015-02-22T18:26:01+11:00"/>
+	<concept dc:identifier="growingWith"
+			 dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/growingWith"
+			 dc:description="growingWith" dc:issued="2015-02-22T18:26:01+11:00"/>
+	<concept dc:identifier="mixedWith"
+			 dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/mixedWith"
+			 dc:description="mixedWith" dc:issued="2015-02-22T18:26:01+11:00"/>
+</thesaurus>
