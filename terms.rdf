@@ -445,12 +445,13 @@
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/collectingTripName">
 		<rdfs:label xml:lang="en">Collecting Trip Name</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">The name collecting trip or expedition where the specimen was collected</skos:definition>
+		<skos:definition xml:lang="en">The name of the collecting trip or expedition during which the specimen was collected</skos:definition>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/collectingTrip-2015-07-11"/>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/8</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
+		<dcterms:issued>2015-10-22</dcterms:issued>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/habitat">
 		<rdfs:label xml:lang="en">Habitat</rdfs:label>
