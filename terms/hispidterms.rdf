@@ -1403,11 +1403,23 @@ or
 		<skos:definition xml:lang="en">Term to indicate the collection object has served as a voucher for a special purpose.</skos:definition>
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFor-2015-07-11"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFlag-2015-10-23"/>
 		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="voucher"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vou-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/voucher_for.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/voucher_flag.xml</skos:scopeNote>
+		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/voucherFor">
+		<rdfs:label xml:lang="en">Voucher For</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">The name, code or other reference to the project for which the specimen is a voucher.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFor-2015-10-23"/>
+		<dwcattributes:abcdEquivalence>Not in ABCD</dwcattributes:abcdEquivalence>
+		<skos:scopeNote></skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/provenanceTypeFlag">
