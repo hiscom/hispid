@@ -1142,6 +1142,7 @@ or
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>subspecies</skos:example>
+		<skos:note>The rank of a hybrid name is the rank of the lowest hypothetical parent. See Article H.5 of the ICN.</skos:note>
 		<skos:scopeNote>Vocabulary: http://rs.gbif.org/vocabulary/gbif/rank.xml</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
 	</rdf:Description>
