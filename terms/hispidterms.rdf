@@ -57,14 +57,14 @@
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/Transaction-2015-07-11"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/Permit">
-		<rdfs:label xml:lang="en">Permit</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/Consent">
+		<rdfs:label xml:lang="en">Consent</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-		<skos:definition xml:lang="en">A document or certificate giving permission to do something, e.g. collecting.</skos:definition>
-		<dwcattributes:status>recommended</dwcattributes:status>
+		<skos:definition xml:lang="en">A document, certificate or permission giving consent to do something, e.g. collecting.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/Permit-2015-07-11"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/Consent-2015-10-23"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/MediaItem">
 		<rdfs:label xml:lang="en">Media Item</rdfs:label>
@@ -1397,8 +1397,8 @@ or
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/7</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/voucherFor">
-		<rdfs:label xml:lang="en">Voucher For</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/voucherFlag">
+		<rdfs:label xml:lang="en">Voucher Flag</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Term to indicate the collection object has served as a voucher for a special purpose.</skos:definition>
 		<dwcattributes:status>current</dwcattributes:status>
@@ -1525,117 +1525,118 @@ or
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/loaret-hispid5"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Transaction"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitType">
-		<rdfs:label xml:lang="en">Permit Type</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentType">
+		<rdfs:label xml:lang="en">Consent Type</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Type of permit.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">Type of consent.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitType-2015-07-11"/>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consenttType-2015-10-23"/>
 		<skos:example>collecting permit</skos:example>
 		<skos:example>export permit</skos:example>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<skos:example>verbal authority</skos:example>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitReferenceNumber">
-		<rdfs:label xml:lang="en">Permit Reference Number</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentReferenceNumber">
+		<rdfs:label xml:lang="en">Consent Reference Number</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Reference number allocated to the permit by the issuing authority.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">Reference number allocated to the consent by the issuing authority.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitReferenceNumber-2015-07-11"/>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consentReferenceNumber-2015-10-23"/>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitIssuedBy">
-		<rdfs:label xml:lang="en">Permit Issued By</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentIssuedBy">
+		<rdfs:label xml:lang="en">Consent Issued By</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Name of the authority by whom the permit was issued.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">Name of the authority or person(s) by whom the consent was issued.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitIssuedBy-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/10</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consentIssuedBy-2015-10-23"/>
+		<skos:note></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitIssuedTo">
-		<rdfs:label xml:lang="en">Permit Issued To</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentIssuedTo">
+		<rdfs:label xml:lang="en">Consent Issued To</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Name(s) of the person(s) or organisation to whom the permit was issued.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">Name(s) of the person(s) or organisation to whom the consent was issued.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitIssuedTo-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/10</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consentIssuedTo-2015-10-23"/>
+		<skos:note></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitIssuedDate">
-		<rdfs:label xml:lang="en">Permit Issued Date</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentIssuedDate">
+		<rdfs:label xml:lang="en">Consent Issued Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Date the permit was issued.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">Date the consent was issued.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitIssuedDate-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/10</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consentIssuedDate-2015-10-23"/>
+		<skos:note></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitValidDate">
-		<rdfs:label xml:lang="en">Permit Valid Date</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentValidDate">
+		<rdfs:label xml:lang="en">Consent Valid Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Date or period for which the permit is valid.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">Date or period for which the consent is valid.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitValidDate-2015-07-11"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consentValidDate-2015-10-23"/>
 		<skos:scopeNote xml:lang="en">ISO-8601</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/10</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<skos:note></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitStatus">
-		<rdfs:label xml:lang="en">Permit Status</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentStatus">
+		<rdfs:label xml:lang="en">Consent Status</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Status of the permit.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">Status of the consent.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitStatus-2015-07-11"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/permit_status.xml</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/10</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consentStatus-2015-10-23"/>
+		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/consent_status.xml</skos:scopeNote>
+		<skos:note></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitConditions">
-		<rdfs:label xml:lang="en">Permit Conditions</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentConditions">
+		<rdfs:label xml:lang="en">Consent Conditions</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Conditions on the permit, which may affect how the specimens collected under the permit may be used or distributed.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">Conditions on the consent, which may affect how the specimens collected under the consent may be used or distributed.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitConditions-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/10</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consentConditions-2015-10-23"/>
+		<skos:note></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitRemarks">
-		<rdfs:label xml:lang="en">Permit Remarks</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentRemarks">
+		<rdfs:label xml:lang="en">Consent Remarks</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Any additional comments pertaining to the permit.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">Any additional comments pertaining to the consent.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitRemarks-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/10</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consentRemarks-2015-10-23"/>
+		<skos:note></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitLink">
-		<rdfs:label xml:lang="en">Permit Link</rdfs:label>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/consentLink">
+		<rdfs:label xml:lang="en">Consent Link</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">The link to an electronic version of the permit.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<skos:definition xml:lang="en">The link to an electronic version of the consent.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitLink-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/10</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Permit"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/consentLink-2015-10-23"/>
+		<skos:note></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Consent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
 		<rdfs:label xml:lang="en">Creator</rdfs:label>
