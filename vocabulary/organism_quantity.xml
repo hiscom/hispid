@@ -1,3 +1,54 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity" dc:title="HISPID Organism Quantity Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"><concept dc:identifier="sparse" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/sparse" dc:description="sparse" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="rare" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/rare" dc:description="rare" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="occasional" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/occasional" dc:description="occasional" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="local frequent" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/local+frequent" dc:description="local frequent" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="frequent" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/frequent" dc:description="frequent" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="local abundant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/local+abundant" dc:description="local abundant" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="abundant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/abundant" dc:description="abundant" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="local dominant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/local+dominant" dc:description="local dominant" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="codominant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/codominant" dc:description="codominant" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="dominant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/dominant" dc:description="dominant" dc:issued="2015-02-22T18:26:01+11:00"/></thesaurus>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity" dc:title="HISPID Organism Quantity Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
+	<concept dc:identifier="sparse" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/sparse" dc:description="sparse" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="sparse"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="rare" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/rare" dc:description="rare" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="rare"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="occasional" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/occasional" dc:description="occasional" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="occasional"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="local frequent" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/local+frequent" dc:description="local frequent" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="local frequent"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="frequent" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/frequent" dc:description="frequent" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="frequent"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="local abundant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/local+abundant" dc:description="local abundant" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="local abundant"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="abundant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/abundant" dc:description="abundant" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="abundant"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="local dominant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/local+dominant" dc:description="local dominant" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="local dominant"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="codominant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/codominant" dc:description="codominant" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="codominant"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="dominant" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity/dominant" dc:description="dominant" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="dominant"/>
+		</preferred>
+	</concept>
+</thesaurus>
