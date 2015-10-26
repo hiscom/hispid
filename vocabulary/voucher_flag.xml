@@ -1,3 +1,72 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag" dc:title="HISPID Voucher Flag Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"><concept dc:identifier="anatomical" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/anatomical" dc:description="anatomical" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="cytological" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/cytological" dc:description="cytological" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="DNA" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/DNA" dc:description="DNA" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="ecological" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/ecological" dc:description="ecological" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="flora" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/flora" dc:description="flora" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="illustration" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/illustration" dc:description="illustration" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="ethnological" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/ethnological" dc:description="ethnological" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="living" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/living" dc:description="living" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="palynology" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/palynology" dc:description="palynology" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="photograph" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/photograph" dc:description="photograph" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="phytochemical" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/phytochemical" dc:description="phytochemical" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="zoological" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/zoological" dc:description="zoological" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="other" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/other" dc:description="other" dc:issued="2015-02-22T18:26:01+11:00"/></thesaurus>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag" dc:title="HISPID Voucher Flag Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="1996-01-01">
+	<concept dc:identifier="anatomical" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/anatomical" dc:description="anatomical" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="anatomical" dc:source="HISPID 3"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="cytological" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/cytological" dc:description="cytological" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="cytological" dc:source="HISPID 3"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="DNA" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/DNA" dc:description="DNA studies" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="DNA" dc:source="HISPID 3"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="ecological" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/ecological" dc:description="ecological" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="ecological" dc:source="HISPID 3"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="flora" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/flora" dc:description="flora project" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="flora" dc:source="HISPID 3"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="illustration" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/illustration" dc:description="illustration" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="illustration" dc:source="HISPID 3"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="ethnological" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/ethnological" dc:description="indigenous uses, ethnobotany" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="ethnological"/>
+		</preferred>
+		<alternative>
+			<term dc:title="indigenous" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="living" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/living" dc:description="living, including seed bank" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="living" dc:source="HISPID 3"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="palynology" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/palynology" dc:description="palynology" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="palynology"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="photograph" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/photograph" dc:description="photograph" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="photograph" dc:source="HISPID 3"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="phytochemical" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/phytochemical" dc:description="phytochemical, pharmacological" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="phytochemical" dc:source="HISPID 3"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="zoological" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/zoological" dc:description="zoological" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="zoological" dc:source="HISPID 3"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="other" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag/other" dc:description="other" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="other"></term>
+		</preferred>
+	</concept>
+</thesaurus>
