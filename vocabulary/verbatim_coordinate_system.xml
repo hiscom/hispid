@@ -1,3 +1,64 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system" dc:title="HISPID Verbatim Coordinate System Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"><concept dc:identifier="decimal degrees" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/decimal+degrees" dc:description="decimal degrees" dc:issued="2015-02-22T23:15:17+11:00"/><concept dc:identifier="degrees decimal minutes" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/degrees+decimal+minutes" dc:description="degrees decimal minutes" dc:issued="2015-02-22T23:15:17+11:00"/><concept dc:identifier="degrees minutes seconds" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/degrees+minutes+seconds" dc:description="degrees minutes seconds" dc:issued="2015-02-22T23:15:17+11:00"/><concept dc:identifier="UTM" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/UTM" dc:description="UTM" dc:issued="2015-02-22T23:15:17+11:00"/><concept dc:identifier="decimal degrees" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/decimal+degrees" dc:description="decimal degrees" dc:issued="2015-02-22T23:15:17+11:00"/><concept dc:identifier="degrees decimal minutes" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/degrees+decimal+minutes" dc:description="degrees decimal minutes" dc:issued="2015-02-22T23:15:17+11:00"/><concept dc:identifier="degrees minutes seconds" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/degrees+minutes+seconds" dc:description="degrees minutes seconds" dc:issued="2015-02-22T23:15:17+11:00"/><concept dc:identifier="UTM" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/UTM" dc:description="UTM" dc:issued="2015-02-22T23:15:17+11:00"/></thesaurus>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system" dc:title="HISPID Verbatim Coordinate System Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
+	<concept dc:identifier="AITM2000" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/AITM2000" dc:description="Antipodes Islands Transverse Mercator 2000" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="AITM2000"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="AKTM2000" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/AKTM2000" dc:description="Auckland Islands Transverse Mercator 2000" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="AKTM2000"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="CATM2000" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/CATM2000" dc:description="Campbell Island Transverse Mercator 2000" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="CATM2000"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="CITM1979" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/CITM1979" dc:description="Chatham Island Transverse Mercator 1979" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="CITM1979"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="CITM2000" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/CITM2000" dc:description="Chatham Island Transverse Mercator 2000" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="CITM2000"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="decimal degrees" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/decimal+degrees" dc:description="decimal degrees" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="decimal degrees"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="degrees decimal minutes" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/degrees+decimal+minutes" dc:description="degrees decimal minutes" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="degrees decimal minutes"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="degrees minutes seconds" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/degrees+minutes+seconds" dc:description="degrees minutes seconds" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="degrees minutes seconds"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="NZMG" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/NZMG" dc:description="New Zealand map grid" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="NZMG"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="NZTM2000" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/NZTM2000" dc:description="New Zealand transverse mercator 2000" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="NZTM2000"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="RITM2000" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/RITM2000" dc:description="Raoul Island Transverse Mercator 2000" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="RITM2000"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="UTM" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system/UTM" dc:description="Universal transverse mercator" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="UTM"/>
+		</preferred>
+	</concept>
+</thesaurus>
