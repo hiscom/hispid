@@ -1,3 +1,36 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag" dc:title="HISPID Provenance Type Flag Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"><concept dc:identifier="W" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag/W" dc:description="Accessions which originate from material collected in the wild. The accession has not been propagated further, except in the case of plants that may have been grown on from the original stock. The accession may have come directly from the wild, or from a botanic garden or gene bank acting as a distribution centre. Recent accessions in this category should have accompanying collection data, but the category may also include older accessions which are known to be of direct wild origin but which do not have such additional data." dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="Z" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag/Z" dc:description="Accessions derived by propagation directly from an original wild source plant. The method of propagation must be recorded in the Propagation History field. If the propagation is not directly from the original wild source plant, a complete history of the intermediate propagation steps must be known, otherwise the accession should placed in the following category." dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="G" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag/G" dc:description="Accessions derived from cultivated plants where the immediate source plant does not have a propagation history that can be traced in detail to a wild plant. This category normally includes all cultivars." dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="U" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag/U" dc:description="Accessions where there is insufficient data or knowledge to know which of the three above categories applies." dc:issued="2015-02-22T18:26:01+11:00"/></thesaurus>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag" dc:title="HISPID Provenance Type Flag Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
+	<concept dc:identifier="W" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag/W" dc:description="Accessions which originate from material collected in the wild. The accession has not been propagated further, except in the case of plants that may have been grown on from the original stock. The accession may have come directly from the wild, or from a botanic garden or gene bank acting as a distribution centre. Recent accessions in this category should have accompanying collection data, but the category may also include older accessions which are known to be of direct wild origin but which do not have such additional data." dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="W"/>
+		</preferred>
+		<alternative>
+			<term dc:title="wild" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="Z" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag/Z" dc:description="Accessions derived by propagation directly from an original wild source plant. The method of propagation must be recorded in the Propagation History field. If the propagation is not directly from the original wild source plant, a complete history of the intermediate propagation steps must be known, otherwise the accession should placed in the following category." dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="Z"/>
+		</preferred>
+		<alternative>
+			<term dc:title="cult. ex wild" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="G" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag/G" dc:description="Accessions derived from cultivated plants where the immediate source plant does not have a propagation history that can be traced in detail to a wild plant. This category normally includes all cultivars." dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="G"/>
+		</preferred>
+		<alternative>
+			<term dc:title="cult. non-wild" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="U" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag/U" dc:description="Accessions where there is insufficient data or knowledge to know which of the three above categories applies." dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="U"/>
+		</preferred>
+		<alternative>
+			<term dc:title="unknown" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+</thesaurus>
