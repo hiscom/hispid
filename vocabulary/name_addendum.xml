@@ -1,3 +1,29 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/name_addendum" dc:title="HISPID Name Addendum Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"><concept dc:identifier="agg." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/name_addendum/agg." dc:description="agg." dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="s.l." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/name_addendum/s.l." dc:description="s.l." dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="s. str." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/name_addendum/s.+str." dc:description="s. str." dc:issued="2015-02-22T18:26:01+11:00"/></thesaurus>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/name_addendum" dc:title="HISPID Name Addendum Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="1996-01-01">
+	<concept dc:identifier="agg." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/name_addendum/agg." dc:description="an aggregate species" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="agg."></term>
+		</preferred>
+		<alternative>
+			<term dc:title="aggregate"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="s.l." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/name_addendum/s.l." dc:description="in a broad sense" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="s.l."></term>
+		</preferred>
+		<alternative>
+			<term dc:title="sensu lato"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="s. str." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/name_addendum/s.+str." dc:description="in a narrow sense" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="s. str."/>
+		</preferred>
+		<alternative>
+			<term dc:title="sensu stricto"/>
+			<term dc:title="s.str."/>
+		</alternative>
+	</concept>
+</thesaurus>
