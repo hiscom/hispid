@@ -1,3 +1,29 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag" dc:title="HISPID Hybrid Flag Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"><concept dc:identifier="x" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/x" dc:description="A latin collective name for a hybrid" dc:issued="2015-03-04T12:29:44+11:00"/><concept dc:identifier="G" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/G" dc:description="A non-latin collective name for a hybrid" dc:issued="2015-03-04T12:29:44+11:00"/><concept dc:identifier="H" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/H" dc:description="A hybrid formula" dc:issued="2015-03-04T12:29:44+11:00"/><concept dc:identifier="+" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/%2B" dc:description="A graft hybrid or graft chimaera" dc:issued="2015-03-04T12:29:44+11:00"/><concept dc:identifier="-" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/-" dc:description="An intergrade of non-hybrid nature" dc:issued="2015-03-04T12:29:44+11:00"/></thesaurus>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag" dc:title="HISPID Hybrid Flag Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="1996-01-01">
+	<concept dc:identifier="x" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/x" dc:description="A latin collective name for a hybrid" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="x"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="G" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/G" dc:description="A non-latin collective name for a hybrid" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="G"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="H" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/H" dc:description="A hybrid formula" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="H"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="+" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/%2B" dc:description="A graft hybrid or graft chimaera" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="+"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="-" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/hybrid_flag/-" dc:description="An intergrade of non-hybrid nature" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="-"></term>
+		</preferred>
+	</concept>
+</thesaurus>
