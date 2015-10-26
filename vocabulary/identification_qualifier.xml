@@ -1,3 +1,29 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier" dc:title="HISPID Identification Qualifier Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"><concept dc:identifier="?" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/%3F" dc:description="?" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="aff." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/aff." dc:description="aff." dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="c.f." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/c.f." dc:description="c.f." dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="forsan" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/forsan" dc:description="forsan" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="near" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/near" dc:description="near" dc:issued="2015-02-22T18:26:01+11:00"/></thesaurus>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier" dc:title="HISPID Identification Qualifier Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="1996-01-01">
+	<concept dc:identifier="?" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/%3F" dc:description="?" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="?"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="aff." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/aff." dc:description="aff." dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="aff."></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="c.f." dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/c.f." dc:description="c.f." dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="c.f."></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="forsan" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/forsan" dc:description="forsan" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="forsan"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="near" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier/near" dc:description="near" dc:issued="1996-01-01">
+		<preferred>
+			<term dc:title="near"></term>
+		</preferred>
+	</concept>
+</thesaurus>
