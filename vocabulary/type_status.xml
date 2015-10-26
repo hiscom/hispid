@@ -1,3 +1,110 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status" dc:title="HISPID Type Status Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd"><concept dc:identifier="epitype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/epitype" dc:description="epitype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="holotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/holotype" dc:description="holotype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="isotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isotype" dc:description="isotype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="isolectotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isolectotype" dc:description="isolectotype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="isoneotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isoneotype" dc:description="isoneotype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="isoparatype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isoparatype" dc:description="isoparatype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="isoparalectotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isoparalectotype" dc:description="isoparalectotype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="isosyntype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isosyntype" dc:description="isosyntype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="lectotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/lectotype" dc:description="lectotype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="neotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/neotype" dc:description="neotype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="paratype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/paratype" dc:description="paratype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="paralectotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/paralectotype" dc:description="paralectotype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="syntype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/syntype" dc:description="syntype" dc:issued="2015-02-22T18:26:01+11:00"/><concept dc:identifier="type" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/type" dc:description="type" dc:issued="2015-02-22T18:26:01+11:00"/></thesaurus>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status" dc:title="HISPID Type Status Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
+	<concept dc:identifier="epitype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/epitype" dc:description="epitype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="epitype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="EPI" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="holotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/holotype" dc:description="holotype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="holotype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="HOLO" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="isotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isotype" dc:description="isotype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="isotype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="ISO" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="isolectotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isolectotype" dc:description="isolectotype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="isolectotype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="ISOLECTO" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="isoneotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isoneotype" dc:description="isoneotype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="isoneotype"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="isoparatype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isoparatype" dc:description="isoparatype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="isoparatype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="ISOPARA" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="isoparalectotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isoparalectotype" dc:description="isoparalectotype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="isoparalectotype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="ISOPARALECTO" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="isosyntype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/isosyntype" dc:description="isosyntype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="isosyntype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="ISOSYN" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="lectotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/lectotype" dc:description="lectotype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="lectotype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="LECTO" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="neotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/neotype" dc:description="neotype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="neotype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="NEO" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="paratype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/paratype" dc:description="paratype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="paratype"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="paralectotype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/paralectotype" dc:description="paralectotype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="paralectotype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="PARALECTO" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="syntype" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/syntype" dc:description="syntype" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="syntype"/>
+		</preferred>
+		<alternative>
+			<term dc:title="SYN" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+	<concept dc:identifier="type" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/type_status/type" dc:description="type" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="type"/>
+		</preferred>
+		<alternative>
+			<term dc:title="TYPE" dc:source="HISPID 3"/>
+		</alternative>
+	</concept>
+</thesaurus>
