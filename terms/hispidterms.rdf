@@ -259,6 +259,28 @@
 		<skos:note xml:lang="en">Note - this is a broader definition than implied by the HISPID 3 mapping</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
+	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedOccurrenceID">
+		<rdfs:label xml:lang="en">Associated Occurrence Identifier</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">The Occurrence ID for a another specimens that has a relationship with this record as defined by the Associated Occurrence Relationship Type.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<!--<dwcattributes:abcdEquivalence></dwcattributes:abcdEquivalence>-->
+		<skos:scopeNote xml:lang="en">To record the identifier for another record that has a relationship with the current occurence record. For HISPID these occurrences should both be herbarium specimens</skos:scopeNote>
+		<skos:note xml:lang="en"></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
+	</rdf:Description>	
+	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedOccurrenceType">
+		<rdfs:label xml:lang="en">Associated Occurrence Type</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">Defines the type of association between the specimen identified by the Occurrence record and the specimen identified by the paired Associated Occurrence ID</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<skos:scopeNote xml:lang="en">For relationships in which both sides of the relationships are herbarium specimens</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
+		<skos:note xml:lang="en"></skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
+	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceRemarks">
 		<rdfs:label xml:lang="en">Occurrence Remarks</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
