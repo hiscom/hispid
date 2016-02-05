@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status" dc:title="HISPID Permit Status Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
+	<concept dc:identifier="valid" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status/valid" dc:description="valid" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="valid"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="expired" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status/expired" dc:description="expired" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="expired"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="revoked" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status/revoked" dc:description="revoked" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="revoked"></term>
+		</preferred>
+	</concept>
+</thesaurus>
