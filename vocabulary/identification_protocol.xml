@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_qualifier" dc:title="HISPID Identification Qualifier Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="1996-01-01">
+	<concept dc:identifier="BLAST" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol/BLAST" dc:description="BLAST" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="BLAST"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="barcode" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol/barcode" dc:description="DNA barcode" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="barcode"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="text" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol/text" dc:description="morphological comparison with electronic or print text" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="text"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="image" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol/image" dc:description="morphological comparison with an image" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="image"></term>
+		</preferred>
+	</concept>
+	<concept dc:identifier="specimen" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol/specimen" dc:description="morphological comparison with specimen" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="specimen"></term>
+		</preferred>
+	</concept>
+</thesaurus>

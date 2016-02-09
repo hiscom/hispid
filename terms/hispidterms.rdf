@@ -1075,6 +1075,16 @@
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/textvdat-hispid5"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
+	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationProtocol">
+		<rdfs:label xml:lang="en">Identification Protocol</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">The protocol used by the identifier to establish the identification of the specimen.</skos:definition>
+		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/identification_protocol.xml</skos:scopeNote>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
+	</rdf:Description>	
+	
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationReferences">
 		<rdfs:label xml:lang="en">Identification References</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
