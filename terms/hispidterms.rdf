@@ -1608,6 +1608,18 @@ or
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/loaret-hispid5"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Transaction"/>
 	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/numberOfSheets">
+		<rdfs:label xml:lang="en">Number of Sheets</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">The number of sheets or parts included in the transaction.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/numshe-hispid5"/>
+		<dwcattributes:abcdEquivalence>//Unit/HerbariumUnit/LoanReturnDate</dwcattributes:abcdEquivalence>
+		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/numshe-hispid5"/>
+		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Transaction"/>
+	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentType">
 		<rdfs:label xml:lang="en">Permit or Consent Type</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
