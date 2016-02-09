@@ -657,37 +657,37 @@
 		<rdfs:label xml:lang="en">Water Body</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the water body in which the Location occurs.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Indian Ocean</skos:example>
 		<skos:example>Bass Strait</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/NamedAreas/NamedArea[AreaClass="waterBody"]/AreaName</dwcattributes:abcdEquivalence>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/21</skos:note>
+		<skos:note>This term should only be applied when it adds clarity to the location.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/islandGroup">
 		<rdfs:label xml:lang="en">Island Group</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the island group in which the Location occurs.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Cocos Islands</skos:example>
 		<skos:example>Auckland Islands</skos:example>
 		<skos:example>Furneaux Islands</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/NamedAreas/NamedArea[AreaClass="islandGroup"]/AreaName</dwcattributes:abcdEquivalence>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/21</skos:note>
+		<skos:note>This term should only be applied when it adds clarity to the location.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/island">
 		<rdfs:label xml:lang="en">Island</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the island on or near which the Location occurs.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Macquarie Island</skos:example>
 		<skos:example>Flinders Island</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/NamedAreas/NamedArea[AreaClass="island"]/AreaName</dwcattributes:abcdEquivalence>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/21</skos:note>
+		<skos:note>This term should only be applied when it adds clarity to the location.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/decimalLatitude">
