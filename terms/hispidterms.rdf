@@ -859,11 +859,11 @@
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceVerificationStatus">
 		<rdfs:label xml:lang="en">Georeference Verification Status</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">A categorical description of the extent to which the georeference has been verified to represent the best possible spatial descript</skos:definition>
+		<skos:definition xml:lang="en">A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description.</skos:definition>
 		<dwcattributes:status>new</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceVerificationStatus</dwcattributes:abcdEquivalence>
-		<skos:scopeNote xml:lang="en">Recommended best practice is to use a controlled vocabulary.</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">This term is frequently only applied after an assertion has been made that the georeference might be incorrect, for instance data quality assertion in ALA or outlier detection.</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/georeference_verification_status.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/19</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
@@ -1095,7 +1095,7 @@
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationProtocol">
 		<rdfs:label xml:lang="en">Identification Protocol</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">The protocol used by the identifier to establish the identification of the specimen.</skos:definition>
+		<skos:definition xml:lang="en">The protocol or method used by the identifier to establish the identification of the specimen.</skos:definition>
 		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/identification_protocol.xml</skos:scopeNote>
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
