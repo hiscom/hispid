@@ -964,6 +964,23 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactText</dwcattributes:abcdEquivalence>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/minimumDistanceAboveSurfaceInMeters">
+		<rdfs:label xml:lang="en">Minimum Distance Above Surface in Meters</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">The lower value for the height above the surface.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<skos:note xml:lang="en">This is a local off-set to the elevation - e.g., to record the height above the ground of epiphytic taxa in trees. </skos:note>
+		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/maximumDistanceAboveSurfaceInMeters">
+		<rdfs:label xml:lang="en">Maximum Distance Above Surface in Meters</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">The greater value for the height above the surface.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
+	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationID">
 		<rdfs:label xml:lang="en">Identification ID</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
