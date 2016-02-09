@@ -243,7 +243,7 @@
 		<skos:example>sheet|silica gel|molecular isolate</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/KindOfUnit</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/ckin-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/preparations.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/preparations.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/26</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
@@ -277,7 +277,7 @@
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:scopeNote xml:lang="en">For relationships in which both sides of the relationships are herbarium specimens</skos:scopeNote>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
 		<skos:note xml:lang="en"></skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
@@ -305,7 +305,7 @@
 		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="organismQuantity"][UnitOfMeasurement="Tansley (1946) scale"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/fre-hispid5"/>
 		<skos:scopeNote xml:lang="en">The value should be from "Tansley (1946) scale"</skos:scopeNote>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/organism_quantity.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity.xml</skos:scopeNote>
 		<skos:note xml:lang="en">organismQuantityType  must be delivered alongside this term. Note that this is a considerable deviation from earlier versions of HISPID, where Frequency was a free text field.</skos:note>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/22</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
@@ -351,7 +351,7 @@
 		<skos:definition xml:lang="en">The life stage of the individual at the time it was collected.</skos:definition>
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/life_stage.xmll</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/life_stage.xmll</skos:scopeNote>
 		<skos:note></skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
@@ -375,7 +375,7 @@
 		<skos:example>flowers|fruit</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="reproductiveCondition"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/phe-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/reproductive_condition.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/reproductive_condition.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/12</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
@@ -402,7 +402,7 @@
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/associationType-2015-07-11"/>
 		<skos:scopeNote xml:lang="en">To be used in combination with dwc:Taxon to make up list for associatedTaxa</skos:scopeNote>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
 		<skos:note xml:lang="en">Could potentially be used for dwc:associatedOccurrences as well, in combination with a dwc:Occurrence.</skos:note>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/33</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
@@ -777,7 +777,7 @@
 		<skos:example>UTM</skos:example>
 		<skos:example>NZMG</skos:example>
 		<skos:scopeNote xml:lang="en">Recommended best practice is to use a controlled vocabulary.</skos:scopeNote>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/verbatim_coordinate_system.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system.xml</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimSRS">
@@ -864,7 +864,7 @@
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceVerificationStatus</dwcattributes:abcdEquivalence>
 		<skos:scopeNote xml:lang="en">This term is frequently only applied after an assertion has been made that the georeference might be incorrect, for instance data quality assertion in ALA or outlier detection.</skos:scopeNote>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/georeference_verification_status.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/19</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
@@ -928,7 +928,7 @@
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/elevationMethod-2015-07-11"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/altdet-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/elevation_method.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/elevation_method.xml</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters">
@@ -1032,7 +1032,7 @@
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/nameAddendum-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="true"]/Result/TaxonIdentified/ScientificName/NameAddendum</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/spql-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/name_addendum.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/name_addendum.xml</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">
@@ -1056,7 +1056,7 @@
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/identifierRole-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Identifiers/IdentifierRole</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/det-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/identifier_role.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/identifier_role.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/31</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
@@ -1096,7 +1096,7 @@
 		<rdfs:label xml:lang="en">Identification Protocol</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The protocol or method used by the identifier to establish the identification of the specimen.</skos:definition>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/identification_protocol.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol.xml</skos:scopeNote>
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
@@ -1147,7 +1147,7 @@ or
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/typeStatusQualifier-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation[0]/DoubtfulFlag</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/tql-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/type_status_qualifier.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/type_status_qualifier.xml</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/typeStatus">
@@ -1160,7 +1160,7 @@ or
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/typeStatus-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation[0]/TypeStatus</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/tsta-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/type_status.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/type_status.xml</skos:scopeNote>
 		<skos:note xml:lang="en">typeStatus has been placed in the HISPID namespace, even though it is available in Darwin Core, because our use is different. In contrast to Darwin Core, in HISPID typeStatus and typifiedName have been separated. Having typeStatus in the HISPID namespace allows us to transfer the type status including or excluding the typified name depending on what circumstances require.</skos:note>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/50</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
@@ -1478,7 +1478,7 @@ or
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFlag-2015-10-23"/>
 		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="voucher"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vou-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/voucher_flag.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag.xml</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/voucherFor">
@@ -1504,7 +1504,7 @@ or
 		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="provenanceTypeFlag"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/prot-hispid5"/>
 		<skos:scopeNote xml:lang="en">Use ITF2 codes</skos:scopeNote>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/provenance_type_flag.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/54</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
@@ -1684,7 +1684,7 @@ or
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentStatus-2015-10-23"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/permit_or_consent_status.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status.xml</skos:scopeNote>
 		<skos:note></skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
