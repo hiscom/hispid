@@ -1116,15 +1116,16 @@
 		<rdfs:label xml:lang="en">Previous Identifications</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Previous identifications of the collection object.</skos:definition>
+		<skos:example>Trymalium floribundum Steud. subsp. floribundum, det. AVH, 07.xi.2005; Trymalium billardierei var. tomentosum Reissek; Trymalium floribundum Steud.</skos:example>
+		<skos:example>Capillipedium parviflorum (R.Br.) Stapf; cf. Chrysopogon parviflorus.</skos:example>
+		<skos:example>Trymalium floribundum Steud. subsp. floribundum, det. AVH, 07.xi.2005; Trymalium billardierei; Trymalium floribundum Steud.</skos:example>
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
-		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="FALSE"]/*
-
-or
-
-//Unit/Identifications/IdentificationHistory</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="FALSE"]/*</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Identifications/IdentificationHistory</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vhist-hispid5"/>
-		<skos:scopeNote xml:lang="en">It is preferrable to use the repeatable Identification elements in ABCD or the Identification extension in Darwin Core.</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">When the source information is well structured, it is preferrable to provide identification history by repeating other fields from the Identification Group, for example in the IdentificationHistory extension of a DarwinCore-Archive.</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">The content of this field is not intended to be parsable. However to assit readability of the data, it is desireable for identifications to be listed in ascending date order, and have a consist content order (e.g., Taxon Name, determiner, date).</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationRemarks">
