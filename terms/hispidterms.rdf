@@ -999,17 +999,6 @@
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/idql-hispid5"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/identificationQualifier">
-		<rdfs:label xml:lang="en">Identification Qualifier Rank</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Rank at which the identificationQualifier applies</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
-		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/identificationQualifier-2015-07-11"/>
-		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/rkql-hispid5"/>
-		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
-	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/nameAddendum">
 		<rdfs:label xml:lang="en">Name Addendum</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
