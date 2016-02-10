@@ -721,6 +721,7 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/SpatialDatum</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/spadat-hispid5"/>
 		<skos:scopeNote xml:lang="en">Use of EPSG codes is recommended.</skos:scopeNote>
+		<skos:note>Mappings of abbreviations to epsg codes.  These are in the format abbrreviation (epsg number) - for delivery the epsg number needs to be prefixed with 'EPSG:' - AGD66 (4202); AGD66/AMG 48 (20248); AGD66/AMG 49 (20249); AGD66/AMG 50 (20250); AGD66/AMG 51 (20251); AGD66/AMG 52 (20252); AGD66/AMG 53 (20253); AGD66/AMG 54 (20254); AGD66/AMG 55 (20255); AGD66/AMG 56 (20256); AGD66/AMG 57 (20257); AGD66/AMG 58 (20258); AGD84 (4203); AGD84/AMG 48 (20348); AGD84/AMG 49 (20349); AGD84/AMG 50 (20350); AGD84/AMG 51 (20351); AGD84/AMG 52 (20352); AGD84/AMG 53 (20353); AGD84/AMG 54 (20354); AGD84/AMG 55 (20355); AGD84/AMG 56 (20356); AGD84/AMG 57 (20357); AGD84/AMG 58 (20358); GDA94 (4283); GDA94/MGA 48 (28348); GDA94/MGA 49 (28349); GDA94/MGA 50 (28350); GDA94/MGA 51 (28351); GDA94/MGA 52 (28352); GDA94/MGA 53 (28353); GDA94/MGA 54 (28354); GDA94/MGA 55 (28355); GDA94/MGA 56 (28356); GDA94/MGA 57(28357); GDA94/MGA 58 (28358); NAD22 (4267); NAD83 (4269); NZGD49 (4272); NZGD2000(4167); WGS84 (4326)</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimLatitude">
@@ -875,19 +876,6 @@
 		<dwcattributes:status>new</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceRemarks</dwcattributes:abcdEquivalence>
-		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
-	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/nearestNamedPlace">
-		<rdfs:label xml:lang="en">Nearest Named Place</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">The nearest named place to the collecting locality. </skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
-		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/nearestNamedPlace-2015-07-11"/>
-		<dwcattributes:abcdEquivalence>//Unit/Gathering/NearNamedPlaces/NamedPlaceRelation/NearNamedPlace</dwcattributes:abcdEquivalence>
-		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/nnp-hispid5"/>
-		<skos:note xml:lang="en">We do not want to use this as generalised locality any more. There are still two use cases: (1) a nearest named placed given by a collector when the collecting locality doesn't have a name or is obscure and (2) the place name the georeference is based on when the name of the locality can't be found in any gazetteer. The latter use case probably desrves its own term.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters">
