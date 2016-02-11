@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status" dc:title="HISPID Georeference Verification Status Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status" dc:title="HISPID Georeference Verification Status Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
 	<concept dc:identifier="verification required" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status/verification+required" dc:description="verification required" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="verification required"></term>
@@ -11,7 +11,7 @@
 			<term dc:title="verified"></term>
 		</preferred>
 	</concept>
-	<concept dc:identifier="verified by collector" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status/verified+by+collector" dc:description="verified by collector" dc:issued="2015-10-23" parentConcept="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status/verified">
+	<concept dc:identifier="verified by collector" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status/verified+by+collector" dc:description="verified by collector" dc:issued="2015-10-23" skos:broader="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status/verified">
 		<preferred>
 			<term dc:title="verified by collector"></term>
 		</preferred>
@@ -21,7 +21,7 @@
 			<term dc:title="verified by custodian"></term>
 		</preferred>
 	</concept>
-	<concept dc:identifier="verified by contributor" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status/verified" dc:description="verified by contributor" dc:issued="2015-10-23" parentConcept="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status/verified">
+	<concept dc:identifier="verified by contributor" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status/verified" dc:description="verified by contributor" dc:issued="2015-10-23" skos:broader="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status/verified">
 		<preferred>
 			<term dc:title="verified by contributor"></term>
 		</preferred>

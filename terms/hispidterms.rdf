@@ -1015,12 +1015,12 @@
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationVerificationStatus">
 		<rdfs:label xml:lang="en">Identification Verification Status</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Verification status of the identification, or an indication of how reliable the identification is deemed to be.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<skos:definition xml:lang="en">An indicator of the extent to which the taxonomic identification has been verified to be correct.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/VerificationLevel</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vlev-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/16</skos:note>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/identification_verification_status.xml</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/identifierRole">
