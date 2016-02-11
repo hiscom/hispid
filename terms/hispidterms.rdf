@@ -1369,29 +1369,6 @@
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/11</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/hybridParent1">
-		<rdfs:label xml:lang="en">Hybrid Parent1</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Scientific name of the first parent of a hybrid</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
-		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/hybridParent1-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/11</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
-	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/hybridParent2">
-		<rdfs:label xml:lang="en">Hybrid Parent2</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Scientific name of the second parent of a hybrid</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
-		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/hybridParent2-2015-07-11"/>
-		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/genhy2-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/11</skos:note>
-		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
-	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/barcode">
 		<rdfs:label xml:lang="en">Barcode</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
