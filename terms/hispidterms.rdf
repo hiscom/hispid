@@ -359,10 +359,10 @@
 		<rdfs:label xml:lang="en">Sex</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The sex of the individual</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Units/Unit/Sex</dwcattributes:abcdEquivalence>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/34</skos:note>
+		<skos:note></skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/reproductiveCondition">
@@ -1141,6 +1141,10 @@
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/type_status.xml</skos:scopeNote>
 		<skos:note xml:lang="en">typeStatus has been placed in the HISPID namespace, even though it is available in Darwin Core, because our use is different. In contrast to Darwin Core, in HISPID typeStatus and typifiedName have been separated. Having typeStatus in the HISPID namespace allows us to transfer the type status including or excluding the typified name depending on what circumstances require.</skos:note>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/50</skos:note>
+		<skos:example>holotype</skos:example>
+		<skos:example>http://hiscom.chah.org.au/hispid/vocabulary/type_status/holotype</skos:example>
+		<skos:example>HOLOTYPE of Boronia deanei subsp. acutifolia Duretto</skos:example>
+		<skos:example>ISOTYPE of Babingtonia bidwillii A.R.Bean, fid. Walsh, N.G., 1999-10-05</skos:example>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/typifiedName">
@@ -1779,14 +1783,15 @@
 		<skos:scopeNote>Vocabulary: natural|artificial|edited</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://iptc.org/std/Iptc4xmpExt/2008-02-29/Cvterm">
+	<rdf:Description rdf:about="http://iptc.org/std/Iptc4xmpExt/2008-02-29/AboutCvterm">
 		<rdfs:label xml:lang="en">Subject Category</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Broad subject or context of the media object.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<skos:definition xml:lang="en">A term (identified by a URI) indicating the broad subject or content of the media object.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://iptc.org/std/Iptc4xmpExt/2008-02-29/"/>
-		<skos:scopeNote>Vocabulary: Under consideration</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/5</skos:note>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
+		<skos:note>Terms from different vocabularies may be used.  The intent is to provide a vocabulary for HISPID. The current vocabulary is an early draft.</skos:note>
+		<skos:note>In Audubon Core this term is mapped to http://iptc.org/std/Iptc4xmpExt/2008-02-29/Cvterm, however that term was deprecated by IPTC 2015 Revision 3.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/ac/terms/tag">
@@ -1852,7 +1857,7 @@
 		<dwcattributes:status>under consideration</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<skos:scopeNote xml:lang="en">URI to vocabulary term</skos:scopeNote>
-		<skos:scopeNote>Vocabulary: Drawing, Painting, Logo, Icon, Illustration, Graphic, Photograph, Animation, Film, SlideShow, DesignPlan, Diagram, Map, MusicalNotation, IdentificationKey, ScannedText, RecordedText, RecordedOrganism, TaxonPage, MultimediaLearningObject, VirtualRealityEnvironment, GlossaryPage.</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/subtype.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/60</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>

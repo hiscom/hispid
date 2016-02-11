@@ -19,13 +19,15 @@
 			<term dc:title="seed" xml:lang="en"/>
 		</alternative>
 	</concept>
-	<concept dc:identifier="juvenile" dc:URI="http://rs.gbif.org/vocabulary/gbif/life_stage/juvenile" dc:description="A juvenile is an individual organism that has not yet reached its adult form, sexual maturity or size. Juveniles sometimes look very different from the adult form, particularly in terms of their colour. In many organisms the juvenile has a different name from the adult.">
+	<concept dc:identifier="juvenile" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_stage/juvenile" dc:description="A juvenile is an individual organism that has not yet reached its adult form, sexual maturity or size. Juveniles sometimes look very different from the adult form, particularly in terms of their colour. In many organisms the juvenile has a different name from the adult.">
 		<preferred>
 			<term dc:title="juvenile" xml:lang="en"/>
 		</preferred>
-		<alternative>
+	</concept>
+	<concept dc:identifier="seedling" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_stage/seedling" dc:description="a seedling">
+		<preferred>
 			<term dc:title="seedling" xml:lang="en"/>
-		</alternative>
+		</preferred>
 	</concept>
 	<concept dc:identifier="adult" dc:URI="http://rs.gbif.org/vocabulary/gbif/life_stage/adult" dc:description="An adult is a plant, animal, or person who has reached full growth or alternatively is capable of reproduction.">
 		<preferred>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/human.xsl"?>
+<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subtype" dc:title="HISPID Subject Category Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
+	<concept dc:identifier="drawing" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subtype/drawing" dc:description="drawing" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="drawing"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="painting" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subtype/painting" dc:description="painting" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="painting"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="illustration" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subtype/illustration" dc:description="illustration" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="illustration"/>
+		</preferred>
+	</concept>
+	<concept dc:identifier="photograph" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subtype/in-situ" dc:description="photograph" dc:issued="2015-10-23">
+		<preferred>
+			<term dc:title="photograph"/>
+		</preferred>
+	</concept>
+</thesaurus>
