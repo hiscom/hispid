@@ -19,13 +19,13 @@
           <html>
                <head>
                     <title><xsl:value-of select="@dc:title"/> - <xsl:value-of select="$defType"/></title>
-                    <link rel="stylesheet" type="text/css" href="../style/human.css"/>
+                    <link rel="stylesheet" type="text/css" href="../accessories/style/human.css"/>
                </head>
                <body>
                     <div class="container">
                          <div id="header" class="box">
                               <h2 id="logo">
-                                   <img src="../style/hiscom.png"/><basefont size=""></basefont>
+                                   <img src="../accessories/style/hiscom.png"/><basefont size=""></basefont>
                                    HISPID <xsl:value-of select="$defType"/>
                                    <span style="font-size:60%;color:#888;"> (<a href="/">index</a>)</span>
                               </h2>
