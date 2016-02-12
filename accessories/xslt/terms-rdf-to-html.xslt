@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?altova_samplexml file:///C:/www/hispid/terms/hispidterms.rdf?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/">
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:variable name="nsHispid">
@@ -21,11 +20,11 @@
 								padding-bottom: 20px;
 							}
 						</style>
-					<link href="css/terms.css" rel="stylesheet"/>
 					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+					<link rel="stylesheet" href="acessories/css/terms.css" rel="stylesheet"/>
 					<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"/>
 					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"/>
-					<script src="js/terms.js"/>
+					<script src="accessories/js/terms.js"/>
 				</head>
 				<body>
 					<nav class="navbar navbar-inverse navbar-fixed-top">

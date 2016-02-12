@@ -22,7 +22,7 @@ table {
     Nav bar at top of page
 */
 .navbar-brand .logo {
-    background-image: url("../../hiscom20.png");
+    background-image: url("../media/hiscom20.png");
     background-repeat: no-repeat;
     padding-left: 30px;
     

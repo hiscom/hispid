@@ -53,6 +53,8 @@
 								<li><a href="#recordNumber">recordNumber</a></li>
 								<li><a href="#preparations">preparations</a></li>
 								<li><a href="#otherCatalogNumbers">otherCatalogNumbers</a></li>
+								<li><a href="#associatedOccurrenceID">associatedOccurrenceID</a></li>
+								<li><a href="#associatedOccurrenceType">associatedOccurrenceType</a></li>
 								<li><a href="#occurrenceRemarks">occurrenceRemarks</a></li>
 								<li><a href="#organismQuantity">organismQuantity</a></li>
 								<li><a href="#organismQuantityType">organismQuantityType</a></li>
@@ -109,7 +111,6 @@
 								<li><a href="#georeferenceSources">georeferenceSources</a></li>
 								<li><a href="#georeferenceVerificationStatus">georeferenceVerificationStatus</a></li>
 								<li><a href="#georeferenceRemarks">georeferenceRemarks</a></li>
-								<li><a href="#nearestNamedPlace">nearestNamedPlace</a></li>
 								<li><a href="#minimumElevationInMeters">minimumElevationInMeters</a></li>
 								<li><a href="#maximumElevationInMeters">maximumElevationInMeters</a></li>
 								<li><a href="#verbatimElevation">verbatimElevation</a></li>
@@ -117,11 +118,13 @@
 								<li><a href="#minimumDepthInMeters">minimumDepthInMeters</a></li>
 								<li><a href="#maximumDepthInMeters">maximumDepthInMeters</a></li>
 								<li><a href="#verbatimDepth">verbatimDepth</a></li>
+								<li><a href="#minimumDistanceAboveSurfaceInMeters">minimumDistanceAboveSurfaceInMeters</a></li>
+								<li><a href="#maximumDistanceAboveSurfaceInMeters">maximumDistanceAboveSurfaceInMeters</a></li>
 							</ul>
 						</li>
 						<li><a href="#Identification">Identification</a><ul>
 								<li><a href="#identificationID">identificationID</a></li>
-								<li><a href="#identificationQualifier">identificationQualifier</a></li>
+								<li><a href="#verbatimIdentification">verbatimIdentification</a></li>
 								<li><a href="#identificationQualifier">identificationQualifier</a></li>
 								<li><a href="#nameAddendum">nameAddendum</a></li>
 								<li><a href="#identificationVerificationStatus">identificationVerificationStatus</a></li>
@@ -129,6 +132,7 @@
 								<li><a href="#identifiedBy">identifiedBy</a></li>
 								<li><a href="#dateIdentified">dateIdentified</a></li>
 								<li><a href="#verbatimDateIdentified">verbatimDateIdentified</a></li>
+								<li><a href="#identificationProtocol">identificationProtocol</a></li>
 								<li><a href="#identificationReferences">identificationReferences</a></li>
 								<li><a href="#previousIdentifications">previousIdentifications</a></li>
 								<li><a href="#identificationRemarks">identificationRemarks</a></li>
@@ -157,15 +161,15 @@
 								<li><a href="#cultivarName">cultivarName</a></li>
 								<li><a href="#tradeDesignation">tradeDesignation</a></li>
 								<li><a href="#hybridFlag">hybridFlag</a></li>
-								<li><a href="#hybridParent1">hybridParent1</a></li>
-								<li><a href="#hybridParent2">hybridParent2</a></li>
 							</ul>
 						</li>
 						<li><a href="#PreservedSpecimen">PreservedSpecimen</a><ul>
+								<li><a href="#barcode">barcode</a></li>
 								<li><a href="#miscellaneousRemarks">miscellaneousRemarks</a></li>
 								<li><a href="#exsiccataSeries">exsiccataSeries</a></li>
 								<li><a href="#exsiccataFascicle">exsiccataFascicle</a></li>
 								<li><a href="#exsiccataNumber">exsiccataNumber</a></li>
+								<li><a href="#voucherFlag">voucherFlag</a></li>
 								<li><a href="#voucherFor">voucherFor</a></li>
 								<li><a href="#provenanceTypeFlag">provenanceTypeFlag</a></li>
 								<li><a href="#cultivatedPlantProvenance">cultivatedPlantProvenance</a></li>
@@ -179,19 +183,20 @@
 								<li><a href="#loanForBotanist">loanForBotanist</a></li>
 								<li><a href="#loanDate">loanDate</a></li>
 								<li><a href="#loanReturnDate">loanReturnDate</a></li>
+								<li><a href="#numberOfSheets">numberOfSheets</a></li>
 							</ul>
 						</li>
-						<li><a href="#Permit">Permit</a><ul>
-								<li><a href="#permitType">permitType</a></li>
-								<li><a href="#permitReferenceNumber">permitReferenceNumber</a></li>
-								<li><a href="#permitIssuedBy">permitIssuedBy</a></li>
-								<li><a href="#permitIssuedTo">permitIssuedTo</a></li>
-								<li><a href="#permitIssuedDate">permitIssuedDate</a></li>
-								<li><a href="#permitValidDate">permitValidDate</a></li>
-								<li><a href="#permitStatus">permitStatus</a></li>
-								<li><a href="#permitConditions">permitConditions</a></li>
-								<li><a href="#permitRemarks">permitRemarks</a></li>
-								<li><a href="#permitLink">permitLink</a></li>
+						<li><a href="#PermitOrConsent">PermitOrConsent</a><ul>
+								<li><a href="#permitOrConsentType">permitOrConsentType</a></li>
+								<li><a href="#permitOrConsentReferenceNumber">permitOrConsentReferenceNumber</a></li>
+								<li><a href="#permitOrConsentIssuedBy">permitOrConsentIssuedBy</a></li>
+								<li><a href="#permitOrConsentIssuedTo">permitOrConsentIssuedTo</a></li>
+								<li><a href="#permitOrConsentIssuedDate">permitOrConsentIssuedDate</a></li>
+								<li><a href="#permitOrConsentValidDate">permitOrConsentValidDate</a></li>
+								<li><a href="#permitOrConsentStatus">permitOrConsentStatus</a></li>
+								<li><a href="#permitOrConsentConditions">permitOrConsentConditions</a></li>
+								<li><a href="#permitOrConsentRemarks">permitOrConsentRemarks</a></li>
+								<li><a href="#permitOrConsentLink">permitOrConsentLink</a></li>
 							</ul>
 						</li>
 						<li><a href="#MediaItem">MediaItem</a><ul>
@@ -203,7 +208,7 @@
 								<li><a href="#description">description</a></li>
 								<li><a href="#caption">caption</a></li>
 								<li><a href="#physicalSetting">physicalSetting</a></li>
-								<li><a href="#Cvterm">Cvterm</a></li>
+								<li><a href="#AboutCvterm">AboutCvterm</a></li>
 								<li><a href="#tag">tag</a></li>
 								<li><a href="#subjectPart">subjectPart</a></li>
 								<li><a href="#subjectOrientation">subjectOrientation</a></li>
@@ -245,23 +250,23 @@
 						<h2><a href="#RecordLevelTerms">Record level terms</a></h2>
 						<p><a href="#institutionCode" data-namespace="http://rs.tdwg.org/dwc/terms/">institutionCode</a><a href="#collectionCode" data-namespace="http://rs.tdwg.org/dwc/terms/">collectionCode</a><a href="#modified" data-namespace="http://purl.org/dc/terms/">modified</a><a href="#basisOfRecord" data-namespace="http://rs.tdwg.org/dwc/terms/">basisOfRecord</a><a href="#type" data-namespace="http://purl.org/dc/terms/">type</a><a href="#language" data-namespace="http://purl.org/dc/terms/">language</a><a href="#rightsHolder" data-namespace="http://purl.org/dc/terms/">rightsHolder</a><a href="#license" data-namespace="http://purl.org/dc/terms/">license</a><a href="#informationWitheld" data-namespace="http://rs.tdwg.org/dwc/terms/">informationWitheld</a><a href="#dataGeneralizations" data-namespace="http://rs.tdwg.org/dwc/terms/">dataGeneralizations</a></p>
 						<h2><a href="#Occurrence">Occurrence</a></h2>
-						<p><a href="#occurrenceID" data-namespace="http://rs.tdwg.org/dwc/terms/">occurrenceID</a><a href="#catalogNumber" data-namespace="http://rs.tdwg.org/dwc/terms/">catalogNumber</a><a href="#recordedBy" data-namespace="http://rs.tdwg.org/dwc/terms/">recordedBy</a><a href="#recordNumber" data-namespace="http://rs.tdwg.org/dwc/terms/">recordNumber</a><a href="#preparations" data-namespace="http://rs.tdwg.org/dwc/terms/">preparations</a><a href="#otherCatalogNumbers" data-namespace="http://rs.tdwg.org/dwc/terms/">otherCatalogNumbers</a><a href="#occurrenceRemarks" data-namespace="http://rs.tdwg.org/dwc/terms/">occurrenceRemarks</a><a href="#organismQuantity" data-namespace="http://rs.tdwg.org/dwc/terms/">organismQuantity</a><a href="#organismQuantityType" data-namespace="http://rs.tdwg.org/dwc/terms/">organismQuantityType</a><a href="#establishmentMeans" data-namespace="http://rs.tdwg.org/dwc/terms/">establishmentMeans</a><a href="#lifeForm" data-namespace="http://hiscom.chah.org.au/hispid/terms/">lifeForm</a><a href="#lifeStage" data-namespace="http://rs.tdwg.org/dwc/terms/">lifeStage</a><a href="#sex" data-namespace="http://rs.tdwg.org/dwc/terms/">sex</a><a href="#reproductiveCondition" data-namespace="http://rs.tdwg.org/dwc/terms/">reproductiveCondition</a><a href="#associatedTaxa" data-namespace="http://rs.tdwg.org/dwc/terms/">associatedTaxa</a><a href="#associationType" data-namespace="http://hiscom.chah.org.au/hispid/terms/">associationType</a><a href="#associatedSequences" data-namespace="http://rs.tdwg.org/dwc/terms/">associatedSequences</a><a href="#disposition" data-namespace="http://rs.tdwg.org/dwc/terms/">disposition</a></p>
+						<p><a href="#occurrenceID" data-namespace="http://rs.tdwg.org/dwc/terms/">occurrenceID</a><a href="#catalogNumber" data-namespace="http://rs.tdwg.org/dwc/terms/">catalogNumber</a><a href="#recordedBy" data-namespace="http://rs.tdwg.org/dwc/terms/">recordedBy</a><a href="#recordNumber" data-namespace="http://rs.tdwg.org/dwc/terms/">recordNumber</a><a href="#preparations" data-namespace="http://rs.tdwg.org/dwc/terms/">preparations</a><a href="#otherCatalogNumbers" data-namespace="http://rs.tdwg.org/dwc/terms/">otherCatalogNumbers</a><a href="#associatedOccurrenceID" data-namespace="http://rs.tdwg.org/dwc/terms/">associatedOccurrenceID</a><a href="#associatedOccurrenceType" data-namespace="http://rs.tdwg.org/dwc/terms/">associatedOccurrenceType</a><a href="#occurrenceRemarks" data-namespace="http://rs.tdwg.org/dwc/terms/">occurrenceRemarks</a><a href="#organismQuantity" data-namespace="http://rs.tdwg.org/dwc/terms/">organismQuantity</a><a href="#organismQuantityType" data-namespace="http://rs.tdwg.org/dwc/terms/">organismQuantityType</a><a href="#establishmentMeans" data-namespace="http://rs.tdwg.org/dwc/terms/">establishmentMeans</a><a href="#lifeForm" data-namespace="http://hiscom.chah.org.au/hispid/terms/">lifeForm</a><a href="#lifeStage" data-namespace="http://rs.tdwg.org/dwc/terms/">lifeStage</a><a href="#sex" data-namespace="http://rs.tdwg.org/dwc/terms/">sex</a><a href="#reproductiveCondition" data-namespace="http://rs.tdwg.org/dwc/terms/">reproductiveCondition</a><a href="#associatedTaxa" data-namespace="http://rs.tdwg.org/dwc/terms/">associatedTaxa</a><a href="#associationType" data-namespace="http://hiscom.chah.org.au/hispid/terms/">associationType</a><a href="#associatedSequences" data-namespace="http://rs.tdwg.org/dwc/terms/">associatedSequences</a><a href="#disposition" data-namespace="http://rs.tdwg.org/dwc/terms/">disposition</a></p>
 						<h2><a href="#Event">Event</a></h2>
 						<p><a href="#eventID" data-namespace="http://rs.tdwg.org/dwc/terms/">eventID</a><a href="#parentEventID" data-namespace="http://rs.tdwg.org/dwc/terms/">parentEventID</a><a href="#habitat" data-namespace="http://rs.tdwg.org/dwc/terms/">habitat</a><a href="#topography" data-namespace="http://hiscom.chah.org.au/hispid/terms/">topography</a><a href="#aspect" data-namespace="http://hiscom.chah.org.au/hispid/terms/">aspect</a><a href="#geologicalSubstrate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">geologicalSubstrate</a><a href="#substrate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">substrate</a><a href="#soil" data-namespace="http://hiscom.chah.org.au/hispid/terms/">soil</a><a href="#vegetation" data-namespace="http://hiscom.chah.org.au/hispid/terms/">vegetation</a><a href="#eventDate" data-namespace="http://rs.tdwg.org/dwc/terms/">eventDate</a><a href="#verbatimEventDate" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimEventDate</a><a href="#collectingTrip" data-namespace="http://hiscom.chah.org.au/hispid/terms/">collectingTrip</a></p>
 						<h2><a href="#Location">Location</a></h2>
-						<p><a href="#locality" data-namespace="http://rs.tdwg.org/dwc/terms/">locality</a><a href="#verbatimLocality" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimLocality</a><a href="#continent" data-namespace="http://rs.tdwg.org/dwc/terms/">continent</a><a href="#country" data-namespace="http://rs.tdwg.org/dwc/terms/">country</a><a href="#countryCode" data-namespace="http://rs.tdwg.org/dwc/terms/">countryCode</a><a href="#stateProvince" data-namespace="http://rs.tdwg.org/dwc/terms/">stateProvince</a><a href="#county" data-namespace="http://rs.tdwg.org/dwc/terms/">county</a><a href="#waterBody" data-namespace="http://rs.tdwg.org/dwc/terms/">waterBody</a><a href="#islandGroup" data-namespace="http://rs.tdwg.org/dwc/terms/">islandGroup</a><a href="#island" data-namespace="http://rs.tdwg.org/dwc/terms/">island</a><a href="#decimalLatitude" data-namespace="http://rs.tdwg.org/dwc/terms/">decimalLatitude</a><a href="#decimalLongitude" data-namespace="http://rs.tdwg.org/dwc/terms/">decimalLongitude</a><a href="#geodeticDatum" data-namespace="http://rs.tdwg.org/dwc/terms/">geodeticDatum</a><a href="#verbatimLatitude" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimLatitude</a><a href="#verbatimLongitude" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimLongitude</a><a href="#verbatimCoordinates" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimCoordinates</a><a href="#verbatimCoordinateSystem" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimCoordinateSystem</a><a href="#verbatimSRS" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimSRS</a><a href="#coordinatePrecision" data-namespace="http://rs.tdwg.org/dwc/terms/">coordinatePrecision</a><a href="#coordinateUncertaintyInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">coordinateUncertaintyInMeters</a><a href="#georeferencedBy" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferencedBy</a><a href="#georeferenceProtocol" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferenceProtocol</a><a href="#georeferencedDate" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferencedDate</a><a href="#georeferenceSources" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferenceSources</a><a href="#georeferenceVerificationStatus" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferenceVerificationStatus</a><a href="#georeferenceRemarks" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferenceRemarks</a><a href="#nearestNamedPlace" data-namespace="http://hiscom.chah.org.au/hispid/terms/">nearestNamedPlace</a><a href="#minimumElevationInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">minimumElevationInMeters</a><a href="#maximumElevationInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">maximumElevationInMeters</a><a href="#verbatimElevation" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimElevation</a><a href="#elevationMethod" data-namespace="http://hiscom.chah.org.au/hispid/terms/">elevationMethod</a><a href="#minimumDepthInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">minimumDepthInMeters</a><a href="#maximumDepthInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">maximumDepthInMeters</a><a href="#verbatimDepth" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimDepth</a></p>
+						<p><a href="#locality" data-namespace="http://rs.tdwg.org/dwc/terms/">locality</a><a href="#verbatimLocality" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimLocality</a><a href="#continent" data-namespace="http://rs.tdwg.org/dwc/terms/">continent</a><a href="#country" data-namespace="http://rs.tdwg.org/dwc/terms/">country</a><a href="#countryCode" data-namespace="http://rs.tdwg.org/dwc/terms/">countryCode</a><a href="#stateProvince" data-namespace="http://rs.tdwg.org/dwc/terms/">stateProvince</a><a href="#county" data-namespace="http://rs.tdwg.org/dwc/terms/">county</a><a href="#waterBody" data-namespace="http://rs.tdwg.org/dwc/terms/">waterBody</a><a href="#islandGroup" data-namespace="http://rs.tdwg.org/dwc/terms/">islandGroup</a><a href="#island" data-namespace="http://rs.tdwg.org/dwc/terms/">island</a><a href="#decimalLatitude" data-namespace="http://rs.tdwg.org/dwc/terms/">decimalLatitude</a><a href="#decimalLongitude" data-namespace="http://rs.tdwg.org/dwc/terms/">decimalLongitude</a><a href="#geodeticDatum" data-namespace="http://rs.tdwg.org/dwc/terms/">geodeticDatum</a><a href="#verbatimLatitude" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimLatitude</a><a href="#verbatimLongitude" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimLongitude</a><a href="#verbatimCoordinates" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimCoordinates</a><a href="#verbatimCoordinateSystem" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimCoordinateSystem</a><a href="#verbatimSRS" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimSRS</a><a href="#coordinatePrecision" data-namespace="http://rs.tdwg.org/dwc/terms/">coordinatePrecision</a><a href="#coordinateUncertaintyInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">coordinateUncertaintyInMeters</a><a href="#georeferencedBy" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferencedBy</a><a href="#georeferenceProtocol" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferenceProtocol</a><a href="#georeferencedDate" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferencedDate</a><a href="#georeferenceSources" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferenceSources</a><a href="#georeferenceVerificationStatus" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferenceVerificationStatus</a><a href="#georeferenceRemarks" data-namespace="http://rs.tdwg.org/dwc/terms/">georeferenceRemarks</a><a href="#minimumElevationInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">minimumElevationInMeters</a><a href="#maximumElevationInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">maximumElevationInMeters</a><a href="#verbatimElevation" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimElevation</a><a href="#elevationMethod" data-namespace="http://hiscom.chah.org.au/hispid/terms/">elevationMethod</a><a href="#minimumDepthInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">minimumDepthInMeters</a><a href="#maximumDepthInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">maximumDepthInMeters</a><a href="#verbatimDepth" data-namespace="http://rs.tdwg.org/dwc/terms/">verbatimDepth</a><a href="#minimumDistanceAboveSurfaceInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">minimumDistanceAboveSurfaceInMeters</a><a href="#maximumDistanceAboveSurfaceInMeters" data-namespace="http://rs.tdwg.org/dwc/terms/">maximumDistanceAboveSurfaceInMeters</a></p>
 						<h2><a href="#Identification">Identification</a></h2>
-						<p><a href="#identificationID" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationID</a><a href="#identificationQualifier" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationQualifier</a><a href="#identificationQualifier" data-namespace="http://hiscom.chah.org.au/hispid/terms/">identificationQualifier</a><a href="#nameAddendum" data-namespace="http://hiscom.chah.org.au/hispid/terms/">nameAddendum</a><a href="#identificationVerificationStatus" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationVerificationStatus</a><a href="#identifierRole" data-namespace="http://hiscom.chah.org.au/hispid/terms/">identifierRole</a><a href="#identifiedBy" data-namespace="http://rs.tdwg.org/dwc/terms/">identifiedBy</a><a href="#dateIdentified" data-namespace="http://rs.tdwg.org/dwc/terms/">dateIdentified</a><a href="#verbatimDateIdentified" data-namespace="http://hiscom.chah.org.au/hispid/terms/">verbatimDateIdentified</a><a href="#identificationReferences" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationReferences</a><a href="#previousIdentifications" data-namespace="http://rs.tdwg.org/dwc/terms/">previousIdentifications</a><a href="#identificationRemarks" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationRemarks</a><a href="#typeStatusQualifier" data-namespace="http://hiscom.chah.org.au/hispid/terms/">typeStatusQualifier</a><a href="#typeStatus" data-namespace="http://hiscom.chah.org.au/hispid/terms/">typeStatus</a><a href="#typifiedName" data-namespace="http://hiscom.chah.org.au/hispid/terms/">typifiedName</a></p>
+						<p><a href="#identificationID" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationID</a><a href="#verbatimIdentification" data-namespace="http://hiscom.chah.org.au/hispid/terms/">verbatimIdentification</a><a href="#identificationQualifier" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationQualifier</a><a href="#nameAddendum" data-namespace="http://hiscom.chah.org.au/hispid/terms/">nameAddendum</a><a href="#identificationVerificationStatus" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationVerificationStatus</a><a href="#identifierRole" data-namespace="http://hiscom.chah.org.au/hispid/terms/">identifierRole</a><a href="#identifiedBy" data-namespace="http://rs.tdwg.org/dwc/terms/">identifiedBy</a><a href="#dateIdentified" data-namespace="http://rs.tdwg.org/dwc/terms/">dateIdentified</a><a href="#verbatimDateIdentified" data-namespace="http://hiscom.chah.org.au/hispid/terms/">verbatimDateIdentified</a><a href="#identificationProtocol" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationProtocol</a><a href="#identificationReferences" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationReferences</a><a href="#previousIdentifications" data-namespace="http://rs.tdwg.org/dwc/terms/">previousIdentifications</a><a href="#identificationRemarks" data-namespace="http://rs.tdwg.org/dwc/terms/">identificationRemarks</a><a href="#typeStatusQualifier" data-namespace="http://hiscom.chah.org.au/hispid/terms/">typeStatusQualifier</a><a href="#typeStatus" data-namespace="http://hiscom.chah.org.au/hispid/terms/">typeStatus</a><a href="#typifiedName" data-namespace="http://hiscom.chah.org.au/hispid/terms/">typifiedName</a></p>
 						<h2><a href="#Taxon">Taxon</a></h2>
-						<p><a href="#taxonRank" data-namespace="http://rs.tdwg.org/dwc/terms/">taxonRank</a><a href="#kingdom" data-namespace="http://rs.tdwg.org/dwc/terms/">kingdom</a><a href="#phylum" data-namespace="http://rs.tdwg.org/dwc/terms/">phylum</a><a href="#class" data-namespace="http://rs.tdwg.org/dwc/terms/">class</a><a href="#order" data-namespace="http://rs.tdwg.org/dwc/terms/">order</a><a href="#family" data-namespace="http://rs.tdwg.org/dwc/terms/">family</a><a href="#genus" data-namespace="http://rs.tdwg.org/dwc/terms/">genus</a><a href="#specificEpithet" data-namespace="http://rs.tdwg.org/dwc/terms/">specificEpithet</a><a href="#infraspecificEpithet" data-namespace="http://rs.tdwg.org/dwc/terms/">infraspecificEpithet</a><a href="#scientificNameID" data-namespace="http://rs.tdwg.org/dwc/terms/">scientificNameID</a><a href="#scientificName" data-namespace="http://rs.tdwg.org/dwc/terms/">scientificName</a><a href="#scientificNameAuthorship" data-namespace="http://rs.tdwg.org/dwc/terms/">scientificNameAuthorship</a><a href="#nomenclaturalCode" data-namespace="http://rs.tdwg.org/dwc/terms/">nomenclaturalCode</a><a href="#taxonRemarks" data-namespace="http://rs.tdwg.org/dwc/terms/">taxonRemarks</a><a href="#vernacularName" data-namespace="http://rs.tdwg.org/dwc/terms/">vernacularName</a><a href="#cultivarGroupName" data-namespace="http://hiscom.chah.org.au/hispid/terms/">cultivarGroupName</a><a href="#cultivarName" data-namespace="http://hiscom.chah.org.au/hispid/terms/">cultivarName</a><a href="#tradeDesignation" data-namespace="http://hiscom.chah.org.au/hispid/terms/">tradeDesignation</a><a href="#hybridFlag" data-namespace="http://hiscom.chah.org.au/hispid/terms/">hybridFlag</a><a href="#hybridParent1" data-namespace="http://hiscom.chah.org.au/hispid/terms/">hybridParent1</a><a href="#hybridParent2" data-namespace="http://hiscom.chah.org.au/hispid/terms/">hybridParent2</a></p>
+						<p><a href="#taxonRank" data-namespace="http://rs.tdwg.org/dwc/terms/">taxonRank</a><a href="#kingdom" data-namespace="http://rs.tdwg.org/dwc/terms/">kingdom</a><a href="#phylum" data-namespace="http://rs.tdwg.org/dwc/terms/">phylum</a><a href="#class" data-namespace="http://rs.tdwg.org/dwc/terms/">class</a><a href="#order" data-namespace="http://rs.tdwg.org/dwc/terms/">order</a><a href="#family" data-namespace="http://rs.tdwg.org/dwc/terms/">family</a><a href="#genus" data-namespace="http://rs.tdwg.org/dwc/terms/">genus</a><a href="#specificEpithet" data-namespace="http://rs.tdwg.org/dwc/terms/">specificEpithet</a><a href="#infraspecificEpithet" data-namespace="http://rs.tdwg.org/dwc/terms/">infraspecificEpithet</a><a href="#scientificNameID" data-namespace="http://rs.tdwg.org/dwc/terms/">scientificNameID</a><a href="#scientificName" data-namespace="http://rs.tdwg.org/dwc/terms/">scientificName</a><a href="#scientificNameAuthorship" data-namespace="http://rs.tdwg.org/dwc/terms/">scientificNameAuthorship</a><a href="#nomenclaturalCode" data-namespace="http://rs.tdwg.org/dwc/terms/">nomenclaturalCode</a><a href="#taxonRemarks" data-namespace="http://rs.tdwg.org/dwc/terms/">taxonRemarks</a><a href="#vernacularName" data-namespace="http://rs.tdwg.org/dwc/terms/">vernacularName</a><a href="#cultivarGroupName" data-namespace="http://hiscom.chah.org.au/hispid/terms/">cultivarGroupName</a><a href="#cultivarName" data-namespace="http://hiscom.chah.org.au/hispid/terms/">cultivarName</a><a href="#tradeDesignation" data-namespace="http://hiscom.chah.org.au/hispid/terms/">tradeDesignation</a><a href="#hybridFlag" data-namespace="http://hiscom.chah.org.au/hispid/terms/">hybridFlag</a></p>
 						<h2><a href="#PreservedSpecimen">PreservedSpecimen</a></h2>
-						<p><a href="#miscellaneousRemarks" data-namespace="http://hiscom.chah.org.au/hispid/terms/">miscellaneousRemarks</a><a href="#exsiccataSeries" data-namespace="http://hiscom.chah.org.au/hispid/terms/">exsiccataSeries</a><a href="#exsiccataFascicle" data-namespace="http://hiscom.chah.org.au/hispid/terms/">exsiccataFascicle</a><a href="#exsiccataNumber" data-namespace="http://hiscom.chah.org.au/hispid/terms/">exsiccataNumber</a><a href="#voucherFor" data-namespace="http://hiscom.chah.org.au/hispid/terms/">voucherFor</a><a href="#provenanceTypeFlag" data-namespace="http://hiscom.chah.org.au/hispid/terms/">provenanceTypeFlag</a><a href="#cultivatedPlantProvenance" data-namespace="http://hiscom.chah.org.au/hispid/terms/">cultivatedPlantProvenance</a></p>
+						<p><a href="#barcode" data-namespace="http://hiscom.chah.org.au/hispid/terms/">barcode</a><a href="#miscellaneousRemarks" data-namespace="http://hiscom.chah.org.au/hispid/terms/">miscellaneousRemarks</a><a href="#exsiccataSeries" data-namespace="http://hiscom.chah.org.au/hispid/terms/">exsiccataSeries</a><a href="#exsiccataFascicle" data-namespace="http://hiscom.chah.org.au/hispid/terms/">exsiccataFascicle</a><a href="#exsiccataNumber" data-namespace="http://hiscom.chah.org.au/hispid/terms/">exsiccataNumber</a><a href="#voucherFlag" data-namespace="http://hiscom.chah.org.au/hispid/terms/">voucherFlag</a><a href="#voucherFor" data-namespace="http://hiscom.chah.org.au/hispid/terms/">voucherFor</a><a href="#provenanceTypeFlag" data-namespace="http://hiscom.chah.org.au/hispid/terms/">provenanceTypeFlag</a><a href="#cultivatedPlantProvenance" data-namespace="http://hiscom.chah.org.au/hispid/terms/">cultivatedPlantProvenance</a></p>
 						<h2><a href="#Transaction">Transaction</a></h2>
-						<p><a href="#donor" data-namespace="http://hiscom.chah.org.au/hispid/terms/">donor</a><a href="#duplicatesDistributedTo" data-namespace="http://hiscom.chah.org.au/hispid/terms/">duplicatesDistributedTo</a><a href="#loanIdentifier" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanIdentifier</a><a href="#loanDestination" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanDestination</a><a href="#loanForBotanist" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanForBotanist</a><a href="#loanDate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanDate</a><a href="#loanReturnDate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanReturnDate</a></p>
-						<h2><a href="#Permit">Permit</a></h2>
-						<p><a href="#permitType" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitType</a><a href="#permitReferenceNumber" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitReferenceNumber</a><a href="#permitIssuedBy" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitIssuedBy</a><a href="#permitIssuedTo" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitIssuedTo</a><a href="#permitIssuedDate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitIssuedDate</a><a href="#permitValidDate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitValidDate</a><a href="#permitStatus" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitStatus</a><a href="#permitConditions" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitConditions</a><a href="#permitRemarks" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitRemarks</a><a href="#permitLink" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitLink</a></p>
+						<p><a href="#donor" data-namespace="http://hiscom.chah.org.au/hispid/terms/">donor</a><a href="#duplicatesDistributedTo" data-namespace="http://hiscom.chah.org.au/hispid/terms/">duplicatesDistributedTo</a><a href="#loanIdentifier" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanIdentifier</a><a href="#loanDestination" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanDestination</a><a href="#loanForBotanist" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanForBotanist</a><a href="#loanDate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanDate</a><a href="#loanReturnDate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">loanReturnDate</a><a href="#numberOfSheets" data-namespace="http://hiscom.chah.org.au/hispid/terms/">numberOfSheets</a></p>
+						<h2><a href="#PermitOrConsent">PermitOrConsent</a></h2>
+						<p><a href="#permitOrConsentType" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentType</a><a href="#permitOrConsentReferenceNumber" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentReferenceNumber</a><a href="#permitOrConsentIssuedBy" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentIssuedBy</a><a href="#permitOrConsentIssuedTo" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentIssuedTo</a><a href="#permitOrConsentIssuedDate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentIssuedDate</a><a href="#permitOrConsentValidDate" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentValidDate</a><a href="#permitOrConsentStatus" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentStatus</a><a href="#permitOrConsentConditions" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentConditions</a><a href="#permitOrConsentRemarks" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentRemarks</a><a href="#permitOrConsentLink" data-namespace="http://hiscom.chah.org.au/hispid/terms/">permitOrConsentLink</a></p>
 						<h2><a href="#MediaItem">MediaItem</a></h2>
-						<p><a href="#creator" data-namespace="http://purl.org/dc/elements/1.1/">creator</a><a href="#CreateDate" data-namespace="http://ns.adobe.com/xap/1.0/">CreateDate</a><a href="#digitizationDate" data-namespace="http://rs.tdwg.org/ac/terms/">digitizationDate</a><a href="#source" data-namespace="http://purl.org/dc/elements/1.1/">source</a><a href="#title" data-namespace="http://purl.org/dc/terms/">title</a><a href="#description" data-namespace="http://purl.org/dc/terms/">description</a><a href="#caption" data-namespace="http://rs.tdwg.org/ac/terms/">caption</a><a href="#physicalSetting" data-namespace="http://rs.tdwg.org/ac/terms/">physicalSetting</a><a href="#Cvterm" data-namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29/">Cvterm</a><a href="#tag" data-namespace="http://rs.tdwg.org/ac/terms/">tag</a><a href="#subjectPart" data-namespace="http://rs.tdwg.org/ac/terms/">subjectPart</a><a href="#subjectOrientation" data-namespace="http://rs.tdwg.org/ac/terms/">subjectOrientation</a><a href="#captureDevice" data-namespace="http://rs.tdwg.org/ac/terms/">captureDevice</a><a href="#resourceCreationTechnique" data-namespace="http://rs.tdwg.org/ac/terms/">resourceCreationTechnique</a><a href="#relatedResourceID" data-namespace="http://rs.tdwg.org/ac/terms/">relatedResourceID</a><a href="#identifier" data-namespace="http://purl.org/dc/terms/">identifier</a><a href="#subtype" data-namespace="http://rs.tdwg.org/ac/terms/">subtype</a><a href="#MetadataDate" data-namespace="http://ns.adobe.com/xap/1.0/">MetadataDate</a><a href="#providerManagedID" data-namespace="http://rs.tdwg.org/ac/terms/">providerManagedID</a><a href="#available" data-namespace="http://purl.org/dc/terms/">available</a><a href="#hasServiceAccessPoint" data-namespace="http://rs.tdwg.org/ac/terms/">hasServiceAccessPoint</a><a href="#rights" data-namespace="http://purl.org/dc/terms/">rights</a><a href="#UsageTerms" data-namespace="http://ns.adobe.com/xap/1.0/rights/">UsageTerms</a><a href="#WebStatement" data-namespace="http://ns.adobe.com/xap/1.0/rights/">WebStatement</a><a href="#licenseLogoURL" data-namespace="http://rs.tdwg.org/ac/terms/">licenseLogoURL</a><a href="#Credit" data-namespace="http://ns.adobe.com/photoshop/1.0/">Credit</a><a href="#attributionLogoURL" data-namespace="http://rs.tdwg.org/ac/terms/">attributionLogoURL</a><a href="#attributionLinkURL" data-namespace="http://rs.tdwg.org/ac/terms/">attributionLinkURL</a><a href="#fundingAttribution" data-namespace="http://rs.tdwg.org/ac/terms/">fundingAttribution</a><a href="#providerLiteral" data-namespace="http://rs.tdwg.org/ac/terms/">providerLiteral</a><a href="#subjectCategoryVocabulary" data-namespace="http://rs.tdwg.org/ac/terms/">subjectCategoryVocabulary</a><a href="#taxonCoverage" data-namespace="http://rs.tdwg.org/ac/terms/">taxonCoverage</a><a href="#derivedFrom" data-namespace="http://rs.tdwg.org/ac/terms/">derivedFrom</a><a href="#associatedSpecimenReference" data-namespace="http://rs.tdwg.org/ac/terms/">associatedSpecimenReference</a><a href="#associatedObservationReference" data-namespace="http://rs.tdwg.org/ac/terms/">associatedObservationReference</a><a href="#accessURI" data-namespace="http://rs.tdwg.org/ac/terms/">accessURI</a><a href="#format" data-namespace="http://purl.org/dc/elements/1.1/">format</a><a href="#variant" data-namespace="http://rs.tdwg.org/ac/terms/">variant</a><a href="#furtherInformationURL" data-namespace="http://rs.tdwg.org/ac/terms/">furtherInformationURL</a></p>
+						<p><a href="#creator" data-namespace="http://purl.org/dc/elements/1.1/">creator</a><a href="#CreateDate" data-namespace="http://ns.adobe.com/xap/1.0/">CreateDate</a><a href="#digitizationDate" data-namespace="http://rs.tdwg.org/ac/terms/">digitizationDate</a><a href="#source" data-namespace="http://purl.org/dc/elements/1.1/">source</a><a href="#title" data-namespace="http://purl.org/dc/terms/">title</a><a href="#description" data-namespace="http://purl.org/dc/terms/">description</a><a href="#caption" data-namespace="http://rs.tdwg.org/ac/terms/">caption</a><a href="#physicalSetting" data-namespace="http://rs.tdwg.org/ac/terms/">physicalSetting</a><a href="#AboutCvterm" data-namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29/">AboutCvterm</a><a href="#tag" data-namespace="http://rs.tdwg.org/ac/terms/">tag</a><a href="#subjectPart" data-namespace="http://rs.tdwg.org/ac/terms/">subjectPart</a><a href="#subjectOrientation" data-namespace="http://rs.tdwg.org/ac/terms/">subjectOrientation</a><a href="#captureDevice" data-namespace="http://rs.tdwg.org/ac/terms/">captureDevice</a><a href="#resourceCreationTechnique" data-namespace="http://rs.tdwg.org/ac/terms/">resourceCreationTechnique</a><a href="#relatedResourceID" data-namespace="http://rs.tdwg.org/ac/terms/">relatedResourceID</a><a href="#identifier" data-namespace="http://purl.org/dc/terms/">identifier</a><a href="#subtype" data-namespace="http://rs.tdwg.org/ac/terms/">subtype</a><a href="#MetadataDate" data-namespace="http://ns.adobe.com/xap/1.0/">MetadataDate</a><a href="#providerManagedID" data-namespace="http://rs.tdwg.org/ac/terms/">providerManagedID</a><a href="#available" data-namespace="http://purl.org/dc/terms/">available</a><a href="#hasServiceAccessPoint" data-namespace="http://rs.tdwg.org/ac/terms/">hasServiceAccessPoint</a><a href="#rights" data-namespace="http://purl.org/dc/terms/">rights</a><a href="#UsageTerms" data-namespace="http://ns.adobe.com/xap/1.0/rights/">UsageTerms</a><a href="#WebStatement" data-namespace="http://ns.adobe.com/xap/1.0/rights/">WebStatement</a><a href="#licenseLogoURL" data-namespace="http://rs.tdwg.org/ac/terms/">licenseLogoURL</a><a href="#Credit" data-namespace="http://ns.adobe.com/photoshop/1.0/">Credit</a><a href="#attributionLogoURL" data-namespace="http://rs.tdwg.org/ac/terms/">attributionLogoURL</a><a href="#attributionLinkURL" data-namespace="http://rs.tdwg.org/ac/terms/">attributionLinkURL</a><a href="#fundingAttribution" data-namespace="http://rs.tdwg.org/ac/terms/">fundingAttribution</a><a href="#providerLiteral" data-namespace="http://rs.tdwg.org/ac/terms/">providerLiteral</a><a href="#subjectCategoryVocabulary" data-namespace="http://rs.tdwg.org/ac/terms/">subjectCategoryVocabulary</a><a href="#taxonCoverage" data-namespace="http://rs.tdwg.org/ac/terms/">taxonCoverage</a><a href="#derivedFrom" data-namespace="http://rs.tdwg.org/ac/terms/">derivedFrom</a><a href="#associatedSpecimenReference" data-namespace="http://rs.tdwg.org/ac/terms/">associatedSpecimenReference</a><a href="#associatedObservationReference" data-namespace="http://rs.tdwg.org/ac/terms/">associatedObservationReference</a><a href="#accessURI" data-namespace="http://rs.tdwg.org/ac/terms/">accessURI</a><a href="#format" data-namespace="http://purl.org/dc/elements/1.1/">format</a><a href="#variant" data-namespace="http://rs.tdwg.org/ac/terms/">variant</a><a href="#furtherInformationURL" data-namespace="http://rs.tdwg.org/ac/terms/">furtherInformationURL</a></p>
 					</div>
 					<div class="concepts">
 						<h2><a id="RecordLevelTerms"></a>Record Level Terms</h2><a id="institutionCode"></a><table class="table table-condensed table-bordered hispid-table">
@@ -2009,7 +2014,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/preparations.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/preparations.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/preparations.xml">http://hiscom.chah.org.au/hispid/vocabulary/preparations.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -2085,7 +2090,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/preparations.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/preparations.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
@@ -2208,6 +2213,230 @@
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
 												<div class="dd col-md-8 col-lg-9">Note - this is a broader definition than implied by the HISPID 3 mapping</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/Occurrence</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+<a id="associatedOccurrenceID"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h3>Property: associatedOccurrenceID</h3>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://rs.tdwg.org/dwc/terms/associatedOccurrenceID</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://rs.tdwg.org/dwc/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Associated Occurrence Identifier</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>The Occurrence ID for a another specimens that has a relationship with this record as defined by the Associated Occurrence Relationship Type.</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td><a href="#Occurrence">Occurrence</a></td>
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td>To record the identifier for another record that has a relationship with the current occurence record. For HISPID these occurrences should both be herbarium specimens</td>
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/associatedOccurrenceID</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Associated Occurrence Identifier</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">The Occurrence ID for a another specimens that has a relationship with this record as defined by the Associated Occurrence Relationship Type.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
+												<div class="dd col-md-8 col-lg-9">To record the identifier for another record that has a relationship with the current occurence record. For HISPID these occurrences should both be herbarium specimens</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:note</div>
+												<div class="dd col-md-8 col-lg-9"></div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/Occurrence</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+<a id="associatedOccurrenceType"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h3>Property: associatedOccurrenceType</h3>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://rs.tdwg.org/dwc/terms/associatedOccurrenceType</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://rs.tdwg.org/dwc/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Associated Occurrence Type</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>Defines the type of association between the specimen identified by the Occurrence record and the specimen identified by the paired Associated Occurrence ID</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td><a href="#Occurrence">Occurrence</a></td>
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td>For relationships in which both sides of the relationships are herbarium specimens</td>
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml">http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</a></td>
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/associatedOccurrenceType</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Associated Occurrence Type</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">Defines the type of association between the specimen identified by the Occurrence record and the specimen identified by the paired Associated Occurrence ID</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
+												<div class="dd col-md-8 col-lg-9">For relationships in which both sides of the relationships are herbarium specimens</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:note</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -2383,7 +2612,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/organism_quantity.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/organism_quantity.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity.xml">http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -2455,7 +2684,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/organism_quantity.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
@@ -2867,7 +3096,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://rs.gbif.org/vocabulary/gbif/sex.xml">http://rs.gbif.org/vocabulary/gbif/sex.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/life_stage.xmll">http://hiscom.chah.org.au/hispid/vocabulary/life_stage.xmll</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -2875,11 +3104,11 @@
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/18">https://github.com/hiscom/hispid/issues/18</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -2911,7 +3140,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">under consideration</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -2919,11 +3148,11 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://rs.gbif.org/vocabulary/gbif/sex.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/life_stage.xmll</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/18</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -2985,11 +3214,11 @@
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/34">https://github.com/hiscom/hispid/issues/34</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -3021,7 +3250,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">under consideration</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -3033,7 +3262,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/34</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -3087,7 +3316,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/reproductive_condition.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/reproductive_condition.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/reproductive_condition.xml">http://hiscom.chah.org.au/hispid/vocabulary/reproductive_condition.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -3155,7 +3384,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/reproductive_condition.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/reproductive_condition.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
@@ -3339,7 +3568,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/association_type.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/association_type.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml">http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -3403,7 +3632,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/association_type.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
@@ -6123,11 +6352,11 @@
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td>This term should only be applied when it adds clarity to the location.</td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/21">https://github.com/hiscom/hispid/issues/21</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -6159,7 +6388,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -6179,7 +6408,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/21</div>
+												<div class="dd col-md-8 col-lg-9">This term should only be applied when it adds clarity to the location.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -6241,11 +6470,11 @@
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td>This term should only be applied when it adds clarity to the location.</td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/21">https://github.com/hiscom/hispid/issues/21</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -6277,7 +6506,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -6301,7 +6530,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/21</div>
+												<div class="dd col-md-8 col-lg-9">This term should only be applied when it adds clarity to the location.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -6363,11 +6592,11 @@
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td>This term should only be applied when it adds clarity to the location.</td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/21">https://github.com/hiscom/hispid/issues/21</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -6399,7 +6628,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -6419,7 +6648,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/21</div>
+												<div class="dd col-md-8 col-lg-9">This term should only be applied when it adds clarity to the location.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -6701,7 +6930,7 @@
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td>Mappings of abbreviations to epsg codes.  These are in the format abbrreviation (epsg number) - for delivery the epsg number needs to be prefixed with 'EPSG:' - AGD66 (4202); AGD66/AMG 48 (20248); AGD66/AMG 49 (20249); AGD66/AMG 50 (20250); AGD66/AMG 51 (20251); AGD66/AMG 52 (20252); AGD66/AMG 53 (20253); AGD66/AMG 54 (20254); AGD66/AMG 55 (20255); AGD66/AMG 56 (20256); AGD66/AMG 57 (20257); AGD66/AMG 58 (20258); AGD84 (4203); AGD84/AMG 48 (20348); AGD84/AMG 49 (20349); AGD84/AMG 50 (20350); AGD84/AMG 51 (20351); AGD84/AMG 52 (20352); AGD84/AMG 53 (20353); AGD84/AMG 54 (20354); AGD84/AMG 55 (20355); AGD84/AMG 56 (20356); AGD84/AMG 57 (20357); AGD84/AMG 58 (20358); GDA94 (4283); GDA94/MGA 48 (28348); GDA94/MGA 49 (28349); GDA94/MGA 50 (28350); GDA94/MGA 51 (28351); GDA94/MGA 52 (28352); GDA94/MGA 53 (28353); GDA94/MGA 54 (28354); GDA94/MGA 55 (28355); GDA94/MGA 56 (28356); GDA94/MGA 57(28357); GDA94/MGA 58 (28358); NAD22 (4267); NAD83 (4269); NZGD49 (4272); NZGD2000(4167); WGS84 (4326)</td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
@@ -6762,6 +6991,10 @@
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
 												<div class="dd col-md-8 col-lg-9">Use of EPSG codes is recommended.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:note</div>
+												<div class="dd col-md-8 col-lg-9">Mappings of abbreviations to epsg codes.  These are in the format abbrreviation (epsg number) - for delivery the epsg number needs to be prefixed with 'EPSG:' - AGD66 (4202); AGD66/AMG 48 (20248); AGD66/AMG 49 (20249); AGD66/AMG 50 (20250); AGD66/AMG 51 (20251); AGD66/AMG 52 (20252); AGD66/AMG 53 (20253); AGD66/AMG 54 (20254); AGD66/AMG 55 (20255); AGD66/AMG 56 (20256); AGD66/AMG 57 (20257); AGD66/AMG 58 (20258); AGD84 (4203); AGD84/AMG 48 (20348); AGD84/AMG 49 (20349); AGD84/AMG 50 (20350); AGD84/AMG 51 (20351); AGD84/AMG 52 (20352); AGD84/AMG 53 (20353); AGD84/AMG 54 (20354); AGD84/AMG 55 (20355); AGD84/AMG 56 (20356); AGD84/AMG 57 (20357); AGD84/AMG 58 (20358); GDA94 (4283); GDA94/MGA 48 (28348); GDA94/MGA 49 (28349); GDA94/MGA 50 (28350); GDA94/MGA 51 (28351); GDA94/MGA 52 (28352); GDA94/MGA 53 (28353); GDA94/MGA 54 (28354); GDA94/MGA 55 (28355); GDA94/MGA 56 (28356); GDA94/MGA 57(28357); GDA94/MGA 58 (28358); NAD22 (4267); NAD83 (4269); NZGD49 (4272); NZGD2000(4167); WGS84 (4326)</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -7201,7 +7434,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/verbatim_coordinate_system.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/verbatim_coordinate_system.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system.xml">http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -7269,7 +7502,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/verbatim_coordinate_system.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/verbatim_coordinate_system.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -8097,7 +8330,7 @@
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial descript</td>
+									<td>A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
@@ -8113,11 +8346,11 @@
 								</tr>
 								<tr>
 									<td>Usage</td>
-									<td>Recommended best practice is to use a controlled vocabulary.</td>
+									<td>This term is frequently only applied after an assertion has been made that the georeference might be incorrect, for instance data quality assertion in ALA or outlier detection.</td>
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/georeference_verification_status.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/georeference_verification_status.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status.xml">http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -8157,7 +8390,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">A categorical description of the extent to which the georeference has been verified to represent the best possible spatial descript</div>
+												<div class="dd col-md-8 col-lg-9">A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
@@ -8173,11 +8406,11 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Recommended best practice is to use a controlled vocabulary.</div>
+												<div class="dd col-md-8 col-lg-9">This term is frequently only applied after an assertion has been made that the georeference might be incorrect, for instance data quality assertion in ALA or outlier detection.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/georeference_verification_status.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
@@ -8288,128 +8521,6 @@
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:abcdEquivalence</div>
 												<div class="dd col-md-8 col-lg-9">//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceRemarks</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://purl.org/dc/terms/Location</div>
-											</div>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-<a id="nearestNamedPlace"></a><table class="table table-condensed table-bordered hispid-table">
-							<thead>
-								<tr>
-									<th colspan="2">
-										<h3>Property: nearestNamedPlace</h3>
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/nearestNamedPlace</td>
-								</tr>
-								<tr>
-									<td>Namespace</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/</td>
-								</tr>
-								<tr>
-									<td>Label</td>
-									<td>Nearest Named Place</td>
-								</tr>
-								<tr>
-									<td>Definition</td>
-									<td>The nearest named place to the collecting locality. </td>
-								</tr>
-								<tr>
-									<td>Class</td>
-									<td><a href="#Location">Location</a></td>
-								</tr>
-								<tr>
-									<td>ABCD 2.06</td>
-									<td>//Unit/Gathering/NearNamedPlaces/NamedPlaceRelation/NearNamedPlace</td>
-								</tr>
-								<tr>
-									<td>Replaces</td>
-									<td><a href="history/#nnp-hispid5">nnp</a></td>
-								</tr>
-								<tr>
-									<td>Usage</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Vocabulary</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Examples</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Comments</td>
-									<td>We do not want to use this as generalised locality any more. There are still two use cases: (1) a nearest named placed given by a collector when the collecting locality doesn't have a name or is obscure and (2) the place name the georeference is based on when the name of the locality can't be found in any gazetteer. The latter use case probably desrves its own term.</td>
-								</tr>
-								<tr>
-									<td>Discussion</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Date issued</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Date modified</td>
-									<td>2015-07-11</td>
-								</tr>
-								<tr>
-									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
-									<td class="col-xs-8 col-lg-9">
-										<div class="rdf-properties">
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/nearestNamedPlace</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Nearest Named Place</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdf:type</div>
-												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">The nearest named place to the collecting locality. </div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">under consideration</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/nearestNamedPlace-2015-07-11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:abcdEquivalence</div>
-												<div class="dd col-md-8 col-lg-9">//Unit/Gathering/NearNamedPlaces/NamedPlaceRelation/NearNamedPlace</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:replaces</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/nnp-hispid5</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">We do not want to use this as generalised locality any more. There are still two use cases: (1) a nearest named placed given by a collector when the collecting locality doesn't have a name or is obscure and (2) the place name the georeference is based on when the name of the locality can't be found in any gazetteer. The latter use case probably desrves its own term.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -8789,7 +8900,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/elevation_method.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/elevation_method.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method.xml">http://hiscom.chah.org.au/hispid/vocabulary/elevation_method.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -8853,7 +8964,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/elevation_method.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/elevation_method.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -9198,6 +9309,214 @@
 								</tr>
 							</tbody>
 						</table>
+<a id="minimumDistanceAboveSurfaceInMeters"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h3>Property: minimumDistanceAboveSurfaceInMeters</h3>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/minimumDistanceAboveSurfaceInMeters</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://rs.tdwg.org/dwc/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Minimum Distance Above Surface in Meters</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>The lower value for the height above the surface.</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td><a href="#Location">Location</a></td>
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td>This is a local off-set to the elevation - e.g., to record the height above the ground of epiphytic taxa in trees. </td>
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/minimumDistanceAboveSurfaceInMeters</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Minimum Distance Above Surface in Meters</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">The lower value for the height above the surface.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:note</div>
+												<div class="dd col-md-8 col-lg-9">This is a local off-set to the elevation - e.g., to record the height above the ground of epiphytic taxa in trees. </div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
+												<div class="dd col-md-8 col-lg-9">http://purl.org/dc/terms/Location</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+<a id="maximumDistanceAboveSurfaceInMeters"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h3>Property: maximumDistanceAboveSurfaceInMeters</h3>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/maximumDistanceAboveSurfaceInMeters</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://rs.tdwg.org/dwc/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Maximum Distance Above Surface in Meters</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>The greater value for the height above the surface.</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td><a href="#Location">Location</a></td>
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/maximumDistanceAboveSurfaceInMeters</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Maximum Distance Above Surface in Meters</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">The greater value for the height above the surface.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
+												<div class="dd col-md-8 col-lg-9">http://purl.org/dc/terms/Location</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 <a id="Identification"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
@@ -9406,6 +9725,116 @@
 								</tr>
 							</tbody>
 						</table>
+<a id="verbatimIdentification"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h3>Property: verbatimIdentification</h3>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/verbatimIdentification</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Verbatim Identification</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>The verbatim taxonomic name provided by the identifier</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td><a href="#Identification">Identification</a></td>
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td>2015-07-11</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/verbatimIdentification</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Verbatim Identification</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">The verbatim taxonomic name provided by the identifier</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
+												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/verbatimIdentification-2015-07-11</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/Identification</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 <a id="identificationQualifier"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
@@ -9516,120 +9945,6 @@
 								</tr>
 							</tbody>
 						</table>
-<a id="identificationQualifier"></a><table class="table table-condensed table-bordered hispid-table">
-							<thead>
-								<tr>
-									<th colspan="2">
-										<h3>Property: identificationQualifier</h3>
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/identificationQualifier</td>
-								</tr>
-								<tr>
-									<td>Namespace</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/</td>
-								</tr>
-								<tr>
-									<td>Label</td>
-									<td>Identification Qualifier Rank</td>
-								</tr>
-								<tr>
-									<td>Definition</td>
-									<td>Rank at which the identificationQualifier applies</td>
-								</tr>
-								<tr>
-									<td>Class</td>
-									<td><a href="#Identification">Identification</a></td>
-								</tr>
-								<tr>
-									<td>ABCD 2.06</td>
-									<td>Not in ABCD</td>
-								</tr>
-								<tr>
-									<td>Replaces</td>
-									<td><a href="history/#rkql-hispid5">rkql</a></td>
-								</tr>
-								<tr>
-									<td>Usage</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Vocabulary</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Examples</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Comments</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Discussion</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Date issued</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Date modified</td>
-									<td>2015-07-11</td>
-								</tr>
-								<tr>
-									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
-									<td class="col-xs-8 col-lg-9">
-										<div class="rdf-properties">
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/identificationQualifier</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Identification Qualifier Rank</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdf:type</div>
-												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Rank at which the identificationQualifier applies</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">current</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/identificationQualifier-2015-07-11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:replaces</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/rkql-hispid5</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/Identification</div>
-											</div>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
 <a id="nameAddendum"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
@@ -9673,7 +9988,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/name_addendum.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/name_addendum.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/name_addendum.xml">http://hiscom.chah.org.au/hispid/vocabulary/name_addendum.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -9741,7 +10056,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/name_addendum.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/name_addendum.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -9775,7 +10090,7 @@
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Verification status of the identification, or an indication of how reliable the identification is deemed to be.</td>
+									<td>An indicator of the extent to which the taxonomic identification has been verified to be correct.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
@@ -9795,7 +10110,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td />
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/identification_verification_status.xml">http://hiscom.chah.org.au/hispid/vocabulary/identification_verification_status.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -9807,7 +10122,7 @@
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/16">https://github.com/hiscom/hispid/issues/16</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -9835,11 +10150,11 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Verification status of the identification, or an indication of how reliable the identification is deemed to be.</div>
+												<div class="dd col-md-8 col-lg-9">An indicator of the extent to which the taxonomic identification has been verified to be correct.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">under consideration</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -9854,8 +10169,8 @@
 												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/vlev-hispid5</div>
 											</div>
 											<div class="row">
-												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/16</div>
+												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/identification_verification_status.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -9909,7 +10224,7 @@
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/identifier_role.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/identifier_role.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/identifier_role.xml">http://hiscom.chah.org.au/hispid/vocabulary/identifier_role.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -9977,7 +10292,7 @@
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/identifier_role.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/identifier_role.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
@@ -10330,6 +10645,112 @@
 								</tr>
 							</tbody>
 						</table>
+<a id="identificationProtocol"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h3>Property: identificationProtocol</h3>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://rs.tdwg.org/dwc/terms/identificationProtocol</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://rs.tdwg.org/dwc/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Identification Protocol</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>The protocol or method used by the identifier to establish the identification of the specimen.</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td><a href="#Identification">Identification</a></td>
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol.xml">http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol.xml</a></td>
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/identificationProtocol</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Identification Protocol</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">The protocol or method used by the identifier to establish the identification of the specimen.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol.xml</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/Identification</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 <a id="identificationReferences"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
@@ -10471,11 +10892,7 @@
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
-									<td>//Unit/Identifications/Identification[PreferredFlag="FALSE"]/*
-
-or
-
-//Unit/Identifications/IdentificationHistory</td>
+									<td>//Unit/Identifications/Identification[PreferredFlag="FALSE"]/* //Unit/Identifications/IdentificationHistory</td>
 								</tr>
 								<tr>
 									<td>Replaces</td>
@@ -10483,7 +10900,7 @@ or
 								</tr>
 								<tr>
 									<td>Usage</td>
-									<td>It is preferrable to use the repeatable Identification elements in ABCD or the Identification extension in Darwin Core.</td>
+									<td>When the source information is well structured, it is preferrable to provide identification history by repeating other fields from the Identification Group, for example in the IdentificationHistory extension of a DarwinCore-Archive.The content of this field is not intended to be parsable. However to assit readability of the data, it is desireable for identifications to be listed in ascending date order, and have a consist content order (e.g., Taxon Name, determiner, date).</td>
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
@@ -10491,7 +10908,7 @@ or
 								</tr>
 								<tr>
 									<td>Examples</td>
-									<td />
+									<td>"Trymalium floribundum Steud. subsp. floribundum, det. AVH, 07.xi.2005; Trymalium billardierei var. tomentosum Reissek; Trymalium floribundum Steud.", "Capillipedium parviflorum (R.Br.) Stapf; cf. Chrysopogon parviflorus.", "Trymalium floribundum Steud. subsp. floribundum, det. AVH, 07.xi.2005; Trymalium billardierei; Trymalium floribundum Steud."</td>
 								</tr>
 								<tr>
 									<td>Comments</td>
@@ -10530,6 +10947,18 @@ or
 												<div class="dd col-md-8 col-lg-9">Previous identifications of the collection object.</div>
 											</div>
 											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:example</div>
+												<div class="dd col-md-8 col-lg-9">Trymalium floribundum Steud. subsp. floribundum, det. AVH, 07.xi.2005; Trymalium billardierei var. tomentosum Reissek; Trymalium floribundum Steud.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:example</div>
+												<div class="dd col-md-8 col-lg-9">Capillipedium parviflorum (R.Br.) Stapf; cf. Chrysopogon parviflorus.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:example</div>
+												<div class="dd col-md-8 col-lg-9">Trymalium floribundum Steud. subsp. floribundum, det. AVH, 07.xi.2005; Trymalium billardierei; Trymalium floribundum Steud.</div>
+											</div>
+											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
 												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
@@ -10539,11 +10968,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:abcdEquivalence</div>
-												<div class="dd col-md-8 col-lg-9">//Unit/Identifications/Identification[PreferredFlag="FALSE"]/*
-
-or
-
-//Unit/Identifications/IdentificationHistory</div>
+												<div class="dd col-md-8 col-lg-9">//Unit/Identifications/Identification[PreferredFlag="FALSE"]/*</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:abcdEquivalence</div>
+												<div class="dd col-md-8 col-lg-9">//Unit/Identifications/IdentificationHistory</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:replaces</div>
@@ -10551,7 +10980,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">It is preferrable to use the repeatable Identification elements in ABCD or the Identification extension in Darwin Core.</div>
+												<div class="dd col-md-8 col-lg-9">When the source information is well structured, it is preferrable to provide identification history by repeating other fields from the Identification Group, for example in the IdentificationHistory extension of a DarwinCore-Archive.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
+												<div class="dd col-md-8 col-lg-9">The content of this field is not intended to be parsable. However to assit readability of the data, it is desireable for identifications to be listed in ascending date order, and have a consist content order (e.g., Taxon Name, determiner, date).</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -10715,7 +11148,7 @@ or
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/type_status_qualifier.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/type_status_qualifier.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/type_status_qualifier.xml">http://hiscom.chah.org.au/hispid/vocabulary/type_status_qualifier.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -10783,7 +11216,7 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/type_status_qualifier.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/type_status_qualifier.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -10837,11 +11270,11 @@ or
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/type_status.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/type_status.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/type_status.xml">http://hiscom.chah.org.au/hispid/vocabulary/type_status.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
-									<td />
+									<td>"holotype", "http://hiscom.chah.org.au/hispid/vocabulary/type_status/holotype", "HOLOTYPE of Boronia deanei subsp. acutifolia Duretto", "ISOTYPE of Babingtonia bidwillii A.R.Bean, fid. Walsh, N.G., 1999-10-05"</td>
 								</tr>
 								<tr>
 									<td>Comments</td>
@@ -10905,7 +11338,7 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/type_status.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/type_status.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
@@ -10914,6 +11347,22 @@ or
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
 												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/50</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:example</div>
+												<div class="dd col-md-8 col-lg-9">holotype</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:example</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/vocabulary/type_status/holotype</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:example</div>
+												<div class="dd col-md-8 col-lg-9">HOLOTYPE of Boronia deanei subsp. acutifolia Duretto</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:example</div>
+												<div class="dd col-md-8 col-lg-9">ISOTYPE of Babingtonia bidwillii A.R.Bean, fid. Walsh, N.G., 1999-10-05</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -13310,238 +13759,6 @@ or
 								</tr>
 							</tbody>
 						</table>
-<a id="hybridParent1"></a><table class="table table-condensed table-bordered hispid-table">
-							<thead>
-								<tr>
-									<th colspan="2">
-										<h3>Property: hybridParent1</h3>
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/hybridParent1</td>
-								</tr>
-								<tr>
-									<td>Namespace</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/</td>
-								</tr>
-								<tr>
-									<td>Label</td>
-									<td>Hybrid Parent1</td>
-								</tr>
-								<tr>
-									<td>Definition</td>
-									<td>Scientific name of the first parent of a hybrid</td>
-								</tr>
-								<tr>
-									<td>Class</td>
-									<td><a href="#Taxon">Taxon</a></td>
-								</tr>
-								<tr>
-									<td>ABCD 2.06</td>
-									<td>Not in ABCD</td>
-								</tr>
-								<tr>
-									<td>Replaces</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Usage</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Vocabulary</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Examples</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Comments</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/11">https://github.com/hiscom/hispid/issues/11</a></td>
-								</tr>
-								<tr>
-									<td>Date issued</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Date modified</td>
-									<td>2015-07-11</td>
-								</tr>
-								<tr>
-									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
-									<td class="col-xs-8 col-lg-9">
-										<div class="rdf-properties">
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/hybridParent1</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Hybrid Parent1</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdf:type</div>
-												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Scientific name of the first parent of a hybrid</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">under consideration</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/hybridParent1-2015-07-11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/Taxon</div>
-											</div>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-<a id="hybridParent2"></a><table class="table table-condensed table-bordered hispid-table">
-							<thead>
-								<tr>
-									<th colspan="2">
-										<h3>Property: hybridParent2</h3>
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/hybridParent2</td>
-								</tr>
-								<tr>
-									<td>Namespace</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/</td>
-								</tr>
-								<tr>
-									<td>Label</td>
-									<td>Hybrid Parent2</td>
-								</tr>
-								<tr>
-									<td>Definition</td>
-									<td>Scientific name of the second parent of a hybrid</td>
-								</tr>
-								<tr>
-									<td>Class</td>
-									<td><a href="#Taxon">Taxon</a></td>
-								</tr>
-								<tr>
-									<td>ABCD 2.06</td>
-									<td>Not in ABCD</td>
-								</tr>
-								<tr>
-									<td>Replaces</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Usage</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Vocabulary</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Examples</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Comments</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/11">https://github.com/hiscom/hispid/issues/11</a></td>
-								</tr>
-								<tr>
-									<td>Date issued</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Date modified</td>
-									<td>2015-07-11</td>
-								</tr>
-								<tr>
-									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
-									<td class="col-xs-8 col-lg-9">
-										<div class="rdf-properties">
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/hybridParent2</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Hybrid Parent2</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdf:type</div>
-												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Scientific name of the second parent of a hybrid</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">under consideration</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/hybridParent2-2015-07-11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:replaces</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/genhy2-hispid5</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/Taxon</div>
-											</div>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
 <a id="PreservedSpecimen"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
@@ -13634,6 +13851,124 @@ or
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
 												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+<a id="barcode"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h3>Property: barcode</h3>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/barcode</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Barcode</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>The unique barcode for the collection object.</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td><a href="#PreservedSpecimen">PreservedSpecimen</a></td>
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td>2015-10-23</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/barcode</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Barcode</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">The unique barcode for the collection object.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/barcode-2015-10-23</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:abcdEquivalence</div>
+												<div class="dd col-md-8 col-lg-9">Not in ABCD</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:note</div>
+												<div class="dd col-md-8 col-lg-9"></div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/PreservedSpecimen</div>
 											</div>
 										</div>
 									</td>
@@ -14104,18 +14439,18 @@ or
 								</tr>
 							</tbody>
 						</table>
-<a id="voucherFor"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="voucherFlag"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: voucherFor</h3>
+										<h3>Property: voucherFlag</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/voucherFor</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/voucherFlag</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -14123,7 +14458,7 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Voucher For</td>
+									<td>Voucher Flag</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
@@ -14147,7 +14482,7 @@ or
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/voucher_for.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/voucher_for.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag.xml">http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -14167,7 +14502,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -14175,11 +14510,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/voucherFor</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/voucherFlag</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Voucher For</div>
+												<div class="dd col-md-8 col-lg-9">Voucher Flag</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -14199,11 +14534,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFor-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFlag-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:abcdEquivalence</div>
@@ -14215,7 +14550,125 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/voucher_for.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/voucher_flag.xml</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
+												<div class="dd col-md-8 col-lg-9">http://rs.tdwg.org/dwc/terms/PreservedSpecimen</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+<a id="voucherFor"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h3>Property: voucherFor</h3>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/voucherFor</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Voucher For</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>The name, code or other reference to the project for which the specimen is a voucher.</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td><a href="#PreservedSpecimen">PreservedSpecimen</a></td>
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td>2015-10-23</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/voucherFor</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Voucher For</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">The name, code or other reference to the project for which the specimen is a voucher.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFor-2015-10-23</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:abcdEquivalence</div>
+												<div class="dd col-md-8 col-lg-9">Not in ABCD</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -14269,7 +14722,7 @@ or
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/provenance_type_flag.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/provenance_type_flag.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag.xml">http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -14341,7 +14794,7 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/provenance_type_flag.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
@@ -15422,18 +15875,18 @@ or
 								</tr>
 							</tbody>
 						</table>
-<a id="Permit"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="numberOfSheets"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h2>Class: Permit</h2>
+										<h3>Property: numberOfSheets</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/Permit</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/numberOfSheets</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -15441,23 +15894,23 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit</td>
+									<td>Number of Sheets</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>A document or certificate giving permission to do something, e.g. collecting.</td>
+									<td>The number of sheets or parts included in the transaction.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td />
+									<td><a href="#Transaction">Transaction</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
-									<td>Not in ABCD</td>
+									<td>//Unit/HerbariumUnit/LoanReturnDate</td>
 								</tr>
 								<tr>
 									<td>Replaces</td>
-									<td />
+									<td><a href="history/#numshe-hispid5">numshe</a></td>
 								</tr>
 								<tr>
 									<td>Usage</td>
@@ -15485,7 +15938,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -15493,117 +15946,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/numberOfSheets</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdf:type</div>
-												<div class="dd col-md-8 col-lg-9">http://www.w3.org/2000/01/rdf-schema#Class</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">A document or certificate giving permission to do something, e.g. collecting.</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">recommended</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/Permit-2015-07-11</div>
-											</div>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-<a id="permitType"></a><table class="table table-condensed table-bordered hispid-table">
-							<thead>
-								<tr>
-									<th colspan="2">
-										<h3>Property: permitType</h3>
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitType</td>
-								</tr>
-								<tr>
-									<td>Namespace</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/</td>
-								</tr>
-								<tr>
-									<td>Label</td>
-									<td>Permit Type</td>
-								</tr>
-								<tr>
-									<td>Definition</td>
-									<td>Type of permit.</td>
-								</tr>
-								<tr>
-									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
-								</tr>
-								<tr>
-									<td>ABCD 2.06</td>
-									<td>Not in ABCD</td>
-								</tr>
-								<tr>
-									<td>Replaces</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Usage</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Vocabulary</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Examples</td>
-									<td>"collecting permit", "export permit"</td>
-								</tr>
-								<tr>
-									<td>Comments</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Discussion</td>
-									<td />
-								</tr>
-								<tr>
-									<td>Date issued</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Date modified</td>
-									<td>2015-07-11</td>
-								</tr>
-								<tr>
-									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
-									<td class="col-xs-8 col-lg-9">
-										<div class="rdf-properties">
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitType</div>
-											</div>
-											<div class="row">
-												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Type</div>
+												<div class="dd col-md-8 col-lg-9">Number of Sheets</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -15611,11 +15958,235 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Type of permit.</div>
+												<div class="dd col-md-8 col-lg-9">The number of sheets or parts included in the transaction.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/numshe-hispid5</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:abcdEquivalence</div>
+												<div class="dd col-md-8 col-lg-9">//Unit/HerbariumUnit/LoanReturnDate</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:replaces</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/numshe-hispid5</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Transaction</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+<a id="PermitOrConsent"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h2>Class: PermitOrConsent</h2>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Permit or Consent</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>A document, certificate or permission giving consent to do something, e.g. collecting.</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td />
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td>2015-10-23</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/2000/01/rdf-schema#Class</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">A document, certificate or permission giving consent to do something, e.g. collecting.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/PermitOrConsent-2015-10-23</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+<a id="permitOrConsentType"></a><table class="table table-condensed table-bordered hispid-table">
+							<thead>
+								<tr>
+									<th colspan="2">
+										<h3>Property: permitOrConsentType</h3>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Identifier</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentType</td>
+								</tr>
+								<tr>
+									<td>Namespace</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/</td>
+								</tr>
+								<tr>
+									<td>Label</td>
+									<td>Permit or Consent Type</td>
+								</tr>
+								<tr>
+									<td>Definition</td>
+									<td>Type of permit or consent.</td>
+								</tr>
+								<tr>
+									<td>Class</td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
+								</tr>
+								<tr>
+									<td>ABCD 2.06</td>
+									<td>Not in ABCD</td>
+								</tr>
+								<tr>
+									<td>Replaces</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Usage</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Vocabulary</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Examples</td>
+									<td>"collecting permit", "export permit", "verbal authority"</td>
+								</tr>
+								<tr>
+									<td>Comments</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Discussion</td>
+									<td />
+								</tr>
+								<tr>
+									<td>Date issued</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Date modified</td>
+									<td>2015-07-11</td>
+								</tr>
+								<tr>
+									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
+									<td class="col-xs-8 col-lg-9">
+										<div class="rdf-properties">
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentType</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent Type</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">rdf:type</div>
+												<div class="dd col-md-8 col-lg-9">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:definition</div>
+												<div class="dd col-md-8 col-lg-9">Type of permit or consent.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -15627,7 +16198,7 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitType-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentType-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:example</div>
@@ -15638,26 +16209,30 @@ or
 												<div class="dd col-md-8 col-lg-9">export permit</div>
 											</div>
 											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:example</div>
+												<div class="dd col-md-8 col-lg-9">verbal authority</div>
+											</div>
+											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-<a id="permitReferenceNumber"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="permitOrConsentReferenceNumber"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: permitReferenceNumber</h3>
+										<h3>Property: permitOrConsentReferenceNumber</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitReferenceNumber</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentReferenceNumber</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -15665,15 +16240,15 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit Reference Number</td>
+									<td>Permit or Consent Reference Number</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Reference number allocated to the permit by the issuing authority.</td>
+									<td>Reference number allocated to the permit or consent by the issuing authority.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
@@ -15709,7 +16284,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -15717,11 +16292,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitReferenceNumber</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentReferenceNumber</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Reference Number</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent Reference Number</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -15729,11 +16304,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Reference number allocated to the permit by the issuing authority.</div>
+												<div class="dd col-md-8 col-lg-9">Reference number allocated to the permit or consent by the issuing authority.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -15741,33 +16316,33 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitReferenceNumber-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentReferenceNumber-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-<a id="permitIssuedBy"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="permitOrConsentIssuedBy"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: permitIssuedBy</h3>
+										<h3>Property: permitOrConsentIssuedBy</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitIssuedBy</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedBy</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -15775,15 +16350,15 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit Issued By</td>
+									<td>Permit or Consent Issued By</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Name of the authority by whom the permit was issued.</td>
+									<td>Name of the authority or person(s) by whom the permit or consent was issued.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
@@ -15807,11 +16382,11 @@ or
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/10">https://github.com/hiscom/hispid/issues/10</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -15819,7 +16394,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -15827,11 +16402,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitIssuedBy</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedBy</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Issued By</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent Issued By</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -15839,11 +16414,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Name of the authority by whom the permit was issued.</div>
+												<div class="dd col-md-8 col-lg-9">Name of the authority or person(s) by whom the permit or consent was issued.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -15851,37 +16426,37 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitIssuedBy-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedBy-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/10</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-<a id="permitIssuedTo"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="permitOrConsentIssuedTo"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: permitIssuedTo</h3>
+										<h3>Property: permitOrConsentIssuedTo</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitIssuedTo</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedTo</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -15889,15 +16464,15 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit Issued To</td>
+									<td>Permit or Consent Issued To</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Name(s) of the person(s) or organisation to whom the permit was issued.</td>
+									<td>Name(s) of the person(s) or organisation to whom the permit or consent was issued.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
@@ -15921,11 +16496,11 @@ or
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/10">https://github.com/hiscom/hispid/issues/10</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -15933,7 +16508,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -15941,11 +16516,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitIssuedTo</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedTo</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Issued To</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent Issued To</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -15953,11 +16528,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Name(s) of the person(s) or organisation to whom the permit was issued.</div>
+												<div class="dd col-md-8 col-lg-9">Name(s) of the person(s) or organisation to whom the permit or consent was issued.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -15965,37 +16540,37 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitIssuedTo-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedTo-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/10</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-<a id="permitIssuedDate"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="permitOrConsentIssuedDate"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: permitIssuedDate</h3>
+										<h3>Property: permitOrConsentIssuedDate</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitIssuedDate</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedDate</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -16003,15 +16578,15 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit Issued Date</td>
+									<td>Permit or Consent Issued Date</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Date the permit was issued.</td>
+									<td>Date the permit or consent was issued.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
@@ -16035,11 +16610,11 @@ or
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/10">https://github.com/hiscom/hispid/issues/10</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -16047,7 +16622,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -16055,11 +16630,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitIssuedDate</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedDate</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Issued Date</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent Issued Date</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -16067,11 +16642,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Date the permit was issued.</div>
+												<div class="dd col-md-8 col-lg-9">Date the permit or consent was issued.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -16079,37 +16654,37 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitIssuedDate-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedDate-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/10</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-<a id="permitValidDate"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="permitOrConsentValidDate"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: permitValidDate</h3>
+										<h3>Property: permitOrConsentValidDate</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitValidDate</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentValidDate</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -16117,15 +16692,15 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit Valid Date</td>
+									<td>Permit or Consent Valid Date</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Date or period for which the permit is valid.</td>
+									<td>Date or period for which the permit or consent is valid.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
@@ -16149,11 +16724,11 @@ or
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/10">https://github.com/hiscom/hispid/issues/10</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -16161,7 +16736,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -16169,11 +16744,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitValidDate</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentValidDate</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Valid Date</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent Valid Date</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -16181,11 +16756,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Date or period for which the permit is valid.</div>
+												<div class="dd col-md-8 col-lg-9">Date or period for which the permit or consent is valid.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -16193,11 +16768,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitValidDate-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentValidDate-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
@@ -16205,29 +16780,29 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/10</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-<a id="permitStatus"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="permitOrConsentStatus"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: permitStatus</h3>
+										<h3>Property: permitOrConsentStatus</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitStatus</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentStatus</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -16235,15 +16810,15 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit Status</td>
+									<td>Permit or Consent Status</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Status of the permit.</td>
+									<td>Status of the permit of consent.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
@@ -16259,7 +16834,7 @@ or
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="http://hiscom.rbg.vic.gov.au/hispid/vocabulary/permit_status.xml">http://hiscom.rbg.vic.gov.au/hispid/vocabulary/permit_status.xml</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status.xml">http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -16267,11 +16842,11 @@ or
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/10">https://github.com/hiscom/hispid/issues/10</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -16279,7 +16854,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -16287,11 +16862,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitStatus</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentStatus</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Status</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent Status</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -16299,11 +16874,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Status of the permit.</div>
+												<div class="dd col-md-8 col-lg-9">Status of the permit of consent.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -16311,41 +16886,41 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitStatus-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentStatus-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.rbg.vic.gov.au/hispid/vocabulary/permit_status.xml</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/10</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-<a id="permitConditions"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="permitOrConsentConditions"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: permitConditions</h3>
+										<h3>Property: permitOrConsentConditions</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitConditions</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentConditions</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -16353,15 +16928,15 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit Conditions</td>
+									<td>Permit or Consent Conditions</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Conditions on the permit, which may affect how the specimens collected under the permit may be used or distributed.</td>
+									<td>Conditions on the permit or consent, which may affect how the specimens collected under the consent may be used or distributed.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
@@ -16385,11 +16960,11 @@ or
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/10">https://github.com/hiscom/hispid/issues/10</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -16397,7 +16972,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -16405,11 +16980,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitConditions</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentConditions</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Conditions</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent Conditions</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -16417,11 +16992,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Conditions on the permit, which may affect how the specimens collected under the permit may be used or distributed.</div>
+												<div class="dd col-md-8 col-lg-9">Conditions on the permit or consent, which may affect how the specimens collected under the consent may be used or distributed.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -16429,37 +17004,37 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitConditions-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentConditions-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/10</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-<a id="permitRemarks"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="permitOrConsentRemarks"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: permitRemarks</h3>
+										<h3>Property: permitOrConsentRemarks</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitRemarks</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentRemarks</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -16467,15 +17042,15 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit Remarks</td>
+									<td>Permit or Consent Remarks</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Any additional comments pertaining to the permit.</td>
+									<td>Any additional comments pertaining to the permit or consent.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
@@ -16499,11 +17074,11 @@ or
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/10">https://github.com/hiscom/hispid/issues/10</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -16511,7 +17086,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -16519,11 +17094,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitRemarks</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentRemarks</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Remarks</div>
+												<div class="dd col-md-8 col-lg-9">Permit or Consent Remarks</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -16531,11 +17106,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Any additional comments pertaining to the permit.</div>
+												<div class="dd col-md-8 col-lg-9">Any additional comments pertaining to the permit or consent.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -16543,37 +17118,37 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitRemarks-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentRemarks-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/10</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-<a id="permitLink"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="permitOrConsentLink"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: permitLink</h3>
+										<h3>Property: permitOrConsentLink</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://hiscom.chah.org.au/hispid/terms/permitLink</td>
+									<td>http://hiscom.chah.org.au/hispid/terms/permitOrConsentLink</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -16581,15 +17156,15 @@ or
 								</tr>
 								<tr>
 									<td>Label</td>
-									<td>Permit Link</td>
+									<td>Consent Link</td>
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>The link to an electronic version of the permit.</td>
+									<td>The link to an electronic version of the permit or consent.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
-									<td><a href="#Permit">Permit</a></td>
+									<td><a href="#PermitOrConsent">PermitOrConsent</a></td>
 								</tr>
 								<tr>
 									<td>ABCD 2.06</td>
@@ -16613,11 +17188,11 @@ or
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td></td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/10">https://github.com/hiscom/hispid/issues/10</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -16625,7 +17200,7 @@ or
 								</tr>
 								<tr>
 									<td>Date modified</td>
-									<td>2015-07-11</td>
+									<td>2015-10-23</td>
 								</tr>
 								<tr>
 									<td class="col-xs-4 col-lg-3">For the geeks among us</td>
@@ -16633,11 +17208,11 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitLink</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/permitOrConsentLink</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
-												<div class="dd col-md-8 col-lg-9">Permit Link</div>
+												<div class="dd col-md-8 col-lg-9">Consent Link</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdf:type</div>
@@ -16645,11 +17220,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">The link to an electronic version of the permit.</div>
+												<div class="dd col-md-8 col-lg-9">The link to an electronic version of the permit or consent.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">new</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -16657,19 +17232,19 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:modified</div>
-												<div class="dd col-md-8 col-lg-9">2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dcterms:hasVersion</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitLink-2015-07-11</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentLink-2015-10-23</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/10</div>
+												<div class="dd col-md-8 col-lg-9"></div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
-												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/Permit</div>
+												<div class="dd col-md-8 col-lg-9">http://hiscom.chah.org.au/hispid/terms/PermitOrConsent</div>
 											</div>
 										</div>
 									</td>
@@ -17614,18 +18189,18 @@ or
 								</tr>
 							</tbody>
 						</table>
-<a id="Cvterm"></a><table class="table table-condensed table-bordered hispid-table">
+<a id="AboutCvterm"></a><table class="table table-condensed table-bordered hispid-table">
 							<thead>
 								<tr>
 									<th colspan="2">
-										<h3>Property: Cvterm</h3>
+										<h3>Property: AboutCvterm</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Identifier</td>
-									<td>http://iptc.org/std/Iptc4xmpExt/2008-02-29/Cvterm</td>
+									<td>http://iptc.org/std/Iptc4xmpExt/2008-02-29/AboutCvterm</td>
 								</tr>
 								<tr>
 									<td>Namespace</td>
@@ -17637,7 +18212,7 @@ or
 								</tr>
 								<tr>
 									<td>Definition</td>
-									<td>Broad subject or context of the media object.</td>
+									<td>A term (identified by a URI) indicating the broad subject or content of the media object.</td>
 								</tr>
 								<tr>
 									<td>Class</td>
@@ -17657,7 +18232,7 @@ or
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="Under consideration">Under consideration</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml">http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -17665,11 +18240,11 @@ or
 								</tr>
 								<tr>
 									<td>Comments</td>
-									<td />
+									<td>Terms from different vocabularies may be used.  The intent is to provide a vocabulary for HISPID. The current vocabulary is an early draft.In Audubon Core this term is mapped to http://iptc.org/std/Iptc4xmpExt/2008-02-29/Cvterm, however that term was deprecated by IPTC 2015 Revision 3.</td>
 								</tr>
 								<tr>
 									<td>Discussion</td>
-									<td><a href="https://github.com/hiscom/hispid/issues/5">https://github.com/hiscom/hispid/issues/5</a></td>
+									<td />
 								</tr>
 								<tr>
 									<td>Date issued</td>
@@ -17685,7 +18260,7 @@ or
 										<div class="rdf-properties">
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">(rdf:about)</div>
-												<div class="dd col-md-8 col-lg-9">http://iptc.org/std/Iptc4xmpExt/2008-02-29/Cvterm</div>
+												<div class="dd col-md-8 col-lg-9">http://iptc.org/std/Iptc4xmpExt/2008-02-29/AboutCvterm</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:label</div>
@@ -17697,11 +18272,11 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:definition</div>
-												<div class="dd col-md-8 col-lg-9">Broad subject or context of the media object.</div>
+												<div class="dd col-md-8 col-lg-9">A term (identified by a URI) indicating the broad subject or content of the media object.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:status</div>
-												<div class="dd col-md-8 col-lg-9">under consideration</div>
+												<div class="dd col-md-8 col-lg-9">current</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">rdfs:isDefinedBy</div>
@@ -17709,11 +18284,15 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: Under consideration</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
-												<div class="dd col-md-8 col-lg-9">GitHub: https://github.com/hiscom/hispid/issues/5</div>
+												<div class="dd col-md-8 col-lg-9">Terms from different vocabularies may be used.  The intent is to provide a vocabulary for HISPID. The current vocabulary is an early draft.</div>
+											</div>
+											<div class="row">
+												<div class="dt col-md-4 col-lg-3">skos:note</div>
+												<div class="dd col-md-8 col-lg-9">In Audubon Core this term is mapped to http://iptc.org/std/Iptc4xmpExt/2008-02-29/Cvterm, however that term was deprecated by IPTC 2015 Revision 3.</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">dwcattributes:organizedInClass</div>
@@ -18481,7 +19060,7 @@ or
 								</tr>
 								<tr>
 									<td>Vocabulary</td>
-									<td><a href="Drawing, Painting, Logo, Icon, Illustration, Graphic, Photograph, Animation, Film, SlideShow, DesignPlan, Diagram, Map, MusicalNotation, IdentificationKey, ScannedText, RecordedText, RecordedOrganism, TaxonPage, MultimediaLearningObject, VirtualRealityEnvironment, GlossaryPage.">Drawing, Painting, Logo, Icon, Illustration, Graphic, Photograph, Animation, Film, SlideShow, DesignPlan, Diagram, Map, MusicalNotation, IdentificationKey, ScannedText, RecordedText, RecordedOrganism, TaxonPage, MultimediaLearningObject, VirtualRealityEnvironment, GlossaryPage.</a></td>
+									<td><a href="http://hiscom.chah.org.au/hispid/vocabulary/subtype.xml">http://hiscom.chah.org.au/hispid/vocabulary/subtype.xml</a></td>
 								</tr>
 								<tr>
 									<td>Examples</td>
@@ -18537,7 +19116,7 @@ or
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:scopeNote</div>
-												<div class="dd col-md-8 col-lg-9">Vocabulary: Drawing, Painting, Logo, Icon, Illustration, Graphic, Photograph, Animation, Film, SlideShow, DesignPlan, Diagram, Map, MusicalNotation, IdentificationKey, ScannedText, RecordedText, RecordedOrganism, TaxonPage, MultimediaLearningObject, VirtualRealityEnvironment, GlossaryPage.</div>
+												<div class="dd col-md-8 col-lg-9">Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/subtype.xml</div>
 											</div>
 											<div class="row">
 												<div class="dt col-md-4 col-lg-3">skos:note</div>
