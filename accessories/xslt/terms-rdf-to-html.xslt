@@ -47,7 +47,7 @@
 					<a id="top"/>
 					<div class="jumbotron">
 						<div class="container-fluid">
-							<h1 class="text-center">HISPID Review 2015</h1>
+							<h1 class="text-center">HISPID</h1>
 						</div>
 					</div>
 					<div class="container-fluid">

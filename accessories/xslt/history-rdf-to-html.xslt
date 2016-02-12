@@ -15,7 +15,7 @@
 	<xsl:variable name="base"><xsl:text>http://hiscom.chah.org.au/hispid/terms/history/#</xsl:text></xsl:variable>
 	
 		<xsl:template match="/">
-			<xsl:result-document href="history/index.html">
+			<xsl:result-document href="../../terms/history/index.html">
 				<html>
 					<head>
 						<title>HISPID terms history</title>
@@ -29,11 +29,11 @@
 								padding-bottom: 20px;
 							}
 						</style>
-						<link href="../accessories/css/terms.css" rel="stylesheet" />
+						<link href="../../accessories/css/terms.css" rel="stylesheet" />
 						<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
 						<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
 						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-						<script src="../accessories/js/terms.js"></script>
+						<script src="../../accessories/js/terms.js"></script>
 					</head>
 					<body>
 						<nav class="navbar navbar-inverse navbar-fixed-top">
