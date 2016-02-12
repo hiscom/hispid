@@ -21,10 +21,10 @@
 							}
 						</style>
 					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
-					<link rel="stylesheet" href="acessories/css/terms.css" rel="stylesheet"/>
+					<link rel="stylesheet" href="../acessories/css/terms.css" />
 					<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"/>
 					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"/>
-					<script src="accessories/js/terms.js"/>
+					<script src="../accessories/js/terms.js"/>
 				</head>
 				<body>
 					<nav class="navbar navbar-inverse navbar-fixed-top">
