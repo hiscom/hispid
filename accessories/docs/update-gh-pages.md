@@ -1,5 +1,5 @@
 #Update GitHub pages#
-The following commands will synchronise the gh-pages branch with master:
+The following commands will synchronise the __gh-pages__ branch with __master__:
 
 1. git checkout gh-pages
 2. git rebase master
