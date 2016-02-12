@@ -1128,24 +1128,30 @@
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/type_status_qualifier.xml</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/typeStatus">
+	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/typeStatus">
 		<rdfs:label xml:lang="en">Type Status</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Code indicating the type status of the collection object.</skos:definition>
+		<skos:definition xml:lang="en">A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<skos:example>HOLOTYPE of Boronia deanei subsp. acutifolia Duretto</skos:example>
+		<skos:example>ISOTYPE of Babingtonia bidwillii A.R.Bean, fid. Walsh, N.G., 1999-10-05</skos:example>
+		<skos:example>ISOTYPE of both Grimmia subflexifolia C. M., Hedwigia 37: 164 (1898) | ISOTYPE of Grimmia aquatica R.Br.bis</skos:example>
+		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/typeOfType">
+		<rdfs:label xml:lang="en">Type Of Type</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">A term indicating the type status of the collection object.</skos:definition>
 		<dwcattributes:status>current</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/typeStatus-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation[0]/TypeStatus</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/tsta-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/type_status.xml</skos:scopeNote>
-		<skos:note xml:lang="en">typeStatus has been placed in the HISPID namespace, even though it is available in Darwin Core, because our use is different. In contrast to Darwin Core, in HISPID typeStatus and typifiedName have been separated. Having typeStatus in the HISPID namespace allows us to transfer the type status including or excluding the typified name depending on what circumstances require.</skos:note>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/50</skos:note>
-		<skos:example>holotype</skos:example>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/type_of_type.xml</skos:scopeNote>
+		<skos:example>hototype</skos:example>
 		<skos:example>http://hiscom.chah.org.au/hispid/vocabulary/type_status/holotype</skos:example>
-		<skos:example>HOLOTYPE of Boronia deanei subsp. acutifolia Duretto</skos:example>
-		<skos:example>ISOTYPE of Babingtonia bidwillii A.R.Bean, fid. Walsh, N.G., 1999-10-05</skos:example>
-		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
+		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/> 
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/typifiedName">
 		<rdfs:label xml:lang="en">Typified Name</rdfs:label>
