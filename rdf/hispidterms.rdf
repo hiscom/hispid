@@ -988,6 +988,7 @@
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/verbatimIdentification-2015-07-11"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
+		<skos:scopeNote>verbatimIdentification is meant to include the entire name string as given by the determiner, including any identification qualifiers and addenda. It is not meant to include the name of the determiner, identification date, remarks etc.</skos:scopeNote>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationQualifier">
 		<rdfs:label xml:lang="en">Identification Qualifier</rdfs:label>
