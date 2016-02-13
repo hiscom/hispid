@@ -979,23 +979,6 @@
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/2</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/verbatimIdentification">
-		<rdfs:label xml:lang="en">Verbatim Identification</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">The verbatim taxonomic name provided by the identifier</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
-		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/verbatimIdentification-2015-07-11"/>
-		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
-		<skos:scopeNote>verbatimIdentification is meant to include the entire name string as given by the determiner, including any identification qualifiers and addenda. It is not meant to include the name of the determiner, identification date, remarks etc.</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/85</skos:note>
-		<skos:example>Riccia aff. multifida Step.</skos:example>
-		<skos:example>Amanita ?pantherina (DC. : Fr.) Secr.</skos:example>
-		<skos:example>Erica cf. hirtiflora Curt.</skos:example>
-		<skos:example>Acacia sp.</skos:example>
-		<skos:example>Bryum s.l.</skos:example>
-	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationQualifier">
 		<rdfs:label xml:lang="en">Identification Qualifier</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -1085,7 +1068,6 @@
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>	
-	
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationReferences">
 		<rdfs:label xml:lang="en">Identification References</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -1171,6 +1153,23 @@
 		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation[0]/TypifiedName/FullScientificNameString</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/basnam-hispid5"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/verbatimIdentification">
+		<rdfs:label xml:lang="en">Verbatim Identification</rdfs:label>
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<skos:definition xml:lang="en">The verbatim taxonomic name provided by the identifier</skos:definition>
+		<dwcattributes:status>current</dwcattributes:status>
+		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
+		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/verbatimIdentification-2015-07-11"/>
+		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
+		<skos:scopeNote>verbatimIdentification is meant to include the entire name string as given by the determiner, including any identification qualifiers and addenda. It is not meant to include the name of the determiner, identification date, remarks etc.</skos:scopeNote>
+		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/85</skos:note>
+		<skos:example>Riccia aff. multifida Step.</skos:example>
+		<skos:example>Amanita ?pantherina (DC. : Fr.) Secr.</skos:example>
+		<skos:example>Erica cf. hirtiflora Curt.</skos:example>
+		<skos:example>Acacia sp.</skos:example>
+		<skos:example>Bryum s.l.</skos:example>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonRank">
 		<rdfs:label xml:lang="en">Taxon Rank</rdfs:label>
