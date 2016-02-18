@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://hiscom.chah.org.au/hispid/terms/">
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/">
-		<dcterms:title xml:lang="en">HISPID terms</dcterms:title>
+		<dcterms:title xml:lang="en">HISPID Terms</dcterms:title>
 		<rdfs:comment/>
 		<dcterms:publisher xml:lang="en">Herbarium Information Systems Committee (HISCOM), Australia</dcterms:publisher>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-25T15:02:07.143+10:00</dcterms:modified>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-25T15:02:07.143+10:00</dcterms:modified>	
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Occurrence">
 		<rdfs:label xml:lang="en">Occurrence</rdfs:label>
@@ -61,7 +61,7 @@
 		<rdfs:label xml:lang="en">Permit or Consent</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		<skos:definition xml:lang="en">A document, certificate or permission giving consent to do something, e.g. collecting.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/PermitOrConsent-2015-10-23"/>
@@ -79,7 +79,7 @@
 		<rdfs:label xml:lang="en">Institution Code</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The Index Herbariorum code for the herbarium supplying the record.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>MEL</skos:example>
 		<skos:example>CANB</skos:example>
@@ -90,7 +90,7 @@
 		<rdfs:label xml:lang="en">Collection Code</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">An acronym or code of a collection or source within the institution.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>CBG</skos:example>
 		<skos:example>QRS</skos:example>
@@ -102,7 +102,7 @@
 		<rdfs:label xml:lang="en">Modified</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Date and time of the last modification to any component of the record.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 		<skos:example>1963-03-08T14:07:00</skos:example>
 		<skos:example>2009-02-12</skos:example>
@@ -114,7 +114,7 @@
 		<rdfs:label xml:lang="en">Basis Of Record</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Nature of the record</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>PreservedSpecimen</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/RecordBasis</dwcattributes:abcdEquivalence>
@@ -126,7 +126,7 @@
 		<rdfs:label xml:lang="en">Type</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Nature of the resource</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 		<skos:example>PhysicalObject</skos:example>
 		<skos:scopeNote>Vocabulary: http://rs.gbif.org/vocabulary/dcterms/type.xml</skos:scopeNote>
@@ -135,7 +135,7 @@
 		<rdfs:label xml:lang="en">Language</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Language of the resource</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 		<skos:example>http://id.loc.gov/vocabulary/iso639-2/eng</skos:example>
 		<skos:scopeNote>Vocabulary: http://id.loc.gov/vocabulary/iso639-2</skos:scopeNote>
@@ -145,14 +145,14 @@
 		<rdfs:label xml:lang="en">Rights Holder</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">[The name of] Owner of the copyright over the resource.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/dc/terms/license">
 		<rdfs:label xml:lang="en">License</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">URL defining or elaborating on the licence statement.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 		<skos:example>http://creativecommons.org/licenses/by/3.0/au/</skos:example>
 		<skos:example>http://creativecommons.org/licenses/by/4.0/</skos:example>
@@ -161,7 +161,7 @@
 		<rdfs:label xml:lang="en">Information Withheld</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Additional information that exists, but that has not been shared in the given record.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>location information not given for endangered species</skos:example>
 		<skos:example>collector identities withheld</skos:example>
@@ -173,7 +173,7 @@
 		<rdfs:label xml:lang="en">Data Generalizations</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Actions taken to make the shared data less specific or complete than in its original form. Suggests that alternative data of higher quality may be available on request.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Coordinates generalized from original GPS coordinates to the nearest half degree grid cell.</skos:example>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/67</skos:note>
@@ -182,7 +182,7 @@
 		<rdfs:label xml:lang="en">Occurrence ID</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A globally unique identifier for the collection object record.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>1cf74f91-e991-4382-8b20-42d2d8e6076a</skos:example>
 		<skos:example>URN:catalog:PERTH:WAHERB:08444595</skos:example>
@@ -195,7 +195,7 @@
 		<rdfs:label xml:lang="en">Catalog Number</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The unique identifier for each collection object, including the acronym</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>MEL 12345</skos:example>
 		<skos:example>CANB 78021.1</skos:example>
@@ -209,7 +209,7 @@
 		<rdfs:label xml:lang="en">Recorded By</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name(s) of the person or persons who made the collection on which this record is based</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Steenis, C.G.G.J. van</skos:example>
 		<skos:example>Wilson, Peter G.</skos:example>
@@ -225,7 +225,7 @@
 		<rdfs:label xml:lang="en">Record Number</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The verbatim collecting number</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/CollectorsFieldNumber</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/cid-hispid5"/>
@@ -235,7 +235,7 @@
 		<rdfs:label xml:lang="en">Preparations</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">List of preparations from a specimen</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>sheet</skos:example>
 		<skos:example>alcohol</skos:example>
@@ -251,7 +251,7 @@
 		<rdfs:label xml:lang="en">Other Catalog Numbers</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A list of previous or alternate catalog numbers for the same Occurrence.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/History/PreviousUnits/PreviousUnit/PreviousUnitID</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/donacc-hispid5"/>
@@ -263,29 +263,29 @@
 		<rdfs:label xml:lang="en">Associated Occurrence Identifier</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The Occurrence ID for a another specimens that has a relationship with this record as defined by the Associated Occurrence Relationship Type.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<!--<dwcattributes:abcdEquivalence></dwcattributes:abcdEquivalence>-->
 		<skos:scopeNote xml:lang="en">To record the identifier for another record that has a relationship with the current occurence record. For HISPID these occurrences should both be herbarium specimens</skos:scopeNote>
-		<skos:note xml:lang="en"></skos:note>
+		<skos:note xml:lang="en"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
-	</rdf:Description>	
+	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedOccurrenceType">
 		<rdfs:label xml:lang="en">Associated Occurrence Type</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Defines the type of association between the specimen identified by the Occurrence record and the specimen identified by the paired Associated Occurrence ID</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:scopeNote xml:lang="en">For relationships in which both sides of the relationships are herbarium specimens</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
-		<skos:note xml:lang="en"></skos:note>
+		<skos:note xml:lang="en"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceRemarks">
 		<rdfs:label xml:lang="en">Occurrence Remarks</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Any additional information provided by the collector.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Notes</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/cnot-hispid5"/>
@@ -298,7 +298,7 @@
 		<rdfs:label xml:lang="en">Organism Quantity</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">An indication of abundance of the taxon at the collecting locality as recorded by the collector</skos:definition>
-		<dwcattributes:status>proposed</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>dominant</skos:example>
 		<skos:example>rare</skos:example>
@@ -314,7 +314,7 @@
 		<rdfs:label xml:lang="en">Organism Quantity Type</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The type of entity to which the number or enumeration value reported for the quantity of organisms in organismQuantity refers</skos:definition>
-		<dwcattributes:status>proposed</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Tansley (1946) scale</skos:example>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/22</skos:note>
@@ -324,7 +324,7 @@
 		<rdfs:label xml:lang="en">Establishment Means</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The process by which the individual(s) represented in the Occurrence became established at the location.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/EstablishmentMeans</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/posnat-hispid5"/>
@@ -337,39 +337,39 @@
 		<rdfs:label xml:lang="en">Life Form</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A description of the habit or life form of the specimen on which the collection object is based.</skos:definition>
-		<dwcattributes:status>discouraged</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/lifeForm-2015-07-11"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/form-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/17</skos:note>
+		<skos:note>In the context of specimen data the use of this term is discouraged as it should only be used to transfer the lifeForm information associated with that specimen.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lifeStage">
 		<rdfs:label xml:lang="en">Life Stage</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The life stage of the individual at the time it was collected.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/life_stage.xmll</skos:scopeNote>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/sex">
 		<rdfs:label xml:lang="en">Sex</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The sex of the individual</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Units/Unit/Sex</dwcattributes:abcdEquivalence>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/reproductiveCondition">
 		<rdfs:label xml:lang="en">Reproductive Condition</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Reproductive condition(s) of the individual represented by the collection object.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>flowers</skos:example>
 		<skos:example>flowers|fruit</skos:example>
@@ -383,7 +383,7 @@
 		<rdfs:label xml:lang="en">Associated Taxa</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A list of names of taxa and their associations with the Occurrence.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>host:Nothofagus cunninghamii</skos:example>
 		<skos:example>growingWith:Eucalyptus regnans|growingWith:Atherospermum moschatum</skos:example>
@@ -397,7 +397,7 @@
 		<rdfs:label xml:lang="en">Association Type</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Type of association</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/associationType-2015-07-11"/>
@@ -411,7 +411,7 @@
 		<rdfs:label xml:lang="en">Associated Sequences</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">List of identifiers for sequences associated with the collection object.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Sequences/Sequence/ID-in-Database</dwcattributes:abcdEquivalence>
 		<skos:scopeNote xml:lang="en">Use Genbank accession numbers.</skos:scopeNote>
@@ -422,7 +422,7 @@
 		<rdfs:label xml:lang="en">Disposition</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Current state of the specimen with respect to the collection identified by the collectionCode and institutionCode.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>missing</skos:example>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/15</skos:note>
@@ -432,7 +432,7 @@
 		<rdfs:label xml:lang="en">Event ID</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">An identifier for the set of information associated with an Event (something that occurs at a place and time).</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Code</dwcattributes:abcdEquivalence>
 		<skos:scopeNote xml:lang="en">May be a global unique identifier or an identifier specific to the data set.</skos:scopeNote>
@@ -443,7 +443,7 @@
 		<rdfs:label xml:lang="en">Parent Event ID</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">An identifier for the broader Event that groups this and potentially other Events.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:scopeNote xml:lang="en">May be a global unique identifier or an identifier specific to the data set. Must be an existing EventID. Could be used for collecting trips and expeditions.</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/75</skos:note>
@@ -453,44 +453,44 @@
 		<rdfs:label xml:lang="en">Habitat</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Description of the habitat from where the collection object was collected, including geology and soil type, as well as the associated species.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/Text</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/hab-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<skos:note></skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/topography">
 		<rdfs:label xml:lang="en">Topography</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A description of the topography of the habitat from which the collection object was collected</skos:definition>
-		<dwcattributes:status>discouraged</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/topography-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/AreaDetail</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/top-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<skos:note></skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/aspect">
 		<rdfs:label xml:lang="en">Aspect</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The abbreviated aspect or outlook of the site from which the collection object was gathered.</skos:definition>
-		<dwcattributes:status>discouraged</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/aspect-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Aspect/Ordination</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/asp-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<skos:note></skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/geologicalSubstrate">
 		<rdfs:label xml:lang="en">Geological Substrate</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The substrate or parent rock material in the habitat from which the collection object was collected.</skos:definition>
-		<dwcattributes:status>discouraged</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/geologicalSubstrate-2015-07-11"/>
@@ -503,7 +503,7 @@
 		<rdfs:label xml:lang="en">Substrate</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The material from which the collection object was collected.</skos:definition>
-		<dwcattributes:status>discouraged</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/substrate-2015-07-11"/>
@@ -515,7 +515,7 @@
 		<rdfs:label xml:lang="en">Soil</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Description of the surface soil type from which the collection object was collected.</skos:definition>
-		<dwcattributes:status>discouraged</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/soil-2015-07-11"/>
@@ -528,7 +528,7 @@
 		<rdfs:label xml:lang="en">Vegetation</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Description of the vegetation from which the specimen was collected.</skos:definition>
-		<dwcattributes:status>discouraged</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/vegetation-2015-07-11"/>
@@ -541,7 +541,7 @@
 		<rdfs:label xml:lang="en">Event Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The date or period when the specimen was collected</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>2014-10-03</skos:example>
 		<skos:example>1954-11</skos:example>
@@ -557,7 +557,7 @@
 		<rdfs:label xml:lang="en">Verbatim Event Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The verbatim date information of when the specimen was collected</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/DateTime/DateText</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/texcdat-hispid5"/>
@@ -577,7 +577,7 @@
 		<rdfs:label xml:lang="en">Locality</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Description of the locality from where the specimen was collected.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/LocalityText</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/loc-hispid5"/>
@@ -587,7 +587,7 @@
 		<rdfs:label xml:lang="en">Verbatim Locality</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Verbatim locality description</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/LocalityText</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/loc-hispid5"/>
@@ -598,7 +598,7 @@
 		<rdfs:label xml:lang="en">Continent</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the continent in which the collecting locality is situated.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Australia</skos:example>
 		<skos:example>South America</skos:example>
@@ -609,7 +609,7 @@
 		<rdfs:label xml:lang="en">Country</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the country in which the collecting locality is situated</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Australia</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Country/Name</dwcattributes:abcdEquivalence>
@@ -621,7 +621,7 @@
 		<rdfs:label xml:lang="en">Country Code</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The standard ISO-3166 code for the country in which the collecting locality is situated.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>AU</skos:example>
 		<skos:example>NZ</skos:example>
@@ -634,7 +634,7 @@
 		<rdfs:label xml:lang="en">State Province</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the next smaller administrative region after country in which the collecting locality is situated.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>New South Wales</skos:example>
 		<skos:example>Kalimantan Barat</skos:example>
@@ -646,7 +646,7 @@
 		<rdfs:label xml:lang="en">County</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the next smaller administrative region after stateProvince in which the collecting locality is situated.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Communa Cabo de Hornos</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/NamedAreas/NamedArea[AreaClass="county"]/AreaName</dwcattributes:abcdEquivalence>
@@ -657,7 +657,7 @@
 		<rdfs:label xml:lang="en">Water Body</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the water body in which the Location occurs.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Indian Ocean</skos:example>
 		<skos:example>Bass Strait</skos:example>
@@ -669,7 +669,7 @@
 		<rdfs:label xml:lang="en">Island Group</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the island group in which the Location occurs.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Cocos Islands</skos:example>
 		<skos:example>Auckland Islands</skos:example>
@@ -682,7 +682,7 @@
 		<rdfs:label xml:lang="en">Island</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name of the island on or near which the Location occurs.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Macquarie Island</skos:example>
 		<skos:example>Flinders Island</skos:example>
@@ -694,7 +694,7 @@
 		<rdfs:label xml:lang="en">Decimal Latitude</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The geographic latitude of the collecting locality</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>-27.8566666667</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/LatitudeDecimal</dwcattributes:abcdEquivalence>
@@ -704,7 +704,7 @@
 		<rdfs:label xml:lang="en">Decimal Longitude</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The geodetic longitude of the collecting locality</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>153.4422222222</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/LongitudeDecimal</dwcattributes:abcdEquivalence>
@@ -714,7 +714,7 @@
 		<rdfs:label xml:lang="en">Geodetic Datum</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude are based.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>EPSG:4326</skos:example>
 		<skos:example>EPSG:4283</skos:example>
@@ -728,7 +728,7 @@
 		<rdfs:label xml:lang="en">Verbatim Latitude</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The verbatim original latitude for the Location</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>15° 5' 59 S"</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/VerbatimLatitude</dwcattributes:abcdEquivalence>
@@ -743,7 +743,7 @@
 		<rdfs:label xml:lang="en">Verbatim Longitude</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The verbatim original longitude for the Location</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>153° 26' 32 E"</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/VerbatimLongitude</dwcattributes:abcdEquivalence>
@@ -758,7 +758,7 @@
 		<rdfs:label xml:lang="en">Verbatim Coordinates</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The verbatim original geographic coordinates for the Location</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>MGA 55 568183 5288204</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMZone + //Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMEasting + //Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesUTM/UTMNorthing</dwcattributes:abcdEquivalence>
@@ -772,7 +772,7 @@
 		<rdfs:label xml:lang="en">Verbatim Coordinate System</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The spatial coordinate system for the verbatimLatitude and verbatimLongitude or the verbatimCoordinates of the Location.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>decimal degrees</skos:example>
 		<skos:example>UTM</skos:example>
@@ -785,7 +785,7 @@
 		<rdfs:label xml:lang="en">Verbatim SRS</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which coordinates given in verbatimLatitude and verbatimLongitude, or verbatimCoordinates are based</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>EPSG:28352</skos:example>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/spapro-hispid5"/>
@@ -796,7 +796,7 @@
 		<rdfs:label xml:lang="en">Coordinate Precision</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A decimal representation of the precision of the coordinates given in the decimalLatitude and decimalLongitude</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>0.016667</skos:example>
 		<skos:example>0.0002778</skos:example>
@@ -806,7 +806,7 @@
 		<rdfs:label xml:lang="en">Coordinate Uncertainty In Meters</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Estimate of the maximum horizontal distance between the point referenced by the decimalLatitude and decimalLongitude and the actual location the collection took place.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinatesLatLong/CoordinateErrorDistanceInMeters</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/geoacy-hispid5"/>
@@ -817,7 +817,7 @@
 		<rdfs:label xml:lang="en">Georeferenced By</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Name(s) of person(s), group(s) or organisation(s) who took the georeference of the Location</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>National Herbarium of Victoria (MEL)</skos:example>
 		<skos:example>Walsh, N.G.</skos:example>
@@ -830,7 +830,7 @@
 		<rdfs:label xml:lang="en">Georeference Protocol</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A description of or reference to the methods used to determine the geographic coordinates of the Location.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>GEOLocate</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinateMethod</dwcattributes:abcdEquivalence>
@@ -842,7 +842,7 @@
 		<rdfs:label xml:lang="en">Georeferenced Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The date on which the Location was georeferenced.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised[Parameter="georeferencedDate"]/LowerValue</dwcattributes:abcdEquivalence>
 		<skos:scopeNote xml:lang="en">Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).</skos:scopeNote>
@@ -852,7 +852,7 @@
 		<rdfs:label xml:lang="en">Georeference Sources</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A list of maps, gazetteers, or other resources used to georeference the Location, described specifically enough to allow anyone in the future to use the same resource.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceSources</dwcattributes:abcdEquivalence>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
@@ -861,7 +861,7 @@
 		<rdfs:label xml:lang="en">Georeference Verification Status</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A categorical description of the extent to which the georeference has been verified to represent the best possible spatial description.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceVerificationStatus</dwcattributes:abcdEquivalence>
 		<skos:scopeNote xml:lang="en">This term is frequently only applied after an assertion has been made that the georeference might be incorrect, for instance data quality assertion in ALA or outlier detection.</skos:scopeNote>
@@ -873,7 +873,7 @@
 		<rdfs:label xml:lang="en">Georeference Remarks</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Notes or comments about the spatial description determination, explaining assumptions made in addition or opposition to the those formalised in the method referred to in georeferenceProtocol.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceRemarks</dwcattributes:abcdEquivalence>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
@@ -882,7 +882,7 @@
 		<rdfs:label xml:lang="en">Minimum Elevation In Meters</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Elevation or lower value of a range of elevation in metres.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Altitude/MeasurementOrFactAtomised[UnitOfMeasurement="metres"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/alt-hispid5"/>
@@ -892,7 +892,7 @@
 		<rdfs:label xml:lang="en">Maximum Elevation In Meters</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Higher value of the range of elevation in metres.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Altitude/MeasurementOrFactAtomised[UnitOfMeasurement="metres"]/UpperValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/altx-hispid5"/>
@@ -902,7 +902,7 @@
 		<rdfs:label xml:lang="en">Verbatim Elevation</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The original description of the elevation as provided by the collector.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Altitude/MeasurementOrFactText</dwcattributes:abcdEquivalence>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
@@ -911,7 +911,7 @@
 		<rdfs:label xml:lang="en">Elevation Method</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Method by which the elevation was determined.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/elevationMethod-2015-07-11"/>
@@ -923,7 +923,7 @@
 		<rdfs:label xml:lang="en">Minimum Depth In Meters</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Depth or the lesser of a range of depth below the local surface in metres.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue with
 
@@ -935,7 +935,7 @@
 		<rdfs:label xml:lang="en">Maximum Depth In Meters</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The greater of a range of depths below the local surface in metres.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue with
 
@@ -947,7 +947,7 @@
 		<rdfs:label xml:lang="en">Verbatim Depth</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Verbatim description of the depth, as provided by the collector.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactText</dwcattributes:abcdEquivalence>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
@@ -956,7 +956,7 @@
 		<rdfs:label xml:lang="en">Minimum Distance Above Surface in Meters</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The lower value for the height above the surface.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:note xml:lang="en">This is a local off-set to the elevation - e.g., to record the height above the ground of epiphytic taxa in trees. </skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
@@ -965,7 +965,7 @@
 		<rdfs:label xml:lang="en">Maximum Distance Above Surface in Meters</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The greater value for the height above the surface.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
@@ -973,7 +973,7 @@
 		<rdfs:label xml:lang="en">Identification ID</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Identifier for the Identification</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:scopeNote xml:lang="en">Use of a UUID is recommended.</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/2</skos:note>
@@ -983,7 +983,7 @@
 		<rdfs:label xml:lang="en">Identification Qualifier</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A brief phrase or standard term to express doubt about an identification.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="true"]/Result/TaxonIdentified/ScientificName/IdentificationQualifier + //Unit/Identifications/Identification[PreferredFlag="true"]/Result/TaxonIdentified/ScientificName/IdentificationQualifier[@insertionpoint]</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/idql-hispid5"/>
@@ -993,7 +993,7 @@
 		<rdfs:label xml:lang="en">Name Addendum</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A suffix added after the scientific name to indicate aggregate taxa or  more or less inclusive taxon concepts</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/nameAddendum-2015-07-11"/>
@@ -1006,7 +1006,7 @@
 		<rdfs:label xml:lang="en">Identification Verification Status</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">An indicator of the extent to which the taxonomic identification has been verified to be correct.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/VerificationLevel</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vlev-hispid5"/>
@@ -1017,7 +1017,7 @@
 		<rdfs:label xml:lang="en">Identifier Role</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Categorical indicator of the type of contribution made by the determiner.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/identifierRole-2015-07-11"/>
@@ -1031,7 +1031,7 @@
 		<rdfs:label xml:lang="en">Identified By</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name(s) of people, groups, or organisations who  identified the collection object.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Identifiers/IdentifiersText</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vnam-hispid5"/>
@@ -1041,7 +1041,7 @@
 		<rdfs:label xml:lang="en">Date Identified</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The date on which the collection object was identified.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Date/ISODateTimeBegin</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vdat-hispid5"/>
@@ -1051,7 +1051,7 @@
 		<rdfs:label xml:lang="en">Verbatim Date Identified</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The verbatim date of the Identification.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/verbatimDateIdentified-2015-07-11"/>
@@ -1064,15 +1064,15 @@
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The protocol or method used by the identifier to establish the identification of the specimen.</skos:definition>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/identification_protocol.xml</skos:scopeNote>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
-	</rdf:Description>	
+	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationReferences">
 		<rdfs:label xml:lang="en">Identification References</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">References used for the Identification.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vlit-hispid5"/>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/16</skos:note>
@@ -1085,7 +1085,7 @@
 		<skos:example>Trymalium floribundum Steud. subsp. floribundum, det. AVH, 07.xi.2005; Trymalium billardierei var. tomentosum Reissek; Trymalium floribundum Steud.</skos:example>
 		<skos:example>Capillipedium parviflorum (R.Br.) Stapf; cf. Chrysopogon parviflorus.</skos:example>
 		<skos:example>Trymalium floribundum Steud. subsp. floribundum, det. AVH, 07.xi.2005; Trymalium billardierei; Trymalium floribundum Steud.</skos:example>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="FALSE"]/*</dwcattributes:abcdEquivalence>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/IdentificationHistory</dwcattributes:abcdEquivalence>
@@ -1098,7 +1098,7 @@
 		<rdfs:label xml:lang="en">Identification Remarks</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Any additional comments made by the determiner as part of the Identification.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Notes</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/idcom-hispid5"/>
@@ -1108,7 +1108,7 @@
 		<rdfs:label xml:lang="en">Type Status Qualifier</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Standard term to qualify the type status designation.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/typeStatusQualifier-2015-07-11"/>
@@ -1121,7 +1121,7 @@
 		<rdfs:label xml:lang="en">Type Status</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A list (concatenated and separated) of nomenclatural types (type status, typified scientific name, publication) applied to the subject.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>HOLOTYPE of Boronia deanei subsp. acutifolia Duretto</skos:example>
 		<skos:example>ISOTYPE of Babingtonia bidwillii A.R.Bean, fid. Walsh, N.G., 1999-10-05</skos:example>
@@ -1132,7 +1132,7 @@
 		<rdfs:label xml:lang="en">Type Of Type</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A term indicating the type status of the collection object.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/typeStatus-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/NomenclaturalTypeDesignations/NomenclaturalTypeDesignation[0]/TypeStatus</dwcattributes:abcdEquivalence>
@@ -1140,13 +1140,13 @@
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/type_of_type.xml</skos:scopeNote>
 		<skos:example>hototype</skos:example>
 		<skos:example>http://hiscom.chah.org.au/hispid/vocabulary/type_status/holotype</skos:example>
-		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/> 
+		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/typifiedName">
 		<rdfs:label xml:lang="en">Typified Name</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The scientific name of which the collection object is a type.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/typifiedName-2015-07-11"/>
@@ -1158,7 +1158,7 @@
 		<rdfs:label xml:lang="en">Verbatim Identification</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The verbatim taxonomic name provided by the identifier</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/verbatimIdentification-2015-07-11"/>
@@ -1175,7 +1175,7 @@
 		<rdfs:label xml:lang="en">Taxon Rank</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Taxonomic rank of the taxon to which the collection object has been identified.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>subspecies</skos:example>
 		<skos:scopeNote>Vocabulary: http://rs.gbif.org/vocabulary/gbif/rank.xml</skos:scopeNote>
@@ -1185,7 +1185,7 @@
 		<rdfs:label xml:lang="en">Kingdom</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Full scientific name of the kingdom in which the taxon is classified</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Plantae</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank="regnum"]/HigherTaxonName</dwcattributes:abcdEquivalence>
@@ -1195,7 +1195,7 @@
 		<rdfs:label xml:lang="en">Phylum</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Full scientific name of the phylum in which the taxon is classified</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Streptophyta</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank="phylum"]/HigherTaxonName</dwcattributes:abcdEquivalence>
@@ -1205,7 +1205,7 @@
 		<rdfs:label xml:lang="en">Class</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Full scientific name of the class in which the taxon is classified</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Equisetopsida</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank="classis"]/HigherTaxonName</dwcattributes:abcdEquivalence>
@@ -1215,7 +1215,7 @@
 		<rdfs:label xml:lang="en">Order</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Full scientific name of the order in which the taxon is classified</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Fabales</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank="ordo"]/HigherTaxonName</dwcattributes:abcdEquivalence>
@@ -1225,7 +1225,7 @@
 		<rdfs:label xml:lang="en">Family</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Full scientific name of the order in which the family is classified</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Fabaceae</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/HigherTaxa/HigherTaxon[HigherTaxonRank="familia"]/HigherTaxonName</dwcattributes:abcdEquivalence>
@@ -1236,7 +1236,7 @@
 		<rdfs:label xml:lang="en">Genus</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Full scientific name of the order in which the genus is classified</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Acacia</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/GenusOrMonomial</dwcattributes:abcdEquivalence>
@@ -1247,7 +1247,7 @@
 		<rdfs:label xml:lang="en">Specific Epithet</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Species epithet of the scientific name.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>dealbata</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/FirstEpithet</dwcattributes:abcdEquivalence>
@@ -1258,7 +1258,7 @@
 		<rdfs:label xml:lang="en">Infraspecific Epithet</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Infraspecific epithet of the scientific name.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>subalpina</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/InfraspecificEpithet</dwcattributes:abcdEquivalence>
@@ -1269,7 +1269,7 @@
 		<rdfs:label xml:lang="en">Scientific Name ID</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">An identifier for the nomenclatural (not taxonomic) details of a scientific name.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
 	</rdf:Description>
@@ -1277,7 +1277,7 @@
 		<rdfs:label xml:lang="en">Scientific Name</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Full scientific name with authorship</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Dicranoloma menziesii (Taylor) Renauld</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/FullScientificNameString</dwcattributes:abcdEquivalence>
@@ -1288,7 +1288,7 @@
 		<rdfs:label xml:lang="en">Scientific Name Authorship</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Authorship of the scientific name formatted to the conventions of the applicable nomenclatural code.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>L.</skos:example>
 		<skos:example>(Taylor) Renauld</skos:example>
@@ -1301,7 +1301,7 @@
 		<rdfs:label xml:lang="en">Nomenclatural Code</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Nomenclatural code under which the scientific name is applied.</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>ICBN</skos:example>
 		<skos:example>ICNCP</skos:example>
@@ -1311,8 +1311,8 @@
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonRemarks">
 		<rdfs:label xml:lang="en">Taxon Remarks</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en"></skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<skos:definition xml:lang="en"/>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/NameComments</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/namcom-hispid5"/>
@@ -1323,7 +1323,7 @@
 		<rdfs:label xml:lang="en">Vernacular Name</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A vernacular name assigned to the specimen.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vernam-hispid5"/>
 		<skos:note xml:lang="en">Only use when provided by the collector, e.g. when the collection is a result of ethnobotanical study.</skos:note>
@@ -1333,7 +1333,7 @@
 		<rdfs:label xml:lang="en">Cultivar Group Name</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Cultivar group name</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/cultivarGroupName-2015-07-11"/>
@@ -1346,7 +1346,7 @@
 		<rdfs:label xml:lang="en">Cultivar Name</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Cultivar name</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/cultivarName-2015-07-11"/>
@@ -1359,7 +1359,7 @@
 		<rdfs:label xml:lang="en">Trade Designation</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Trade designation</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/tradeDesignation-2015-07-11"/>
@@ -1372,7 +1372,7 @@
 		<rdfs:label xml:lang="en">Hybrid Flag</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Flag to indicate whether the plant name refers to a hybrid, graft chimaera or intergrade, without reference to rank.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/hybridFlag-2015-07-11"/>
@@ -1385,19 +1385,19 @@
 		<rdfs:label xml:lang="en">Barcode</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The unique barcode for the collection object.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/barcode-2015-10-23"/>
 		<dwcattributes:abcdEquivalence>Not in ABCD</dwcattributes:abcdEquivalence>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/miscellaneousRemarks">
 		<rdfs:label xml:lang="en">Miscellaneous Remarks</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Any additional information to be transferred pertaining to the collection object.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/miscellaneousRemarks-2015-07-11"/>
@@ -1410,7 +1410,7 @@
 		<rdfs:label xml:lang="en">Exsiccata Series</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Exsiccata series</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/exsiccataSeries-2015-07-11"/>
@@ -1421,7 +1421,7 @@
 		<rdfs:label xml:lang="en">Exsiccata Fascicle</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Fascicle in exsiccata series</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/exsiccataFascicle-2015-07-11"/>
@@ -1432,7 +1432,7 @@
 		<rdfs:label xml:lang="en">Exsiccata Number</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Number in exsiccata series</skos:definition>
-		<dwcattributes:status>new</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/exsiccataNumber-2015-07-11"/>
@@ -1443,7 +1443,7 @@
 		<rdfs:label xml:lang="en">Voucher Flag</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Term to indicate the collection object has served as a voucher for a special purpose.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFlag-2015-10-23"/>
@@ -1456,19 +1456,19 @@
 		<rdfs:label xml:lang="en">Voucher For</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The name, code or other reference to the project for which the specimen is a voucher.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFor-2015-10-23"/>
 		<dwcattributes:abcdEquivalence>Not in ABCD</dwcattributes:abcdEquivalence>
-		<skos:scopeNote></skos:scopeNote>
+		<skos:scopeNote/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/provenanceTypeFlag">
 		<rdfs:label xml:lang="en">Provenance Type Flag</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Code to indicate the type of provenance of the cultivated material from which this collection object was taken.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/provenanceTypeFlag-2015-07-11"/>
@@ -1483,7 +1483,7 @@
 		<rdfs:label xml:lang="en">Cultivated Plant Provenance</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Descriptive and coded information that describes the geographic position from which the source material of the cultivated plant from which the collection object was taken was collected.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/cultivatedPlantProvenance-2015-07-11"/>
@@ -1495,7 +1495,7 @@
 		<rdfs:label xml:lang="en">Donor</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The person, business or institution from which the collection object was obtained.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/donor-2015-07-11"/>
@@ -1507,7 +1507,7 @@
 		<rdfs:label xml:lang="en">Duplicates Distributed To</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">List of institutions replicates have been sent to.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/duplicatesDistributedTo-2015-07-11"/>
@@ -1522,7 +1522,7 @@
 		<rdfs:label xml:lang="en">Loan Identifier</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The number assigned to the loan by the lending institution.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/loanIdentifier-2015-07-11"/>
@@ -1534,7 +1534,7 @@
 		<rdfs:label xml:lang="en">Loan Destination</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Institution to which the loan is sent.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/loanDestination-2015-07-11"/>
@@ -1547,7 +1547,7 @@
 		<rdfs:label xml:lang="en">Loan For Botanist</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Name(s) of the botanist(s) for whom the loan is intended.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/loanForBotanist-2015-07-11"/>
@@ -1559,7 +1559,7 @@
 		<rdfs:label xml:lang="en">Loan Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The date the loan is prepared and/or sent.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/loanDate-2015-07-11"/>
@@ -1571,7 +1571,7 @@
 		<rdfs:label xml:lang="en">Loan Return Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The date the loan is due to be returned.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/loanReturnDate-2015-07-11"/>
@@ -1582,8 +1582,9 @@
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/numberOfSheets">
 		<rdfs:label xml:lang="en">Number of Sheets</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<rdf:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
 		<skos:definition xml:lang="en">The number of sheets or parts included in the transaction.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/numshe-hispid5"/>
@@ -1595,7 +1596,7 @@
 		<rdfs:label xml:lang="en">Permit or Consent Type</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Type of permit or consent.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentType-2015-10-23"/>
@@ -1608,7 +1609,7 @@
 		<rdfs:label xml:lang="en">Permit or Consent Reference Number</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Reference number allocated to the permit or consent by the issuing authority.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentReferenceNumber-2015-10-23"/>
@@ -1618,97 +1619,97 @@
 		<rdfs:label xml:lang="en">Permit or Consent Issued By</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Name of the authority or person(s) by whom the permit or consent was issued.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedBy-2015-10-23"/>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedTo">
 		<rdfs:label xml:lang="en">Permit or Consent Issued To</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Name(s) of the person(s) or organisation to whom the permit or consent was issued.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedTo-2015-10-23"/>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedDate">
 		<rdfs:label xml:lang="en">Permit or Consent Issued Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Date the permit or consent was issued.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedDate-2015-10-23"/>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentValidDate">
 		<rdfs:label xml:lang="en">Permit or Consent Valid Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Date or period for which the permit or consent is valid.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentValidDate-2015-10-23"/>
 		<skos:scopeNote xml:lang="en">ISO-8601</skos:scopeNote>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentStatus">
 		<rdfs:label xml:lang="en">Permit or Consent Status</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Status of the permit of consent.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentStatus-2015-10-23"/>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status.xml</skos:scopeNote>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentConditions">
 		<rdfs:label xml:lang="en">Permit or Consent Conditions</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Conditions on the permit or consent, which may affect how the specimens collected under the consent may be used or distributed.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentConditions-2015-10-23"/>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentRemarks">
 		<rdfs:label xml:lang="en">Permit or Consent Remarks</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Any additional comments pertaining to the permit or consent.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentRemarks-2015-10-23"/>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentLink">
 		<rdfs:label xml:lang="en">Consent Link</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The link to an electronic version of the permit or consent.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentLink-2015-10-23"/>
-		<skos:note></skos:note>
+		<skos:note/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
 		<rdfs:label xml:lang="en">Creator</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Creator of the media object.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/65</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
@@ -1717,7 +1718,7 @@
 		<rdfs:label xml:lang="en">Create Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Date the media object, or its source, was created.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://ns.adobe.com/xap/1.0/"/>
 		<skos:scopeNote xml:lang="en">ISO-8601</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
@@ -1726,7 +1727,7 @@
 		<rdfs:label xml:lang="en">Digitization Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Date the media object was created.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<skos:scopeNote xml:lang="en">ISO-8601</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
@@ -1735,7 +1736,7 @@
 		<rdfs:label xml:lang="en">Source</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Original source of the media object, if the resource was digitised from a non-digital source.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1743,7 +1744,7 @@
 		<rdfs:label xml:lang="en">Title</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Title of the media object, including subtitles, if any.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1751,7 +1752,7 @@
 		<rdfs:label xml:lang="en">Description</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Description of the media resource.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1759,7 +1760,7 @@
 		<rdfs:label xml:lang="en">Caption</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Free-form text to be displayed together with (rather than instead of) a media object that is suitable for captions.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1767,7 +1768,7 @@
 		<rdfs:label xml:lang="en">Physical Setting</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The setting of the content represented in the media object</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<skos:scopeNote>Vocabulary: natural|artificial|edited</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
@@ -1776,10 +1777,10 @@
 		<rdfs:label xml:lang="en">Subject Category</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A term (identified by a URI) indicating the broad subject or content of the media object.</skos:definition>
-		<dwcattributes:status>current</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://iptc.org/std/Iptc4xmpExt/2008-02-29/"/>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
-		<skos:note>Terms from different vocabularies may be used.  The intent is to provide a vocabulary for HISPID. The current vocabulary is an early draft.</skos:note>
+		<skos:note>Terms from different vocabularies may be used.</skos:note>
 		<skos:note>In Audubon Core this term is mapped to http://iptc.org/std/Iptc4xmpExt/2008-02-29/Cvterm, however that term was deprecated by IPTC 2015 Revision 3.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1787,7 +1788,7 @@
 		<rdfs:label xml:lang="en">Tag</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Tag or keyword.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1795,7 +1796,7 @@
 		<rdfs:label xml:lang="en">Subject Part</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Part of the subject that is imaged.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1803,7 +1804,7 @@
 		<rdfs:label xml:lang="en">Subject Orientation</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Orientation of the subject represented in the media object with respect to the capturing device.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1811,7 +1812,7 @@
 		<rdfs:label xml:lang="en">Capture Device</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Device used to create the media object.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1819,7 +1820,7 @@
 		<rdfs:label xml:lang="en">Resource Creation Technique</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Information about technical aspects of the creation of the media object.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1827,7 +1828,7 @@
 		<rdfs:label xml:lang="en">Related Resource ID</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Identifier(s) of related media objects, e.g.different view angles of the same subject.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1835,7 +1836,7 @@
 		<rdfs:label xml:lang="en">Media Item ID</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">An arbitrary code that is unique for the resource, with the resource being either a provider, collection, or media item</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1843,7 +1844,7 @@
 		<rdfs:label xml:lang="en">Subtype</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Any URI may be used that provides for more specialization than the type. Possible values are community-defined.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<skos:scopeNote xml:lang="en">URI to vocabulary term</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/subtype.xml</skos:scopeNote>
@@ -1854,7 +1855,7 @@
 		<rdfs:label xml:lang="en">Metadata Date</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Point in time recording when the last modification to metadata (not necessarily the media object itself) occurred.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://ns.adobe.com/xap/1.0/"/>
 		<skos:scopeNote xml:lang="en">ISO-8601</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
@@ -1863,7 +1864,7 @@
 		<rdfs:label xml:lang="en">Provider Managed ID</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A free-form identifier (a simple number, an alphanumeric code, a URL, etc.) that is unique and meaningful primarily for the data provider.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1871,7 +1872,7 @@
 		<rdfs:label xml:lang="en">Available</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The date (often a range) that the resource became or will become available.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 		<skos:scopeNote xml:lang="en">ISO-8601</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
@@ -1880,7 +1881,7 @@
 		<rdfs:label xml:lang="en">Has Service Access Point</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Service access point for metadata about this media resource</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1888,7 +1889,7 @@
 		<rdfs:label xml:lang="en">Rights</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Information about rights held in and over the resource.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1896,7 +1897,7 @@
 		<rdfs:label xml:lang="en">License Terms</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The license statement defining how resources may be used.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://ns.adobe.com/xap/1.0/rights/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1904,7 +1905,7 @@
 		<rdfs:label xml:lang="en">License URL</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A URL defining or further elaborating on the license statement (e. g., a web page explaining the precise terms of use).</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://ns.adobe.com/xap/1.0/rights/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1912,7 +1913,7 @@
 		<rdfs:label xml:lang="en">License Logo URL</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A URL providing access to a logo that symbolizes the License.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1920,7 +1921,7 @@
 		<rdfs:label xml:lang="en">Credit</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Attribution statement</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://ns.adobe.com/photoshop/1.0/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1928,7 +1929,7 @@
 		<rdfs:label xml:lang="en">Attribution URL</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The URL of the icon or logo image to appear in source attribution.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1936,7 +1937,7 @@
 		<rdfs:label xml:lang="en">Attribution Link URL</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The URL where information about ownership, attribution, etc. of the resource may be found.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1944,7 +1945,7 @@
 		<rdfs:label xml:lang="en">Funding</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Organizations or individuals who funded the creation of the resource.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1952,7 +1953,7 @@
 		<rdfs:label xml:lang="en">Provider</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Person or organization responsible for presenting the media resource.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1960,7 +1961,7 @@
 		<rdfs:label xml:lang="en">Subject Category Vocabulary</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Any vocabulary or formal classification from which terms in the Subject Category have been drawn.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1968,7 +1969,7 @@
 		<rdfs:label xml:lang="en">Taxon Coverage</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A higher taxon (e. g., a genus, family, or order) at the level of the genus or higher, that covers all taxa that are the primary subject of the resource</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1976,7 +1977,7 @@
 		<rdfs:label xml:lang="en">Derived From</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A reference to an original resource from which the current one is derived.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -1984,7 +1985,7 @@
 		<rdfs:label xml:lang="en">Associated Specimen Reference</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A reference to a specimen associated with this resource.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<skos:scopeNote xml:lang="en">This should be in the same form as catalogNumber</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
@@ -1993,7 +1994,7 @@
 		<rdfs:label xml:lang="en">Associated Observation Reference</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A reference to an observation associated with this resource.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -2001,7 +2002,7 @@
 		<rdfs:label xml:lang="en">Access URI</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A URI that uniquely identifies a service that provides a representation of the underlying resource. If this resource can be acquired by an http request, its http URL should be given. If not, but it has some URI in another URI scheme, that may be given here.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -2009,7 +2010,7 @@
 		<rdfs:label xml:lang="en">Format</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A string describing the technical format of the resource (file format or physical medium).</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
 		<skos:scopeNote>Vocabulary: dc:format</skos:scopeNote>
 		<skos:note xml:lang="en">maybe be more appropriate to use  dcterms:format?</skos:note>
@@ -2019,7 +2020,7 @@
 		<rdfs:label xml:lang="en">Variant</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A URI designating what this Service Access Point provides. Some suggested values are the URIs ac:Thumbnail, ac:Trailer, ac:LowerQuality, ac:MediumQuality, ac:GoodQuality, ac:BestQuality, and ac:Offline. Additional URIs from communities of practice may be introduced.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
@@ -2027,7 +2028,7 @@
 		<rdfs:label xml:lang="en">Further Information URL</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">The URL of a Web site that provides additional information about the version of the media resource that is provided by the Service Access Point.</skos:definition>
-		<dwcattributes:status>under consideration</dwcattributes:status>
+		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
