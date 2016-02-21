@@ -470,7 +470,7 @@
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/topography-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/AreaDetail</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/top-hispid5"/>
-		<skos:note></skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/aspect">
@@ -497,6 +497,7 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="geologicalSubstrate"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/sub-hispid5"/>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/substrate">
@@ -509,6 +510,7 @@
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/substrate-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="substrate"]/LowerValue</dwcattributes:abcdEquivalence>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/14</skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/soil">
@@ -522,6 +524,7 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="soil"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/soil-hispid5"/>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/vegetation">
@@ -535,6 +538,7 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="vegetation"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/veg-hispid5"/>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventDate">
