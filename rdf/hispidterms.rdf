@@ -322,7 +322,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/fre-hispid5"/>
 		<skos:scopeNote xml:lang="en">The value should be from "Tansley (1946) scale"</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity.xml</skos:scopeNote>
-		<skos:note xml:lang="en">organismQuantityType  must be delivered alongside this term. Note that this is a considerable deviation from earlier versions of HISPID, where Frequency was a free text field.</skos:note>
+		<skos:note xml:lang="en">organismQuantityType must be delivered alongside this term. Note that this is a considerable deviation from earlier versions of HISPID, where Frequency was a free text field. Free text strings from earlier implementations should be concatenated into occurrenceRemarks.</skos:note>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/22</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
@@ -358,7 +358,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/lifeForm-2015-07-11"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/form-hispid5"/>
-		<skos:note>In the context of specimen data the use of this term is discouraged as it should only be used to transfer the lifeForm information associated with that specimen.</skos:note>
+		<skos:note>In previous editions of HISPID lifeForm (form) has been free text, but in the current edition we&apos;ve added a vocabulary. Free-text from previous implementations should be concatenated into occurrenceRemarks when exchanged. In the context of specimen data the term should only be used to transfer the lifeForm information associated with that specimen, not the taxon it belongs to.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lifeStage">
@@ -391,7 +391,7 @@ Version 5: </dcterms:provenance>
 		<skos:example>flowers|fruit</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="reproductiveCondition"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/phe-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/reproductive_condition.xml</skos:scopeNote>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/reproductive_colindition.xml</skos:scopeNote>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/12</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
@@ -486,7 +486,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/topography-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/AreaDetail</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/top-hispid5"/>
-		<skos:note></skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged. This term is to be used for interpreted data; verbatim collecting data should be included in habitat.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/aspect">
@@ -499,7 +499,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/aspect-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Aspect/Ordination</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/asp-hispid5"/>
-		<skos:note></skos:note>
+		<skos:note>As in previous editions of HISPID, when exchanged this information needs to be included in the habitat description.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/geologicalSubstrate">
@@ -513,6 +513,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="geologicalSubstrate"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/sub-hispid5"/>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged. This term is to be used for interpreted data; verbatim collecting data should be included in habitat.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/substrate">
@@ -525,6 +526,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/substrate-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="substrate"]/LowerValue</dwcattributes:abcdEquivalence>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/14</skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged. This term is to be used for interpreted data; verbatim collecting data should be included in habitat.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/soil">
@@ -538,6 +540,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="soil"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/soil-hispid5"/>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged. This term is to be used for interpreted data; verbatim collecting data should be included in habitat.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/vegetation">
@@ -551,6 +554,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="vegetation"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/veg-hispid5"/>
 		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged. This term is to be used for interpreted data; verbatim collecting data should be included in habitat.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventDate">
