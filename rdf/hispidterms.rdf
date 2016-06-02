@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://hiscom.chah.org.au/hispid/terms/">
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/">
-		<dcterms:title xml:lang="en">HISPID Terms</dcterms:title>
+		<dcterms:title xml:lang="en">HISPID 6.0.0 Recommended Terms</dcterms:title>
 		<rdfs:comment/>
-		<dcterms:publisher xml:lang="en">Herbarium Information Systems Committee (HISCOM), Australia</dcterms:publisher>
+		<dcterms:publisher xml:lang="en">Council of Heads of Australasian Herbaraia (CHAH)</dcterms:publisher>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-25T15:02:07.143+10:00</dcterms:modified>
 		<dcterms:description/>
-		<dcterms:creator>HISCOM</dcterms:creator>
+		<dcterms:creator>Herbarium Information Systems Committee (HISCOM), Australia</dcterms:creator>
 		<dcterms:contributor>Aaron Wilton (CHR), Niels Klazenga (MEL), Ben Richardson (PERTH), Anne Fuchs (CANB), Laurence Paine (HO), Eleanor Crichton (AD)</dcterms:contributor>
 		<dcterms:bibliographicCitation>[Morris, Robert A., et al. 2014. Audubon Core Multimedia Resources Metadata Schema, Release 1.0. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/638/]</dcterms:bibliographicCitation>
 		<dcterms:issued/>
@@ -136,7 +136,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:abcdEquivalence>//Unit/RecordBasis</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/recsou-hispid5"/>
 		<skos:scopeNote>Vocabulary: http://rs.gbif.org/vocabulary/dwc/basis_of_record.xml</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/27</skos:note>
+		<skos:note></skos:note>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/dc/terms/type">
 		<rdfs:label xml:lang="en">Type</rdfs:label>
@@ -183,7 +183,6 @@ Version 5: </dcterms:provenance>
 		<skos:example>collector identities withheld</skos:example>
 		<skos:example>ask about tissue samples</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/InformationWithheld</dwcattributes:abcdEquivalence>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/67</skos:note>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/dataGeneralizations">
 		<rdfs:label xml:lang="en">Data Generalizations</rdfs:label>
@@ -192,7 +191,6 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Coordinates generalized from original GPS coordinates to the nearest half degree grid cell.</skos:example>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/67</skos:note>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceID">
 		<rdfs:label xml:lang="en">Occurrence ID</rdfs:label>
@@ -204,7 +202,6 @@ Version 5: </dcterms:provenance>
 		<skos:example>URN:catalog:PERTH:WAHERB:08444595</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/UnitGUID</dwcattributes:abcdEquivalence>
 		<skos:scopeNote xml:lang="en">Preferrably use a UUID. If this is not feasible an identifier can be created based on a unique field in the database, for example the catalogNumber. If doing so, the identifier must be stored in the database and cannot be changed or used for another record.</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/2</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/catalogNumber">
@@ -228,13 +225,12 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Steenis, C.G.G.J. van</skos:example>
-		<skos:example>Wilson, Peter G.</skos:example>
+		<skos:example>Wilson, P.G.</skos:example>
 		<skos:example>Streimann, H.|Mundua, A.</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Agents/GatheringAgentsText or //Unit/Gathering/Agents/GatheringAgent/AgentText (+)</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/cnam-hispid5"/>
 		<skos:scopeNote xml:lang="en">Any valid collector's name, collector's family name (surname) followed by comma and space (", ") then initials (all in uppercase and separated by fullstops).</skos:scopeNote>
 		<skos:note xml:lang="en">The format of names is not strictly enforced, but when available should be provided in the standard form.</skos:note>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/30</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/recordNumber">
@@ -260,7 +256,6 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:abcdEquivalence>//Unit/KindOfUnit</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/ckin-hispid5"/>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/preparations.xml</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/26</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers">
@@ -269,6 +264,7 @@ Version 5: </dcterms:provenance>
 		<skos:definition xml:lang="en">A list of previous or alternate catalog numbers for the same Occurrence.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<skos:example>CHR 588875|HO 83834|HO 83835</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/History/PreviousUnits/PreviousUnit/PreviousUnitID</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/donacc-hispid5"/>
 		<skos:scopeNote xml:lang="en">e.g., for the catalogue numbers for exchanged specimens when known or of multisheets.</skos:scopeNote>
@@ -283,7 +279,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<!--<dwcattributes:abcdEquivalence></dwcattributes:abcdEquivalence>-->
 		<skos:scopeNote xml:lang="en">To record the identifier for another record that has a relationship with the current occurence record. For HISPID these occurrences should both be herbarium specimens</skos:scopeNote>
-		<skos:note xml:lang="en"/>
+		<!--<skos:note xml:lang="en"/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedOccurrenceType">
@@ -294,7 +290,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:scopeNote xml:lang="en">For relationships in which both sides of the relationships are herbarium specimens</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
-		<skos:note xml:lang="en"/>
+		<!--<skos:note xml:lang="en"/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/occurrenceRemarks">
@@ -307,7 +303,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/cnot-hispid5"/>
 		<skos:scopeNote xml:lang="en">This may contain information about the collecting event/gathering, or descriptive information about the organism.</skos:scopeNote>
 		<skos:note xml:lang="en">Darwin Core maps occurrenceRemarks to abcd://Unit/Notes and eventRemarks to abcd://Unit/Gathering/Remarks, but botanical collecting notes often contain descriptive notes, which relate to a taxon and hence semantically fit better in occurrenceRemarks. At the same time, they fit better in abcd://Unit/Gathering/Notes, to which they were mapped in HISPID 5, in order to distinguish between notes made by the collector in the field and which refer to the Occurrence and annotations that are made in the herbarium and which refer to the PreservedSpecimen, i.e. abcd://Unit/Notes or HISPID Miscellaneous Notes (misc).</skos:note>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/1</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismQuantity">
@@ -323,7 +319,7 @@ Version 5: </dcterms:provenance>
 		<skos:scopeNote xml:lang="en">The value should be from "Tansley (1946) scale"</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/organism_quantity.xml</skos:scopeNote>
 		<skos:note xml:lang="en">organismQuantityType must be delivered alongside this term. Note that this is a considerable deviation from earlier versions of HISPID, where Frequency was a free text field. Free text strings from earlier implementations should be concatenated into occurrenceRemarks.</skos:note>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/22</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/organismQuantityType">
@@ -333,7 +329,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>Tansley (1946) scale</skos:example>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/22</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/establishmentMeans">
@@ -346,7 +342,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/posnat-hispid5"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/poscul-hispid5"/>
 		<skos:scopeNote>Vocabulary: http://rs.gbif.org/vocabulary/gbif/establishment_means.xml</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/4</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/lifeForm">
@@ -358,7 +354,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/lifeForm-2015-07-11"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/form-hispid5"/>
-		<skos:note>In previous editions of HISPID lifeForm (form) has been free text, but in the current edition we&apos;ve added a vocabulary. Free-text from previous implementations should be concatenated into occurrenceRemarks when exchanged. In the context of specimen data the term should only be used to transfer the lifeForm information associated with that specimen, not the taxon it belongs to.</skos:note>
+		<skos:note>In previous editions of HISPID lifeForm (form) has been free text, but in the current edition a vocabulary is provided. Free-text from previous implementations should be concatenated into occurrenceRemarks when exchanged. In the context of specimen data the term should only be used to transfer the lifeForm information associated with that specimen, not the taxon it belongs to.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lifeStage">
@@ -367,8 +363,8 @@ Version 5: </dcterms:provenance>
 		<skos:definition xml:lang="en">The life stage of the individual at the time it was collected.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
-		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/life_stage.xmll</skos:scopeNote>
-		<skos:note/>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/life_stage.xml</skos:scopeNote>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/sex">
@@ -378,7 +374,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Units/Unit/Sex</dwcattributes:abcdEquivalence>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/reproductiveCondition">
@@ -392,7 +388,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:abcdEquivalence>//Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="reproductiveCondition"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/phe-hispid5"/>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/reproductive_colindition.xml</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/12</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedTaxa">
@@ -406,7 +402,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Synecology/AssociatedTaxa/TaxonIdentified/ScientificName/FullScientificNameString + //Unit/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="host"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/asspp-hispid5"/>
 		<skos:note xml:lang="en">The ABCD mapping using the Synecology element can only be used to transfer one association type, 'growingWith'.  Host taxa have to be delivered using a MeasurementOrFact. The HISPID 5 free text representation cannot be delivered in this element at all and needs to be delivered as part of habitat.</skos:note>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/20</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/associationType">
