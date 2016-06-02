@@ -416,7 +416,7 @@ Version 5: </dcterms:provenance>
 		<skos:scopeNote xml:lang="en">To be used in combination with dwc:Taxon to make up list for associatedTaxa</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/association_type.xml</skos:scopeNote>
 		<skos:note xml:lang="en">Could potentially be used for dwc:associatedOccurrences as well, in combination with a dwc:Occurrence.</skos:note>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/33</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/associatedSequences">
@@ -425,9 +425,10 @@ Version 5: </dcterms:provenance>
 		<skos:definition xml:lang="en">List of identifiers for sequences associated with the collection object.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<skos:example>AY554086|AY554114</skos:example>
 		<dwcattributes:abcdEquivalence>//Sequences/Sequence/ID-in-Database</dwcattributes:abcdEquivalence>
 		<skos:scopeNote xml:lang="en">Use Genbank accession numbers.</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/32</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/disposition">
@@ -437,7 +438,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>missing</skos:example>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/15</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/eventID">
@@ -448,7 +449,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Code</dwcattributes:abcdEquivalence>
 		<skos:scopeNote xml:lang="en">May be a global unique identifier or an identifier specific to the data set.</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/2</skos:note>
+		<!--<skos:note</skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/parentEventID">
@@ -458,7 +459,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:scopeNote xml:lang="en">May be a global unique identifier or an identifier specific to the data set. Must be an existing EventID. Could be used for collecting trips and expeditions.</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/75</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/habitat">
@@ -469,7 +470,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/Text</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/hab-hispid5"/>
-		<skos:note></skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/topography">
@@ -495,7 +496,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/aspect-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Aspect/Ordination</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/asp-hispid5"/>
-		<skos:note>As in previous editions of HISPID, when exchanged this information needs to be included in the habitat description.</skos:note>
+		<skos:note>As in previous editions of HISPID, when exchanged this information also needs to be included in the habitat description.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/geologicalSubstrate">
@@ -508,7 +509,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/geologicalSubstrate-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="geologicalSubstrate"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/sub-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<!--<skos:note></skos:note>-->
 		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged. This term is to be used for interpreted data; verbatim collecting data should be included in habitat.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
@@ -521,7 +522,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/substrate-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="substrate"]/LowerValue</dwcattributes:abcdEquivalence>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/14</skos:note>
+<!--		<skos:note></skos:note>-->
 		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged. This term is to be used for interpreted data; verbatim collecting data should be included in habitat.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
@@ -535,7 +536,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/soil-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="soil"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/soil-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<!--<skos:note></skos:note>-->
 		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged. This term is to be used for interpreted data; verbatim collecting data should be included in habitat.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
@@ -549,7 +550,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/vegetation-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Biotope/MeasurementsOrFacts/MeasurementOrFact/MeasurementOrFactAtomised[Parameter="vegetation"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/veg-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/23</skos:note>
+		<!--<skos:note></skos:note>-->
 		<skos:note>This term is under review. We intend to have a vocabulary. In the meantime, use of this term with free text is discouraged. This term is to be used for interpreted data; verbatim collecting data should be included in habitat.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
@@ -586,7 +587,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/collectingTrip-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/8</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locality">
@@ -839,7 +840,7 @@ Version 5: </dcterms:provenance>
 		<skos:example>Walsh, N.G.</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteMeasurementsOrFacts/SiteMeasurementOrFact/MeasurementOrFactAtomised[Parameter="georeferencedBy"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/geosou-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/13</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceProtocol">
@@ -851,7 +852,7 @@ Version 5: </dcterms:provenance>
 		<skos:example>GEOLocate</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/CoordinateMethod</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/geosou-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/13</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferencedDate">
@@ -882,7 +883,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/SiteCoordinateSets/SiteCoordinates/GeoreferenceVerificationStatus</dwcattributes:abcdEquivalence>
 		<skos:scopeNote xml:lang="en">This term is frequently only applied after an assertion has been made that the georeference might be incorrect, for instance data quality assertion in ALA or outlier detection.</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/georeference_verification_status.xml</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/19</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/georeferenceRemarks">
@@ -941,9 +942,7 @@ Version 5: </dcterms:provenance>
 		<skos:definition xml:lang="en">Depth or the lesser of a range of depth below the local surface in metres.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
-		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue with
-
-//Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/LowerValue with //Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/dep-hispid5"/>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
@@ -953,9 +952,7 @@ Version 5: </dcterms:provenance>
 		<skos:definition xml:lang="en">The greater of a range of depths below the local surface in metres.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
-		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue with
-
-//Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'</dwcattributes:abcdEquivalence>
+		<dwcattributes:abcdEquivalence>//Unit/Gathering/Depth/MeasurementOrFactAtomised/UpperValue with //Unit/Gathering/Depth/MeasurementOrFactAtomised/UnitOfMeasurement = 'metres'</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/depx-hispid5"/>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
@@ -992,7 +989,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:scopeNote xml:lang="en">Use of a UUID is recommended.</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/2</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationQualifier">
@@ -1040,7 +1037,7 @@ Version 5: </dcterms:provenance>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Identifiers/IdentifierRole</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/det-hispid5"/>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/identifier_role.xml</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/31</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identifiedBy">
@@ -1087,11 +1084,11 @@ Version 5: </dcterms:provenance>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationReferences">
 		<rdfs:label xml:lang="en">Identification References</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">References used for the Identification.</skos:definition>
+		<skos:definition xml:lang="en">Reference(s) used for the Identification.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vlit-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/16</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/previousIdentifications">
@@ -1180,7 +1177,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/verbatimIdentification-2015-07-11"/>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 		<skos:scopeNote>verbatimIdentification is meant to include the entire name string as given by the determiner, including any identification qualifiers and addenda. It is not meant to include the name of the determiner, identification date, remarks etc.</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/85</skos:note>
+		<!--<skos:note></skos:note>-->
 		<skos:example>Riccia aff. multifida Step.</skos:example>
 		<skos:example>Amanita ?pantherina (DC. : Fr.) Secr.</skos:example>
 		<skos:example>Erica cf. hirtiflora Curt.</skos:example>
@@ -1332,7 +1329,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/NameComments</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/namcom-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/66</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/vernacularName">
@@ -1394,7 +1391,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/hybridFlag-2015-07-11"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/hyb-hispid5"/>
 		<skos:note xml:lang="en">The ABCD and HISPID 5 //Unit/Identifications/Identification/Result/TaxonIdentified/ScientificName/NameAtomised/Botanical/HybridFlag only applies to hybrid names (hybridFlag:"x").</skos:note>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/11</skos:note>
+<!--		<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Taxon"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/barcode">
@@ -1406,7 +1403,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/barcode-2015-10-23"/>
 		<dwcattributes:abcdEquivalence>Not in ABCD</dwcattributes:abcdEquivalence>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/miscellaneousRemarks">
@@ -1419,7 +1416,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/miscellaneousRemarks-2015-07-11"/>
 		<dwcattributes:abcdEquivalence>//Unit/Notes</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/misc-hispid5"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/1</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/exsiccataSeries">
@@ -1430,7 +1427,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/exsiccataSeries-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/7</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/exsiccataFascicle">
@@ -1441,7 +1438,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/exsiccataFascicle-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/7</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/exsiccataNumber">
@@ -1452,13 +1449,13 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/exsiccataNumber-2015-07-11"/>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/7</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/voucherFlag">
 		<rdfs:label xml:lang="en">Voucher Flag</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Term to indicate the collection object has served as a voucher for a special purpose.</skos:definition>
+		<skos:definition xml:lang="en">Term to indicate the collection object is a voucher for a special purpose.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
@@ -1477,7 +1474,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/voucherFor-2015-10-23"/>
 		<dwcattributes:abcdEquivalence>Not in ABCD</dwcattributes:abcdEquivalence>
-		<skos:scopeNote/>
+		<!--<skos:scopeNote/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/provenanceTypeFlag">
@@ -1492,7 +1489,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/prot-hispid5"/>
 		<skos:scopeNote xml:lang="en">Use ITF2 codes</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/provenance_type_flag.xml</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/54</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/cultivatedPlantProvenance">
@@ -1504,7 +1501,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/cultivatedPlantProvenance-2015-07-11"/>
 		<skos:scopeNote xml:lang="en">Preferrably this information is databased and delivered as a related resource, using all relevant elements from the relevant standard; if this is not feasible, the information can be delivered as free text, providing as much detail as possible.</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/59</skos:note>
+		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/donor">
@@ -1531,7 +1528,7 @@ Version 5: </dcterms:provenance>
 		<skos:example>CANB|NSW</skos:example>
 		<dwcattributes:abcdEquivalence>//Unit/SpecimenUnit/DuplicatesDistributedTo</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/desrep-hispid5"/>
-		<skos:scopeNote xml:lang="en">Use Index Herbariorum acronyms.</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">Use Index Herbariorum acronyms when available.</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/Transaction"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/loanIdentifier">
@@ -1638,7 +1635,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedBy-2015-10-23"/>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedTo">
@@ -1649,7 +1646,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedTo-2015-10-23"/>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedDate">
@@ -1660,7 +1657,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentIssuedDate-2015-10-23"/>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentValidDate">
@@ -1672,7 +1669,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentValidDate-2015-10-23"/>
 		<skos:scopeNote xml:lang="en">ISO-8601</skos:scopeNote>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentStatus">
@@ -1684,7 +1681,7 @@ Version 5: </dcterms:provenance>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentStatus-2015-10-23"/>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/permit_or_consent_status.xml</skos:scopeNote>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentConditions">
@@ -1695,7 +1692,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentConditions-2015-10-23"/>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentRemarks">
@@ -1706,7 +1703,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentRemarks-2015-10-23"/>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/permitOrConsentLink">
@@ -1717,7 +1714,7 @@ Version 5: </dcterms:provenance>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-23</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/http://hiscom.chah.org.au/hispid/terms/permitOrConsentLink-2015-10-23"/>
-		<skos:note/>
+		<!--<skos:note/>-->
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/PermitOrConsent"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
