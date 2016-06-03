@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Content>
+	<Heading1>Introduction</Heading1>
+	<Paragraph>The Herbarium Information Standards and Protocols for Interchange of Data (HISPID) standard ...
+	</Paragraph>
+	<Paragraph>Blurb about background history</Paragraph>
+	<Paragraph>
+		<ul>
+			<li>Version 1:  Croft, J.R. (ed.) (1989). HISPID - Herbarium Information Standards and Protocols for Interchange of Data (Australian National Botanic Gardens: Canberra).</li>
+			<li>Version 2: Whalen, A. (ed.) (1993). HISPID - Herbarium Information Standards and Protocols for Interchange of Data (National Herbarium of New South Wales: Sydney).</li>
+			<li>Version 3: Conn, B.J. (ed) (1996). HISPID3 </li>
+			<li>Version 5:</li>
+		</ul>
+	</Paragraph>
+	<Heading2>Conventions</Heading2>
+	<Paragraph>Blurb about conventions</Paragraph>
+	<Heading3>Changes in this version</Heading3>
+	<Paragraph>Blurb about key changes in this version</Paragraph>
+	<Paragraph>conversion to content standard; inclusion of images; inclusion of permit or consent terms;... </Paragraph>
+</Content>

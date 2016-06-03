@@ -4,11 +4,11 @@
 		<dcterms:title xml:lang="en">HISPID 6.0.0 Recommended Terms</dcterms:title>
 		<rdfs:comment/>
 		<dcterms:publisher xml:lang="en">Council of Heads of Australasian Herbaraia (CHAH)</dcterms:publisher>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-25T15:02:07.143+10:00</dcterms:modified>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-03T13:02:07.143+10:00</dcterms:modified>
 		<dcterms:description/>
-		<dcterms:creator>Herbarium Information Systems Committee (HISCOM), Australia</dcterms:creator>
+		<dcterms:creator>Herbarium Information Systems Committee (HISCOM), Australasia</dcterms:creator>
 		<dcterms:contributor>Aaron Wilton (CHR), Niels Klazenga (MEL), Ben Richardson (PERTH), Anne Fuchs (CANB), Laurence Paine (HO), Eleanor Crichton (AD)</dcterms:contributor>
-		<dcterms:bibliographicCitation>[Morris, Robert A., et al. 2014. Audubon Core Multimedia Resources Metadata Schema, Release 1.0. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/638/]</dcterms:bibliographicCitation>
+		<dcterms:bibliographicCitation>Wilton, A.; Klazenga, N.; Richardon, B.; Fuchs, A.; Paine, L.; Crichton, E. 2016. HISPID 6.0.0 Recommended Terms.  Council of Heads of Australasian Herbaria, Canberra.</dcterms:bibliographicCitation>
 		<dcterms:issued/>
 		<dcterms:license>CC-BY 4.0</dcterms:license>
 		<dcterms:provenance>
