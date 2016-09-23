@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  xmlns:hispidVocab="http://hiscom.chah.org.au/hispid/vocabulary/" 
+  targetNamespace="http://hiscom.chah.org.au/hispid/vocabulary/">
+	<!-- VOCABULARIES -->
+	<xs:simpleType name="associationTypeVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/association_type.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="host"/>
+			<xs:enumeration value="growingWith"/>
+			<xs:enumeration value="growingOn"/>
+			<xs:enumeration value="mixedWith"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="elevationMethodVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/elevation_method.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="altimeter"/>
+			<xs:enumeration value="DEM"/>
+			<xs:enumeration value="GPS"/>
+			<xs:enumeration value="field estimate"/>
+			<xs:enumeration value="map"/>
+			<xs:enumeration value="unknown"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="georeferenceVerificationStatusVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/georeference_verification_status.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="verification required"/>
+			<xs:enumeration value="verified"/>
+			<xs:enumeration value="verified by collector"/>
+			<xs:enumeration value="verified by curator"/>
+			<xs:enumeration value="verified by contributor"/>
+			<xs:enumeration value="unverifiable"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="hybridFlagVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/hybrid_flag.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="x"/>
+			<xs:enumeration value="G"/>
+			<xs:enumeration value="H"/>
+			<xs:enumeration value="+"/>
+			<xs:enumeration value="-"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="identificationQualifierVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/identification_qualifier.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="?"/>
+			<xs:enumeration value="aff."/>
+			<xs:enumeration value="cf."/>
+			<xs:enumeration value="forsan"/>
+			<xs:enumeration value="near"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="identificationVerificationStatusVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/identification_verification_status.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="verification required"/>
+			<xs:enumeration value="verified"/>
+			<xs:enumeration value="verified by specialist"/>
+			<xs:enumeration value="unverifiable"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="identifierRoleVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/identifier_role.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="conf."/>
+			<xs:enumeration value="cit."/>
+			<xs:enumeration value="det."/>
+			<xs:enumeration value="scrips."/>
+			<xs:enumeration value="vid."/>
+			<xs:enumeration value="upg."/>
+			<xs:enumeration value="tss."/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="lifeFormVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/life_form.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="phanerophyte"/>
+			<xs:enumeration value="nanophanerophyte"/>
+			<xs:enumeration value="herbaceous phanerophyte"/>
+			<xs:enumeration value="chamaephyte"/>
+			<xs:enumeration value="hemicryptophyte"/>
+			<xs:enumeration value="geophyte"/>
+			<xs:enumeration value="therophyte"/>
+			<xs:enumeration value="epiphyte"/>
+			<xs:enumeration value="helophyte"/>
+			<xs:enumeration value="hydrophyte"/>
+			<xs:enumeration value="annual"/>
+			<xs:enumeration value="short turf"/>
+			<xs:enumeration value="tall turf"/>
+			<xs:enumeration value="cuhion"/>
+			<xs:enumeration value="mat"/>
+			<xs:enumeration value="weft"/>
+			<xs:enumeration value="tail"/>
+			<xs:enumeration value="fan"/>
+			<xs:enumeration value="dendroid"/>
+			<xs:enumeration value="streamer"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="lifeStageVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/life_stage.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="zygote"/>
+			<xs:enumeration value="embryo"/>
+			<xs:enumeration value="juvenile"/>
+			<xs:enumeration value="seedling"/>
+			<xs:enumeration value="adult"/>
+			<xs:enumeration value="sporophyte"/>
+			<xs:enumeration value="spore"/>
+			<xs:enumeration value="gametophyte"/>
+			<xs:enumeration value="gamete"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="nameAddendumVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/name_addendum.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="agg."/>
+			<xs:enumeration value="s.l."/>
+			<xs:enumeration value="s. str."/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="organismQuantityVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/organism_quantity.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="sparse"/>
+			<xs:enumeration value="rare"/>
+			<xs:enumeration value="occasional"/>
+			<xs:enumeration value="local frequent"/>
+			<xs:enumeration value="frequent"/>
+			<xs:enumeration value="local abundant"/>
+			<xs:enumeration value="abundant"/>
+			<xs:enumeration value="local dominant"/>
+			<xs:enumeration value="codominant"/>
+			<xs:enumeration value="dominant"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="permitStatusVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/permit_or_consent_status.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="valid"/>
+			<xs:enumeration value="expired"/>
+			<xs:enumeration value="revoked"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="preparationsVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/preparations.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="alcohol"/>
+			<xs:enumeration value="bark"/>
+			<xs:enumeration value="boxed"/>
+			<xs:enumeration value="cytological"/>
+			<xs:enumeration value="fruit"/>
+			<xs:enumeration value="illustration"/>
+			<xs:enumeration value="image"/>
+			<xs:enumeration value="other"/>
+			<xs:enumeration value="print"/>
+			<xs:enumeration value="reference"/>
+			<xs:enumeration value="molecular isolate"/>
+			<xs:enumeration value="seed"/>
+			<xs:enumeration value="sheet"/>
+			<xs:enumeration value="silica gel"/>
+			<xs:enumeration value="slide"/>
+			<xs:enumeration value="transparency"/>
+			<xs:enumeration value="vertical"/>
+			<xs:enumeration value="wood"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="provenanceTypeFlagVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/provenance_type_flag.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="W"/>
+			<xs:enumeration value="Z"/>
+			<xs:enumeration value="G"/>
+			<xs:enumeration value="U"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="reproductiveConditionVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/reproductive_condition.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="bisexual flowers"/>
+			<xs:enumeration value="buds"/>
+			<xs:enumeration value="female cones"/>
+			<xs:enumeration value="female flowers"/>
+			<xs:enumeration value="flowers"/>
+			<xs:enumeration value="male/female cones"/>
+			<xs:enumeration value="male cones"/>
+			<xs:enumeration value="fruit"/>
+			<xs:enumeration value="fruiting cones"/>
+			<xs:enumeration value="gametophyte"/>
+			<xs:enumeration value="sporophyte"/>
+			<xs:enumeration value="spore bearing bodies"/>
+			<xs:enumeration value="fertile"/>
+			<xs:enumeration value="sterile"/>
+			<xs:enumeration value="leafless"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typeOfTypeVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/type_of_type.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="epitype"/>
+			<xs:enumeration value="holotype"/>
+			<xs:enumeration value="isotype"/>
+			<xs:enumeration value="isolectotype"/>
+			<xs:enumeration value="isoneotype"/>
+			<xs:enumeration value="isoparatype"/>
+			<xs:enumeration value="isoparalectotype"/>
+			<xs:enumeration value="isosyntype"/>
+			<xs:enumeration value="lectotype"/>
+			<xs:enumeration value="neotype"/>
+			<xs:enumeration value="paratype"/>
+			<xs:enumeration value="paralectotype"/>
+			<xs:enumeration value="syntype"/>
+			<xs:enumeration value="type"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="verbatimCoordinateSystemVocab">
+		<xs:annotation>
+			<xs:documentation>http://hiscom.github.io/hispid/vocabulary/verbatim_coordinate_system.xml</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="decimal degrees"/>
+			<xs:enumeration value="degrees decimal minutes"/>
+			<xs:enumeration value="degrees minutes seconds"/>
+			<xs:enumeration value="UTM"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

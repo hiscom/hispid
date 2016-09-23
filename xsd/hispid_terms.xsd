@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcelem="http://purl.org/dc/elements/1.1/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:hispid="http://hiscom.chah.org.au/hispid/terms/" 
+targetNamespace="http://hiscom.chah.org.au/hispid/terms/" version="2016-09-17">
+	<xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="http://rs.tdwg.org/dwc/xsd/tdwg_dwcterms.xsd"/>
+	<!-- IDENTIFIERS -->
+	<xs:group name="HispidIdentifierTerms">
+		<xs:annotation>
+			<xs:documentation>Group of all HISPID identifier terms as a convenience to construct other schemas</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="dwc:occurrenceID" minOccurs="0"/>
+			<xs:element ref="dwc:eventID" minOccurs="0"/>
+			<xs:element ref="dwc:locationID" minOccurs="0"/>
+			<xs:element ref="dwc:identificationID" minOccurs="0"/>
+			<xs:element ref="dwc:taxonID" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- OCCURRENCE -->
+	<xs:element name="lifeForm" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
+	<xs:element name="associationType" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
+	<xs:group name="HispidOccurrenceGroup">
+		<xs:sequence>
+			<xs:element ref="dwc:catalogNumber" minOccurs="1"/>
+			<xs:element ref="dwc:recordedBy" minOccurs="0"/>
+			<xs:element ref="dwc:recordNumber" minOccurs="0"/>
+			<xs:element ref="dwc:preparations" minOccurs="0"/>
+			<xs:element ref="dwc:otherCatalogNumbers" minOccurs="0"/>
+			<xs:element ref="dwc:associatedOccurrences" minOccurs="0"/>
+			<xs:element ref="dwc:occurrenceRemarks" minOccurs="0"/>
+			<xs:element ref="dwc:organismQuantity" minOccurs="0"/>
+			<xs:element ref="dwc:organismQuantityType" minOccurs="0"/>
+			<xs:element ref="dwc:establishmentMeans" minOccurs="0"/>
+			<xs:element ref="hispid:lifeForm" minOccurs="0"/>
+			<xs:element ref="dwc:lifeStage" minOccurs="0"/>
+			<xs:element ref="dwc:sex" minOccurs="0"/>
+			<xs:element ref="dwc:reproductiveCondition" minOccurs="0"/>
+			<xs:element ref="dwc:associatedTaxa" minOccurs="0"/>
+			<xs:element ref="hispid:associationType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- EVENT -->
+	<xs:element name="topography" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+	<xs:element name="aspect" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+	<xs:element name="geologicalSubstrate" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+	<xs:element name="substrate" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+	<xs:element name="soil" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+	<xs:element name="vegetation" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+	<xs:element name="collectingTrip" type="xs:string" substitutionGroup="dwc:anyEventTerm"/>
+	<xs:group name="HispidEventTerms">
+		<xs:sequence>
+			<xs:element ref="dwc:parentEventID" minOccurs="0"/>
+			<xs:element ref="dwc:habitat" minOccurs="0"/>
+			<xs:element ref="hispid:topography" minOccurs="0"/>
+			<xs:element ref="hispid:aspect" minOccurs="0"/>
+			<xs:element ref="hispid:geologicalSubstrate" minOccurs="0"/>
+			<xs:element ref="hispid:substrate" minOccurs="0"/>
+			<xs:element ref="hispid:soil" minOccurs="0"/>
+			<xs:element ref="hispid:vegetation" minOccurs="0"/>
+			<xs:element ref="dwc:eventDate" minOccurs="0"/>
+			<xs:element ref="dwc:verbatimEventDate" minOccurs="0"/>
+			<xs:element ref="hispid:collectingTrip" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- LOCATION -->
+	<xs:element name="elevationMethod" type="xs:string" substitutionGroup="dwc:anyLocationTerm"/>
+	<xs:group name="HispidLocationTerms">
+		<xs:sequence>
+			<xs:element ref="dwc:locality" minOccurs="0"/>
+			<xs:element ref="dwc:verbatimLocality" minOccurs="0"/>
+			<xs:element ref="dwc:continent" minOccurs="0"/>
+			<xs:element ref="dwc:country" minOccurs="0"/>
+			<xs:element ref="dwc:countryCode" minOccurs="0"/>
+			<xs:element ref="dwc:stateProvince" minOccurs="0"/>
+			<xs:element ref="dwc:county" minOccurs="0"/>
+			<xs:element ref="dwc:waterbody" minOccurs="0"/>
+			<xs:element ref="dwc:islandGroup" minOccurs="0"/>
+			<xs:element ref="dwc:island" minOccurs="0"/>
+			<xs:element ref="dwc:decimalLatitude" minOccurs="0"/>
+			<xs:element ref="dwc:decimalLongitude" minOccurs="0"/>
+			<xs:element ref="dwc:geodeticDatum" minOccurs="0"/>
+			<xs:element ref="dwc:verbatimLatitude" minOccurs="0"/>
+			<xs:element ref="dwc:verbatimLongitude" minOccurs="0"/>
+			<xs:element ref="dwc:verbatimCoordinateSystem" minOccurs="0"/>
+			<xs:element ref="dwc:verbatimSRS" minOccurs="0"/>
+			<xs:element ref="dwc:coordinatePrecision" minOccurs="0"/>
+			<xs:element ref="dwc:coordinateUncertaintyInMeters" minOccurs="0"/>
+			<xs:element ref="dwc:georeferencedBy" minOccurs="0"/>
+			<xs:element ref="dwc:georeferenceProtocol" minOccurs="0"/>
+			<xs:element ref="dwc:georeferencedDate" minOccurs="0"/>
+			<xs:element ref="dwc:georeferenceSources" minOccurs="0"/>
+			<xs:element ref="dwc:georeferenceVerificationStatus" minOccurs="0"/>
+			<xs:element ref="dwc:georeferenceRemarks" minOccurs="0"/>
+			<xs:element ref="dwc:minimumElevationInMeters" minOccurs="0"/>
+			<xs:element ref="dwc:maximumElevationInMeters" minOccurs="0"/>
+			<xs:element ref="dwc:verbatimElevation" minOccurs="0"/>
+			<xs:element ref="hispid:elevationMethod" minOccurs="0"/>
+			<xs:element ref="dwc:minimumDepthInMeters" minOccurs="0"/>
+			<xs:element ref="dwc:maximumDepthInMeters" minOccurs="0"/>
+			<xs:element ref="dwc:verbatimDepth" minOccurs="0"/>
+			<xs:element ref="dwc:minimumDistanceAboveSurfaceInMeters" minOccurs="0"/>
+			<xs:element ref="dwc:maximumDistanceAboveSurfaceInMeters" minOccurs="0"/>
+			<xs:element ref="dwc:locationRemarks" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- IDENTIFICATION -->
+	<xs:element name="nameAddendum" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
+	<xs:element name="identifierRole" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
+	<xs:element name="verbatimDateIdentified" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
+	<xs:element name="typeStatusQualifier" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
+	<xs:element name="typeOfType" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
+	<xs:element name="typifiedName" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
+	<xs:group name="HispidIdentificationTerms">
+		<xs:sequence>
+			<xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
+			<xs:element ref="hispid:nameAddendum" minOccurs="0"/>
+			<xs:element ref="dwc:identificationVerificationStatus" minOccurs="0"/>
+			<xs:element ref="hispid:identifierRole" minOccurs="0"/>
+			<xs:element ref="dwc:identifiedBy" minOccurs="0"/>
+			<xs:element ref="dwc:dateIdentified" minOccurs="0"/>
+			<xs:element ref="dwc:identificationReferences" minOccurs="0"/>
+			<xs:element ref="dwc:previousIdentifications" minOccurs="0"/>
+			<xs:element ref="dwc:identificationRemarks" minOccurs="0"/>
+			<xs:element ref="dwc:typeStatus" minOccurs="0"/>
+			<xs:element ref="hispid:typeStatusQualifier" minOccurs="0"/>
+			<xs:element ref="hispid:typeOfType" minOccurs="0"/>
+			<xs:element ref="hispid:typifiedName" minOccurs="0"/>
+			<xs:element ref="hispid:verbatimIdentification" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- TAXON -->
+	<xs:element name="cultivarGroupName" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+	<xs:element name="cultivarName" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+	<xs:element name="tradeDesignation" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+	<xs:element name="hybridFlag" type="xs:string" substitutionGroup="dwc:anyTaxonTerm"/>
+	<xs:group name="HispidTaxonTerms">
+		<xs:sequence>
+			<xs:element ref="dwc:taxonRank" minOccurs="0"/>
+			<xs:element ref="dwc:kingdom" minOccurs="0"/>
+			<xs:element ref="dwc:phylum" minOccurs="0"/>
+			<xs:element ref="dwc:class" minOccurs="0"/>
+			<xs:element ref="dwc:order" minOccurs="0"/>
+			<xs:element ref="dwc:family" minOccurs="0"/>
+			<xs:element ref="dwc:genus" minOccurs="0"/>
+			<xs:element ref="dwc:subgenus" minOccurs="0"/>
+			<xs:element ref="dwc:specificEpithet" minOccurs="0"/>
+			<xs:element ref="dwc:infraspecificEpithet" minOccurs="0"/>
+			<xs:element ref="dwc:scientificNameID" minOccurs="0"/>
+			<xs:element ref="dwc:scientificName" minOccurs="0"/>
+			<xs:element ref="dwc:scientificNameAuthorship" minOccurs="0"/>
+			<xs:element ref="dwc:nomenclaturalCode" minOccurs="0"/>
+			<xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
+			<xs:element ref="dwc:vernacularName" minOccurs="0"/>
+			<xs:element ref="hispid:CultivarGroupName" minOccurs="0"/>
+			<xs:element ref="hispid:CultivarName" minOccurs="0"/>
+			<xs:element ref="hispid:tradeDesignation" minOccurs="0"/>
+			<xs:element ref="hispid:hybridFlag" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- PRESERVED SPECIMEN -->
+	<xs:element name="PreservedSpecimen" substitutionGroup="dwc:anyClass">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="dwc:anyIdentifier"/>
+				<xs:element ref="hispid:anySpecimenTerm"/>
+				<xs:element ref="dwc:anyRecordLevelTerm"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="anySpecimenTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+	<xs:element name="barcode" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:element name="miscellaneousRemarks" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:element name="exsiccataSeries" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:element name="exsiccataFascicle" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:element name="exsiccataNumber" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:element name="voucherFlag" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:element name="voucherFor" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:element name="provenanceTypeFlag" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:element name="cultivatedPlantProvenance" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:group name="SpecimenTerms">
+		<xs:sequence>
+			<xs:element ref="hispid:barcode" minOccurs="0"/>
+			<xs:element ref="hispid:miscellaneousRemarks" minOccurs="0"/>
+			<xs:element ref="hispid:exsiccataSeries" minOccurs="0"/>
+			<xs:element ref="hispid:exsiccataFascicle" minOccurs="0"/>
+			<xs:element ref="hispid:exsiccataNumber" minOccurs="0"/>
+			<xs:element ref="hispid:voucherFlag" minOccurs="0"/>
+			<xs:element ref="hispid:voucherFor" minOccurs="0"/>
+			<xs:element ref="hispid:provenanceTypeFlag" minOccurs="0"/>
+			<xs:element ref="hispid:cultivatedPlantProvenance" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- TRANSACTION -->
+	<xs:element name="Transaction" substitutionGroup="dwc:anyClass">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="dwc:anyIdentifier"/>
+				<xs:element ref="hispid:anyTransactionTerm"/>
+				<xs:element ref="dwc:anyRecordLevelTerm"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="anyTransactionTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+	<xs:element name="donor" type="xs:string" substitutionGroup="hispid:anyTransactionTerm"/>
+	<xs:element name="duplicatesDistributedTo" type="xs:string" substitutionGroup="hispid:anyTransactionTerm"/>
+	<xs:element name="loanIdentifier" type="xs:string" substitutionGroup="hispid:anyTransactionTerm"/>
+	<xs:element name="loanDestination" type="xs:string" substitutionGroup="hispid:anyTransactionTerm"/>
+	<xs:element name="loanForBotanist" type="xs:string" substitutionGroup="hispid:anyTransactionTerm"/>
+	<xs:element name="loanDate" type="xs:date" substitutionGroup="hispid:anyTransactionTerm"/>
+	<xs:element name="loanReturnDate" type="xs:date" substitutionGroup="hispid:anyTransactionTerm"/>
+	<xs:element name="numberOfSheets" type="xs:positiveInteger" substitutionGroup="hispid:anyTransactionTerm"/>
+	<xs:group name="TransactionTerms">
+		<xs:sequence>
+			<xs:element ref="hispid:donor" minOccurs="0"/>
+			<xs:element ref="hispid:duplicatesDistributedTo" minOccurs="0"/>
+			<xs:element ref="hispid:loanIdentifier" minOccurs="0"/>
+			<xs:element ref="hispid:loanDestination" minOccurs="0"/>
+			<xs:element ref="hispid:loanForBotanist" minOccurs="0"/>
+			<xs:element ref="hispid:loanDate" minOccurs="0"/>
+			<xs:element ref="hispid:loanReturnDate" minOccurs="0"/>
+			<xs:element ref="hispid:numberOfSheets" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- PERMIT OR CONSENT -->
+	<xs:element name="PermitOrConsent" substitutionGroup="dwc:anyClass">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="dwc:anyIdentifier"/>
+				<xs:element ref="hispid:anyPermitTerm"/>
+				<xs:element ref="dwc:anyRecordLevelTerm"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="anyPermitTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
+	<xs:element name="permitType" type="xs:string" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:element name="permitReferenceNumber" type="xs:string" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:element name="permitIssuedBy" type="xs:string" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:element name="permitIssuedTo" type="xs:string" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:element name="permitIssuedDate" type="xs:date" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:element name="permitValidDate" type="xs:date" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:element name="permitStatus" type="xs:string" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:element name="permitConditions" type="xs:string" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:element name="permitRemarks" type="xs:string" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:element name="permitLink" type="xs:string" substitutionGroup="hispid:anyPermitTerm"/>
+	<xs:group name="PermitTerms">
+		<xs:sequence>
+			<xs:element ref="hispid:permitType" minOccurs="0"/>
+			<xs:element ref="hispid:permitReferenceNumber" minOccurs="0"/>
+			<xs:element ref="hispid:permitIssuedBy" minOccurs="0"/>
+			<xs:element ref="hispid:permitIssuedTo" minOccurs="0"/>
+			<xs:element ref="hispid:permitIssuedDate" minOccurs="0"/>
+			<xs:element ref="hispid:permitValidDate" minOccurs="0"/>
+			<xs:element ref="hispid:permitStatus" minOccurs="0"/>
+			<xs:element ref="hispid:permitConditions" minOccurs="0"/>
+			<xs:element ref="hispid:permitRemarks" minOccurs="0"/>
+			<xs:element ref="hispid:permitLink" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+</xs:schema>
