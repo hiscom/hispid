@@ -13,10 +13,11 @@
 		<dcterms:license>CC-BY 4.0</dcterms:license>
 		<dcterms:provenance>
 		The Herbarium Information Standards and Protocols for Interchange of Data (HISPID) standard 
-		Version 1:  Croft, J.R. (ed.) (1989). HISPID - Herbarium Information Standards and Protocols for Interchange of Data (Australian National Botanic Gardens: Canberra).
-			Version 2: Whalen, A. (ed.) (1993). HISPID - Herbarium Information Standards and Protocols for Interchange of Data (National Herbarium of New South Wales: Sydney).
-Version 3: Conn, B.J. (ed) (1996). HISPID3 
-Version 5: </dcterms:provenance>
+		Version 1:  Croft, J.R. (ed.) (1989). HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 1]. (Australian National Botanic Gardens: Canberra).
+		Version 2: Whalen, A. (ed.) (1993). HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 2]. (National Herbarium of New South Wales: Sydney).
+		Version 3: Conn, B.J. (ed.) (1996). HISPID3 — Herbarium Information Standards and Protocols for Interchange of Data. Version 3. (Council of Heads of Australian Herbaria at Royal Botanic Gardens: Sydney).
+		Version 4: Herbarium Information Systems Committee. (2000) HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 4]. Council of Heads of Australian Herbaria. http://hiscom.rbg.vic.gov.au/wiki/HISPID_4
+		Version 5: Neish, P., Richardson, B.P., and Whitbread, G. (2007). HISPID 5. Council of Heads of Australian Herbaria. https://github.com/hiscom/hispid5.</dcterms:provenance>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<dcterms:accrualMethod>[how are items added]</dcterms:accrualMethod>
 		<dcterms:accrualPeriodicity>[freqeuncy items are  added]</dcterms:accrualPeriodicity>

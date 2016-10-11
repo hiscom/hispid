@@ -7,10 +7,10 @@
 	<Paragraph>HISPID existed before XML (1998), XML Schema (2001) and JSON (2001, but standardised in 2014). These options for how to represent the specimen in digital form were thus not available until later versions. HISPID versions 1–4 were based on the Abstract Syntax Notation One (ASN.1) format for reasons of simplicity. HISPID 5 was implemented as an XML extension of the ABCD 2 XML Schema written by the Access to Biological Collections Data (ABCD) task group of Biodiversity Information Standards (TDWG). Its aim was to be broadly compatible with ABCD, a common international specimen data standard at the time, as well as introduce the ability to store data in repeatable  units. This came at the expense of simplicity, however.</Paragraph>
 	<Paragraph>
 		<ul>
-			<li>Version 1:  Croft, J.R. (ed.) (1989). HISPID - Herbarium Information Standards and Protocols for Interchange of Data [Version 1]. (Australian National Botanic Gardens: Canberra).</li>
-			<li>Version 2: Whalen, A. (ed.) (1993). HISPID - Herbarium Information Standards and Protocols for Interchange of Data [Version 2]. (National Herbarium of New South Wales: Sydney).</li>
-			<li>Version 3: Conn, B.J. (ed) (1996). HISPID3 - Herbarium Information Standards and Protocols for Interchange of Data. Version 3. (Council of Heads of Australian Herbaria at Royal Botanic Gardens: Sydney).</li>
-			<li>Version 4: Herbarium Information Systems Committee. (2000) HISPID - Herbarium Information Standards and Protocols for Interchange of Data [Version 4]. Council of Heads of Australian Herbaria. http://hiscom.rbg.vic.gov.au/wiki/HISPID_4.</li>
+			<li>Version 1:  Croft, J.R. (ed.) (1989). HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 1]. (Australian National Botanic Gardens: Canberra).</li>
+			<li>Version 2: Whalen, A. (ed.) (1993). HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 2]. (National Herbarium of New South Wales: Sydney).</li>
+			<li>Version 3: Conn, B.J. (ed.) (1996). HISPID3 — Herbarium Information Standards and Protocols for Interchange of Data. Version 3. (Council of Heads of Australian Herbaria at Royal Botanic Gardens: Sydney).</li>
+			<li>Version 4: Herbarium Information Systems Committee. (2000) HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 4]. Council of Heads of Australian Herbaria. http://hiscom.rbg.vic.gov.au/wiki/HISPID_4.</li>
 			<li>Version 5: Neish, P., Richardson, B.P., and Whitbread, G. (2007). HISPID 5. Council of Heads of Australian Herbaria. https://github.com/hiscom/hispid5.</li>
 		</ul>
 	</Paragraph>
