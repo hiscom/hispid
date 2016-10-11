@@ -4,7 +4,7 @@
 		<dcterms:title xml:lang="en">HISPID 6.0.0 Recommended Terms</dcterms:title>
 		<rdfs:comment/>
 		<dcterms:publisher xml:lang="en">Council of Heads of Australasian Herbaraia (CHAH)</dcterms:publisher>
-		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-03T13:02:07.143+10:00</dcterms:modified>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-06-03T13:02:07.143+10:00</dcterms:modified>
 		<dcterms:description/>
 		<dcterms:creator>Herbarium Information Systems Committee (HISCOM), Australasia</dcterms:creator>
 		<dcterms:contributor>Aaron Wilton (CHR), Niels Klazenga (MEL), Ben Richardson (PERTH), Anne Fuchs (CANB), Laurence Paine (HO), Eleanor Crichton (AD)</dcterms:contributor>
