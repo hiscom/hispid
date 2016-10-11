@@ -65,7 +65,7 @@
 			<xsl:value-of select="year-from-dateTime(//rdf:Description[1]/dcterms:modified)"/>
 		</fo:block>
 		<fo:block text-align="center" space-before="70mm">
-			<fo:external-graphic src="url('resources/CHAH-logo.jpg')" scaling="uniform" width="40mm" content-height="scale-to-fit" content-width="scale-to-fit"/>
+			<fo:external-graphic src="url('Resources/CHAH-Logo.jpg')" scaling="uniform" width="40mm" content-height="scale-to-fit" content-width="scale-to-fit"/>
 		</fo:block>
 	</xsl:template>
 	<xsl:template name="FrontMatter">
