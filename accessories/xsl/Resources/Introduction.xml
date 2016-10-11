@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Content>
 	<Heading1>Introduction</Heading1>
-	<Paragraph>The Herbarium Information Standards and Protocols for Interchange of Data (HISPID) standard ...
-	</Paragraph>
-	<Paragraph>Blurb about background history</Paragraph>
+	<Paragraph>Herbaria have exchanged specimen material for almost as long as they have existed. This ensured that scientific data was not lost but also that specimens became available to others for critical scientific work. With changes in technology and the existence of herbarium specimen databases it became clear that providing the data in digital form as well as the exchange specimens would be helpful to the receiving institution.</Paragraph>
+	<Paragraph>In Australia, herbaria have had a standard digital representation for a specimen since 1989. The work began as a merged set of fields in use by Australian herbaria along with some rules about how each field should be used. Upon its publication in 1989, this standard was named <em>Herbarium Information Standards and Protocols for Interchange of Data</em> (HISPID). Since that time there have been steady improvements to HISPID, culminating in HISPID 6.</Paragraph>
+	<Heading2>HISPID Versions</Heading2>
+	<Paragraph>HISPID existed before XML (1998), XML Schema (2001) and JSON (2001, but standardised in 2014). These options for how to represent the specimen in digital form were thus not available until later versions. HISPID versions 1–4 were based on the Abstract Syntax Notation One (ASN.1) format for reasons of simplicity. HISPID 5 was implemented as an XML extension of the ABCD 2 XML Schema written by the Access to Biological Collections Data (ABCD) task group of Biodiversity Information Standards (TDWG). Its aim was to be broadly compatible with ABCD, a common international specimen data standard at the time, as well as introduce the ability to store data in repeatable  units. This came at the expense of simplicity, however.</Paragraph>
 	<Paragraph>
 		<ul>
-			<li>Version 1:  Croft, J.R. (ed.) (1989). HISPID - Herbarium Information Standards and Protocols for Interchange of Data (Australian National Botanic Gardens: Canberra).</li>
-			<li>Version 2: Whalen, A. (ed.) (1993). HISPID - Herbarium Information Standards and Protocols for Interchange of Data (National Herbarium of New South Wales: Sydney).</li>
-			<li>Version 3: Conn, B.J. (ed) (1996). HISPID3 </li>
-			<li>Version 5:</li>
+			<li>Version 1:  Croft, J.R. (ed.) (1989). HISPID - Herbarium Information Standards and Protocols for Interchange of Data [Version 1]. (Australian National Botanic Gardens: Canberra).</li>
+			<li>Version 2: Whalen, A. (ed.) (1993). HISPID - Herbarium Information Standards and Protocols for Interchange of Data [Version 2]. (National Herbarium of New South Wales: Sydney).</li>
+			<li>Version 3: Conn, B.J. (ed) (1996). HISPID3 - Herbarium Information Standards and Protocols for Interchange of Data. Version 3. (Council of Heads of Australian Herbaria at Royal Botanic Gardens: Sydney).</li>
+			<li>Version 4: Herbarium Information Systems Committee. (2000) HISPID - Herbarium Information Standards and Protocols for Interchange of Data [Version 4]. Council of Heads of Australian Herbaria. http://hiscom.rbg.vic.gov.au/wiki/HISPID_4.</li>
+			<li>Version 5: Neish, P., Richardson, B.P., and Whitbread, G. (2007). HISPID 5. Council of Heads of Australian Herbaria. https://github.com/hiscom/hispid5.</li>
 		</ul>
 	</Paragraph>
+	<Heading2>HISPID 6</Heading2>
+	<Paragraph>In this document we describe HISPID 6, an extensive upgrade to HISPID that reworks the standard as a vocabulary that is deliberately without a predefined transfer format. Also, the terms make extensive reference to Dublin Core, Darwin Core and other RDF-based vocabularies to enhance the cross-discipline availability of a HISPID document as well as to avoid adding a term when an applicable one already exists in another vocabulary.</Paragraph>
+	<Paragraph>A benefit of this approach is that the terms can now be transferred in any agreed transfer format, including the now ubiquitous JSON. A HISPID 6 document formatted in JSON looks quite similar to a HISPID 3 document, but has the ability to store repeatable elements (as anonymous child objects, for example).</Paragraph>
 	<Heading2>Conventions</Heading2>
-	<Paragraph>Blurb about conventions</Paragraph>
-	<Heading3>Changes in this version</Heading3>
+	<Paragraph>A HISPID 6 document is an RDF document. It uses RDF Schema and related standards to describe its vocabulary of terms and to relate these to other standards. An RDF document uses the word “term” in a way that correlates with HISPID 1–4’s “field” or “transfer code” and HISPID 5’s “element”. HISPID 6 can be described in a number of formats including the RDF flavour of XML (RDF/XML), and delivered across the network in these formats as well as others including JSON.</Paragraph>
+	<Heading3>Changes in This Version</Heading3>
 	<Paragraph>Blurb about key changes in this version</Paragraph>
-	<Paragraph>conversion to content standard; inclusion of images; inclusion of permit or consent terms;... </Paragraph>
+	<Paragraph>Conversion to content standard; semantic differences between earlier HISPID versions and equivalent Darwin Core terms; inclusion of images; inclusion of permit or consent terms;... </Paragraph>
 </Content>
