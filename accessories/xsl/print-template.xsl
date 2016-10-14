@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dwcattributes="http://rs.tdwg.org/dwc/terms/attributes/" xmlns:dc="http://purl.org/dc/terms/">
 	<xsl:import href="template-text.xsl"/>
+	<xsl:import href="template-vocabulary.xsl"/>
 	<xsl:template match="/">
 		<fo:root>
 			<fo:layout-master-set>
@@ -38,9 +39,10 @@
 					</fo:block>-->
 				</fo:flow>
 			</fo:page-sequence>
+			
 			<fo:page-sequence master-reference="A4" font-family="Arial, 'Arial Unicode MS', Courier" font-selection-strategy="character-by-character">
 				<fo:static-content flow-name="body-before" >
-					<fo:block border-bottom="thin #95B73D solid" color="#95B73D">
+					<fo:block border-bottom="thin #BFD9BF solid" color="#BFD9BF">
 						<fo:retrieve-marker retrieve-class-name="class" retrieve-position="first-including-carryover" retrieve-boundary="page-sequence"/>
 					</fo:block>
 				</fo:static-content>
@@ -48,7 +50,22 @@
 					<fo:block text-align="center" border-top="thin #BFD9BF solid" color="#BFD9BF" font-size="8pt" padding-top="3mm"><fo:page-number  /></fo:block>
 				</fo:static-content>
 				<fo:flow flow-name="body">
+						<fo:block font-weight="bold" font-size="2em">Terms</fo:block>
 						<xsl:apply-templates select="//rdf:Description[rdf:type/@rdf:resource='http://www.w3.org/2000/01/rdf-schema#Class']" mode="Class"/>
+				</fo:flow>
+			</fo:page-sequence>
+			<fo:page-sequence master-reference="A4" font-family="Arial, 'Arial Unicode MS', Courier" font-selection-strategy="character-by-character">
+				<fo:static-content flow-name="body-before" >
+					<fo:block border-bottom="thin #BFD9BF solid" color="#BFD9BF">
+						<fo:retrieve-marker retrieve-class-name="class" retrieve-position="first-including-carryover" retrieve-boundary="page-sequence"/>
+					</fo:block>
+				</fo:static-content>
+				<fo:static-content flow-name="body-after">
+					<fo:block text-align="center" border-top="thin #BFD9BF solid" color="#BFD9BF" font-size="8pt" padding-top="3mm"><fo:page-number  /></fo:block>
+				</fo:static-content>
+				<fo:flow flow-name="body">
+					<fo:block font-weight="bold" font-size="2em">Vocabularies</fo:block>
+					<xsl:apply-templates select="document('Resources/Vocabularies-Combined.xml')//thesaurus"/>
 				</fo:flow>
 			</fo:page-sequence>
 		</fo:root>
