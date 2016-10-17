@@ -401,6 +401,7 @@
 		<rdfs:label xml:lang="en">Associated Taxa</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A list of names of taxa and their associations with the Occurrence.</skos:definition>
+		<skos:scopeNote xml:lang="en">Transfer individual taxa as a list of key-value pairs separated by the pipe character (“|”) where the key is a hispid:associationType and the value a dwc:scientificName.</skos:scopeNote>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>host:Nothofagus cunninghamii</skos:example>
