@@ -174,7 +174,7 @@
 		<skos:example>http://creativecommons.org/licenses/by/3.0/au/</skos:example>
 		<skos:example>http://creativecommons.org/licenses/by/4.0/</skos:example>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/informationWitheld">
+	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/informationWithheld">
 		<rdfs:label xml:lang="en">Information Withheld</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">Additional information that exists, but that has not been shared in the given record.</skos:definition>
