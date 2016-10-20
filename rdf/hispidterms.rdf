@@ -354,13 +354,15 @@
 	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/lifeForm">
 		<rdfs:label xml:lang="en">Life Form</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">A description of the habit or life form of the specimen on which the collection object is based.</skos:definition>
+		<skos:definition xml:lang="en">A controlled vocabulary term describing the habit or life form of the specimen on which the collection object is based.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
 		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/lifeForm-2015-07-11"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/form-hispid5"/>
-		<skos:note>In previous editions of HISPID lifeForm (form) has been free text, but in the current edition a vocabulary is provided. Free-text from previous implementations should be concatenated into occurrenceRemarks when exchanged. In the context of specimen data the term should only be used to transfer the lifeForm information associated with that specimen, not the taxon it belongs to.</skos:note>
+		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/life_form.xml</skos:scopeNote>
+		<skos:note>In previous editions of HISPID lifeForm (form) has been free text, but in the current edition it is intended for providing term(s) from a vocabulary. Free-text from previous implementations should be concatenated into occurrenceRemarks when exchanged. In the context of specimen data the term should only be used to transfer the lifeForm information associated with that specimen, not the taxon it belongs to.</skos:note>
+		<skos:note>We intend to provide a controlled vocabulary, and/or a term to identify a controlled vocabulary.  The linked vocabulary provides examples of terms that may be used.</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lifeStage">
