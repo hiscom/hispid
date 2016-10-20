@@ -446,7 +446,7 @@
 		<skos:definition xml:lang="en">Current state of the specimen with respect to the collection identified by the collectionCode and institutionCode.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
-		<skos:example>missing</skos:example>
+		<skos:example>"missing", "deaccessioned", "on loan"</skos:example>
 		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
