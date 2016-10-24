@@ -1112,8 +1112,8 @@
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification[PreferredFlag="FALSE"]/*</dwcattributes:abcdEquivalence>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/IdentificationHistory</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/vhist-hispid5"/>
-		<skos:scopeNote xml:lang="en">When the source information is well structured, it is preferrable to provide identification history by repeating other fields from the Identification Group, for example in the IdentificationHistory extension of a DarwinCore-Archive.</skos:scopeNote>
-		<skos:scopeNote xml:lang="en">The content of this field is not intended to be parsable. However to assit readability of the data, it is desireable for identifications to be listed in ascending date order, and have a consist content order (e.g., Taxon Name, determiner, date).</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">When the source information is well structured, it is preferable to provide identification history by repeating other fields from the Identification Group, for example in the IdentificationHistory extension of a DarwinCore-Archive.</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">The content of this field is not intended to be parsed. However to assist readability of the data, it is desirable for identifications to be listed in ascending date order, and have a consistent content order (e.g., Taxon Name, determiner, date).</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Identification"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/identificationRemarks">
