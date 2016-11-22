@@ -1,32 +1,32 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../accessories/style/human.xsl"?>
 <thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method" dc:title="HISPID Elevation Method Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
-	<concept dc:identifier="altimeter" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/altimeter" dc:description="altimeter" dc:issued="2015-10-23">
+	<concept dc:identifier="altimeter" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/altimeter" dc:description="elevation determined using altimeter" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="altimeter"></term>
 		</preferred>
 	</concept>
-	<concept dc:identifier="DEM" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/DEM" dc:description="DEM" dc:issued="2015-10-23">
+	<concept dc:identifier="DEM" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/DEM" dc:description="elevation determined using digital elevation model" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="DEM"></term>
 		</preferred>
 	</concept>
-	<concept dc:identifier="GPS" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/GPS" dc:description="GPS" dc:issued="2015-10-23">
+	<concept dc:identifier="GPS" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/GPS" dc:description="elevation determined using GPS" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="GPS"></term>
 		</preferred>
 	</concept>
-	<concept dc:identifier="field estimate" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/field+estimate" dc:description="field estimate" dc:issued="2015-10-23">
+	<concept dc:identifier="field estimate" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/field+estimate" dc:description="elevation estimated by recorder in the field" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="field estimate"></term>
 		</preferred>
 	</concept>
-	<concept dc:identifier="map" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/map" dc:description="map" dc:issued="2015-10-23">
+	<concept dc:identifier="map" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/map" dc:description="elevation estimated using a map" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="map"></term>
 		</preferred>
 	</concept>
-	<concept dc:identifier="unknown" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/unknown" dc:description="unknown" dc:issued="2015-10-23">
+	<concept dc:identifier="unknown" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/elevation_method/unknown" dc:description="method of determining elevation is unknown" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="unknown"></term>
 		</preferred>
