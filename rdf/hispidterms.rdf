@@ -912,6 +912,7 @@
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Altitude/MeasurementOrFactAtomised[UnitOfMeasurement="metres"]/LowerValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/alt-hispid5"/>
+		<skos:note xml:lang="en">This field may be used with maximumElevationInMeters to define an elevation range.  minimumElevationInMeters may also be used independently (i.e. without providing a maximumElevationInMeters) to provide a lower elevation limit  (e.g., &gt;500m)</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters">
@@ -922,6 +923,7 @@
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/Altitude/MeasurementOrFactAtomised[UnitOfMeasurement="metres"]/UpperValue</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/altx-hispid5"/>
+		<skos:note xml:lang="en">This field may be used with minimumElevationInMeters to define an elevation range.  maximumElevationInMeters may be used independently  (i.e. without providing a minimumElevationInMeters)  to provide an upper elevation limit (e.g., &lt;500m)</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimElevation">
@@ -1869,7 +1871,6 @@
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/ac/terms/"/>
 		<skos:scopeNote xml:lang="en">URI to vocabulary term</skos:scopeNote>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/subtype.xml</skos:scopeNote>
-		<skos:note>GitHub: https://github.com/hiscom/hispid/issues/60</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://hiscom.chah.org.au/hispid/terms/MediaItem"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://ns.adobe.com/xap/1.0/MetadataDate">
