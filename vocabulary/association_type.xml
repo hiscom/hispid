@@ -8,28 +8,28 @@
 		   xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
 	<concept dc:identifier="host"
 			 dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/host"
-			 dc:description="host" dc:issued="2015-10-23">
+			 dc:description="the organism with which a parasite or commensal organism lives" dc:issued="2015-10-23">
 					<preferred>
 						<term dc:title="host"></term>
 					</preferred>
 				</concept>
 	<concept dc:identifier="growingWith"
 			 dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/growingWith"
-			 dc:description="growingWith" dc:issued="2015-10-23">
+			 dc:description="other species that were observed to be growing with the specimen at the time of collection" dc:issued="2015-10-23">
 					<preferred>
 						<term dc:title="growingWith"></term>
 					</preferred>
 				</concept>
 	<concept dc:identifier="growingOn"
 			 dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/growingWith"
-			 dc:description="growingOn" dc:issued="2015-10-23">
+			 dc:description="the organism upon which the specimen was growing at time of collection, particularly for non-parasitic taxa (e.g., epiphytes)" dc:issued="2015-10-23">
 					<preferred>
 						<term dc:title="growingOn"></term>
 					</preferred>
 				</concept>
 	<concept dc:identifier="mixedWith"
 			 dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/association_type/mixedWith"
-			 dc:description="mixedWith" dc:issued="2015-10-23">
+			 dc:description="other taxa that were collected as part of the same gathering, and form part of the same specimen (esp. cryptogams)" dc:issued="2015-10-23">
 					<preferred>
 						<term dc:title="mixedWith"></term>
 					</preferred>
