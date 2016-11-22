@@ -1335,9 +1335,10 @@
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonRemarks">
 		<rdfs:label xml:lang="en">Taxon Remarks</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en"/>
+		<skos:definition xml:lang="en">A comment or note about the taxon or name.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
+		<skos:note xml:lang="en">This differs from identificationRemarks which are additional comments made about the identification.</skos:note>
 		<dwcattributes:abcdEquivalence>//Unit/Identifications/Identification/Result/TaxonIdentified/NameComments</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/namcom-hispid5"/>
 		<!--<skos:note></skos:note>-->
