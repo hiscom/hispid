@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../accessories/style/human.xsl"?>
 <thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category" dc:title="HISPID Subject Category Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-23">
-	<concept dc:identifier="illustration" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/illustration" dc:description="illustration" dc:issued="2015-10-23">
+	<concept dc:identifier="illustration" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/illustration" dc:description="image depicts an illustration" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="illustration"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="painting" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/painting" dc:description="painting" dc:issued="2015-10-23">
+	<concept dc:identifier="painting" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/painting" dc:description="image depicts a painting" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="painting"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="drawing" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/drawing" dc:description="drawing" dc:issued="2015-10-23">
+	<concept dc:identifier="drawing" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/drawing" dc:description="image depicts a drawing" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="drawing"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="in situ" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/in-situ" dc:description="in situ" dc:issued="2015-10-23">
+	<concept dc:identifier="in situ" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/in-situ" dc:description="image shows subject where it was growing or located" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="in situ"/>
 		</preferred>
@@ -26,37 +26,37 @@
 			<term dc:title="ex situ"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="laboratory" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/laboratory" dc:description="laboratory" dc:issued="2015-10-23">
+	<concept dc:identifier="laboratory" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/laboratory" dc:description="image shows subject in laboratory setting" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="laboratory"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="cultivation" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/cultivation" dc:description="cultivation" dc:issued="2015-10-23">
+	<concept dc:identifier="cultivation" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/cultivation" dc:description="image shows subject in culture or cultivation" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="cultivation"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="label" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/label" dc:description="label" dc:issued="2015-10-23">
+	<concept dc:identifier="label" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/label" dc:description="image shows the specimen label(s)" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="label"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="insect damage" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/insect-damage" dc:description="Insect damage" dc:issued="2015-10-23">
+	<concept dc:identifier="insect damage" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/insect-damage" dc:description=" image shows insect damage to the collection object" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="insect damage"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="annotation" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/annotation" dc:description="Annotation" dc:issued="2015-10-23">
+	<concept dc:identifier="annotation" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/annotation" dc:description="image shows annotations on the specimens" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="annotation"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="field description" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/field+description" dc:description="field description" dc:issued="2015-10-23">
+	<concept dc:identifier="field description" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/field+description" dc:description="image shows a field description" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="field description"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="specimen" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/specimen" dc:description="specimen" dc:issued="2015-10-23">
+	<concept dc:identifier="specimen" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/specimen" dc:description="image shows a specimen" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="specimen"/>
 		</preferred>
@@ -64,62 +64,62 @@
 			<term dc:title="entire specimen"/>
 		</alternative>
 	</concept>
-	<concept dc:identifier="fragment packet" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/fragment+packet" dc:description="contents of a fragment packet" dc:issued="2015-10-23">
+	<concept dc:identifier="fragment packet" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/fragment+packet" dc:description="image shows the contents of a fragment packet" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="fragment packet"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="habit" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/habit" dc:description="habit" dc:issued="2015-10-23">
+	<concept dc:identifier="habit" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/habit" dc:description="image shows the habit of the specimen" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="habit"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="habitat" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/habitat" dc:description="habitat" dc:issued="2015-10-23">
+	<concept dc:identifier="habitat" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/habitat" dc:description="image shows the habitat of the specimen" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="habitat"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="plant detail" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/plant+detail" dc:description="plant detail" dc:issued="2015-10-23">
+	<concept dc:identifier="plant detail" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/plant+detail" dc:description="image shows details of the organism" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="plant detail"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="anatomy" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/anatomy" dc:description="anatomy" dc:issued="2015-10-23">
+	<concept dc:identifier="anatomy" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/anatomy" dc:description="image shows anatomical detail" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="anatomy"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="morphology" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/morphology" dc:description="morphology" dc:issued="2015-10-23">
+	<concept dc:identifier="morphology" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/morphology" dc:description="image shows morphological detail" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="morphology"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="pollen" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/pollen" dc:description="pollen" dc:issued="2015-10-23">
+	<concept dc:identifier="pollen" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/pollen" dc:description="image shows details of pollen" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="pollen"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="seed" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/seed" dc:description="seed" dc:issued="2015-10-23">
+	<concept dc:identifier="seed" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/seed" dc:description="image shows details of seed(s)" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="seed"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="spore print" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/spore+print" dc:description="spore print" dc:issued="2015-10-23">
+	<concept dc:identifier="spore print" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/spore+print" dc:description="image shows a spore print" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="spore print"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="fruit" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/fruit" dc:description="fruit" dc:issued="2015-10-23">
+	<concept dc:identifier="fruit" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/fruit" dc:description="image shows fruit" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="fruit"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="chromosome" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/chromosome" dc:description="chromosome" dc:issued="2015-10-23">
+	<concept dc:identifier="chromosome" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/chromosome" dc:description="image shows details from a chromosome preparation" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="chromosome"/>
 		</preferred>
 	</concept>
-	<concept dc:identifier="reproductive biology" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/reproductive+biology" dc:description="reproductive biology" dc:issued="2015-10-23">
+	<concept dc:identifier="reproductive biology" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/subject_category/reproductive+biology" dc:description=" image shows details relating to reproductive biology" dc:issued="2015-10-23">
 		<preferred>
 			<term dc:title="reproductive biology"/>
 		</preferred>
