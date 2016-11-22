@@ -347,7 +347,7 @@
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/EstablishmentMeans</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/posnat-hispid5"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/poscul-hispid5"/>
-		<skos:scopeNote>Vocabulary: http://rs.gbif.org/vocabulary/gbif/establishment_means.xml</skos:scopeNote>
+		<skos:scopeNote>http://hiscom.chah.org.au/hispid/vocabulary/establishment_means.xml</skos:scopeNote>
 		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
