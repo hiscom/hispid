@@ -13,13 +13,13 @@
 # OCCURRENCE STATUS VOCABULARY
 #
 
-@prefix : <occurrence_status/> .
-
-:OccurrenceStatusVocab a skos:ConceptScheme ;
+<OccurrenceStatusVocab> a skos:ConceptScheme ;
   dc:title "HISPID Occurrence status vocabulary" ;
   dcterms:created "2017-01-01"^^xs:date ;
   rdfs:isDefinedBy <http://hiscom.chah.org.au/hispid/vocabularies> .
   
+@prefix : <OccurrenceStatusVocab#> .
+
 <http://rs.gbif.org/vocabulary/gbif/occurrence_status/present> a skos:Concept ;
   skos:inScheme :OccurrenceStatusVocab ;
   skos:prefLabel "present"@en ;
@@ -84,12 +84,12 @@
 # ESTABLISHMENT MEANS VOCABULARY
 #
 
-@prefix : <establishment_means/> .
-
-:EstablishmentMeansVocab rdf:type skos:ConceptScheme ;
+<EstablishmentMeansVocab> rdf:type skos:ConceptScheme ;
   dc:title "HISPID Establishment means vocabulary" ;
   dcterms:created "2016-02-09"^^xs:date ;
   rdfs:isDefinedBy <http://hiscom.chah.org.au/hispid/vocabularies> .
+
+@prefix : <EstablishmentMeansVocab#> .
 
 <http://rs.gbif.org/vocabulary/gbif/establishment_means/native> a skos:Concept ;
   skos:inScheme :EstablishmentMeansVocab ;
