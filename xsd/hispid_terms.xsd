@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcelem="http://purl.org/dc/elements/1.1/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:hispid="http://hiscom.chah.org.au/hispid/terms/" 
-targetNamespace="http://hiscom.chah.org.au/hispid/terms/" version="2016-09-17">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcelem="http://purl.org/dc/elements/1.1/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:ac="http://rs.tdwg.org/ac/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:Iptc4xmpExt="http://iptc.org/std/Iptc4xmpExt/2008-02-29/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:gbif="http://rs.gbif.org/terms/1.0/" xmlns:hispid="http://hiscom.chah.org.au/hispid/terms/" targetNamespace="http://hiscom.chah.org.au/hispid/terms/" version="2016-09-17">
 	<xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="http://rs.tdwg.org/dwc/xsd/tdwg_dwcterms.xsd"/>
+	<xs:import namespace="http://rs.tdwg.org/ac/terms/" schemaLocation="ac/ac_terms.xsd"/>
+	<xs:import namespace="http://rs.gbif.org/terms/1.0/" schemaLocation="gbif/gbif_terms.xsd"/>
 	<!-- IDENTIFIERS -->
 	<xs:group name="HispidIdentifierTerms">
 		<xs:annotation>
@@ -16,7 +17,6 @@ targetNamespace="http://hiscom.chah.org.au/hispid/terms/" version="2016-09-17">
 		</xs:sequence>
 	</xs:group>
 	<!-- OCCURRENCE -->
-	<xs:element name="lifeForm" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
 	<xs:element name="associationType" type="xs:string" substitutionGroup="dwc:anyOccurrenceTerm"/>
 	<xs:group name="HispidOccurrenceGroup">
 		<xs:sequence>
@@ -30,7 +30,7 @@ targetNamespace="http://hiscom.chah.org.au/hispid/terms/" version="2016-09-17">
 			<xs:element ref="dwc:organismQuantity" minOccurs="0"/>
 			<xs:element ref="dwc:organismQuantityType" minOccurs="0"/>
 			<xs:element ref="dwc:establishmentMeans" minOccurs="0"/>
-			<xs:element ref="hispid:lifeForm" minOccurs="0"/>
+			<xs:element ref="gbif:lifeForm" minOccurs="0"/>
 			<xs:element ref="dwc:lifeStage" minOccurs="0"/>
 			<xs:element ref="dwc:sex" minOccurs="0"/>
 			<xs:element ref="dwc:reproductiveCondition" minOccurs="0"/>
@@ -109,6 +109,7 @@ targetNamespace="http://hiscom.chah.org.au/hispid/terms/" version="2016-09-17">
 	<xs:element name="typeStatusQualifier" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
 	<xs:element name="typeOfType" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
 	<xs:element name="typifiedName" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
+	<xs:element name="verbatimIdentification" type="xs:string" substitutionGroup="dwc:anyIdentificationTerm"/>
 	<xs:group name="HispidIdentificationTerms">
 		<xs:sequence>
 			<xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
@@ -150,8 +151,8 @@ targetNamespace="http://hiscom.chah.org.au/hispid/terms/" version="2016-09-17">
 			<xs:element ref="dwc:nomenclaturalCode" minOccurs="0"/>
 			<xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
 			<xs:element ref="dwc:vernacularName" minOccurs="0"/>
-			<xs:element ref="hispid:CultivarGroupName" minOccurs="0"/>
-			<xs:element ref="hispid:CultivarName" minOccurs="0"/>
+			<xs:element ref="hispid:cultivarGroupName" minOccurs="0"/>
+			<xs:element ref="hispid:cultivarName" minOccurs="0"/>
 			<xs:element ref="hispid:tradeDesignation" minOccurs="0"/>
 			<xs:element ref="hispid:hybridFlag" minOccurs="0"/>
 		</xs:sequence>
@@ -168,7 +169,7 @@ targetNamespace="http://hiscom.chah.org.au/hispid/terms/" version="2016-09-17">
 	</xs:element>
 	<xs:element name="anySpecimenTerm" abstract="true" substitutionGroup="dwc:anyProperty"/>
 	<xs:element name="barcode" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
-	<xs:element name="miscellaneousRemarks" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
+	<xs:element name="preservedSpecimenRemarks" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
 	<xs:element name="exsiccataSeries" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
 	<xs:element name="exsiccataFascicle" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
 	<xs:element name="exsiccataNumber" type="xs:string" substitutionGroup="hispid:anySpecimenTerm"/>
@@ -253,6 +254,93 @@ targetNamespace="http://hiscom.chah.org.au/hispid/terms/" version="2016-09-17">
 			<xs:element ref="hispid:permitConditions" minOccurs="0"/>
 			<xs:element ref="hispid:permitRemarks" minOccurs="0"/>
 			<xs:element ref="hispid:permitLink" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<!-- MEDIA ITEM -->
+	<xs:element name="MediaItem" substitutionGroup="dwc:anyClass">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="dc:creator"/>
+				<xs:element ref="xmp:CreateDate"/>
+				<xs:element ref="ac:digitizationDate"/>
+				<xs:element ref="dc:source"/>
+				<xs:element ref="dcterms:title"/>
+				<xs:element ref="dcterms:description"/>
+				<xs:element ref="ac:caption"/>
+				<xs:element ref="ac:physicalSetting"/>
+				<xs:element ref="Iptc4xmpExt:CVterm"/>
+				<xs:element ref="ac:tag"/>
+				<xs:element ref="ac:subjectPart"/>
+				<xs:element ref="ac:subjectOrientation"/>
+				<xs:element ref="ac:captureDevice"/>
+				<xs:element ref="ac:resourceCreationTechnique"/>
+				<xs:element ref="ac:relatedResourceID"/>
+				<xs:element ref="ac:subtype"/>
+				<xs:element ref="xmp:MetadataDate"/>
+				<xs:element ref="ac:ProviderManagedID"/>
+				<xs:element ref="dcterms:available"/>
+				<xs:element ref="ac:hasServiceAccessPoint"/>
+				<xs:element ref="dcterms:rights"/>
+				<xs:element ref="xmpRights:UsageTerms"/>
+				<xs:element ref="xmpRights:WebStatement"/>
+				<xs:element ref="ac:licenseLogoUrl"/>
+				<xs:element ref="photoshop:credit"/>
+				<xs:element ref="ac:attributionLogoURL"/>
+				<xs:element ref="ac:attributionLinkURL"/>
+				<xs:element ref="ac:fundingAttribution"/>
+				<xs:element ref="ac:providerLiteral"/>
+				<xs:element ref="ac:subjectCategoryVocabulary"/>
+				<xs:element ref="ac:taxonCoverage"/>
+				<xs:element ref="ac:derivedFrom"/>
+				<xs:element ref="ac:associatedSpecimenReference"/>
+				<xs:element ref="ac:associatedObservationReference"/>
+				<xs:element ref="ac:accessURI"/>
+				<xs:element ref="dc:format"/>
+				<xs:element ref="ac:variant"/>
+				<xs:element ref="ac:furtherInformationURL"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:group name="MediaItemTerms">
+		<xs:sequence>
+			<xs:element ref="dc:creator" minOccurs="0"/>
+			<xs:element ref="xmp:CreateDate" minOccurs="0"/>
+			<xs:element ref="ac:digitizationDate" minOccurs="0"/>
+			<xs:element ref="dc:source" minOccurs="0"/>
+			<xs:element ref="dcterms:title" minOccurs="0"/>
+			<xs:element ref="dcterms:description" minOccurs="0"/>
+			<xs:element ref="ac:caption" minOccurs="0"/>
+			<xs:element ref="ac:physicalSetting" minOccurs="0"/>
+			<xs:element ref="Iptc4xmpExt:CVterm" minOccurs="0"/>
+			<xs:element ref="ac:tag" minOccurs="0"/>
+			<xs:element ref="ac:subjectPart" minOccurs="0"/>
+			<xs:element ref="ac:subjectOrientation" minOccurs="0"/>
+			<xs:element ref="ac:captureDevice" minOccurs="0"/>
+			<xs:element ref="ac:resourceCreationTechnique" minOccurs="0"/>
+			<xs:element ref="ac:relatedResourceID" minOccurs="0"/>
+			<xs:element ref="ac:subtype" minOccurs="0"/>
+			<xs:element ref="xmp:MetadataDate" minOccurs="0"/>
+			<xs:element ref="ac:ProviderManagedID" minOccurs="0"/>
+			<xs:element ref="dcterms:available" minOccurs="0"/>
+			<xs:element ref="ac:hasServiceAccessPoint" minOccurs="0"/>
+			<xs:element ref="dcterms:rights" minOccurs="0"/>
+			<xs:element ref="xmpRights:UsageTerms" minOccurs="0"/>
+			<xs:element ref="xmpRights:WebStatement" minOccurs="0"/>
+			<xs:element ref="ac:licenseLogoUrl" minOccurs="0"/>
+			<xs:element ref="photoshop:credit" minOccurs="0"/>
+			<xs:element ref="ac:attributionLogoURL" minOccurs="0"/>
+			<xs:element ref="ac:attributionLinkURL" minOccurs="0"/>
+			<xs:element ref="ac:fundingAttribution" minOccurs="0"/>
+			<xs:element ref="ac:providerLiteral" minOccurs="0"/>
+			<xs:element ref="ac:subjectCategoryVocabulary" minOccurs="0"/>
+			<xs:element ref="ac:taxonCoverage" minOccurs="0"/>
+			<xs:element ref="ac:derivedFrom" minOccurs="0"/>
+			<xs:element ref="ac:associatedSpecimenReference" minOccurs="0"/>
+			<xs:element ref="ac:associatedObservationReference" minOccurs="0"/>
+			<xs:element ref="ac:accessURI" minOccurs="0"/>
+			<xs:element ref="dc:format" minOccurs="0"/>
+			<xs:element ref="ac:variant" minOccurs="0"/>
+			<xs:element ref="ac:furtherInformationURL" minOccurs="0"/>
 		</xs:sequence>
 	</xs:group>
 </xs:schema>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:hispid="http://hiscom.chah.org.au/hispid/terms/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:ac="http://rs.tdwg.org/ac/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:Iptc4xmpExt="http://iptc.org/std/Iptc4xmpExt/2008-02-29/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:gbif="http://rs.gbif.org/terms/1.0/" xmlns:hispidrec="http://hiscom.chah.org.au/hispid/xsd/hispidrecord/" targetNamespace="http://hiscom.chah.org.au/hispid/xsd/hispidrecord/" version="2015-10-26">
+	<xs:import namespace="http://hiscom.chah.org.au/hispid/terms/" schemaLocation="hispid_terms.xsd"/>
+	<xs:element name="HispidRecordSet">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="hispidrec:HispidRecord" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HispidRecord">
+		<xs:complexType>
+			<xs:all>
+				<!-- Record-level terms -->
+				<xs:element ref="dcterms:type" minOccurs="0"/>
+				<xs:element ref="dcterms:modified" minOccurs="0"/>
+				<xs:element ref="dcterms:language" minOccurs="0"/>
+				<xs:element ref="dcterms:license" minOccurs="0"/>
+				<xs:element ref="dcterms:rightsHolder" minOccurs="0"/>
+				<xs:element ref="dcterms:accessRights" minOccurs="0"/>
+				<xs:element ref="dcterms:bibliographicCitation" minOccurs="0"/>
+				<xs:element ref="dcterms:references" minOccurs="0"/>
+				<xs:element ref="dwc:institutionID" minOccurs="0"/>
+				<xs:element ref="dwc:collectionID" minOccurs="0"/>
+				<xs:element ref="dwc:datasetID" minOccurs="0"/>
+				<xs:element ref="dwc:institutionCode" minOccurs="0"/>
+				<xs:element ref="dwc:collectionCode" minOccurs="0"/>
+				<xs:element ref="dwc:datasetName" minOccurs="0"/>
+				<xs:element ref="dwc:ownerInstitutionCode" minOccurs="0"/>
+				<xs:element ref="dwc:basisOfRecord" minOccurs="0"/>
+				<xs:element ref="dwc:informationWithheld" minOccurs="0"/>
+				<xs:element ref="dwc:dataGeneralizations" minOccurs="0"/>
+				<xs:element ref="dwc:dynamicProperties" minOccurs="0"/>
+				<!-- Occurrence terms -->
+				<xs:element ref="dwc:occurrenceID" minOccurs="0"/>
+				<xs:element ref="dwc:catalogNumber" minOccurs="0"/>
+				<xs:element ref="dwc:recordNumber" minOccurs="0"/>
+				<xs:element ref="dwc:recordedBy" minOccurs="0"/>
+				<xs:element ref="dwc:individualCount" minOccurs="0"/>
+				<xs:element ref="dwc:organismQuantity" minOccurs="0"/>
+				<xs:element ref="dwc:organismQuantityType" minOccurs="0"/>
+				<xs:element ref="dwc:sex" minOccurs="0"/>
+				<xs:element ref="dwc:lifeStage" minOccurs="0"/>
+				<xs:element ref="dwc:reproductiveCondition" minOccurs="0"/>
+				<xs:element ref="dwc:behavior" minOccurs="0"/>
+				<xs:element ref="dwc:establishmentMeans" minOccurs="0"/>
+				<xs:element ref="dwc:occurrenceStatus" minOccurs="0"/>
+				<xs:element ref="dwc:preparations" minOccurs="0"/>
+				<xs:element ref="dwc:disposition" minOccurs="0"/>
+				<xs:element ref="dwc:associatedMedia" minOccurs="0"/>
+				<xs:element ref="dwc:associatedReferences" minOccurs="0"/>
+				<xs:element ref="dwc:associatedSequences" minOccurs="0"/>
+				<xs:element ref="dwc:associatedTaxa" minOccurs="0"/>
+				<xs:element ref="dwc:otherCatalogNumbers" minOccurs="0"/>
+				<xs:element ref="dwc:occurrenceRemarks" minOccurs="0"/>
+				<xs:element ref="gbif:lifeForm" minOccurs="0"/>
+				<!-- Organism terms -->
+				<xs:element ref="dwc:organismID" minOccurs="0"/>
+				<xs:element ref="dwc:organismName" minOccurs="0"/>
+				<xs:element ref="dwc:organismScope" minOccurs="0"/>
+				<xs:element ref="dwc:associatedOccurrences" minOccurs="0"/>
+				<xs:element ref="dwc:associatedOrganisms" minOccurs="0"/>
+				<xs:element ref="dwc:previousIdentifications" minOccurs="0"/>
+				<xs:element ref="dwc:organismRemarks" minOccurs="0"/>
+				<!-- MaterialSample terms -->
+				<xs:element ref="dwc:materialSampleID" minOccurs="0"/>
+				<!-- Event terms -->
+				<xs:element ref="dwc:eventID" minOccurs="0"/>
+				<xs:element ref="dwc:parentEventID" minOccurs="0"/>
+				<xs:element ref="dwc:fieldNumber" minOccurs="0"/>
+				<xs:element ref="dwc:eventDate" minOccurs="0"/>
+				<xs:element ref="dwc:eventTime" minOccurs="0"/>
+				<xs:element ref="dwc:startDayOfYear" minOccurs="0"/>
+				<xs:element ref="dwc:endDayOfYear" minOccurs="0"/>
+				<xs:element ref="dwc:year" minOccurs="0"/>
+				<xs:element ref="dwc:month" minOccurs="0"/>
+				<xs:element ref="dwc:day" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimEventDate" minOccurs="0"/>
+				<xs:element ref="dwc:habitat" minOccurs="0"/>
+				<xs:element ref="dwc:samplingProtocol" minOccurs="0"/>
+				<xs:element ref="dwc:samplingEffort" minOccurs="0"/>
+				<xs:element ref="dwc:sampleSizeValue" minOccurs="0"/>
+				<xs:element ref="dwc:sampleSizeUnit" minOccurs="0"/>
+				<xs:element ref="dwc:fieldNotes" minOccurs="0"/>
+				<xs:element ref="dwc:eventRemarks" minOccurs="0"/>
+				<xs:element ref="hispid:topography" minOccurs="0"/>
+				<xs:element ref="hispid:aspect" minOccurs="0"/>
+				<xs:element ref="hispid:geologicalSubstrate" minOccurs="0"/>
+				<xs:element ref="hispid:substrate" minOccurs="0"/>
+				<xs:element ref="hispid:soil" minOccurs="0"/>
+				<xs:element ref="hispid:vegetation" minOccurs="0"/>
+				<xs:element ref="hispid:collectingTrip" minOccurs="0"/>
+				<!-- Location terms -->
+				<xs:element ref="dwc:locationID" minOccurs="0"/>
+				<xs:element ref="dwc:higherGeographyID" minOccurs="0"/>
+				<xs:element ref="dwc:higherGeography" minOccurs="0"/>
+				<xs:element ref="dwc:continent" minOccurs="0"/>
+				<xs:element ref="dwc:waterbody" minOccurs="0"/>
+				<xs:element ref="dwc:islandGroup" minOccurs="0"/>
+				<xs:element ref="dwc:island" minOccurs="0"/>
+				<xs:element ref="dwc:country" minOccurs="0"/>
+				<xs:element ref="dwc:countryCode" minOccurs="0"/>
+				<xs:element ref="dwc:stateProvince" minOccurs="0"/>
+				<xs:element ref="dwc:county" minOccurs="0"/>
+				<xs:element ref="dwc:municipality" minOccurs="0"/>
+				<xs:element ref="dwc:locality" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimLocality" minOccurs="0"/>
+				<xs:element ref="dwc:minimumElevationInMeters" minOccurs="0"/>
+				<xs:element ref="dwc:maximumElevationInMeters" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimElevation" minOccurs="0"/>
+				<xs:element ref="dwc:minimumDepthInMeters" minOccurs="0"/>
+				<xs:element ref="dwc:maximumDepthInMeters" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimDepth" minOccurs="0"/>
+				<xs:element ref="dwc:minimumDistanceAboveSurfaceInMeters" minOccurs="0"/>
+				<xs:element ref="dwc:maximumDistanceAboveSurfaceInMeters" minOccurs="0"/>
+				<xs:element ref="dwc:locationAccordingTo" minOccurs="0"/>
+				<xs:element ref="dwc:locationRemarks" minOccurs="0"/>
+				<xs:element ref="dwc:decimalLatitude" minOccurs="0"/>
+				<xs:element ref="dwc:decimalLongitude" minOccurs="0"/>
+				<xs:element ref="dwc:geodeticDatum" minOccurs="0"/>
+				<xs:element ref="dwc:coordinateUncertaintyInMeters" minOccurs="0"/>
+				<xs:element ref="dwc:coordinatePrecision" minOccurs="0"/>
+				<xs:element ref="dwc:pointRadiusSpatialFit" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimCoordinates" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimLatitude" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimLongitude" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimCoordinateSystem" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimSRS" minOccurs="0"/>
+				<xs:element ref="dwc:footprintWKT" minOccurs="0"/>
+				<xs:element ref="dwc:footprintSRS" minOccurs="0"/>
+				<xs:element ref="dwc:footprintSpatialFit" minOccurs="0"/>
+				<xs:element ref="dwc:georeferencedBy" minOccurs="0"/>
+				<xs:element ref="dwc:georeferencedDate" minOccurs="0"/>
+				<xs:element ref="dwc:georeferenceProtocol" minOccurs="0"/>
+				<xs:element ref="dwc:georeferenceSources" minOccurs="0"/>
+				<xs:element ref="dwc:georeferenceVerificationStatus" minOccurs="0"/>
+				<xs:element ref="dwc:georeferenceRemarks" minOccurs="0"/>
+				<xs:element ref="hispid:elevationMethod" minOccurs="0"/>
+				<!-- GeologicalContext terms -->
+				<xs:element ref="dwc:geologicalContextID" minOccurs="0"/>
+				<xs:element ref="dwc:earliestEonOrLowestEonothem" minOccurs="0"/>
+				<xs:element ref="dwc:latestEonOrHighestEonothem" minOccurs="0"/>
+				<xs:element ref="dwc:earliestEraOrLowestErathem" minOccurs="0"/>
+				<xs:element ref="dwc:latestEraOrHighestErathem" minOccurs="0"/>
+				<xs:element ref="dwc:earliestPeriodOrLowestSystem" minOccurs="0"/>
+				<xs:element ref="dwc:latestPeriodOrHighestSystem" minOccurs="0"/>
+				<xs:element ref="dwc:earliestEpochOrLowestSeries" minOccurs="0"/>
+				<xs:element ref="dwc:latestEpochOrHighestSeries" minOccurs="0"/>
+				<xs:element ref="dwc:earliestAgeOrLowestStage" minOccurs="0"/>
+				<xs:element ref="dwc:latestAgeOrHighestStage" minOccurs="0"/>
+				<xs:element ref="dwc:lowestBiostratigraphicZone" minOccurs="0"/>
+				<xs:element ref="dwc:highestBiostratigraphicZone" minOccurs="0"/>
+				<xs:element ref="dwc:lithostratigraphicTerms" minOccurs="0"/>
+				<xs:element ref="dwc:group" minOccurs="0"/>
+				<xs:element ref="dwc:formation" minOccurs="0"/>
+				<xs:element ref="dwc:member" minOccurs="0"/>
+				<xs:element ref="dwc:bed" minOccurs="0"/>
+				<!-- CURRENT IDENTIFICATION -->
+				<!-- Identification terms -->
+				<xs:element ref="dwc:identificationID" minOccurs="0"/>
+				<xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
+				<xs:element ref="dwc:typeStatus" minOccurs="0"/>
+				<xs:element ref="dwc:identifiedBy" minOccurs="0"/>
+				<xs:element ref="dwc:dateIdentified" minOccurs="0"/>
+				<xs:element ref="dwc:identificationReferences" minOccurs="0"/>
+				<xs:element ref="dwc:identificationVerificationStatus" minOccurs="0"/>
+				<xs:element ref="dwc:identificationRemarks" minOccurs="0"/>
+				<xs:element ref="hispid:nameAddendum" minOccurs="0"/>
+				<xs:element ref="hispid:identifierRole" minOccurs="0"/>
+				<xs:element ref="hispid:verbatimDateIdentified" minOccurs="0"/>
+				<xs:element ref="hispid:typeStatusQualifier" minOccurs="0"/>
+				<xs:element ref="hispid:typeOfType" minOccurs="0"/>
+				<xs:element ref="hispid:typifiedName" minOccurs="0"/>
+				<xs:element ref="hispid:verbatimIdentification" minOccurs="0"/>
+				<!-- Taxon terms -->
+				<xs:element ref="dwc:taxonID" minOccurs="0"/>
+				<xs:element ref="dwc:scientificNameID" minOccurs="0"/>
+				<xs:element ref="dwc:acceptedNameUsageID" minOccurs="0"/>
+				<xs:element ref="dwc:parentNameUsageID" minOccurs="0"/>
+				<xs:element ref="dwc:originalNameUsageID" minOccurs="0"/>
+				<xs:element ref="dwc:nameAccordingToID" minOccurs="0"/>
+				<xs:element ref="dwc:namePublishedInID" minOccurs="0"/>
+				<xs:element ref="dwc:taxonConceptID" minOccurs="0"/>
+				<xs:element ref="dwc:scientificName" minOccurs="0"/>
+				<xs:element ref="dwc:acceptedNameUsage" minOccurs="0"/>
+				<xs:element ref="dwc:parentNameUsage" minOccurs="0"/>
+				<xs:element ref="dwc:originalNameUsage" minOccurs="0"/>
+				<xs:element ref="dwc:nameAccordingTo" minOccurs="0"/>
+				<xs:element ref="dwc:namePublishedIn" minOccurs="0"/>
+				<xs:element ref="dwc:namePublishedInYear" minOccurs="0"/>
+				<xs:element ref="dwc:higherClassification" minOccurs="0"/>
+				<xs:element ref="dwc:kingdom" minOccurs="0"/>
+				<xs:element ref="dwc:phylum" minOccurs="0"/>
+				<xs:element ref="dwc:class" minOccurs="0"/>
+				<xs:element ref="dwc:order" minOccurs="0"/>
+				<xs:element ref="dwc:family" minOccurs="0"/>
+				<xs:element ref="dwc:genus" minOccurs="0"/>
+				<xs:element ref="dwc:subgenus" minOccurs="0"/>
+				<xs:element ref="dwc:specificEpithet" minOccurs="0"/>
+				<xs:element ref="dwc:infraspecificEpithet" minOccurs="0"/>
+				<xs:element ref="dwc:taxonRank" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimTaxonRank" minOccurs="0"/>
+				<xs:element ref="dwc:scientificNameAuthorship" minOccurs="0"/>
+				<xs:element ref="dwc:vernacularName" minOccurs="0"/>
+				<xs:element ref="dwc:nomenclaturalCode" minOccurs="0"/>
+				<xs:element ref="dwc:taxonomicStatus" minOccurs="0"/>
+				<xs:element ref="dwc:nomenclaturalStatus" minOccurs="0"/>
+				<xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
+				<xs:element ref="hispid:cultivarGroupName" minOccurs="0"/>
+				<xs:element ref="hispid:cultivarName" minOccurs="0"/>
+				<xs:element ref="hispid:tradeDesignation" minOccurs="0"/>
+				<xs:element ref="hispid:hybridFlag" minOccurs="0"/>
+				<!-- PreservedSpecimen terms -->
+				<xs:element ref="hispid:barcode" minOccurs="0"/>
+				<xs:element ref="hispid:preservedSpecimenRemarks" minOccurs="0"/>
+				<xs:element ref="hispid:exsiccataSeries" minOccurs="0"/>
+				<xs:element ref="hispid:exsiccataFascicle" minOccurs="0"/>
+				<xs:element ref="hispid:exsiccataNumber" minOccurs="0"/>
+				<xs:element ref="hispid:voucherFlag" minOccurs="0"/>
+				<xs:element ref="hispid:voucherFor" minOccurs="0"/>
+				<xs:element ref="hispid:provenanceTypeFlag" minOccurs="0"/>
+				<xs:element ref="hispid:cultivatedPlantProvenance" minOccurs="0"/>
+				<!-- Transaction terms -->
+				<xs:element ref="hispid:donor" minOccurs="0"/>
+				<xs:element ref="hispid:duplicatesDistributedTo" minOccurs="0"/>
+				<xs:element ref="hispid:loanIdentifier" minOccurs="0"/>
+				<xs:element ref="hispid:loanDestination" minOccurs="0"/>
+				<xs:element ref="hispid:loanForBotanist" minOccurs="0"/>
+				<xs:element ref="hispid:loanDate" minOccurs="0"/>
+				<xs:element ref="hispid:loanReturnDate" minOccurs="0"/>
+				<xs:element ref="hispid:numberOfSheets" minOccurs="0"/>
+				<!-- PermitOrConsent terms -->
+				<xs:element ref="hispid:permitType" minOccurs="0"/>
+				<xs:element ref="hispid:permitReferenceNumber" minOccurs="0"/>
+				<xs:element ref="hispid:permitIssuedBy" minOccurs="0"/>
+				<xs:element ref="hispid:permitIssuedDate" minOccurs="0"/>
+				<xs:element ref="hispid:permitValidDate" minOccurs="0"/>
+				<xs:element ref="hispid:permitStatus" minOccurs="0"/>
+				<xs:element ref="hispid:permitConditions" minOccurs="0"/>
+				<xs:element ref="hispid:permitRemarks" minOccurs="0"/>
+				<xs:element ref="hispid:permitLink" minOccurs="0"/>
+				<!--xs:element ref="dwr:SimpleDarwinExtensions" minOccurs="0"/-->
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="IdentificationHistory">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="IdentificationHistoryRecord"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="IdentificationHistoryRecord">
+		<xs:complexType>
+			<xs:all>
+				<!-- Identification terms -->
+				<xs:element ref="dwc:identificationID" minOccurs="0"/>
+				<xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
+				<xs:element ref="dwc:typeStatus" minOccurs="0"/>
+				<xs:element ref="dwc:identifiedBy" minOccurs="0"/>
+				<xs:element ref="dwc:dateIdentified" minOccurs="0"/>
+				<xs:element ref="dwc:identificationReferences" minOccurs="0"/>
+				<xs:element ref="dwc:identificationVerificationStatus" minOccurs="0"/>
+				<xs:element ref="dwc:identificationRemarks" minOccurs="0"/>
+				<xs:element ref="hispid:nameAddendum" minOccurs="0"/>
+				<xs:element ref="hispid:identifierRole" minOccurs="0"/>
+				<xs:element ref="hispid:verbatimDateIdentified" minOccurs="0"/>
+				<xs:element ref="hispid:typeStatusQualifier" minOccurs="0"/>
+				<xs:element ref="hispid:verbatimIdentification" minOccurs="0"/>
+				<!-- Taxon terms -->
+				<xs:element ref="dwc:taxonID" minOccurs="0"/>
+				<xs:element ref="dwc:scientificNameID" minOccurs="0"/>
+				<xs:element ref="dwc:acceptedNameUsageID" minOccurs="0"/>
+				<xs:element ref="dwc:parentNameUsageID" minOccurs="0"/>
+				<xs:element ref="dwc:originalNameUsageID" minOccurs="0"/>
+				<xs:element ref="dwc:nameAccordingToID" minOccurs="0"/>
+				<xs:element ref="dwc:namePublishedInID" minOccurs="0"/>
+				<xs:element ref="dwc:taxonConceptID" minOccurs="0"/>
+				<xs:element ref="dwc:scientificName" minOccurs="0"/>
+				<xs:element ref="dwc:acceptedNameUsage" minOccurs="0"/>
+				<xs:element ref="dwc:parentNameUsage" minOccurs="0"/>
+				<xs:element ref="dwc:originalNameUsage" minOccurs="0"/>
+				<xs:element ref="dwc:nameAccordingTo" minOccurs="0"/>
+				<xs:element ref="dwc:namePublishedIn" minOccurs="0"/>
+				<xs:element ref="dwc:namePublishedInYear" minOccurs="0"/>
+				<xs:element ref="dwc:higherClassification" minOccurs="0"/>
+				<xs:element ref="dwc:kingdom" minOccurs="0"/>
+				<xs:element ref="dwc:phylum" minOccurs="0"/>
+				<xs:element ref="dwc:class" minOccurs="0"/>
+				<xs:element ref="dwc:order" minOccurs="0"/>
+				<xs:element ref="dwc:family" minOccurs="0"/>
+				<xs:element ref="dwc:genus" minOccurs="0"/>
+				<xs:element ref="dwc:subgenus" minOccurs="0"/>
+				<xs:element ref="dwc:specificEpithet" minOccurs="0"/>
+				<xs:element ref="dwc:infraspecificEpithet" minOccurs="0"/>
+				<xs:element ref="dwc:taxonRank" minOccurs="0"/>
+				<xs:element ref="dwc:verbatimTaxonRank" minOccurs="0"/>
+				<xs:element ref="dwc:scientificNameAuthorship" minOccurs="0"/>
+				<xs:element ref="dwc:vernacularName" minOccurs="0"/>
+				<xs:element ref="dwc:nomenclaturalCode" minOccurs="0"/>
+				<xs:element ref="dwc:taxonomicStatus" minOccurs="0"/>
+				<xs:element ref="dwc:nomenclaturalStatus" minOccurs="0"/>
+				<xs:element ref="dwc:taxonRemarks" minOccurs="0"/>
+				<xs:element ref="hispid:cultivarGroupName" minOccurs="0"/>
+				<xs:element ref="hispid:cultivarName" minOccurs="0"/>
+				<xs:element ref="hispid:tradeDesignation" minOccurs="0"/>
+				<xs:element ref="hispid:hybridFlag" minOccurs="0"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AudubonCoreExtension">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="AudubonCoreRecord"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AudubonCoreRecord">
+		<xs:complexType>
+			<xs:all>
+				<!-- Management Vocabulary -->
+				<xs:element ref="dcterms:identifier" minOccurs="0"/>
+				<xs:element ref="dc:type" minOccurs="0"/>
+				<xs:element ref="dcterms:type" minOccurs="0"/>
+				<xs:element ref="ac:subtypeLiteral" minOccurs="0"/>
+				<xs:element ref="ac:subtype" minOccurs="0"/>
+				<xs:element ref="dcterms:title" minOccurs="0"/>
+				<xs:element ref="dcterms:modified" minOccurs="0"/>
+				<xs:element ref="xmp:MetadataDate" minOccurs="0"/>
+				<xs:element ref="ac:metadataLanguageLiteral" minOccurs="0"/>
+				<xs:element ref="ac:metadataLanguage" minOccurs="0"/>
+				<xs:element ref="ac:providerManagedID" minOccurs="0"/>
+				<xs:element ref="xmp:Rating" minOccurs="0"/>
+				<xs:element ref="ac:commenter" minOccurs="0"/>
+				<xs:element ref="ac:commenterLiteral" minOccurs="0"/>
+				<xs:element ref="ac:comments" minOccurs="0"/>
+				<xs:element ref="ac:reviewer" minOccurs="0"/>
+				<xs:element ref="ac:reviewerLiteral" minOccurs="0"/>
+				<xs:element ref="ac:reviewerComments" minOccurs="0"/>
+				<xs:element ref="dcterms:available" minOccurs="0"/>
+				<xs:element ref="ac:hasServiceAccessPoint" minOccurs="0"/>
+				<!-- Attribution Vocabulary -->
+				<xs:element ref="dc:rights" minOccurs="0"/>
+				<xs:element ref="dcterms:rights" minOccurs="0"/>
+				<xs:element ref="xmpRights:Owner" minOccurs="0"/>
+				<xs:element ref="xmpRights:UsageTerms" minOccurs="0"/>
+				<xs:element ref="xmpRights:WebStatement" minOccurs="0"/>
+				<xs:element ref="ac:licenseLogoURL" minOccurs="0"/>
+				<xs:element ref="photoshop:credit" minOccurs="0"/>
+				<xs:element ref="ac:attributionLogoURL" minOccurs="0"/>
+				<xs:element ref="ac:attributionLinkURL" minOccurs="0"/>
+				<xs:element ref="ac:fundingAttribution" minOccurs="0"/>
+				<xs:element ref="dc:source" minOccurs="0"/>
+				<xs:element ref="dcterms:source" minOccurs="0"/>
+				<!-- Agents Vocabulary -->
+				<xs:element ref="dc:creator" minOccurs="0"/>
+				<xs:element ref="dcterms:creator" minOccurs="0"/>
+				<xs:element ref="ac:providerLiteral" minOccurs="0"/>
+				<xs:element ref="ac:provider" minOccurs="0"/>
+				<xs:element ref="ac:metadataProviderLiteral" minOccurs="0"/>
+				<xs:element ref="ac:metadataProvider" minOccurs="0"/>
+				<xs:element ref="ac:metadataCreatorLiteral" minOccurs="0"/>
+				<xs:element ref="ac:metadataCreator" minOccurs="0"/>
+				<!-- Content Coverage Vocabulary -->
+				<xs:element ref="dcterms:description" minOccurs="0"/>
+				<xs:element ref="ac:caption" minOccurs="0"/>
+				<xs:element ref="dc:language" minOccurs="0"/>
+				<xs:element ref="dcterms:language" minOccurs="0"/>
+				<xs:element ref="ac:physicalSetting" minOccurs="0"/>
+				<xs:element ref="Iptc4xmpExt:CVterm" minOccurs="0"/>
+				<xs:element ref="ac:subjectCategoryVocabulary" minOccurs="0"/>
+				<xs:element ref="ac:tag" minOccurs="0"/>
+				<!-- Geography Vocabulary -->
+				<xs:element ref="Iptc4xmpExt:LocationShown" minOccurs="0"/>
+				<xs:element ref="Iptc4xmpExt:WorldRegion" minOccurs="0"/>
+				<xs:element ref="Iptc4xmpExt:CountryCode" minOccurs="0"/>
+				<xs:element ref="Iptc4xmpExt:CountryName" minOccurs="0"/>
+				<xs:element ref="Iptc4xmpExt:ProvinceState" minOccurs="0"/>
+				<xs:element ref="Iptc4xmpExt:City" minOccurs="0"/>
+				<xs:element ref="Iptc4xmpExt:Sublocation" minOccurs="0"/>
+				<!-- Temporal Coverage Vocabulary -->
+				<xs:element ref="dcterms:temporal" minOccurs="0"/>
+				<xs:element ref="xmp:CreateDate" minOccurs="0"/>
+				<xs:element ref="ac:timeOfDay" minOccurs="0"/>
+				<!-- Taxonomic Coverage Vocabulary -->
+				<xs:element ref="ac:taxonCoverage" minOccurs="0"/>
+				<xs:element ref="dwc:scientificName" minOccurs="0"/>
+				<xs:element ref="dwc:identificationQualifier" minOccurs="0"/>
+				<xs:element ref="dwc:vernacularName" minOccurs="0"/>
+				<xs:element ref="dwc:nameAccordingTo" minOccurs="0"/>
+				<xs:element ref="dwc:scientificNameID" minOccurs="0"/>
+				<xs:element ref="ac:otherScientificName" minOccurs="0"/>
+				<xs:element ref="dwc:identifiedBy" minOccurs="0"/>
+				<xs:element ref="dwc:dateIdentified" minOccurs="0"/>
+				<xs:element ref="ac:taxonCount" minOccurs="0"/>
+				<xs:element ref="ac:subjectPart" minOccurs="0"/>
+				<xs:element ref="dwc:sex" minOccurs="0"/>
+				<xs:element ref="dwc:lifeStage" minOccurs="0"/>
+				<xs:element ref="ac:subjectOrientation" minOccurs="0"/>
+				<xs:element ref="dwc:preparations" minOccurs="0"/>
+				<!-- Resource Creation Vocabulary -->
+				<xs:element ref="Iptc4xmpExt:LocationCreated" minOccurs="0"/>
+				<xs:element ref="ac:digitizationDate" minOccurs="0"/>
+				<xs:element ref="ac:captureDevice" minOccurs="0"/>
+				<xs:element ref="ac:resourceCreationTechnique" minOccurs="0"/>
+				<!-- Related Resources Vocabulary -->
+				<xs:element ref="ac:IDofContainingCollection" minOccurs="0"/>
+				<xs:element ref="ac:relatedResourceID" minOccurs="0"/>
+				<xs:element ref="ac:providerID" minOccurs="0"/>
+				<xs:element ref="ac:derivedFrom" minOccurs="0"/>
+				<xs:element ref="ac:associatedSpecimenReference" minOccurs="0"/>
+				<xs:element ref="ac:associatedObservationReference" minOccurs="0"/>
+				<!-- Service Access Point Vocabulary -->
+				<xs:element ref="ac:accessURI" minOccurs="0"/>
+				<xs:element ref="dc:format" minOccurs="0"/>
+				<xs:element ref="dcterms:format" minOccurs="0"/>
+				<xs:element ref="ac:variantLiteral" minOccurs="0"/>
+				<xs:element ref="ac:variant" minOccurs="0"/>
+				<xs:element ref="ac:variantDescription" minOccurs="0"/>
+				<xs:element ref="ac:furtherInformationURL" minOccurs="0"/>
+				<xs:element ref="ac:licensingException" minOccurs="0"/>
+				<xs:element ref="ac:serviceExpectation" minOccurs="0"/>
+				<xs:element ref="ac:hashFunction" minOccurs="0"/>
+				<xs:element ref="ac:hashValue" minOccurs="0"/>
+				<xs:element ref="exif:PixelXDimension" minOccurs="0"/>
+				<xs:element ref="exif:PixelYDimension" minOccurs="0"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

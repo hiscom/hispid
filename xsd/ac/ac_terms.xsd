@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:ac="http://rs.tdwg.org/ac/terms/" 
+    xmlns:dcterms="http://purl.org/dc/terms/" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+    xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" 
+    xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" 
+    xmlns:Iptc4xmpExt="http://iptc.org/std/Iptc4xmpExt/2008-02-29/" 
+    xmlns:exif="http://ns.adobe.com/exif/1.0/" 
+    targetNamespace="http://rs.tdwg.org/ac/terms/" 
+    version="2016-10-25">
+    
+    <xs:import namespace="http://ns.adobe.com/xap/1.0/" schemaLocation="xmp_terms.xsd" />
+    <xs:import namespace="http://ns.adobe.com/xap/1.0/rights/" schemaLocation="xmpRights_terms.xsd" />
+    <xs:import namespace="http://ns.adobe.com/photoshop/1.0/" schemaLocation="photoshop_terms.xsd" />
+    <xs:import namespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29/" schemaLocation="Iptc4xmpExt_terms.xsd" />
+    <xs:import namespace="http://ns.adobe.com/exif/1.0/" schemaLocation="exif_terms.xsd" />
+
+	<!-- Management Vocabulary -->
+	<xs:element name="subtypeLiteral" type="xs:string"></xs:element>
+	<xs:element name="subtype" type="xs:string"></xs:element>
+	<xs:element name="metadataLanguageLiteral" type="xs:string"></xs:element>
+	<xs:element name="metadataLanguage" type="xs:string"></xs:element>
+	<xs:element name="providerManagedID" type="xs:string"></xs:element>
+	<xs:element name="commenter" type="xs:string"></xs:element>
+	<xs:element name="commenterLiteral" type="xs:string"></xs:element>
+	<xs:element name="comments" type="xs:string"></xs:element>
+	<xs:element name="reviewer" type="xs:string"></xs:element>
+	<xs:element name="reviewerLiteral" type="xs:string"></xs:element>
+	<xs:element name="reviewerComments" type="xs:string"></xs:element>
+	<xs:element name="hasServiceAccessPoint" type="xs:string"></xs:element>
+	
+	<!-- Attribution Vocabulary -->
+	<xs:element name="licenseLogoUrl" type="xs:string"></xs:element>
+	<xs:element name="attributionLogoUrl" type="xs:string"></xs:element>
+	<xs:element name="attributionLinkUrl" type="xs:string"></xs:element>
+	<xs:element name="fundingAttribution" type="xs:string"></xs:element>
+	
+	<!-- Agents Vocabulary -->
+	<xs:element name="providerLiteral" type="xs:string"></xs:element>
+	<xs:element name="provider" type="xs:string"></xs:element>
+	<xs:element name="metadataProviderLiteral" type="xs:string"></xs:element>
+	<xs:element name="metadataProvider" type="xs:string"></xs:element>
+	<xs:element name="metadataCreatorLiteral" type="xs:string"></xs:element>
+	<xs:element name="metadataCreator" type="xs:string"></xs:element>
+	
+	<!-- Content Coverage Vocabulary -->
+	<xs:element name="caption" type="xs:string"></xs:element>
+	<xs:element name="physicalSetting" type="xs:string"></xs:element>
+	<xs:element name="subjectCategoryVocabulary" type="xs:string"></xs:element>
+	<xs:element name="tag" type="xs:string"></xs:element>
+	
+	<!-- Geography Vocabulary -->
+	
+	<!-- Temporal Coverage Vocabulary -->
+	<xs:element name="timeOfDay" type="xs:string"></xs:element>
+	
+	<!-- Taxonomic Coverage Vocabulary -->
+	<xs:element name="taxonCoverage" type="xs:string"></xs:element>
+	<xs:element name="otherScientificName" type="xs:string"></xs:element>
+	<xs:element name="taxonCount" type="xs:string"></xs:element>
+	<xs:element name="subjectPart" type="xs:string"></xs:element>
+	<xs:element name="subjectOrientation" type="xs:string"></xs:element>
+	
+	<!-- Resource Creation Vocabulary -->
+	<xs:element name="digitizationDate" type="xs:dateTime"></xs:element>
+	<xs:element name="captureDevice" type="xs:string"></xs:element>
+	<xs:element name="resourceCreationTechnique" type="xs:string"></xs:element>
+	
+	<!-- Related Resources Vocabulary -->
+	<xs:element name="IDofVontainingCollection" type="xs:string"></xs:element>
+	<xs:element name="relatedResourceID" type="xs:string"></xs:element>
+	<xs:element name="providerID" type="xs:string"></xs:element>
+	<xs:element name="derivedFrom" type="xs:string"></xs:element>
+	<xs:element name="associatedSpecimenReference" type="xs:string"></xs:element>
+	<xs:element name="associatedObservationReference" type="xs:string"></xs:element>
+	
+	<!-- Service Access Point Vocabulary -->
+	<xs:element name="accessURI" type="xs:string"></xs:element>
+	<xs:element name="variantLiteral" type="xs:string"></xs:element>
+	<xs:element name="variant" type="xs:string"></xs:element>
+	<xs:element name="variantDescription" type="xs:string"></xs:element>
+	<xs:element name="furtherInformationURL" type="xs:string"></xs:element>
+	<xs:element name="licensingException" type="xs:string"></xs:element>
+	<xs:element name="serviceExpectation" type="xs:string"></xs:element>
+	<xs:element name="hashFunction" type="xs:string"></xs:element>
+	<xs:element name="hashValue" type="xs:string"></xs:element>
+</xs:schema>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xmp="http://rs.gbif.org/terms/1.0/" targetNamespace="http://rs.gbif.org/terms/1.0/" version="2016-10-27">
+	<xs:element name="lifeForm" type="xs:dateTime"/>
+</xs:schema>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" targetNamespace="http://ns.adobe.com/photoshop/1.0/" version="2015-10-25">
+	<xs:element name="Credit" type="xs:string"></xs:element>
+</xs:schema>

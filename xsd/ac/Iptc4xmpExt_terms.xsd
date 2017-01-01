@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:Iptc4xmpExt="http://iptc.org/std/Iptc4xmpExt/2008-02-29/" targetNamespace="http://iptc.org/std/Iptc4xmpExt/2008-02-29/" version="2015-10-25">
+	<xs:element name="CVterm" type="xs:string"></xs:element>
+	<xs:element name="LocationShown" type="xs:string"></xs:element>
+	<xs:element name="WorldRegion" type="xs:string"></xs:element>
+	<xs:element name="CountryCode" type="xs:string"></xs:element>
+	<xs:element name="CountryName" type="xs:string"></xs:element>
+	<xs:element name="ProvinceState" type="xs:string"></xs:element>
+	<xs:element name="City" type="xs:string"></xs:element>
+	<xs:element name="Sublocation" type="xs:string"></xs:element>
+	<xs:element name="LocationCreated" type="xs:string"></xs:element>
+</xs:schema>

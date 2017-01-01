@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" targetNamespace="http://ns.adobe.com/xap/1.0/rights/" version="2015-10-25">
+	<xs:element name="Owner" type="xs:string"></xs:element>
+	<xs:element name="UsageTerms" type="xs:string"></xs:element>
+	<xs:element name="WebStatement" type="xs:string"></xs:element>
+</xs:schema>
