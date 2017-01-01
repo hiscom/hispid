@@ -152,7 +152,7 @@
     <http://rs.gbif.org/vocabulary/gbif/establishment_means/naturalised> ,
     :adventive ,
     <http://rs.gbif.org/vocabulary/gbif/establishment_means/managed> ,
-    <http://rs.gbif.org/vocabulary/gbif/establishment_means/invasive> ;
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/invasive> .
     
 <http://rs.gbif.org/vocabulary/gbif/establishment_means/naturalised> skos:related 
     :adventive ,
