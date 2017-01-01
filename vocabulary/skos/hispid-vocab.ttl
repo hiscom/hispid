@@ -115,7 +115,7 @@
   skos:inScheme <EstablishmentMeansVocab> ;
   skos:prefLabel "introduced"@en ;
   skos:definition """Introduced with human help (intentionally or accidentally) to a new 
-     place or new type of habitat where it was not previously found."""@en ;
+      place or new type of habitat where it was not previously found."""@en ;
   rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/establishment_means> .
 
 <http://rs.gbif.org/vocabulary/gbif/establishment_means/naturalised> 
@@ -140,7 +140,7 @@
   skos:prefLabel "managed"@en ;
   skos:altLabel "cultivated"@en ;
   skos:definition """Subclass of introduced: The organism maintains its presence through 
-     intentional  cultivation or husbandry."""@en ;
+      intentional  cultivation or husbandry."""@en ;
   rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/establishment_means> .
 
 <http://rs.gbif.org/vocabulary/gbif/establishment_means/invasive> 
