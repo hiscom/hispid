@@ -1,0 +1,161 @@
+@prefix : <http://hiscom.chah.org.au/hispid/vocabularies/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema> .
+
+@base <http://hiscom.chah.org.au/hispid/vocabularies/> .
+
+#
+# OCCURRENCE STATUS VOCABULARY
+#
+
+@prefix : <occurrence_status/> .
+
+:occurrenceStatusVocab a skos:ConceptScheme ;
+  dc:title "HISPID Occurrence status vocabulary" ;
+  dcterms:created "2017-01-01"^^xs:date ;
+  rdfs:isDefinedBy <http://hiscom.chah.org.au/hispid/vocabularies> .
+  
+<http://rs.gbif.org/vocabulary/gbif/occurrence_status/present> a skos:Concept ;
+  skos:inScheme :occurrenceStatusVocab ;
+  skos:prefLabel "present"@en ;
+  skos:definition """There is at least one well documented record of the taxons presence in the area.""" ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> .
+  
+:endemic a skos:Concept ;
+  skos:inScheme :occurrenceStatusVocab ;
+  skos:prefLabel "endemic"@en ;
+  skos:definition """The taxon is restricted to the area.""" ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> ;
+  skos:scopeNote """In the GBIF vocabulary 'endemic' is considered a synonym of 'present'; in HISPID it
+      is considered a distinct concept with the more restricted definition that the distribution of the
+	  taxon is restricted to the area."""@en .
+  
+<http://rs.gbif.org/vocabulary/gbif/occurrence_status/absent> a skos:Concept ;
+  skos:inScheme :occurrenceStatusVocab ;
+  skos:prefLabel "absent"@en ;
+  skos:definition """There is evidence to document the absence of a taxon in the area.""" ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> .
+  
+:extinct a skos:Concept ;
+  skos:inScheme :occurrenceStatusVocab ;
+  skos:prefLabel "extinct"@en ;
+  skos:definition """The taxon no longer exists and has no living representatives in the area.""" ;
+  rdfs:isDefinedBy <http://hiscom.chah.org.au/hispid/vocabularies/occurrence_status> ;
+  skos:scopeNote """In the GBIF vocabulary 'extinct' is considered a synonym of 'absent'; in HISPID it
+      is a distinct concept, the distinguishing feature being that extinct taxa are know to have been 
+	  present in the area before."""@en .
+  
+<http://rs.gbif.org/vocabulary/gbif/occurrence_status/excluded> a skos:Concept ;
+  skos:inScheme :occurrenceStatusVocab ;
+  skos:prefLabel "excluded"@en ;
+  skos:definition """Subclass of absent: The organism is reported insome (gray) literature for a certain 
+      region, but is is erroneous. Reason for exclusion could be a misidentification, an old report, 
+	  a simple publishing mistake or any other or unknown reason.""" ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> .
+
+<http://rs.gbif.org/vocabulary/gbif/occurrence_status/doubtful> a skos:Concept ;
+  skos:inScheme :occurrenceStatusVocab ;
+  skos:prefLabel "doubtful"@en ;
+  skos:definition """The taxon is scored as being present in the area but there is some doubt over the 
+      evidence. The doubt may be of different kinds including taxonomic or geographic imprecision in 
+	  the records.""" ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> .
+  
+# Semantic relationships
+:occurrenceStatusVocab skos:hasTopConcept <http://rs.gbif.org/vocabulary/gbif/occurrence_status/present> ,
+    <http://rs.gbif.org/vocabulary/gbif/occurrence_status/absent> ,
+	<http://rs.gbif.org/vocabulary/gbif/occurrence_status/doubtful> .
+	
+<http://rs.gbif.org/vocabulary/gbif/occurrence_status/present> skos:related 
+    <http://rs.gbif.org/vocabulary/gbif/occurrence_status/absent> ,
+	<http://rs.gbif.org/vocabulary/gbif/occurrence_status/doubtful> .
+	
+<http://rs.gbif.org/vocabulary/gbif/occurrence_status/present> skos:narrower :endemic .
+
+<http://rs.gbif.org/vocabulary/gbif/occurrence_status/absent> skos:narrower :extinct .
+  
+
+#
+# ESTABLISHMENT MEANS VOCABULARY
+#
+
+@prefix : <establishment_means/> .
+
+:establishmentMeansVocab rdf:type skos:ConceptScheme ;
+  dc:title "HISPID Establishment means vocabulary" ;
+  dcterms:created "2016-02-09"^^xs:date ;
+  rdfs:isDefinedBy <http://hiscom.chah.org.au/hispid/vocabularies> .
+
+<http://rs.gbif.org/vocabulary/gbif/establishment_means/native> a skos:Concept ;
+  skos:inScheme :establishmentMeansVocab ;
+  skos:prefLabel "native"@en ;
+  skos:definition """Naturally occurring in a particular region or ecosystem."""@en ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/establishment_means> .
+
+<http://rs.gbif.org/vocabulary/gbif/establishment_means/introduced> a skos:Concept ;
+  skos:inScheme :establishmentMeansVocab ;
+  skos:prefLabel "introduced"@en ;
+  skos:definition """Introduced with human help (intentionally or accidentally) to a new 
+     place or new type of habitat where it was not previously found."""@en ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/establishment_means> .
+
+<http://rs.gbif.org/vocabulary/gbif/establishment_means/naturalised> a skos:Concept ;
+  skos:inScheme :establishmentMeansVocab ;
+  skos:prefLabel "naturalised"@en ;
+  skos:definition """Subclass of introduced: The organism reproduces naturally."""@en ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/establishment_means> .
+  
+:adventive a skos:Concept ;
+  skos:inScheme :establishmentMeansVocab ;
+  skos:prefLabel "adventive"@en ;
+  skos:hiddenLabel "sparesely established"@en ;
+  skos:hiddenLabel "incipiently naturalised"@en ;
+  skos:definition """Not native to and not fully established in a new habitat or environment."""@en ;
+  rdfs:isDefinedBy <http://hiscom.chah.org.au/hispid/vocabularies> .
+
+<http://rs.gbif.org/vocabulary/gbif/establishment_means/managed> a skos:Concept ;
+  skos:inScheme :establishmentMeansVocab ;
+  skos:prefLabel "managed"@en ;
+  skos:altLabel "cultivated"@en ;
+  skos:definition """Subclass of introduced: The organism maintains its presence through 
+     intentional  cultivation or husbandry."""@en ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/establishment_means> .
+
+<http://rs.gbif.org/vocabulary/gbif/establishment_means/invasive> a skos:Concept ;
+  skos:inScheme :establishmentMeansVocab ;
+  skos:prefLabel "invasive"@en ;
+  skos:definition """Subclass of introduced: The organism is having a deleterious impact 
+      on another organism, multiple organisms or the ecosystem as a whole."""@en ;
+  rdfs:isDefinedBy  <http://rs.gbif.org/vocabulary/gbif/establishment_means> .
+
+<http://rs.gbif.org/vocabulary/gbif/establishment_means/uncertain> a skos:Concept ;
+  skos:inScheme :establishmentMeansVocab ;
+  skos:prefLabel "uncertain"@en ;
+  skos:definition """Origin of organism uncertain"""@en ;
+  rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/establishment_means> .
+  
+# Semantic relationships
+:establishmentMeansVocab skos:hasTopConcept <http://rs.gbif.org/vocabulary/gbif/establishment_means/native> ,
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/introduced>, 
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/uncertain> .
+    
+<http://rs.gbif.org/vocabulary/gbif/establishment_means/native> skos:related 
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/introduced> ,
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/uncertain> .
+    
+<http://rs.gbif.org/vocabulary/gbif/establishment_means/introduced> skos:narrower 
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/naturalised> ,
+    :adventive ,
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/managed> ,
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/invasive> ;
+    
+<http://rs.gbif.org/vocabulary/gbif/establishment_means/naturalised> skos:related 
+    :adventive ,
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/managed> ,
+    <http://rs.gbif.org/vocabulary/gbif/establishment_means/invasive> .
+
