@@ -7,10 +7,10 @@
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-06-03T13:02:07.143+10:00</dcterms:modified>
 		<dcterms:description/>
 		<dcterms:creator>Herbarium Information Systems Committee (HISCOM), Australasia</dcterms:creator>
-		<dcterms:contributor>Aaron Wilton (CHR), Niels Klazenga (MEL), Ben Richardson (PERTH), Anne Fuchs (CANB), Laurence Paine (HO), Eleanor Crichton (AD)</dcterms:contributor>
-		<dcterms:bibliographicCitation>Wilton, A.; Klazenga, N.; Richardson, B.; Fuchs, A.; Paine, L.; Crichton, E. 2016. HISPID 6.0.0 Recommended Terms.  Council of Heads of Australasian Herbaria, Canberra.</dcterms:bibliographicCitation>
+		<dcterms:contributor>Aaron Wilton (CHR), Niels Klazenga (MEL), Ben Richardson (PERTH), Anne Fuchs (CANB)</dcterms:contributor>
+		<dcterms:bibliographicCitation>Wilton, A.; Klazenga, N.; Richardson, B.; Fuchs, A. 2016. HISPID 6.0.0 Recommended Terms.  Council of Heads of Australasian Herbaria, Canberra.</dcterms:bibliographicCitation>
 		<dcterms:issued/>
-		<dcterms:license>CC-BY 4.0</dcterms:license>
+		<dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
 		<dcterms:provenance>
 		The Herbarium Information Standards and Protocols for Interchange of Data (HISPID) standard 
 		Version 1:  Croft, J.R. (ed.) (1989). HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 1]. (Australian National Botanic Gardens: Canberra).
