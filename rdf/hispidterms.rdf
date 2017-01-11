@@ -436,7 +436,7 @@
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<skos:example>AY554086|AY554114</skos:example>
 		<dwcattributes:abcdEquivalence>//Sequences/Sequence/ID-in-Database</dwcattributes:abcdEquivalence>
-		<skos:scopeNote xml:lang="en">Use Genbank accession numbers.</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">Use genetic data repository number. e.g. Genbank accession numbers</skos:scopeNote>
 		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
