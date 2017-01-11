@@ -59,9 +59,9 @@
   a skos:Concept ;
   skos:inScheme <OccurrenceStatusVocab> ;
   skos:prefLabel "excluded"@en ;
-  skos:definition """Subclass of absent: The organism is reported insome (gray) literature for a certain 
-      region, but is is erroneous. Reason for exclusion could be a misidentification, an old report, 
-      a simple publishing mistake or any other or unknown reason."""@en ;
+  skos:definition """Subclass of absent: The organism is reported in some literature for a certain 
+      region, but these reports are erroneous. Reason for exclusion could be a misidentification, 
+	  an old report, a simple publishing mistake or any other or unknown reason."""@en ;
   rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> .
 
 <http://rs.gbif.org/vocabulary/gbif/occurrence_status/doubtful> 
