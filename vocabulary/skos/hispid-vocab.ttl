@@ -129,7 +129,7 @@
   a skos:Concept ;
   skos:inScheme <EstablishmentMeansVocab> ;
   skos:prefLabel "adventive"@en ;
-  skos:hiddenLabel "sparesely established"@en ;
+  skos:hiddenLabel "sparsely established"@en ;
   skos:hiddenLabel "incipiently naturalised"@en ;
   skos:definition """Not native to and not fully established in a new habitat or environment."""@en ;
   rdfs:isDefinedBy <http://hiscom.chah.org.au/hispid/vocabularies> .
