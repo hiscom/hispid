@@ -25,7 +25,7 @@
   a skos:Concept ;
   skos:inScheme <OccurrenceStatusVocab> ;
   skos:prefLabel "present"@en ;
-  skos:definition """There is at least one well documented record of the taxons presence in the area.""" ;
+  skos:definition """There is at least one well documented record of the taxons presence in the area."""@en ;
   rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> .
   
 :endemic 
@@ -42,14 +42,14 @@
   a skos:Concept ;
   skos:inScheme <OccurrenceStatusVocab> ;
   skos:prefLabel "absent"@en ;
-  skos:definition """There is evidence to document the absence of a taxon in the area.""" ;
+  skos:definition """There is evidence to document the absence of a taxon in the area."""@en ;
   rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> .
   
 :extinct 
   a skos:Concept ;
   skos:inScheme <OccurrenceStatusVocab> ;
   skos:prefLabel "extinct"@en ;
-  skos:definition """The taxon no longer exists and has no living representatives in the area.""" ;
+  skos:definition """The taxon no longer exists and has no living representatives in the area."""@en ;
   rdfs:isDefinedBy <http://hiscom.chah.org.au/hispid/vocabularies/occurrence_status> ;
   skos:scopeNote """In the GBIF vocabulary 'extinct' is considered a synonym of 'absent'; in HISPID it
       is a distinct concept, the distinguishing feature being that extinct taxa are know to have been 
@@ -61,7 +61,7 @@
   skos:prefLabel "excluded"@en ;
   skos:definition """Subclass of absent: The organism is reported insome (gray) literature for a certain 
       region, but is is erroneous. Reason for exclusion could be a misidentification, an old report, 
-      a simple publishing mistake or any other or unknown reason.""" ;
+      a simple publishing mistake or any other or unknown reason."""@en ;
   rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> .
 
 <http://rs.gbif.org/vocabulary/gbif/occurrence_status/doubtful> 
@@ -70,7 +70,7 @@
   skos:prefLabel "doubtful"@en ;
   skos:definition """The taxon is scored as being present in the area but there is some doubt over the 
       evidence. The doubt may be of different kinds including taxonomic or geographic imprecision in 
-      the records.""" ;
+      the records."""@en ;
   rdfs:isDefinedBy <http://rs.gbif.org/vocabulary/gbif/occurrence_status> .
   
 # Semantic relationships
