@@ -602,22 +602,28 @@
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/locality">
 		<rdfs:label xml:lang="en">Locality</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Description of the locality from where the specimen was collected.</skos:definition>
+		<skos:definition xml:lang="en">The specific description of the place.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/LocalityText</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/loc-hispid5"/>
+		<skos:scopeNote xml:lang="en">Less specific geographic information can be provided in 
+			other geographic terms (higherGeography, continent, country, stateProvince, county, 
+			municipality, waterBody, island, islandGroup). This term may contain information modified 
+			from the original to correct perceived errors or standardize the description.</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/verbatimLocality">
 		<rdfs:label xml:lang="en">Verbatim Locality</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-		<skos:definition xml:lang="en">Verbatim locality description</skos:definition>
+		<skos:definition xml:lang="en">Description of the locality from where the specimen was 
+			collected.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/LocalityText</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/loc-hispid5"/>
-		<skos:scopeNote xml:lang="en">Locality should always be delivered; only deliver verbatimLocality if stored separately from the locality.</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">verbatimLocality should always be delivered; locality only 
+			needs to be delivered if it is stored separately in the database.</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/continent">
