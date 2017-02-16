@@ -622,8 +622,9 @@
 		<rdfs:isDefinedBy rdf:resource="http://rs.tdwg.org/dwc/terms/"/>
 		<dwcattributes:abcdEquivalence>//Unit/Gathering/LocalityText</dwcattributes:abcdEquivalence>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/loc-hispid5"/>
-		<skos:scopeNote xml:lang="en">verbatimLocality should always be delivered; locality only 
-			needs to be delivered if it is stored separately in the database.</skos:scopeNote>
+		<skos:scopeNote xml:lang="en">verbatimLocality generally is the locality information exactly as provided by the collector (or an old label), 
+		    but we take it to be the locality as defined in previous iterations of HISPID, which is very nearly the same. Less specific geographic information 
+		    can be included under this term if it concerns non-standard and/or historic names, for example &apos;Nova Hollandia&apos;, &apos;Van Diemen's Land&apos;.</skos:scopeNote>
 		<dwcattributes:organizedInClass rdf:resource="http://purl.org/dc/terms/Location"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/continent">
