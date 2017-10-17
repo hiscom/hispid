@@ -1,61 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../accessories/style/human.xsl"?>
 <thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form" dc:title="HISPID Life Form Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-22">
-	<concept dc:identifier="phanerophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/phanerophyte" dc:description="have stems that are woody and persistent, and buds that are normally exposed 3 m or more above ground level. This category includes trees and large shrubs" dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="phanerophyte"></term>
-		</preferred>
-	</concept>
-	<concept dc:identifier="nanophanerophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/nanophanerophyte" dc:description="also have woody, persistent stems, but are lower in stature with buds typically located between 0.5 m and 3 m above ground level. This category includes smaller shrubs" dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="nanophanerophyte"/>
-		</preferred>
-	</concept>
-	<concept dc:identifier="herbaceous_phanerophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/herbaceous_phanerophyte" dc:description="have herbaceous stems that persist for several years and include tropical species such as bananas and plantains." dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="herbaceous phanerophyte"/>
-		</preferred>
-	</concept>
-	<concept dc:identifier="chamaephyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/chamaephyte" dc:description="can have stems that are herbaceous or woody and persistent, and have buds that are located above soil level, but never by more than 50 cm. This group includes dwarf shrubs and some perennial herbs." dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="chamaephyte"/>
-		</preferred>
-	</concept>
-	<concept dc:identifier="hemicryptophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/hemicryptophyte" dc:description="have herbaceous stems that often die-back during unfavourable seasons, and surviving buds placed on (or just below) soil level. This group includes many biennial and perennial herbs, including those in which buds grow from a basal rosette." dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="hemicryptophyte"/>
-		</preferred>
-	</concept>
-	<concept dc:identifier="geophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/geophyte" dc:description="have stems that die back during unfavourable seasons, with the plant surviving as a bulb, rhizome, tuber or root bud." dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="geophyte"/>
-		</preferred>
-	</concept>
-	<concept dc:identifier="therophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/therophyte" dc:description="complete their entire life-cycle during the favourable season, and survive the unfavourable season as a seed. This group includes all annual herbs." dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="therophyte"/>
-		</preferred>
-	</concept>
-	<concept dc:identifier="epiphyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/epiphyte" dc:description="grow on other plants (their growing buds occur on another plant)." dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="epiphyte"/>
-		</preferred>
-	</concept>
-	<concept dc:identifier="helophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/helophyte" dc:description="are plants in which surviving buds are buried in water-saturated soil, or below water-level, but that have flowers and leaves that are fully emergent during the growing season. The group includes many marsh and emergent aquatic herbs." dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="helophyte"/>
-		</preferred>
-	</concept>
-	<concept dc:identifier="hydrophyte" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/hydrophyte" dc:description="are fully aquatic herbs in which surviving buds are submerged, or buried in soil beneath water. Their stems and vegetative shoots grow entirely underwater and leaves can be submerged or floating, but only the flower-bearing parts may be emergent." dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="hydrophyte"/>
-		</preferred>
-	</concept>
-	<concept dc:identifier="annual" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/annual" dc:description="Mägdefrau (1982): pioneers; no vegetative shoots remain to carry on a second year" dc:issued="2015-10-22">
-		<preferred>
-			<term dc:title="annual"/>
-		</preferred>
-	</concept>
 	<concept dc:identifier="short_turf" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form/short_turf" dc:description="Mägdefrau (1982): open mineral soils and rocks; regenerative shoots; form spreading turfs for only a few years" dc:issued="2015-10-22">
 		<preferred>
 			<term dc:title="short turf"/>

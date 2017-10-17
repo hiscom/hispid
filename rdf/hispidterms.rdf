@@ -7,20 +7,8 @@
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-06-03T13:02:07.143+10:00</dcterms:modified>
 		<dcterms:description/>
 		<dcterms:creator>Herbarium Information Systems Committee (HISCOM), Australasia</dcterms:creator>
-		<dcterms:contributor>Aaron Wilton (CHR), Niels Klazenga (MEL), Ben Richardson (PERTH), Anne Fuchs (CANB)</dcterms:contributor>
-		<dcterms:bibliographicCitation>Wilton, A.; Klazenga, N.; Richardson, B.; Fuchs, A. 2016. HISPID 6.0.0 Recommended Terms.  Council of Heads of Australasian Herbaria, Canberra.</dcterms:bibliographicCitation>
-		<dcterms:issued/>
 		<dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-		<dcterms:provenance>
-		The Herbarium Information Standards and Protocols for Interchange of Data (HISPID) standard 
-		Version 1:  Croft, J.R. (ed.) (1989). HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 1]. (Australian National Botanic Gardens: Canberra).
-		Version 2: Whalen, A. (ed.) (1993). HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 2]. (National Herbarium of New South Wales: Sydney).
-		Version 3: Conn, B.J. (ed.) (1996). HISPID3 — Herbarium Information Standards and Protocols for Interchange of Data. Version 3. (Council of Heads of Australian Herbaria at Royal Botanic Gardens: Sydney).
-		Version 4: Herbarium Information Systems Committee. (2000) HISPID — Herbarium Information Standards and Protocols for Interchange of Data [Version 4]. Council of Heads of Australian Herbaria. http://hiscom.rbg.vic.gov.au/wiki/HISPID_4
-		Version 5: Neish, P., Richardson, B.P., and Whitbread, G. (2007). HISPID 5. Council of Heads of Australian Herbaria. https://github.com/hiscom/hispid5.</dcterms:provenance>
 		<dwcattributes:status>recommended</dwcattributes:status>
-		<dcterms:accrualMethod>[how are items added]</dcterms:accrualMethod>
-		<dcterms:accrualPeriodicity>[freqeuncy items are  added]</dcterms:accrualPeriodicity>
 		<dcterms:replaces></dcterms:replaces>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/Occurrence">
@@ -351,18 +339,19 @@
 		<!--<skos:note></skos:note>-->
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
-	<rdf:Description rdf:about="http://hiscom.chah.org.au/hispid/terms/lifeForm">
+	<rdf:Description rdf:about="http://rs.gbif.org/terms/1.0/lifeForm">
 		<rdfs:label xml:lang="en">Life Form</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		<skos:definition xml:lang="en">A controlled vocabulary term describing the habit or life form of the specimen on which the collection object is based.</skos:definition>
 		<dwcattributes:status>recommended</dwcattributes:status>
 		<rdfs:isDefinedBy rdf:resource="http://hiscom.chah.org.au/hispid/terms/"/>
 		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-11</dcterms:modified>
-		<dcterms:hasVersion rdf:resource="http://hiscom.chah.org.au/hispid/terms/lifeForm-2015-07-11"/>
+		<dcterms:hasVersion rdf:resource="http://rs.gbif.org/terms/1.0/lifeForm,/lifeForm-2017-10-17"/>
 		<dcterms:replaces rdf:resource="http://hiscom.chah.org.au/hispid/terms/form-hispid5"/>
 		<skos:scopeNote>Vocabulary: http://hiscom.chah.org.au/hispid/vocabulary/life_form.xml</skos:scopeNote>
 		<skos:note>In previous editions of HISPID lifeForm (form) has been free text, but in the current edition it is intended for providing term(s) from a vocabulary. Free-text from previous implementations should be concatenated into occurrenceRemarks when exchanged. In the context of specimen data the term should only be used to transfer the lifeForm information associated with that specimen, not the taxon it belongs to.</skos:note>
 		<skos:note>We intend to provide a controlled vocabulary, and/or a term to identify a controlled vocabulary.  The linked vocabulary provides examples of terms that may be used.</skos:note>
+		<skos:note>Removed Raunkiaer life forms from the vocabulary, as we don't think they'll be used [2017-10-17]</skos:note>
 		<dwcattributes:organizedInClass rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
 	</rdf:Description>
 	<rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/lifeStage">
