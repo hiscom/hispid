@@ -19,14 +19,14 @@
           <html>
                <head>
                     <title><xsl:value-of select="@dc:title"/> - <xsl:value-of select="$defType"/></title>
-                    <link rel="stylesheet" type="text/css" href="/style/human.css"/>
+                    <link rel="stylesheet" type="text/css" href="../accessories/style/human.css"/>
                </head>
                <body>
                     <div class="container">
                          <div id="header" class="box">
                               <h2 id="logo">
-                                   <img src="/style/logo-gbif.svg" width="115" height="46"/>
-                                   Darwin Core <xsl:value-of select="$defType"/>
+                                   <img src="../accessories/style/hiscom.png"/><basefont size=""></basefont>
+                                   HISPID <xsl:value-of select="$defType"/>
                                    <span style="font-size:60%;color:#888;"> (<a href="/">index</a>)</span>
                               </h2>
                               <h1><xsl:value-of select="@dc:title"/></h1>
@@ -40,11 +40,6 @@
                                    <xsl:if test="@name">
                                         <tr>
                                              <th>Name</th><td><xsl:value-of select="@name"/></td>
-                                        </tr>
-                                   </xsl:if>
-                                   <xsl:if test="@dc:issued">
-                                        <tr>
-                                             <th>Issued</th><td><xsl:value-of select="@dc:issued"/></td>
                                         </tr>
                                    </xsl:if>
                                    <xsl:if test="@namespace">
