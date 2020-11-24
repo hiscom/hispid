@@ -1,6 +1,13 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../accessories/style/human.xsl"?>
-<thesaurus xmlns="http://rs.gbif.org/thesaurus/" dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form" dc:title="HISPID Life Form Vocabulary" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" dc:issued="2015-10-22">
+<thesaurus 
+		xmlns="http://rs.gbif.org/thesaurus/" 
+		dc:URI="http://hiscom.chah.org.au/hispid/vocabulary/life_form" 
+		dc:title="HISPID Life Form Vocabulary" 
+		xmlns:dc="http://purl.org/dc/terms/" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://rs.gbif.org/thesaurus/  http://rs.gbif.org/schema/thesaurus.xsd" 
+		dc:issued="2015-10-22">
 	<concept 
 			dc:identifier="aquatic" 
 			dc:URI="http://www.neii.gov.au/def/voc/NVIS/national-vegetation-information-system-growth-form/aquatic" 
