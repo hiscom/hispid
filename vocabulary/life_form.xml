@@ -4,11 +4,14 @@
 	<concept 
 			dc:identifier="aquatic" 
 			dc:URI="http://www.neii.gov.au/def/voc/NVIS/national-vegetation-information-system-growth-form/aquatic" 
-			dc:description="Plant growing in an inland waterway or wetland with the majority of its biomass under water for most of the year. Fresh, saline or brackish water." 
+			dc:description="Plant growing in an inland waterway or wetland with the majority of its biomass under water for most of the year. Fresh, saline or brackish water."
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="aquatic"/>
+			<term dc:title="aquatic" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="Q"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="bryophyte" 
@@ -16,8 +19,11 @@
 			dc:description="Mosses and Liverworts. Mosses are small plants usually with a slender leaf-bearing stem with no true vascular tissue. Liverworts are often moss-like in appearance or consisting of a flat, ribbon-like green thallus." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="bryophyte"/>
+			<term dc:title="bryophyte" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="B"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="chenopod-shrub" 
@@ -25,8 +31,11 @@
 			dc:description="Single or multi-stemmed, semi-succulent shrub of the family Chenopodiaceae exhibiting drought and salt tolerance." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="chenopod shrub"/>
+			<term dc:title="chenopod shrub" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="C"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="cycad" 
@@ -34,8 +43,11 @@
 			dc:description="Members of the families Cycadaceae and Zamiaceae." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="cycad"/>
+			<term dc:title="cycad" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="A"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="epiphyte" 
@@ -43,17 +55,23 @@
 			dc:description="Epiphytes, mistletoes and parasites. Plant with roots attached to the aerial portions of other plants. Often could also be another growth form, such as fern or forb." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="epiphyte"/>
+			<term dc:title="epiphyte" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="K"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="fern" 
 			dc:URI="http://www.neii.gov.au/def/voc/NVIS/national-vegetation-information-system-growth-form/fern" 
 			dc:description="Ferns and fern allies. Characterised by large and usually branched leaves (fronds), herbaceous and terrestrial to aquatic; spores in sporangia on the leaves." 
-			dc:issued="2019-06-07">
+			dc:issued="2019-06-07" xml:lang="en">
 		<preferred>
-			<term dc:title="fern"/>
+			<term dc:title="fern" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="E"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="forb" 
@@ -61,8 +79,11 @@
 			dc:description="Herbaceous or slightly woody, annual or sometimes perennial plant. (Usually a dicotyledon.)." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="forb"/>
+			<term dc:title="forb" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="F"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="grass-tree" 
@@ -70,8 +91,11 @@
 			dc:description="Australian grass trees. Members of the Xanthorroeaceae." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="grass tree"/>
+			<term dc:title="grass tree" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="X"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="heath-shrub" 
@@ -79,8 +103,11 @@
 			dc:description="Shrub usually less than 2m, with sclerophyllous leaves having high fibre:protein ratios and with an area of nanophyll or smaller (less than 225 sq. m.). Often a member of one the following families: Epacridaceae, Myrtaceae, Fabaceae and Proteaceae. Commonly occur on nutrient-poor substrates." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="heath shrub"/>
+			<term dc:title="heath shrub" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="Z"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="hummock-grass" 
@@ -88,8 +115,11 @@
 			dc:description="Coarse xeromorphic grass with a mound-like form often dead in the middle; genera are Triodia and Plectrachne." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="hummock grass"/>
+			<term dc:title="hummock grass" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="H"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="lichen" 
@@ -97,8 +127,11 @@
 			dc:description="Composite plant consisting of a fungus living symbiotically with algae: without true roots, stems or leaves." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="lichen"/>
+			<term dc:title="lichen" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="N"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="lower-plant" 
@@ -106,8 +139,11 @@
 			dc:description="Composite plant consisting of a fungus living symbiotically with algae: without true roots, stems or leaves." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="lower plant"/>
+			<term dc:title="lower plant" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="O"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="mallee-shrub" 
@@ -115,8 +151,11 @@
 			dc:description="Commonly less than 8m tall, usually with 5 or more trunks, of which at least three of the largest do not exceed 100mm at breast height (1.3m)." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="mallee shrub"/>
+			<term dc:title="mallee shrub" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="Y"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="other-grass" 
@@ -124,8 +163,11 @@
 			dc:description="Member of the family Poaceae, but having neither a distinctive tussock nor hummock appearance." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="other grass"/>
+			<term dc:title="other grass" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="W"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="palm" 
@@ -133,8 +175,11 @@
 			dc:description="Palms and other arborescent monocotyledons. Members of the Arecaceae or the genus Pandanus. (Pandanus is often multi-stemmed)." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="palm"/>
+			<term dc:title="palm" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="P"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="rush" 
@@ -142,8 +187,11 @@
 			dc:description="Herbaceous, usually perennial erect monocot that is neither a grass nor a sedge. For the purposes of NVIS, rushes include the monocotyledon families Juncaceae, Typhaceae, Liliaceae, Iridaceae, Xyridaceae and the genus Lomandra. I.e. graminoid or grass-like genera." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="rush"/>
+			<term dc:title="rush" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="R"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="samphire-shrub" 
@@ -151,8 +199,11 @@
 			dc:description="Genera (of Tribe Salicornioideae, viz: Halosarcia, Pachycornia, Sarcocornia, Sclerostegia, Tecticornia and Tegicornia) with articulate branches, fleshy stems and reduced flowers within the Chenopodiaceae family, succulent chenopods (Wilson 1980). Also the genus Sueda." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="samphire shrub"/>
+			<term dc:title="samphire shrub" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="D"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="seagrass" 
@@ -160,8 +211,11 @@
 			dc:description="Flowering angiosperms forming sparse to dense mats of material at the subtidal and down to 30m below MSL. Occasionally exposed." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="seagrass"/>
+			<term dc:title="seagrass" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="J"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="sedge" 
@@ -169,8 +223,11 @@
 			dc:description="Herbaceous, usually perennial erect plant generally with a tufted habit and of the families Cyperaceae (true sedges) or Restionaceae (node sedges)." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="sedge"/>
+			<term dc:title="sedge" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="V"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="shrub" 
@@ -178,8 +235,11 @@
 			dc:description="Woody plants multi-stemmed at the base (or within 200mm from ground level) or if single stemmed, less than 2m." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="shrub"/>
+			<term dc:title="shrub" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="S"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="tree" 
@@ -187,8 +247,11 @@
 			dc:description="Woody plants, more than 2m tall with a single stem or branches well above the base." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="tree"/>
+			<term dc:title="tree" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="T"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="tree-fern" 
@@ -220,8 +283,11 @@
 			dc:description="Forms discrete but open tussocks usually with distinct individual shoots, or if not, then forming a hummock. These are the common agricultural grasses." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="tussock grass"/>
+			<term dc:title="tussock grass" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="G"/> 
+		</alternative>
 	</concept>
 	<concept 
 			dc:identifier="vine" 
@@ -229,8 +295,11 @@
 			dc:description="Climbing, twining, winding or sprawling plants usually with a woody stem." 
 			dc:issued="2019-06-07">
 		<preferred>
-			<term dc:title="vine"/>
+			<term dc:title="vine" xml:lang="en"/>
 		</preferred>
+		<alternative>
+			<term dc:title="L"/> 
+		</alternative>
 	</concept>
 
 
